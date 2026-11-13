@@ -84,3 +84,4 @@ flowchart TD
 ### 2.5 Persistence Strategy
 - **Authoritative JSON State Ledger** (`backend/app/db/.persisted_session.json`): Provides high-speed, zero-dependency local development persistence that survives backend restarts.
 - **PostgreSQL / PostGIS Relational Database**: Migration scripts (`database/migrations/001_initial_postgis_schema.sql` through `005_simulation_sessions_and_telemetry.sql`) ready for full PostGIS deployment.
+

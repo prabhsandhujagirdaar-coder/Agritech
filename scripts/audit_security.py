@@ -41,3 +41,4 @@ if findings:
         print(f"  - {file_path} [{name}]: {masked}")
 else:
     print("SUCCESS: Zero exposed credentials, tokens, or private keys detected.")
+

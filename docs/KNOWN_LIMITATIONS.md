@@ -45,3 +45,4 @@ This document provides transparent technical disclosures regarding current archi
 
 - **Current State**: High-accuracy road routes are computed using public OSRM highway routing services.
 - **Disclosure**: If public OSRM servers are unreachable or the environment has no internet connectivity, the system automatically falls back to an internal **calibrated multi-waypoint corridor fallback** (`routing_service.py`), ensuring uninterrupted map visualization and distance estimation.
+

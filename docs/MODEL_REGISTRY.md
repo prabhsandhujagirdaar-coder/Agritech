@@ -78,3 +78,4 @@ for name, expected in baseline.items():
     print(f'[{'PASS' if match else 'FAIL'}] {name} (size: {p.stat().st_size:,} bytes)')
 "
 ```
+

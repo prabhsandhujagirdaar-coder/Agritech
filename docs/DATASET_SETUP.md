@@ -55,3 +55,4 @@ $env:PYTHONPATH="backend"
 # 3. Verify dataset directory structure and manifest alignment
 .\.venv\Scripts\python.exe scripts/verify_raw_datasets.py
 ```
+
