@@ -1,0 +1,120 @@
+{
+  "experiment_name": "fruit_identifier_resnet18_baseline",
+  "version": "1.0.0",
+  "task": "stage1_fruit_identification",
+  "dataset_manifests": {
+    "train": "ml/data/manifests/fruit_identifier_v1/train.json",
+    "val": "ml/data/manifests/fruit_identifier_v1/val.json",
+    "test": "ml/data/manifests/fruit_identifier_v1/test.json"
+  },
+  "model": {
+    "architecture": "resnet18",
+    "pretrained": true,
+    "weights": "ResNet18_Weights.DEFAULT",
+    "num_classes": 5,
+    "class_to_idx": {
+      "guava": 0,
+      "banana": 1,
+      "apple": 2,
+      "mango": 3,
+      "negative_background": 4
+    },
+    "idx_to_class": {
+      "0": "guava",
+      "1": "banana",
+      "2": "apple",
+      "3": "mango",
+      "4": "negative_background"
+    },
+    "freeze_stages": [
+      "conv1",
+      "bn1",
+      "layer1",
+      "layer2"
+    ],
+    "trainable_stages": [
+      "layer3",
+      "layer4",
+      "fc"
+    ],
+    "dropout": 0.2
+  },
+  "training": {
+    "random_seed": 42,
+    "batch_size": 64,
+    "num_workers": 0,
+    "epochs": 15,
+    "device": "cuda",
+    "mixed_precision": true,
+    "optimizer": {
+      "type": "AdamW",
+      "lr_head": 0.0001,
+      "lr_backbone": 1e-05,
+      "weight_decay": 0.01
+    },
+    "lr_scheduler": {
+      "type": "CosineAnnealingLR",
+      "T_max": 15,
+      "eta_min": 1e-06
+    },
+    "loss": {
+      "type": "WeightedCrossEntropyLoss",
+      "label_smoothing": 0.05,
+      "class_weights": {
+        "guava": 1.11,
+        "banana": 1.31,
+        "apple": 0.91,
+        "mango": 3.50,
+        "negative_background": 0.75
+      }
+    },
+    "early_stopping": {
+      "enabled": true,
+      "patience": 5,
+      "monitor_metric": "val_macro_f1",
+      "mode": "max",
+      "min_delta": 0.001
+    }
+  },
+  "preprocessing": {
+    "input_size": [3, 224, 224],
+    "train_transforms": {
+      "resize": [256, 256],
+      "random_crop": [224, 224],
+      "random_horizontal_flip_prob": 0.5,
+      "random_rotation_degrees": 15,
+      "color_jitter": {
+        "brightness": 0.15,
+        "contrast": 0.15,
+        "saturation": 0.1,
+        "hue": 0.0
+      },
+      "normalization": {
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225]
+      }
+    },
+    "eval_transforms": {
+      "resize": [256, 256],
+      "center_crop": [224, 224],
+      "normalization": {
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225]
+      }
+    }
+  },
+  "calibration_and_ood": {
+    "method": "temperature_scaling",
+    "ood_scoring": "helmholtz_free_energy",
+    "validation_tpr_target": 0.95,
+    "confidence_threshold_candidate": 0.80,
+    "margin_threshold": 0.20
+  },
+  "checkpointing": {
+    "best_checkpoint_path": "ml/artifacts/best_fruit_identifier_resnet18.pth",
+    "latest_checkpoint_path": "ml/artifacts/latest_fruit_identifier_resnet18_checkpoint.pth",
+    "save_optimizer_state": true,
+    "save_metadata": true
+  }
+}
+

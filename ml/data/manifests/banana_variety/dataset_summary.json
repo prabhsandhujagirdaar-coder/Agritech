@@ -1,0 +1,37 @@
+{
+  "dataset": "Banana Variety",
+  "seed": 42,
+  "total_samples": 1960,
+  "splits": {
+    "train": {
+      "count": 1370,
+      "classes": {
+        "Ambon": 331,
+        "Cavendish": 264,
+        "Mas": 261,
+        "Raja": 296,
+        "Saba": 218
+      }
+    },
+    "val": {
+      "count": 293,
+      "classes": {
+        "Ambon": 65,
+        "Cavendish": 60,
+        "Mas": 61,
+        "Raja": 66,
+        "Saba": 41
+      }
+    },
+    "test": {
+      "count": 297,
+      "classes": {
+        "Ambon": 72,
+        "Cavendish": 56,
+        "Mas": 54,
+        "Raja": 62,
+        "Saba": 53
+      }
+    }
+  }
+}

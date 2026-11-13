@@ -1,0 +1,229 @@
+{
+  "experiment_name": "banana_resnet18_baseline",
+  "phase": "14E",
+  "timestamp": "2026-10-29T12:42:48Z",
+  "random_seed": 42,
+  "pytorch_version": "2.11.0+cu128",
+  "device": "cuda",
+  "config": {
+    "experiment_name": "banana_resnet18_baseline",
+    "version": "1.0.0",
+    "target_crop": "banana",
+    "task": "ripeness_classification",
+    "dataset_manifests": {
+      "train": "ml/data/manifests/banana_ripeness/train.json",
+      "val": "ml/data/manifests/banana_ripeness/val.json",
+      "test": "ml/data/manifests/banana_ripeness/test.json"
+    },
+    "model": {
+      "architecture": "resnet18",
+      "pretrained": true,
+      "weights": "ResNet18_Weights.DEFAULT",
+      "num_classes": 4,
+      "class_to_idx": {
+        "Unripe": 0,
+        "Half_Ripe": 1,
+        "Ripe": 2,
+        "Overripe": 3
+      },
+      "idx_to_class": {
+        "0": "Unripe",
+        "1": "Half_Ripe",
+        "2": "Ripe",
+        "3": "Overripe"
+      },
+      "freeze_stages": [
+        "conv1",
+        "bn1",
+        "layer1",
+        "layer2"
+      ],
+      "trainable_stages": [
+        "layer3",
+        "layer4",
+        "fc"
+      ],
+      "dropout": 0.2
+    },
+    "training": {
+      "random_seed": 42,
+      "batch_size": 32,
+      "num_workers": 0,
+      "epochs": 25,
+      "device": "cuda",
+      "mixed_precision": true,
+      "optimizer": {
+        "type": "AdamW",
+        "lr_head": 0.0001,
+        "lr_backbone": 1e-05,
+        "weight_decay": 0.01
+      },
+      "lr_scheduler": {
+        "type": "CosineAnnealingLR",
+        "T_max": 25,
+        "eta_min": 1e-06
+      },
+      "loss": {
+        "type": "WeightedCrossEntropyLoss",
+        "label_smoothing": 0.05
+      },
+      "early_stopping": {
+        "enabled": true,
+        "patience": 6,
+        "monitor_metric": "val_macro_f1",
+        "mode": "max",
+        "min_delta": 0.001
+      }
+    },
+    "preprocessing": {
+      "input_size": [
+        3,
+        224,
+        224
+      ],
+      "train_transforms": {
+        "resize": [
+          256,
+          256
+        ],
+        "random_crop": [
+          224,
+          224
+        ],
+        "random_horizontal_flip_prob": 0.5,
+        "random_vertical_flip_prob": 0.0,
+        "random_rotation_degrees": 15,
+        "color_jitter": {
+          "brightness": 0.1,
+          "contrast": 0.1,
+          "saturation": 0.08,
+          "hue": 0.0
+        },
+        "normalization": {
+          "mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "std": [
+            0.229,
+            0.224,
+            0.225
+          ]
+        }
+      },
+      "eval_transforms": {
+        "resize": [
+          256,
+          256
+        ],
+        "center_crop": [
+          224,
+          224
+        ],
+        "normalization": {
+          "mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "std": [
+            0.229,
+            0.224,
+            0.225
+          ]
+        }
+      }
+    },
+    "evaluation_metrics": [
+      "top1_accuracy",
+      "macro_precision",
+      "macro_recall",
+      "macro_f1",
+      "per_class_recall",
+      "confusion_matrix",
+      "inference_latency_ms"
+    ],
+    "checkpointing": {
+      "best_checkpoint_path": "ml/artifacts/best_banana_resnet18.pth",
+      "latest_checkpoint_path": "ml/artifacts/latest_banana_resnet18_checkpoint.pth",
+      "save_optimizer_state": true,
+      "save_metadata": true
+    }
+  },
+  "test_results": {
+    "evaluation_split": "test",
+    "total_test_samples": 297,
+    "overall_accuracy": 0.8182,
+    "macro_precision": 0.8181,
+    "macro_recall": 0.8285,
+    "macro_f1": 0.8146,
+    "per_class": {
+      "Unripe": {
+        "support": 62,
+        "precision": 0.725,
+        "recall": 0.9355,
+        "f1": 0.8169
+      },
+      "Half_Ripe": {
+        "support": 75,
+        "precision": 0.8,
+        "recall": 0.64,
+        "f1": 0.7111
+      },
+      "Ripe": {
+        "support": 92,
+        "precision": 0.9351,
+        "recall": 0.7826,
+        "f1": 0.8521
+      },
+      "Overripe": {
+        "support": 68,
+        "precision": 0.8125,
+        "recall": 0.9559,
+        "f1": 0.8784
+      }
+    },
+    "confusion_matrix": [
+      [
+        58,
+        4,
+        0,
+        0
+      ],
+      [
+        20,
+        48,
+        2,
+        5
+      ],
+      [
+        2,
+        8,
+        72,
+        10
+      ],
+      [
+        0,
+        0,
+        3,
+        65
+      ]
+    ],
+    "classes_order": [
+      "Unripe",
+      "Half_Ripe",
+      "Ripe",
+      "Overripe"
+    ],
+    "inference_latency_ms": {
+      "mean": 2.38,
+      "p95": 14.94,
+      "device": "cuda"
+    },
+    "model_file_size_mb": 122.83,
+    "checkpoint_sha256": "3b296ba8556d88bd934f74fee1e88860921fe69dd5b4869984fd0c529f339dae",
+    "best_epoch": 24,
+    "best_val_macro_f1": 0.8136
+  }
+}

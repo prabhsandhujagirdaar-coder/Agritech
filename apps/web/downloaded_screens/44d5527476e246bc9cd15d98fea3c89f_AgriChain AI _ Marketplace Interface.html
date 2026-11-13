@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AgriChain AI - Marketplace</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#4cffb3",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#accfb8",
+                        "on-primary-fixed": "#022113",
+                        "surface-container": "#eceef0",
+                        "on-surface-variant": "#424843",
+                        "surface-dim": "#d8dadc",
+                        "on-tertiary-container": "#8090a8",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed": "#002112",
+                        "surface-container-high": "#e6e8ea",
+                        "inverse-surface": "#2d3133",
+                        "surface-tint": "#466553",
+                        "outline": "#727973",
+                        "surface-variant": "#e0e3e5",
+                        "error": "#ba1a1a",
+                        "primary-container": "#0f2e1f",
+                        "tertiary": "#031427",
+                        "on-secondary-fixed-variant": "#005234",
+                        "secondary-container": "#45fcb0",
+                        "primary-fixed": "#c8ebd4",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-primary-fixed-variant": "#2f4d3c",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#006c46",
+                        "secondary-fixed-dim": "#0ae298",
+                        "on-primary-container": "#769783",
+                        "on-background": "#191c1e",
+                        "on-tertiary-fixed-variant": "#38485d",
+                        "outline-variant": "#c2c8c1",
+                        "surface": "#f7f9fb",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#19293d",
+                        "surface-container-highest": "#e0e3e5",
+                        "tertiary-fixed-dim": "#b7c8e1",
+                        "surface-bright": "#f7f9fb",
+                        "surface-container-low": "#f2f4f6",
+                        "primary-fixed-dim": "#accfb8",
+                        "on-secondary-container": "#00714a",
+                        "on-surface": "#191c1e",
+                        "background": "#f7f9fb",
+                        "primary": "#00180c",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#0b1c30",
+                        "tertiary-fixed": "#d3e4fe"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "40px",
+                        "unit": "8px",
+                        "container-max": "1440px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "data-mono": ["Plus Jakarta Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "label-caps": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "data-mono": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .custom-card-shadow {
+            box-shadow: 0 10px 25px -5px rgba(3, 20, 39, 0.04), 0 8px 10px -6px rgba(3, 20, 39, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background flex h-screen overflow-hidden font-body-md antialiased">
+<!-- SideNavBar (from JSON logic) -->
+<nav class="hidden md:flex flex-col h-full py-unit w-64 border-r border-outline-variant bg-surface-container-low z-40 shrink-0">
+<!-- Header -->
+<div class="px-6 py-6 border-b border-outline-variant/50 mb-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<div>
+<h1 class="font-headline-md text-headline-md font-bold text-primary">AgriChain Admin</h1>
+<p class="font-label-caps text-label-caps text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed inline-block"></span> AI Service Online
+                    </p>
+</div>
+</div>
+</div>
+<!-- Navigation Links (Active: Inventory for Marketplace context) -->
+<div class="flex-1 overflow-y-auto">
+<a class="text-on-surface-variant mx-2 my-1 px-4 py-3 flex items-center gap-3 rounded-xl hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-body-md text-body-md font-medium">Dashboard</span>
+</a>
+<a class="bg-secondary-container text-on-secondary-container rounded-xl mx-2 my-1 px-4 py-3 flex items-center gap-3 translate-x-1 duration-200" href="#">
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
+<span class="font-body-md text-body-md font-medium">Inventory</span>
+</a>
+<a class="text-on-surface-variant mx-2 my-1 px-4 py-3 flex items-center gap-3 rounded-xl hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined">local_shipping</span>
+<span class="font-body-md text-body-md font-medium">Logistics</span>
+</a>
+<a class="text-on-surface-variant mx-2 my-1 px-4 py-3 flex items-center gap-3 rounded-xl hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined">monitoring</span>
+<span class="font-body-md text-body-md font-medium">Analytics</span>
+</a>
+<a class="text-on-surface-variant mx-2 my-1 px-4 py-3 flex items-center gap-3 rounded-xl hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined">chat_bubble</span>
+<span class="font-body-md text-body-md font-medium">Messages</span>
+</a>
+<a class="text-on-surface-variant mx-2 my-1 px-4 py-3 flex items-center gap-3 rounded-xl hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-body-md text-body-md font-medium">Settings</span>
+</a>
+</div>
+<!-- CTA & Footer -->
+<div class="p-4 mt-auto border-t border-outline-variant/50">
+<button class="w-full bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps py-3 rounded-lg mb-4 hover:brightness-105 transition-all shadow-sm">
+                Analyze Produce
+            </button>
+<div class="flex flex-col gap-1">
+<a class="text-on-surface-variant mx-2 px-2 py-2 flex items-center gap-3 rounded-lg hover:bg-surface-container-high transition-all text-sm" href="#">
+<span class="material-symbols-outlined text-lg">help</span>
+<span class="font-body-md">Support</span>
+</a>
+<a class="text-on-surface-variant mx-2 px-2 py-2 flex items-center gap-3 rounded-lg hover:bg-surface-container-high transition-all text-sm" href="#">
+<span class="material-symbols-outlined text-lg">logout</span>
+<span class="font-body-md">Log Out</span>
+</a>
+</div>
+</div>
+</nav>
+<!-- Main Canvas -->
+<main class="flex-1 overflow-y-auto bg-background">
+<div class="max-w-container-max mx-auto p-margin-mobile md:p-margin-desktop space-y-gutter pb-24">
+<!-- Page Header & Search -->
+<header class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+<div>
+<h2 class="font-display-lg text-display-lg text-primary tracking-tight">Global Market</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2 max-w-2xl">Access real-time, AI-verified agricultural yields from pre-vetted global logistics partners.</p>
+</div>
+<div class="flex-1 max-w-md w-full">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full pl-12 pr-4 py-3 min-h-[48px] bg-surface-container-lowest border border-outline-variant rounded-xl font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary-fixed transition-shadow custom-card-shadow placeholder:text-on-surface-variant/60" placeholder="Search cultivars, locations, or suppliers..." type="text"/>
+</div>
+</div>
+</header>
+<!-- Filters / Logistics Chips -->
+<div class="flex flex-wrap gap-3 pb-4">
+<button class="bg-primary/10 text-primary border border-primary/20 px-4 py-2 rounded-full font-label-caps text-label-caps flex items-center gap-2 hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-[18px]">tune</span> All Filters
+                </button>
+<button class="bg-surface-container-lowest border border-outline-variant text-on-surface px-4 py-2 rounded-full font-label-caps text-label-caps flex items-center gap-2 hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified</span> AI Verified Only
+                </button>
+<button class="bg-surface-container-lowest border border-outline-variant text-on-surface px-4 py-2 rounded-full font-label-caps text-label-caps flex items-center gap-2 hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-[18px]">thermostat</span> Temp-Controlled
+                </button>
+<button class="bg-surface-container-lowest border border-outline-variant text-on-surface px-4 py-2 rounded-full font-label-caps text-label-caps flex items-center gap-2 hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-[18px]">schedule</span> Immediate Dispatch
+                </button>
+</div>
+<!-- Bento Grid: Featured Highlight -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-gutter mb-12">
+<!-- Large Featured Card -->
+<div class="lg:col-span-2 relative h-[400px] rounded-2xl overflow-hidden group border border-outline-variant/30 custom-card-shadow">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Wide-angle aerial shot of an automated, hyper-modern organic farm at sunrise. Precision agriculture drones hover over meticulously aligned rows of crops. The environment is flooded with soft, high-key light, emphasizing a clean, optimistic future-ready aesthetic. The color scheme blends lush organic greens with crisp whites and subtle mint-colored digital overlays, reflecting high-stakes logistics." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSnPrbFLBcnv5w7TVyMoJ24RirRc8xyXM7emzmX_-TnmrdmwQh_Wt0mRq_QHOsJT07-ou3Ou1D2bzNJUkELteMLFHObrGZpuMKODagMqw7VM2KGOONfZTBeBScDiwvV-sHbBXbmqvOxdqTSABMcUgAK7Z_yUuKGiSFi5S8RDwUyKuuafXoISBApWxF1mVOjU_vaGXBgZENNmJj_nHXSyZeyP3sJuilESpuNcLB39MgyU9N8MhstgSn')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/40 to-transparent"></div>
+<div class="absolute inset-0 p-8 flex flex-col justify-end">
+<div class="flex items-center gap-2 mb-3">
+<span class="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full font-label-caps text-label-caps uppercase tracking-wider flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> Yield Alert
+                            </span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-primary mb-2">Premium Organic Blueberries</h3>
+<p class="font-body-md text-body-md text-on-primary/80 max-w-lg mb-6">Surplus harvest detected in the Pacific Northwest sector. Optimal sugar levels confirmed by AI spectrography. Ready for immediate cold-chain logistics.</p>
+<div class="flex items-center gap-6">
+<div>
+<p class="font-label-caps text-label-caps text-on-primary/60 uppercase">Available Volume</p>
+<p class="font-data-mono text-data-mono text-on-primary text-xl mt-1">12,500 kg</p>
+</div>
+<div class="w-px h-10 bg-on-primary/20"></div>
+<div>
+<p class="font-label-caps text-label-caps text-on-primary/60 uppercase">AI Quality Score</p>
+<p class="font-data-mono text-data-mono text-secondary-fixed text-xl mt-1 flex items-center gap-1">
+                                    98.5 <span class="material-symbols-outlined text-[18px]">verified</span>
+</p>
+</div>
+<button class="ml-auto bg-surface-container-lowest text-primary px-6 py-3 rounded-lg font-label-caps text-label-caps hover:bg-surface-container transition-colors">
+                                View Logistics Data
+                            </button>
+</div>
+</div>
+</div>
+<!-- Market Data / Trend Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 border border-outline-variant/50 custom-card-shadow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-primary mb-6 flex items-center justify-between">
+                        Market Vitality
+                        <span class="material-symbols-outlined text-on-surface-variant">monitoring</span>
+</h3>
+<div class="flex-1 flex flex-col justify-center space-y-6">
+<div>
+<div class="flex justify-between items-end mb-2">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Global Supply Index</span>
+<span class="font-data-mono text-data-mono text-secondary font-bold">+4.2%</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary-fixed h-full w-[76%] rounded-full"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-end mb-2">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Average Transit Time</span>
+<span class="font-data-mono text-data-mono text-primary font-bold">48 hrs</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-primary/40 h-full w-[45%] rounded-full"></div>
+</div>
+</div>
+<div class="mt-4 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30 flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary">info</span>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">AI models predict a 12% increase in avocado demand over the next 72 hours. Secure supply lines early.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Grid Layout: Available Produce -->
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-headline-md text-headline-md text-primary">Live Inventory Feed</h3>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Showing 42 Results</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-gutter">
+<!-- Listing Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden border border-surface-variant custom-card-shadow group hover:border-secondary/50 transition-colors cursor-pointer flex flex-col h-full relative">
+<!-- Absolute AI Badge -->
+<div class="absolute top-4 right-4 z-10 bg-surface-container-lowest/90 backdrop-blur-sm border border-secondary/20 px-2 py-1 rounded-md flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span class="font-label-caps text-[10px] font-bold text-secondary tracking-wide">AI VERIFIED</span>
+</div>
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Macro photography of freshly harvested organic strawberries in a high-tech agricultural facility. The lighting is pristine and cinematic, highlighting the vibrant red textures of the fruit against a crisp, clean white background. A subtle, modern light-mode aesthetic dominates, conveying premium quality and precision data-driven farming. Deep forest green accents hint at organic vitality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf66ZVdE6XvZS2Ncmu6MEIHIfDb0hl3zDGtfQfZKcE8DiTtpFbg1qEdonzwDEbkaxqd1wlAnjFqUVh8nELpMkO9l8zDOmL5UYx6NAly-4ZejcGGrMkxDRaUEqNvuMelzA_saZcdXyvyU02JrpzSJuQh-gov73mRZOJE-9WxssQRqJiL6zEHT5rRzTGS3JaHDRYGrAAMo8No6XC5FRw9hLHBRHsemp-io3WOjV6Q7LsBGN2p1h3LH6G"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent opacity-80"></div>
+<div class="absolute bottom-3 left-4 right-4 flex justify-between items-end">
+<h4 class="font-headline-md text-headline-md text-on-primary">Camarosa Strawberries</h4>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col">
+<div class="flex items-start justify-between mb-4">
+<div>
+<p class="font-body-md text-body-md text-on-surface font-medium">VerdeTech Farms Ltd.</p>
+<p class="font-body-md text-[13px] text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span> Salinas Valley, CA
+                                </p>
+</div>
+</div>
+<div class="mt-auto pt-4 border-t border-outline-variant/30 flex items-center justify-between">
+<div>
+<p class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider mb-1">Quality Index</p>
+<p class="font-data-mono text-data-mono text-primary font-bold text-lg">94.2<span class="text-xs font-normal text-on-surface-variant">/100</span></p>
+</div>
+<div class="text-right">
+<p class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider mb-1">Available Qty</p>
+<p class="font-data-mono text-data-mono text-primary font-bold">4,200 <span class="text-sm font-normal">kg</span></p>
+</div>
+</div>
+</div>
+</div>
+<!-- Listing Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden border border-surface-variant custom-card-shadow group hover:border-secondary/50 transition-colors cursor-pointer flex flex-col h-full relative">
+<div class="absolute top-4 right-4 z-10 bg-surface-container-lowest/90 backdrop-blur-sm border border-secondary/20 px-2 py-1 rounded-md flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span class="font-label-caps text-[10px] font-bold text-secondary tracking-wide">AI VERIFIED</span>
+</div>
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Close-up, high-definition shot of premium Hass avocados neatly arranged in a modern logistics crate. The scene is illuminated by bright, diffused sunlight typical of an advanced greenhouse. The color palette emphasizes rich, organic greens juxtaposed with sterile, metallic surfaces of agricultural tech. The mood is fresh, reliable, and expertly managed within a light-themed interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxXXcx8rjjMqCAA3V9nezkS9qgDIifm96tJURwt-U5Mww9qCbW7G8-uLk3gvHHZZA4-MGtLuTsC-5yPuRUwfT_YUTlyk3SUldGW9FPIr5_N2cQdTVZ10rRabNj0_yfYd659juk1gQFWGR3NkxLsdYFuHBlUMMwXamJkKdb1F45OoVfbN7plhLlKpcKIsWrH6rMXfZ2KYVezhJpjuNHbYYz_sPpQKY2EfkrgpFxkpNM83MRqHabeCXN"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent opacity-80"></div>
+<div class="absolute bottom-3 left-4 right-4 flex justify-between items-end">
+<h4 class="font-headline-md text-headline-md text-on-primary">Hass Avocados (Class 1)</h4>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col">
+<div class="flex items-start justify-between mb-4">
+<div>
+<p class="font-body-md text-body-md text-on-surface font-medium">Michoacán Agrilogistics</p>
+<p class="font-body-md text-[13px] text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span> Michoacán, MX
+                                </p>
+</div>
+</div>
+<div class="mt-auto pt-4 border-t border-outline-variant/30 flex items-center justify-between">
+<div>
+<p class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider mb-1">Quality Index</p>
+<p class="font-data-mono text-data-mono text-primary font-bold text-lg">96.8<span class="text-xs font-normal text-on-surface-variant">/100</span></p>
+</div>
+<div class="text-right">
+<p class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider mb-1">Available Qty</p>
+<p class="font-data-mono text-data-mono text-primary font-bold">18,000 <span class="text-sm font-normal">kg</span></p>
+</div>
+</div>
+</div>
+</div>
+<!-- Listing Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden border border-surface-variant custom-card-shadow group hover:border-secondary/50 transition-colors cursor-pointer flex flex-col h-full relative">
+<!-- Notice: Missing AI Verified for variety, but request asks for them. Let's add it to all for consistency with prompt. -->
+<div class="absolute top-4 right-4 z-10 bg-surface-container-lowest/90 backdrop-blur-sm border border-secondary/20 px-2 py-1 rounded-md flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span class="font-label-caps text-[10px] font-bold text-secondary tracking-wide">AI VERIFIED</span>
+</div>
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="High-resolution close up of crisp, vibrant green Romaine lettuce heads growing in a futuristic hydroponic vertical farming system. The environment features clean white structural elements and soft, even LED grow lights that emulate natural daylight, fitting a modern, data-driven light-mode UI. The imagery communicates extreme freshness, high yield, and technological precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxgSJbDgqpFU82IlUO46s5vhrTyTKD4wFMDpZr2jjLbCnbF8R13H66XMJkcat_CDjCQJC7Fc-rVXC1zY-OPhFU9tl-z9lcqgUV5AUEKaM3z4ExjPA94rl_jbk1Hp-bme6_6TE9p5_klxD0S8ovjuOLJd-b5bDdzYTA8D8WX1cXwM1ADK_bpYC-ihrN75417j17PAbhjNs4w69FH8YNqlQpwEjWC-T1KTvQwdTDcJCz0iG1kbBEdKaz"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent opacity-80"></div>
+<div class="absolute bottom-3 left-4 right-4 flex justify-between items-end">
+<h4 class="font-headline-md text-headline-md text-on-primary">Hydroponic Romaine</h4>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col">
+<div class="flex items-start justify-between mb-4">
+<div>
+<p class="font-body-md text-body-md text-on-surface font-medium">AeroYield Hub #4</p>
+<p class="font-body-md text-[13px] text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span> Urban Sector, NY
+                                </p>
+</div>
+</div>
+<div class="mt-auto pt-4 border-t border-outline-variant/30 flex items-center justify-between">
+<div>
+<p class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider mb-1">Quality Index</p>
+<p class="font-data-mono text-data-mono text-primary font-bold text-lg">99.1<span class="text-xs font-normal text-on-surface-variant">/100</span></p>
+</div>
+<div class="text-right">
+<p class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider mb-1">Available Qty</p>
+<p class="font-data-mono text-data-mono text-primary font-bold">850 <span class="text-sm font-normal">units</span></p>
+</div>
+</div>
+</div>
+</div>
+<!-- Listing Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden border border-surface-variant custom-card-shadow group hover:border-secondary/50 transition-colors cursor-pointer flex flex-col h-full relative">
+<div class="absolute top-4 right-4 z-10 bg-surface-container-lowest/90 backdrop-blur-sm border border-secondary/20 px-2 py-1 rounded-md flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span class="font-label-caps text-[10px] font-bold text-secondary tracking-wide">AI VERIFIED</span>
+</div>
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Macro detail of deep purple, perfectly formed organic eggplants resting on a sterile stainless steel inspection table in an agricultural grading facility. The lighting is bright and analytical, reflecting a modern, corporate aesthetic suitable for a high-end logistics dashboard. The contrast between the rich organic color of the produce and the clinical setting emphasizes data-driven quality control." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdhNlM7bRf45nV7kmD6dU3E6rHFFE19k7e13f7iNHT3hGeJ6oLfhOZoH59uKevKy1bQVzRg7BALExTFIji7usYjE17HaI5LPIdaqIAHo0LdgLYww5Rjx-VcJPq3BTL6-5fQhYaJeCVRwPiDUn2fe-o2PCm0-VYZUFahGNv8hDHlsfoFUuifSTpjSLZl4HiljTyb7ezk7WxOdM_gn0sUVrC7_PUg1y45N_2vNE3JrPkbjKkuwPoLyVp"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent opacity-80"></div>
+<div class="absolute bottom-3 left-4 right-4 flex justify-between items-end">
+<h4 class="font-headline-md text-headline-md text-on-primary">Heirloom Eggplant</h4>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col">
+<div class="flex items-start justify-between mb-4">
+<div>
+<p class="font-body-md text-body-md text-on-surface font-medium">Sunbelt Organic Coop</p>
+<p class="font-body-md text-[13px] text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span> Central Valley, CA
+                                </p>
+</div>
+</div>
+<div class="mt-auto pt-4 border-t border-outline-variant/30 flex items-center justify-between">
+<div>
+<p class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider mb-1">Quality Index</p>
+<p class="font-data-mono text-data-mono text-primary font-bold text-lg">92.5<span class="text-xs font-normal text-on-surface-variant">/100</span></p>
+</div>
+<div class="text-right">
+<p class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider mb-1">Available Qty</p>
+<p class="font-data-mono text-data-mono text-primary font-bold">2,100 <span class="text-sm font-normal">kg</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Load More -->
+<div class="flex justify-center mt-12">
+<button class="bg-surface-container border border-outline-variant text-on-surface px-8 py-3 rounded-lg font-label-caps text-label-caps hover:bg-surface-container-high transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">sync</span> Load More Logistics Data
+                </button>
+</div>
+</div>
+</main>
+</body></html>

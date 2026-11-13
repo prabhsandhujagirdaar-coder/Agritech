@@ -1,0 +1,239 @@
+{
+  "architecture": "efficientnet_b0",
+  "temperature": 1.3672785758972168,
+  "validation_calibration_profile": {
+    "msp_operating_points": {
+      "0.5": {
+        "fruit_frr": 0.0010689470871191875
+      },
+      "0.6": {
+        "fruit_frr": 0.002672367717797969
+      },
+      "0.7": {
+        "fruit_frr": 0.00427578834847675
+      },
+      "0.8": {
+        "fruit_frr": 0.0074826296098343134
+      },
+      "0.85": {
+        "fruit_frr": 0.009086050240513094
+      },
+      "0.9": {
+        "fruit_frr": 0.010689470871191877
+      },
+      "0.95": {
+        "fruit_frr": 0.013361838588989846
+      },
+      "0.98": {
+        "fruit_frr": 0.021378941742383754
+      }
+    },
+    "margin_operating_points": {
+      "0.2": {
+        "fruit_frr": 0.002672367717797969
+      },
+      "0.35": {
+        "fruit_frr": 0.0037413148049171567
+      },
+      "0.5": {
+        "fruit_frr": 0.004810261892036344
+      },
+      "0.65": {
+        "fruit_frr": 0.008017103153393906
+      },
+      "0.8": {
+        "fruit_frr": 0.010154997327632281
+      },
+      "0.9": {
+        "fruit_frr": 0.013361838588989846
+      }
+    },
+    "energy_operating_points": {
+      "-4.0": {
+        "fruit_frr": 0.00427578834847675
+      },
+      "-6.0": {
+        "fruit_frr": 0.01870657402458578
+      },
+      "-8.0": {
+        "fruit_frr": 0.1207910208444682
+      },
+      "-10.0": {
+        "fruit_frr": 0.6819882415820417
+      },
+      "-12.0": {
+        "fruit_frr": 0.9241047568145376
+      },
+      "-14.0": {
+        "fruit_frr": 0.9909139497594869
+      }
+    }
+  },
+  "suites": {
+    "suite_1_canopy_illumination_stress": {
+      "samples": 1500,
+      "description": "Outdoor orchard tree canopy without target fruits across rainy, night, and direct noon illumination.",
+      "expected_behavior": "Rejection as negative_background (TNR >= 95%); 0% false acceptance as apple.",
+      "raw_architecture_rejection": {
+        "assigned_negative_background_rate": 1.0,
+        "tnr": 1.0,
+        "raw_false_fruit_acceptance_rate": 0.0,
+        "predicted_class_breakdown": {
+          "4": 1500
+        }
+      },
+      "ood_detection_metrics": {
+        "auroc_energy": 0.6860933547122752,
+        "auroc_msp": 0.6505015143417068,
+        "aupr_in_distribution": 0.7455370259794538
+      },
+      "score_distributions": {
+        "msp_mean": 0.9971677468617757,
+        "msp_std": 0.0141818332466623,
+        "margin_mean": 0.9958036267360052,
+        "margin_std": 0.021672370806274877,
+        "energy_mean": -8.59480159107844,
+        "energy_std": 1.1457103881587705
+      },
+      "calibrated_threshold_far": {
+        "msp": {
+          "0.5": 0.0,
+          "0.6": 0.0,
+          "0.7": 0.0,
+          "0.8": 0.0,
+          "0.85": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.98": 0.0
+        },
+        "margin": {
+          "0.2": 0.0,
+          "0.35": 0.0,
+          "0.5": 0.0,
+          "0.65": 0.0,
+          "0.8": 0.0,
+          "0.9": 0.0
+        },
+        "energy": {
+          "-4.0": 0.0,
+          "-6.0": 0.0,
+          "-8.0": 0.0,
+          "-10.0": 0.0,
+          "-12.0": 0.0,
+          "-14.0": 0.0
+        }
+      }
+    },
+    "suite_2_pathological_foliage_stress": {
+      "samples": 159,
+      "description": "Diseased citrus leaves and bark with canker, melanose, and greening lesions.",
+      "expected_behavior": "Rejection as negative_background (TNR >= 95%); 0% false acceptance as banana/mango.",
+      "raw_architecture_rejection": {
+        "assigned_negative_background_rate": 0.9874213836477987,
+        "tnr": 0.9874213836477987,
+        "raw_false_fruit_acceptance_rate": 0.012578616352201259,
+        "predicted_class_breakdown": {
+          "4": 157,
+          "2": 1,
+          "3": 1
+        }
+      },
+      "ood_detection_metrics": {
+        "auroc_energy": 0.8205513481170733,
+        "auroc_msp": 0.8092937890140476,
+        "aupr_in_distribution": 0.9802134701271794
+      },
+      "score_distributions": {
+        "msp_mean": 0.9870360118787993,
+        "msp_std": 0.048996716727209504,
+        "margin_mean": 0.977621872095192,
+        "margin_std": 0.09615184997524137,
+        "energy_mean": -7.737122283791596,
+        "energy_std": 1.2631312539732729
+      },
+      "calibrated_threshold_far": {
+        "msp": {
+          "0.5": 0.012578616352201259,
+          "0.6": 0.012578616352201259,
+          "0.7": 0.012578616352201259,
+          "0.8": 0.012578616352201259,
+          "0.85": 0.012578616352201259,
+          "0.9": 0.006289308176100629,
+          "0.95": 0.0,
+          "0.98": 0.0
+        },
+        "margin": {
+          "0.2": 0.012578616352201259,
+          "0.35": 0.012578616352201259,
+          "0.5": 0.012578616352201259,
+          "0.65": 0.012578616352201259,
+          "0.8": 0.006289308176100629,
+          "0.9": 0.0
+        },
+        "energy": {
+          "-4.0": 0.012578616352201259,
+          "-6.0": 0.0,
+          "-8.0": 0.0,
+          "-10.0": 0.0,
+          "-12.0": 0.0,
+          "-14.0": 0.0
+        }
+      }
+    },
+    "suite_3_retail_non_target_produce": {
+      "samples": 2000,
+      "description": "Exotic non-target retail produce displays in market crates and wire baskets.",
+      "expected_behavior": "Rejection as negative_background (TNR >= 99%).",
+      "raw_architecture_rejection": {
+        "assigned_negative_background_rate": 0.998,
+        "tnr": 0.998,
+        "raw_false_fruit_acceptance_rate": 0.002,
+        "predicted_class_breakdown": {
+          "4": 1996,
+          "2": 4
+        }
+      },
+      "ood_detection_metrics": {
+        "auroc_energy": 0.5875754943880278,
+        "auroc_msp": 0.5419306520577232,
+        "aupr_in_distribution": 0.5767936579877402
+      },
+      "score_distributions": {
+        "msp_mean": 0.9943236506134272,
+        "msp_std": 0.03080911146330638,
+        "margin_mean": 0.9906263524144888,
+        "margin_std": 0.05324942073272232,
+        "energy_mean": -8.934967614173889,
+        "energy_std": 1.583026454978321
+      },
+      "calibrated_threshold_far": {
+        "msp": {
+          "0.5": 0.002,
+          "0.6": 0.002,
+          "0.7": 0.0015,
+          "0.8": 0.0005,
+          "0.85": 0.0005,
+          "0.9": 0.0005,
+          "0.95": 0.0005,
+          "0.98": 0.0
+        },
+        "margin": {
+          "0.2": 0.002,
+          "0.35": 0.002,
+          "0.5": 0.001,
+          "0.65": 0.0005,
+          "0.8": 0.0005,
+          "0.9": 0.0005
+        },
+        "energy": {
+          "-4.0": 0.001,
+          "-6.0": 0.0,
+          "-8.0": 0.0,
+          "-10.0": 0.0,
+          "-12.0": 0.0,
+          "-14.0": 0.0
+        }
+      }
+    }
+  }
+}

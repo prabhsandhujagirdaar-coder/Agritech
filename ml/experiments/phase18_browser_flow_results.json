@@ -1,0 +1,249 @@
+{
+  "timestamp": "2026-10-31T09:38:48Z",
+  "screenshots": {
+    "01_role_selection_modal.png": {
+      "description": "Interactive Onboarding Role Selection Modal",
+      "url": "http://localhost:3000/dashboard",
+      "path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\docs\\screenshots\\phase18\\01_role_selection_modal.png",
+      "size_bytes": 119009,
+      "success": true
+    },
+    "02_farmer_intake_dashboard.png": {
+      "description": "Farmer Packhouse Intake & Yield Dashboard",
+      "url": "http://localhost:3000/dashboard?role=Farmer&tab=farmer",
+      "path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\docs\\screenshots\\phase18\\02_farmer_intake_dashboard.png",
+      "size_bytes": 123953,
+      "success": true
+    },
+    "03_manual_fruit_inspection_interface.png": {
+      "description": "Dual-Mode Produce Inspection: Manual Mode",
+      "url": "http://localhost:3000/dashboard?role=Farmer&tab=analyze",
+      "path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\docs\\screenshots\\phase18\\03_manual_fruit_inspection_interface.png",
+      "size_bytes": 170580,
+      "success": true
+    },
+    "04_automatic_species_identifier.png": {
+      "description": "Dual-Mode Produce Inspection: Automatic Mode UI",
+      "url": "http://localhost:3000/dashboard?role=Farmer&tab=analyze",
+      "path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\docs\\screenshots\\phase18\\04_automatic_species_identifier.png",
+      "size_bytes": 170578,
+      "success": true
+    },
+    "05_postgis_shipments_tracking_map.png": {
+      "description": "PostGIS Logistics Tracking, Leaflet Map & Telemetry HUD",
+      "url": "http://localhost:3000/dashboard?role=Logistics&tab=tracking",
+      "path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\docs\\screenshots\\phase18\\05_postgis_shipments_tracking_map.png",
+      "size_bytes": 328665,
+      "success": true
+    },
+    "06_dealer_auction_and_intake.png": {
+      "description": "Dealer Mandi Quality Inspection & Auction View",
+      "url": "http://localhost:3000/dashboard?role=Dealer&tab=dealer",
+      "path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\docs\\screenshots\\phase18\\06_dealer_auction_and_intake.png",
+      "size_bytes": 105507,
+      "success": true
+    },
+    "07_b2b_buyer_marketplace.png": {
+      "description": "B2B Verified Produce Marketplace",
+      "url": "http://localhost:3000/dashboard?role=Buyer&tab=marketplace",
+      "path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\docs\\screenshots\\phase18\\07_b2b_buyer_marketplace.png",
+      "size_bytes": 156863,
+      "success": true
+    },
+    "08_system_hardware_and_cuda_status.png": {
+      "description": "Admin PyTorch CUDA Diagnostics & Server Health",
+      "url": "http://localhost:3000/dashboard?role=Admin&tab=status",
+      "path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\docs\\screenshots\\phase18\\08_system_hardware_and_cuda_status.png",
+      "size_bytes": 98307,
+      "success": true
+    }
+  },
+  "created_shipment": {
+    "id": "SHP-2026-034",
+    "produce_type": "Guava (Mature Green)",
+    "produce": "Guava (Mature Green)",
+    "origin": "Abohar Regional Packhouse, Punjab",
+    "destination": "Azadpur Terminal Mandi, Delhi",
+    "origin_facility_id": "FAC-PB-ABO-01",
+    "destination_facility_id": "FAC-DL-AZD-01",
+    "intermediate_facility_id": null,
+    "origin_operation": null,
+    "destination_operation": null,
+    "intermediate_operation": null,
+    "planned_departure": null,
+    "actual_departure": null,
+    "planned_arrival": null,
+    "actual_arrival": null,
+    "tracking_mode": "simulated",
+    "telemetry_mode": "unavailable",
+    "quantity": 2100,
+    "quantity_crates": 2100,
+    "status": "in_transit",
+    "temperature_c": 6,
+    "humidity_pct": 88,
+    "risk_index": 15,
+    "quality_grade": "Mature Green",
+    "inspection_verdict": {
+      "target_fruit": "guava",
+      "task_type": "classification",
+      "predicted_class": "Mature Green",
+      "stage": "Mature Green",
+      "confidence": 0.8147,
+      "probabilities": {
+        "Green": 0.1782,
+        "Mature Green": 0.8147,
+        "Ripe": 0.0071
+      },
+      "model_version": "2.0.0",
+      "inspected_at": "2026-10-31T09:38:48Z"
+    },
+    "created_at": "2026-10-31T09:38:48.724093+00:00",
+    "last_update": "2026-10-31T09:38:48.724093+00:00",
+    "current_coordinates": null,
+    "latest_waypoint": null,
+    "origin_facility": {
+      "id": "FAC-PB-ABO-01",
+      "name": "PAGREXCO Kinnow Grading, Waxing & Packhouse Center",
+      "facility_type": "packhouse",
+      "address": "Village Alamgarh, Abohar-Ganganagar Road (NH-62)",
+      "village_or_city": "Alamgarh",
+      "district": "Fazilka",
+      "state": "Punjab",
+      "postal_code": "152116",
+      "latitude": 30.1227,
+      "longitude": 74.1566,
+      "coordinates": {
+        "latitude": 30.1227,
+        "longitude": 74.1566
+      },
+      "contact_phone": null,
+      "contact_email": "pagrexco@punjabagro.gov.in",
+      "capacity": null,
+      "capacity_unit": null,
+      "current_utilization": null,
+      "storage_temperature_min_c": null,
+      "storage_temperature_max_c": null,
+      "supported_commodities": [
+        "Kinnow",
+        "Citrus"
+      ],
+      "operational_status": "active",
+      "guava_suitability_category": "horticulture_unconfirmed",
+      "source_citation_type": "directory_level_reference",
+      "legal_entity_verification": "verified",
+      "physical_facility_verification": "verified",
+      "source_name": "Punjab Agro Export Corporation (PAGREXCO)",
+      "source_url": "https://punjabagro.gov.in/horticulture/",
+      "source_record": "PAGREXCO Horticultural Infrastructure Directory (Alamgarh Center, Abohar)",
+      "verification_status": "verified",
+      "verification_date": "2026-10-26",
+      "last_source_check": "2026-10-26",
+      "coordinate_source": "Village Alamgarh, NH-62 Abohar corridor approximate geocode",
+      "geocoding_confidence": "village_level",
+      "data_provenance": "Major mechanized citrus post-harvest center on NH-62 with washing, waxing, and electronic size grading lines. Sourced from PAGREXCO horticulture directory (directory-level reference). Engineered specifically for Kinnow/citrus; guava handling is not documented.",
+      "location_verification_status": "verified",
+      "created_at": "2026-10-18T10:00:00Z",
+      "updated_at": "2026-10-26T10:00:00Z"
+    },
+    "destination_facility": {
+      "id": "FAC-DL-AZD-01",
+      "name": "Azadpur APMC Fruit & Vegetable Mega Mandi",
+      "facility_type": "mandi",
+      "address": "Office Complex, New Fruit Market (NFM) Phase-II, Sarai Pipal Thala, Azadpur",
+      "village_or_city": "Azadpur",
+      "district": "North Delhi",
+      "state": "Delhi",
+      "postal_code": "110033",
+      "latitude": 28.7161,
+      "longitude": 77.1772,
+      "coordinates": {
+        "latitude": 28.7161,
+        "longitude": 77.1772
+      },
+      "contact_phone": "011-27691807",
+      "contact_email": "apmcazadpur.delhi@delhi.gov.in",
+      "capacity": null,
+      "capacity_unit": null,
+      "current_utilization": null,
+      "storage_temperature_min_c": null,
+      "storage_temperature_max_c": null,
+      "supported_commodities": [
+        "Guava",
+        "Kinnow",
+        "Citrus",
+        "Perishable Produce"
+      ],
+      "operational_status": "active",
+      "guava_suitability_category": "guava_confirmed",
+      "source_citation_type": "official_portal",
+      "legal_entity_verification": "verified",
+      "physical_facility_verification": "verified",
+      "source_name": "APMC Azadpur (Market of National Importance) / Govt of NCT of Delhi",
+      "source_url": "https://apmcazadpurdelhi.com/",
+      "source_record": "APMC Azadpur Terminal Market Directory & e-NAM Trading Hub",
+      "verification_status": "verified",
+      "verification_date": "2026-10-26",
+      "last_source_check": "2026-10-26",
+      "coordinate_source": "Azadpur APMC Market Office Complex, WGS84 Geocode",
+      "geocoding_confidence": "facility_campus",
+      "data_provenance": "Asia's largest wholesale fruits and vegetables market. CONFIRMED SUITABLE FOR GUAVA: primary northern terminal market handling commercial guava auction, ripening chambers, and cold-chain transfers from Punjab. Verified via official APMC portal.",
+      "location_verification_status": "verified",
+      "created_at": "2026-10-18T10:00:00Z",
+      "updated_at": "2026-10-26T10:00:00Z"
+    },
+    "intermediate_facility": null,
+    "origin_suitability": {
+      "facility_id": "FAC-PB-ABO-01",
+      "facility_name": "PAGREXCO Kinnow Grading, Waxing & Packhouse Center",
+      "operation": "harvesting_aggregation",
+      "crop": "guava",
+      "suitable": true,
+      "suitability_status": "verified",
+      "capabilities": {
+        "guava_trading": "not_verified",
+        "guava_handling": "unconfirmed",
+        "guava_cold_chain": "unconfirmed",
+        "operational_availability": "active"
+      },
+      "warnings": [],
+      "evidence_summary": "Facility 'PAGREXCO Kinnow Grading, Waxing & Packhouse Center' (PACKHOUSE): Trading=NOT_VERIFIED, Handling=UNCONFIRMED, ColdChain=UNCONFIRMED, Availability=ACTIVE.",
+      "source_citation": {
+        "source_name": "Punjab Agro Export Corporation (PAGREXCO)",
+        "source_record": "PAGREXCO Horticultural Infrastructure Directory (Alamgarh Center, Abohar)",
+        "source_url": "https://punjabagro.gov.in/horticulture/",
+        "source_citation_type": "directory_level_reference",
+        "verification_status": "verified",
+        "coordinate_source": "Village Alamgarh, NH-62 Abohar corridor approximate geocode",
+        "geocoding_confidence": "village_level"
+      }
+    },
+    "destination_suitability": {
+      "facility_id": "FAC-DL-AZD-01",
+      "facility_name": "Azadpur APMC Fruit & Vegetable Mega Mandi",
+      "operation": "market_auction",
+      "crop": "guava",
+      "suitable": true,
+      "suitability_status": "verified_guava_trading",
+      "capabilities": {
+        "guava_trading": "verified",
+        "guava_handling": "not_verified",
+        "guava_cold_chain": "partially_verified",
+        "operational_availability": "active"
+      },
+      "warnings": [],
+      "evidence_summary": "Facility 'Azadpur APMC Fruit & Vegetable Mega Mandi' (MANDI): Trading=VERIFIED, Handling=NOT_VERIFIED, ColdChain=PARTIALLY_VERIFIED, Availability=ACTIVE.",
+      "source_citation": {
+        "source_name": "APMC Azadpur (Market of National Importance) / Govt of NCT of Delhi",
+        "source_record": "APMC Azadpur Terminal Market Directory & e-NAM Trading Hub",
+        "source_url": "https://apmcazadpurdelhi.com/",
+        "source_citation_type": "official_portal",
+        "verification_status": "verified",
+        "coordinate_source": "Azadpur APMC Market Office Complex, WGS84 Geocode",
+        "geocoding_confidence": "facility_campus"
+      }
+    },
+    "intermediate_suitability": null,
+    "suitability_warnings": [],
+    "events_count": 3
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-10-31T09:11:14+0530",
+  "model_architecture": "YOLOv8n (Apple Orchard)",
+  "readiness_criteria": {
+    "mAP50_ge_80": true,
+    "recall_ge_75": true,
+    "precision_ge_75": true,
+    "edge_throughput_ge_30_img_s": true,
+    "licensing_compliance": "CC_BY_NC_4.0_NON_COMMERCIAL_ONLY"
+  },
+  "overall_status": "EXPERIMENTAL_BENCHMARK_VALIDATED",
+  "production_integration_authorized": false,
+  "rationale": "Model is validated for research/experimental apple detection; production deployment is blocked by CC BY-NC 4.0 license restriction and single-class scope."
+}

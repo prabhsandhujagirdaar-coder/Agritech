@@ -1,0 +1,97 @@
+# AgriChain AI — Final Freeze & Submission Consistency Audit
+
+We have completed Phase 20. The final submission deadline is November 7, 2026.
+
+Your task is to perform a FINAL FREEZE AUDIT. Do not expand the project, retrain models, replace checkpoints, migrate databases, or redesign the frontend.
+
+## 1. Freeze the implementation
+- Preserve all five verified model checkpoints and their SHA-256 hashes.
+- Preserve existing APIs, role-based dashboards, shipment workflows and file-based persistence.
+- Do not introduce PostgreSQL/PostGIS runtime dependencies at this stage.
+- Do not remove working features.
+
+## 2. Verify the demonstration workflows
+Verify:
+- Farmer: manual fruit selection, automatic fruit identification and inspection.
+- Logistics: shipment creation, route map and simulated telemetry.
+- Dealer: intake and quality workflow.
+- Buyer: marketplace and demo order creation.
+- Admin: model registry, system health and CUDA diagnostics.
+
+Confirm that Mango remains honestly gated and Apple remains detection-only.
+
+## 3. Verify persistence
+- Create a test shipment.
+- Advance simulated telemetry.
+- Restart the backend.
+- Confirm shipment and telemetry records survive.
+- Explicitly identify JSON file-based persistence as the active implementation.
+- Do not claim live PostgreSQL/PostGIS integration.
+
+## 4. Documentation consistency
+Review:
+- README
+- Final architecture documentation
+- Phase 19 report
+- Phase 20 database verification report
+- Final submission checklist
+- Model and dataset licensing information
+
+Correct inconsistent Windows edition/version information using actual runtime evidence.
+
+Use accurate terminology:
+- Active: JSON-based persistent ledger.
+- Prepared but inactive: PostgreSQL/PostGIS deployment schema.
+- Simulated: GPS and cold-chain telemetry.
+- Demo-only: marketplace transactions.
+
+## 5. Final deliverables
+Create:
+- docs/FINAL_DEMO_RUNBOOK.md
+- docs/FINAL_VIVA_PREPARATION.md
+- docs/FINAL_SUBMISSION_FREEZE_REPORT.md
+
+The demo runbook should contain startup commands, URLs, demonstration order, sample workflows and troubleshooting.
+
+The viva preparation should explain system architecture, CNNs, MobileNetV3, ResNet18, YOLOv8, model registry, confidence thresholds, LSTM spoilage-risk prediction, FastAPI, Next.js, file-based persistence, PostGIS architecture, simulated telemetry and model limitations.
+
+## 6. Final regression
+Run existing backend and frontend tests, Next.js production build and checkpoint hash verification.
+
+Report actual results. Never fabricate successful tests or claim a feature was verified if it was not.
+
+## Final rule
+This is a submission stabilization task. Do not introduce new features. Preserve the working implementation and produce an honest, reproducible academic demonstration.{
+  "classes": [
+    "Unripe",
+    "Half_Ripe",
+    "Ripe",
+    "Overripe"
+  ],
+  "matrix": [
+    [
+      58,
+      4,
+      0,
+      0
+    ],
+    [
+      20,
+      48,
+      2,
+      5
+    ],
+    [
+      2,
+      8,
+      72,
+      10
+    ],
+    [
+      0,
+      0,
+      3,
+      65
+    ]
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "evaluation_split": "test",
+  "total_test_samples": 2882,
+  "overall_accuracy": 1.0,
+  "macro_precision": 1.0,
+  "macro_recall": 1.0,
+  "macro_f1": 1.0,
+  "ece_calibrated": 0.1781,
+  "negative_rejection_rate": 1.0,
+  "false_acceptance_rate_80": 0.0,
+  "per_class": {
+    "guava": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 346
+    },
+    "banana": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 297
+    },
+    "apple": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 408
+    },
+    "mango": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 46
+    },
+    "negative_background": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 1785
+    }
+  },
+  "confusion_matrix": [
+    [
+      346,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      297,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      408,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      46,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1785
+    ]
+  ],
+  "classes_order": [
+    "guava",
+    "banana",
+    "apple",
+    "mango",
+    "negative_background"
+  ],
+  "inference_latency_ms": {
+    "mean": 2.02,
+    "p95": 4.19,
+    "device": "cuda"
+  },
+  "model_file_size_mb": 122.83,
+  "checkpoint_sha256": "07150d1ddb92ea8ce7018e08fa6c3d21b6b6de6aac9c5feb838d6f9dc28a8967",
+  "best_epoch": 12,
+  "best_val_macro_f1": 0.9713
+}

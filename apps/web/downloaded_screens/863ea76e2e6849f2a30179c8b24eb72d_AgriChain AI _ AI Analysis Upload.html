@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Analysis - AgriChain AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "secondary-fixed": "#4cffb3",
+                      "surface-container-lowest": "#ffffff",
+                      "inverse-primary": "#accfb8",
+                      "on-primary-fixed": "#022113",
+                      "surface-container": "#eceef0",
+                      "on-surface-variant": "#424843",
+                      "surface-dim": "#d8dadc",
+                      "on-tertiary-container": "#8090a8",
+                      "on-primary": "#ffffff",
+                      "on-secondary-fixed": "#002112",
+                      "surface-container-high": "#e6e8ea",
+                      "inverse-surface": "#2d3133",
+                      "surface-tint": "#466553",
+                      "outline": "#727973",
+                      "surface-variant": "#e0e3e5",
+                      "error": "#ba1a1a",
+                      "primary-container": "#0f2e1f",
+                      "tertiary": "#031427",
+                      "on-secondary-fixed-variant": "#005234",
+                      "secondary-container": "#45fcb0",
+                      "primary-fixed": "#c8ebd4",
+                      "inverse-on-surface": "#eff1f3",
+                      "on-primary-fixed-variant": "#2f4d3c",
+                      "on-tertiary": "#ffffff",
+                      "secondary": "#006c46",
+                      "secondary-fixed-dim": "#0ae298",
+                      "on-primary-container": "#769783",
+                      "on-background": "#191c1e",
+                      "on-tertiary-fixed-variant": "#38485d",
+                      "outline-variant": "#c2c8c1",
+                      "surface": "#f7f9fb",
+                      "on-error-container": "#93000a",
+                      "tertiary-container": "#19293d",
+                      "surface-container-highest": "#e0e3e5",
+                      "tertiary-fixed-dim": "#b7c8e1",
+                      "surface-bright": "#f7f9fb",
+                      "surface-container-low": "#f2f4f6",
+                      "primary-fixed-dim": "#accfb8",
+                      "on-secondary-container": "#00714a",
+                      "on-surface": "#191c1e",
+                      "background": "#f7f9fb",
+                      "primary": "#00180c",
+                      "on-error": "#ffffff",
+                      "on-tertiary-fixed": "#0b1c30",
+                      "tertiary-fixed": "#d3e4fe"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-desktop": "40px",
+                      "unit": "8px",
+                      "container-max": "1440px",
+                      "margin-mobile": "16px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "data-mono": ["Plus Jakarta Sans"],
+                      "display-lg": ["Plus Jakarta Sans"],
+                      "headline-lg": ["Plus Jakarta Sans"],
+                      "headline-md": ["Plus Jakarta Sans"],
+                      "label-caps": ["Plus Jakarta Sans"],
+                      "body-lg": ["Plus Jakarta Sans"],
+                      "body-md": ["Plus Jakarta Sans"],
+                      "headline-lg-mobile": ["Plus Jakarta Sans"]
+              },
+              "fontSize": {
+                      "data-mono": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "700"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        body { background-color: theme('colors.background'); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .icon-fill { font-variation-settings: 'FILL' 1; }
+        
+        .shadow-premium {
+            box-shadow: 0 10px 40px -10px rgba(15, 46, 31, 0.08), 0 0 20px rgba(15, 46, 31, 0.03);
+        }
+        
+        .drag-active {
+            border-color: theme('colors.secondary-container');
+            background-color: rgba(69, 252, 176, 0.05);
+        }
+        
+        #preview-state {
+            display: none;
+        }
+    </style>
+</head>
+<body class="text-on-surface antialiased flex">
+<!-- SideNavBar (Shared Component) -->
+<nav class="bg-surface-container-low dark:bg-surface-container-lowest h-screen w-64 fixed left-0 top-0 border-r border-outline-variant dark:border-outline z-40 flex flex-col py-unit hidden md:flex">
+<!-- Header -->
+<div class="px-6 py-6 border-b border-outline-variant/50 mb-4">
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed mb-1">AgriChain Admin</h1>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                AI Service Online
+            </p>
+</div>
+<!-- CTA -->
+<div class="px-4 mb-6">
+<button class="w-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps py-3 px-4 rounded-lg flex items-center justify-center gap-2 hover:bg-secondary-fixed-dim transition-colors shadow-sm">
+<span class="material-symbols-outlined">center_focus_strong</span>
+                Analyze Produce
+            </button>
+</div>
+<!-- Main Navigation -->
+<div class="flex-1 overflow-y-auto">
+<a class="text-on-surface-variant dark:text-outline-variant mx-2 my-1 px-4 py-3 flex items-center gap-3 rounded-xl hover:bg-surface-container-high dark:hover:bg-surface-container transition-all" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-body-md text-body-md">Dashboard</span>
+</a>
+<a class="text-on-surface-variant dark:text-outline-variant mx-2 my-1 px-4 py-3 flex items-center gap-3 rounded-xl hover:bg-surface-container-high dark:hover:bg-surface-container transition-all" href="#">
+<span class="material-symbols-outlined">inventory_2</span>
+<span class="font-body-md text-body-md">Inventory</span>
+</a>
+<a class="text-on-surface-variant dark:text-outline-variant mx-2 my-1 px-4 py-3 flex items-center gap-3 rounded-xl hover:bg-surface-container-high dark:hover:bg-surface-container transition-all" href="#">
+<span class="material-symbols-outlined">local_shipping</span>
+<span class="font-body-md text-body-md">Logistics</span>
+</a>
+<!-- Active Tab -->
+<a class="bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-xl mx-2 my-1 px-4 py-3 flex items-center gap-3 translate-x-1 duration-200" href="#">
+<span class="material-symbols-outlined icon-fill">monitoring</span>
+<span class="font-body-md text-body-md font-semibold">Analytics</span>
+</a>
+<a class="text-on-surface-variant dark:text-outline-variant mx-2 my-1 px-4 py-3 flex items-center gap-3 rounded-xl hover:bg-surface-container-high dark:hover:bg-surface-container transition-all" href="#">
+<span class="material-symbols-outlined">chat_bubble</span>
+<span class="font-body-md text-body-md">Messages</span>
+</a>
+<a class="text-on-surface-variant dark:text-outline-variant mx-2 my-1 px-4 py-3 flex items-center gap-3 rounded-xl hover:bg-surface-container-high dark:hover:bg-surface-container transition-all" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-body-md text-body-md">Settings</span>
+</a>
+</div>
+<!-- Footer Navigation -->
+<div class="mt-auto border-t border-outline-variant/50 pt-4 px-2 pb-4">
+<a class="text-on-surface-variant dark:text-outline-variant mx-2 my-1 px-4 py-2 flex items-center gap-3 rounded-xl hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined">help</span>
+<span class="font-body-md text-body-md">Support</span>
+</a>
+<a class="text-on-surface-variant dark:text-outline-variant mx-2 my-1 px-4 py-2 flex items-center gap-3 rounded-xl hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined">logout</span>
+<span class="font-body-md text-body-md">Log Out</span>
+</a>
+<div class="flex items-center gap-3 px-6 mt-4">
+<img class="w-10 h-10 rounded-full object-cover border-2 border-surface-container-highest" data-alt="A macro studio portrait of a professional agricultural data scientist wearing a crisp white lab coat, standing in front of an out-of-focus high-tech indoor vertical farm. Soft, bright, modern light-mode aesthetic highlighting clean scientific professionalism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK2MW6MCwV3avf1Ywp412zGVbtIViADZMKfLC5uNqOvJJ4Y5V4cjQ1yqWcMQIFwK2sngGYtmOl6nQL-CvKxT4pL6TGbGDxaaXnBwGZjj_5fmfGyh5tbkWJz92-bXuMH1gq18Rah8mucKfxpc6lp9bKxTLOYN1fsboNHZBE5DP9bBaDHjG_tpIo0e8e2vNYXz0iKt_7nhk3bvUaXzEMaHpPlj3ZFd_ELRbTUgdSCOriVD9fYqJfkbgR"/>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-primary">Dr. E. Vance</span>
+<span class="font-body-md text-xs text-on-surface-variant">Lead Analyst</span>
+</div>
+</div>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-1 md:ml-64 min-h-screen pb-20">
+<!-- Top Header -->
+<header class="w-full px-margin-mobile md:px-margin-desktop py-8 md:py-12 flex justify-between items-end border-b border-surface-variant bg-surface/50 backdrop-blur-sm sticky top-0 z-30">
+<div>
+<p class="font-label-caps text-label-caps text-secondary uppercase tracking-wider mb-2">Diagnostic Module</p>
+<h2 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary">AI Produce Analysis</h2>
+</div>
+<div class="hidden md:flex gap-4">
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:border-secondary hover:text-secondary transition-colors">
+<span class="material-symbols-outlined">history</span>
+</button>
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:border-secondary hover:text-secondary transition-colors">
+<span class="material-symbols-outlined">info</span>
+</button>
+</div>
+</header>
+<div class="px-margin-mobile md:px-margin-desktop py-12 max-w-5xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Main Upload Canvas -->
+<div class="lg:col-span-8">
+<!-- Upload State -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-premium border border-surface-variant p-8 md:p-12 h-full flex flex-col transition-all duration-300" id="upload-state">
+<div class="mb-8">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Upload Sample</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Submit high-resolution imagery of strawberries or blueberries for automated defect detection, ripeness scoring, and shelf-life estimation.</p>
+</div>
+<div class="flex-1 border-2 border-dashed border-outline-variant rounded-xl flex flex-col items-center justify-center p-12 text-center group hover:border-secondary-container hover:bg-surface-container transition-all cursor-pointer min-h-[320px]" id="dropzone" onclick="togglePreview()">
+<div class="w-20 h-20 rounded-full bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-secondary-container/20 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant group-hover:text-secondary">cloud_upload</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Drag &amp; Drop Image Here</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">or click to browse local files</p>
+<div class="flex gap-4 items-center justify-center font-label-caps text-label-caps text-on-surface-variant/70">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">image</span> JPG, PNG</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">weight</span> Max 10MB</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">high_quality</span> 4K Supported</span>
+</div>
+</div>
+</div>
+<!-- Preview State (Hidden by default) -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-premium border border-surface-variant overflow-hidden h-full flex flex-col" id="preview-state">
+<div class="relative w-full h-80 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A pristine, macro close-up photograph of a cluster of freshly picked organic strawberries resting on a stainless steel sorting tray. The lighting is bright, surgical, and professional, highlighting the deep red textures, green leaves, and tiny seeds with a high-end technological agriculture aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7YbnMokL3li1SmkcqNHsmsUb2oio_F1Qz1ufmyJzK4cPGP8VVuHSJ2doNBWNKRxEsQggIPh_EkCQSmbRjKnPmt-Og16MVYu4qyTJPTqJnproJ0Wjq9uUfIJzAayo9tlY8YMLMduiYlmdipM7PK8cSD23hGsCh5T3kaZzbpx1rg8oAZc7Q73lTtzJjZD9W6IaUK69eX-jLroQN2Ik50CX_wQXNCtqT33whm_MxTsLqIi61ZlnvngND"/>
+<!-- Scanning Overlay UI Effect -->
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-secondary-container/10 to-transparent animate-[scan_3s_ease-in-out_infinite] border-b-2 border-secondary-container/50 hidden" id="scan-line"></div>
+<div class="absolute top-4 right-4 flex gap-2">
+<button class="w-10 h-10 rounded-full bg-surface-container-lowest/80 backdrop-blur shadow-sm flex items-center justify-center text-on-surface hover:text-error transition-colors" onclick="togglePreview()">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+<div class="absolute bottom-4 left-4">
+<div class="bg-surface-container-lowest/90 backdrop-blur-md rounded-lg px-4 py-2 shadow-sm flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<div>
+<p class="font-data-mono text-data-mono text-primary">sample_batch_7A.jpg</p>
+<p class="font-label-caps text-label-caps text-on-surface-variant">4.2 MB • 3024 x 4032</p>
+</div>
+</div>
+</div>
+</div>
+<div class="p-8 flex justify-between items-center bg-surface-container-lowest">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary">Image Ready for Processing</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Model: AgriVision v4.2 (Berries &amp; Soft Fruit)</p>
+</div>
+<button class="bg-primary text-on-primary font-label-caps text-label-caps px-8 py-4 rounded-xl flex items-center gap-3 hover:bg-on-primary-fixed-variant transition-colors shadow-md" id="analyze-btn">
+<span class="material-symbols-outlined">memory</span>
+                                Analyze with AI
+                            </button>
+</div>
+</div>
+</div>
+<!-- Side Instructions / Status -->
+<div class="lg:col-span-4 flex flex-col gap-6">
+<div class="bg-surface-container-lowest rounded-2xl border border-surface-variant p-6 shadow-sm">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-8 h-8 rounded-full bg-secondary-container/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-sm">neurology</span>
+</div>
+<h4 class="font-headline-md text-body-lg font-semibold text-primary">Analysis Parameters</h4>
+</div>
+<ul class="space-y-4">
+<li class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-secondary mt-1">check</span>
+<div>
+<p class="font-data-mono text-data-mono text-primary">Surface Defect Detection</p>
+<p class="font-body-md text-sm text-on-surface-variant">Identifies bruising, mold, and physical damage.</p>
+</div>
+</li>
+<li class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-secondary mt-1">check</span>
+<div>
+<p class="font-data-mono text-data-mono text-primary">Coloration &amp; Ripeness</p>
+<p class="font-body-md text-sm text-on-surface-variant">Measures chromatic consistency against ideal harvest indices.</p>
+</div>
+</li>
+<li class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-secondary mt-1">check</span>
+<div>
+<p class="font-data-mono text-data-mono text-primary">Volumetric Estimation</p>
+<p class="font-body-md text-sm text-on-surface-variant">Calculates approximate weight and size distribution.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30 relative overflow-hidden">
+<!-- Abstract bg decoration -->
+<div class="absolute -right-10 -bottom-10 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined" style="font-size: 160px;">compost</span>
+</div>
+<h4 class="font-headline-md text-body-lg font-semibold text-primary mb-2 relative z-10">System Status</h4>
+<div class="flex items-center gap-2 mb-1 relative z-10">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim animate-pulse"></span>
+<p class="font-data-mono text-data-mono text-primary">Model Server: Optimal</p>
+</div>
+<p class="font-body-md text-sm text-on-surface-variant relative z-10">Expected processing latency: &lt; 1.2s</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<script>
+        // Simple drag and drop visual feedback
+        const dropzone = document.getElementById('dropzone');
+        
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            dropzone.addEventListener(eventName, preventDefaults, false);
+        });
+        
+        function preventDefaults (e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+        
+        ['dragenter', 'dragover'].forEach(eventName => {
+            dropzone.addEventListener(eventName, () => dropzone.classList.add('drag-active'), false);
+        });
+        
+        ['dragleave', 'drop'].forEach(eventName => {
+            dropzone.addEventListener(eventName, () => dropzone.classList.remove('drag-active'), false);
+        });
+        
+        dropzone.addEventListener('drop', handleDrop, false);
+        
+        function handleDrop(e) {
+            // In a real app, we'd handle the file here.
+            // For UI purposes, we simulate dropping a file and showing the preview.
+            togglePreview();
+        }
+        
+        // Toggle between upload and preview states
+        function togglePreview() {
+            const uploadState = document.getElementById('upload-state');
+            const previewState = document.getElementById('preview-state');
+            
+            if (uploadState.style.display === 'none') {
+                uploadState.style.display = 'flex';
+                previewState.style.display = 'none';
+            } else {
+                uploadState.style.display = 'none';
+                previewState.style.display = 'flex';
+            }
+        }
+        
+        // Simulate Analysis Click
+        document.getElementById('analyze-btn').addEventListener('click', function() {
+            const btn = this;
+            const originalText = btn.innerHTML;
+            const scanLine = document.getElementById('scan-line');
+            
+            btn.innerHTML = '<span class="material-symbols-outlined animate-spin">progress_activity</span> Analyzing...';
+            btn.classList.add('opacity-80', 'cursor-not-allowed');
+            scanLine.style.display = 'block';
+            
+            setTimeout(() => {
+                btn.innerHTML = '<span class="material-symbols-outlined">analytics</span> View Results';
+                btn.classList.remove('opacity-80', 'cursor-not-allowed');
+                btn.classList.replace('bg-primary', 'bg-secondary-container');
+                btn.classList.replace('text-on-primary', 'text-on-secondary-container');
+                scanLine.style.display = 'none';
+            }, 2500);
+        });
+    </script>
+</body></html>

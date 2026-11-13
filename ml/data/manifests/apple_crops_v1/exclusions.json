@@ -1,0 +1,10 @@
+[
+  {
+    "split": "test",
+    "source_image": "IMG_54350.jpg",
+    "img_key": "IMG_54350.jpg77789",
+    "region_index": 3,
+    "label": "unknown",
+    "reason": "Non-standard classification label; excluded from agronomic maturity dataset"
+  }
+]

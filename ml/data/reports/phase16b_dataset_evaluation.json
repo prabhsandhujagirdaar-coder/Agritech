@@ -1,0 +1,22 @@
+{
+  "dataset_name": "fruit_identifier_v2",
+  "split_manifests": {
+    "train": 14078,
+    "val": 2771,
+    "test": 3037
+  },
+  "classes": [
+    "guava",
+    "banana",
+    "apple",
+    "mango",
+    "negative_background"
+  ],
+  "mango_deficit_handling": {
+    "train_samples": 189,
+    "loss_weight": 14.897354497354497,
+    "status": "GATED_DEFICIT"
+  },
+  "split_leakage_check": "ZERO_LEAKAGE_GROUP_ISOLATED",
+  "locked_test_set_status": "FROZEN_STAGE2_SYNC"
+}

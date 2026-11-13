@@ -1,0 +1,27 @@
+{
+  "split_version": "v2_grouped",
+  "description": "Perceptual cluster group-aware split (dHash <= 2 clustering)",
+  "random_seed": 42,
+  "total_images": 2309,
+  "total_clusters": 606,
+  "split_counts": {
+    "train": 1617,
+    "val": 346,
+    "test": 346
+  },
+  "train_class_distribution": {
+    "Green": 162,
+    "Mature Green": 579,
+    "Ripe": 876
+  },
+  "val_class_distribution": {
+    "Green": 40,
+    "Mature Green": 121,
+    "Ripe": 185
+  },
+  "test_class_distribution": {
+    "Green": 30,
+    "Mature Green": 129,
+    "Ripe": 187
+  }
+}

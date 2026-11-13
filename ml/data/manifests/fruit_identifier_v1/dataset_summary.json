@@ -1,0 +1,84 @@
+{
+  "manifest_version": "1.0.0",
+  "phase": "15B",
+  "random_seed": 42,
+  "classes": [
+    "guava",
+    "banana",
+    "apple",
+    "mango",
+    "negative_background"
+  ],
+  "class_to_idx": {
+    "guava": 0,
+    "banana": 1,
+    "apple": 2,
+    "mango": 3,
+    "negative_background": 4
+  },
+  "splits": {
+    "train": {
+      "total_samples": 8982,
+      "class_distribution": {
+        "guava": 1617,
+        "banana": 1370,
+        "apple": 1981,
+        "mango": 189,
+        "negative_background": 3825
+      },
+      "sources": {
+        "Guava_SAU_Harvest": 1617,
+        "BananaID_Ripeness": 1370,
+        "Apple_Phenotyping_Crops": 1981,
+        "Harumanis_Mango": 189,
+        "FruitNet_OOD_orange": 2009,
+        "FruitNet_OOD_lime_lemon": 1504,
+        "FruitNet_OOD_pomegranate": 312
+      }
+    },
+    "val": {
+      "total_samples": 7460,
+      "class_distribution": {
+        "guava": 346,
+        "banana": 293,
+        "apple": 185,
+        "mango": 37,
+        "negative_background": 6599
+      },
+      "sources": {
+        "Guava_SAU_Harvest": 346,
+        "BananaID_Ripeness": 293,
+        "Apple_Phenotyping_Crops": 185,
+        "Harumanis_Mango": 37,
+        "FruitNet_OOD_lime_lemon": 587,
+        "FruitNet_OOD_orange": 72,
+        "FruitNet_OOD_pomegranate": 5940
+      }
+    },
+    "test": {
+      "total_samples": 2882,
+      "class_distribution": {
+        "guava": 346,
+        "banana": 297,
+        "apple": 408,
+        "mango": 46,
+        "negative_background": 1785
+      },
+      "sources": {
+        "Guava_SAU_Harvest": 346,
+        "BananaID_Ripeness": 297,
+        "Apple_Phenotyping_Crops": 408,
+        "Harumanis_Mango": 46,
+        "FruitNet_OOD_lime_lemon": 366,
+        "FruitNet_OOD_orange": 419,
+        "FruitNet_OOD_pomegranate": 1000
+      }
+    }
+  },
+  "synchronization_guarantees": {
+    "guava_test_split_locked": "Stage 1 test split contains exactly the 345 Guava images from v2_grouped/test.json with ZERO leakage into Stage 1 train or val.",
+    "banana_test_split_locked": "Stage 1 test split contains exactly the 297 Banana images from banana_ripeness/test.json with ZERO leakage into Stage 1 train or val.",
+    "apple_test_split_locked": "Stage 1 test split contains exactly the 409 Apple crops from apple_crops_v1/test.json with ZERO leakage into Stage 1 train or val.",
+    "negative_pool_isolation": "Negative samples are partitioned by capture burst group ID to eliminate visual leakage across train, val, and test."
+  }
+}

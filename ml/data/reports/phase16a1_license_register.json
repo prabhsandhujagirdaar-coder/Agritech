@@ -1,0 +1,85 @@
+{
+  "dataset_name": "fruit_identifier_v2_and_apple_detection_yolo",
+  "created_at": "2026-10-30T19:27:01+0530",
+  "licenses_by_source": {
+    "Guava_SAU_Harvest": {
+      "license": "CC BY 4.0",
+      "licensor": "Sindh Agriculture University / Mendeley Data",
+      "commercial_deployment_allowed": true,
+      "attribution_required": true,
+      "notes": "Full commercial training and inference permitted."
+    },
+    "FruitNet_Guava": {
+      "license": "CC BY 4.0",
+      "licensor": "FruitNet / Mendeley Data (10.17632/b6vjg7322w.1)",
+      "commercial_deployment_allowed": true,
+      "attribution_required": true,
+      "notes": "Full commercial use allowed."
+    },
+    "BananaID_Ripeness": {
+      "license": "CC BY 4.0",
+      "licensor": "BananaID / Kaggle Open Datasets",
+      "commercial_deployment_allowed": true,
+      "attribution_required": true,
+      "notes": "Full commercial use allowed."
+    },
+    "FruitNet_Banana": {
+      "license": "CC BY 4.0",
+      "licensor": "FruitNet / Mendeley Data",
+      "commercial_deployment_allowed": true,
+      "attribution_required": true,
+      "notes": "Full commercial use allowed."
+    },
+    "Apple_Mendeley_Phenotyping": {
+      "license": "CC BY-NC 4.0",
+      "licensor": "Mendeley Data (Multi-Stage Apple Phenotyping)",
+      "commercial_deployment_allowed": false,
+      "attribution_required": true,
+      "RESTRICTION": "STRICT NON-COMMERCIAL RESTRICTION. Certified for academic research and internal prototype demonstration only. Production enterprise deployment requires replacement with open CC-BY or public-domain imagery."
+    },
+    "FruitNet_Apple": {
+      "license": "CC BY 4.0",
+      "licensor": "FruitNet / Mendeley Data",
+      "commercial_deployment_allowed": true,
+      "attribution_required": true,
+      "notes": "Full commercial use allowed."
+    },
+    "Harumanis_Mango": {
+      "license": "CC BY 4.0",
+      "licensor": "Basaruddin et al. / Mendeley Data (10.17632/x6bcr3fkj5.2)",
+      "commercial_deployment_allowed": true,
+      "attribution_required": true,
+      "DEFICIT_NOTE": "Small cohort (272 images total, 65 per ripeness stage). Permitted commercially but blocked for production readiness due to extreme sample deficit."
+    },
+    "FruitNet_NonTarget_Produce": {
+      "license": "CC BY 4.0",
+      "licensor": "FruitNet / Mendeley Data (Orange, Lime, Pomegranate)",
+      "commercial_deployment_allowed": true,
+      "attribution_required": true
+    },
+    "Oranges_In_Field_Canopy": {
+      "license": "CC BY 4.0",
+      "licensor": "Oranges in the Field / Research Dataset",
+      "commercial_deployment_allowed": true,
+      "attribution_required": true
+    },
+    "Citrus_Disease_Foliage": {
+      "license": "CC BY 4.0",
+      "licensor": "Citrus Disease Dataset",
+      "commercial_deployment_allowed": true,
+      "attribution_required": true
+    }
+  },
+  "overall_commercial_readiness_summary": {
+    "commercial_safe_commodities": [
+      "guava",
+      "banana"
+    ],
+    "restricted_commodities": [
+      "apple (CC BY-NC 4.0)"
+    ],
+    "deficit_blocked_commodities": [
+      "mango (272 samples)"
+    ]
+  }
+}

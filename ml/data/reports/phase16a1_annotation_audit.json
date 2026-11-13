@@ -1,0 +1,29 @@
+{
+  "dataset_name": "apple_detection_yolo",
+  "yolo_labels_directory": "ml/data/processed/apple_detection_yolo/labels",
+  "total_label_files": 1406,
+  "total_bounding_boxes": 2575,
+  "malformed_or_out_of_bounds": 0,
+  "split_counts": {
+    "train": {
+      "scenes": 1041,
+      "instances": 1981
+    },
+    "val": {
+      "scenes": 126,
+      "instances": 185
+    },
+    "test": {
+      "scenes": 239,
+      "instances": 409
+    }
+  },
+  "audit_previews_count": 80,
+  "previews_directory": "ml/data/processed/apple_detection_yolo/audit_previews",
+  "annotation_quality_status": "PASS_VERIFIED",
+  "missing_bbox_datasets": {
+    "guava": "Zero bounding boxes (classification only)",
+    "banana": "Zero bounding boxes (classification only)",
+    "mango": "Zero bounding boxes (classification only)"
+  }
+}

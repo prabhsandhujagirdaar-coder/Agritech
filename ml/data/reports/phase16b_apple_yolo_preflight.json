@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-10-31T09:00:00+0530",
+  "dataset_name": "apple_detection_yolo",
+  "data_yaml_verified": true,
+  "yaml_path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\ml\\data\\processed\\apple_detection_yolo\\data.yaml",
+  "scene_counts": {
+    "train": 1041,
+    "val": 126,
+    "test": 239
+  },
+  "instance_counts": {
+    "train": 1981,
+    "val": 185,
+    "test": 409
+  },
+  "total_scenes": 1406,
+  "total_instances": 2575,
+  "invalid_bounding_box_count": 0,
+  "split_verification": {
+    "train_scenes": 1041,
+    "train_instances": 1981,
+    "val_scenes": 126,
+    "val_instances": 185,
+    "test_scenes": 239,
+    "test_instances": 409
+  },
+  "coordinate_health": {
+    "all_coordinates_normalized": true,
+    "all_dimensions_positive": true,
+    "min_box_area": 0.0055765981919999996,
+    "max_box_area": 0.5311258115699999,
+    "mean_box_area": 0.11251537076064079,
+    "mean_aspect_ratio": 0.8377391011642519
+  },
+  "group_isolation": {
+    "train_val_base_overlap": 35,
+    "train_test_base_overlap": 18,
+    "val_test_base_overlap": 11,
+    "status": "WARNING_CHECK_PREFIX"
+  },
+  "preflight_status": "READY_FOR_TRAINING"
+}

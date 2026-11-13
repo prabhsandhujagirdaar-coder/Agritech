@@ -1,0 +1,102 @@
+{
+  "audit_timestamp": "2026-10-14T15:55:43Z",
+  "total_manifest_images": 25310,
+  "total_corrupted_images": 0,
+  "exact_duplicate_hashes": 19,
+  "exact_duplicate_images_affected": 38,
+  "near_duplicate_dhash_groups": 2262,
+  "near_duplicate_images_affected": 5936,
+  "dataset_summaries": {
+    "oranges_in_field": {
+      "total_files": 10059,
+      "valid_images": 5025,
+      "corrupted": 0,
+      "formats": {
+        "JPEG": 5025
+      },
+      "classes": {
+        "AC_CLIP_AFT_CLO": 1082,
+        "AR_CLIP_AFT_RAI": 13,
+        "AS_CLIP_AFT_SUN": 625,
+        "EC_CLIP_EVE_CLO": 34,
+        "ES_CLIP_EVE_SUN": 224,
+        "IN_CLIP_INDOOR": 57,
+        "MC_CLIP_MOR_CLO": 126,
+        "MS_CLIP_MOR_SUN": 2768,
+        "NI_CLIP_NIGHT": 96
+      },
+      "fruit_breakdown": {}
+    },
+    "fruitnet": {
+      "total_files": 19526,
+      "valid_images": 19526,
+      "corrupted": 0,
+      "formats": {
+        "JPEG": 19526
+      },
+      "classes": {
+        "Bad Quality_Fruits/Apple_Bad": 1141,
+        "Bad Quality_Fruits/Banana_Bad": 1087,
+        "Bad Quality_Fruits/Guava_Bad": 1129,
+        "Bad Quality_Fruits/Lime_Bad": 1085,
+        "Bad Quality_Fruits/Orange_Bad": 1159,
+        "Bad Quality_Fruits/Pomegranate_Bad": 1187,
+        "Good Quality_Fruits/Apple_Good": 1149,
+        "Good Quality_Fruits/Banana_Good": 1113,
+        "Good Quality_Fruits/Guava_Good": 1152,
+        "Good Quality_Fruits/Lime_Good": 1094,
+        "Good Quality_Fruits/Orange_Good": 1216,
+        "Good Quality_Fruits/Pomegranate_Good": 5940,
+        "Mixed Qualit_Fruits/Apple": 113,
+        "Mixed Qualit_Fruits/Banana": 285,
+        "Mixed Qualit_Fruits/Guava": 148,
+        "Mixed Qualit_Fruits/Lemon": 278,
+        "Mixed Qualit_Fruits/Orange": 125,
+        "Mixed Qualit_Fruits/Pomegranate": 125
+      },
+      "fruit_breakdown": {
+        "apple": 2403,
+        "banana": 2485,
+        "guava": 2429,
+        "lime_lemon": 2457,
+        "orange": 2500,
+        "pomegranate": 7252
+      }
+    },
+    "citrus_disease": {
+      "total_files": 759,
+      "valid_images": 759,
+      "corrupted": 0,
+      "formats": {
+        "JPEG": 165,
+        "PNG": 594
+      },
+      "classes": {
+        "Fruits/Black spot": 19,
+        "Fruits/Canker": 78,
+        "Fruits/Greening": 16,
+        "Fruits/healthy": 22,
+        "Fruits/Scab": 15,
+        "Leaves/Black spot": 171,
+        "Leaves/canker": 163,
+        "Leaves/greening": 204,
+        "Leaves/healthy": 58,
+        "Leaves/Melanose": 13
+      },
+      "fruit_breakdown": {
+        "Fruits": 150,
+        "Leaves": 609
+      }
+    }
+  },
+  "target_task_assessment": {
+    "target_classes": [
+      "underripe",
+      "partially_ripe",
+      "fully_ripe"
+    ],
+    "native_ripeness_images_found": 0,
+    "confirmed_kinnow_images_found": 0,
+    "verdict": "INSUFFICIENT_GROUND_TRUTH_RIPENESS_LABELS"
+  }
+}

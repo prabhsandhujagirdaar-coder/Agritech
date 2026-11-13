@@ -1,0 +1,34 @@
+{
+  "dataset": "Banana Ripeness",
+  "seed": 42,
+  "total_samples": 1960,
+  "splits": {
+    "train": {
+      "count": 1370,
+      "classes": {
+        "Half_Ripe": 340,
+        "Unripe": 285,
+        "Ripe": 431,
+        "Overripe": 314
+      }
+    },
+    "val": {
+      "count": 293,
+      "classes": {
+        "Half_Ripe": 73,
+        "Unripe": 61,
+        "Overripe": 66,
+        "Ripe": 93
+      }
+    },
+    "test": {
+      "count": 297,
+      "classes": {
+        "Half_Ripe": 75,
+        "Overripe": 68,
+        "Ripe": 92,
+        "Unripe": 62
+      }
+    }
+  }
+}

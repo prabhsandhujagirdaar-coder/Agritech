@@ -1,0 +1,67 @@
+{
+  "dataset_name": "fruit_identifier_v2",
+  "created_at": "2026-10-30T19:23:23+0530",
+  "total_records": 19886,
+  "split_counts": {
+    "train": 14078,
+    "val": 2771,
+    "test": 3037
+  },
+  "class_counts_by_split": {
+    "train": {
+      "guava": 3208,
+      "banana": 2910,
+      "apple": 3581,
+      "mango": 189,
+      "negative_background": 4190
+    },
+    "val": {
+      "guava": 686,
+      "banana": 623,
+      "apple": 525,
+      "mango": 37,
+      "negative_background": 900
+    },
+    "test": {
+      "guava": 696,
+      "banana": 627,
+      "apple": 758,
+      "mango": 46,
+      "negative_background": 910
+    }
+  },
+  "source_domains": {
+    "guava": [
+      "SAU_Sindh_Laboratory",
+      "FruitNet_Market_Retail"
+    ],
+    "banana": [
+      "BananaID_Studio_BlueCloth",
+      "FruitNet_Market_Retail"
+    ],
+    "apple": [
+      "Apple_Mendeley_Orchard_Canopy",
+      "FruitNet_Market_Retail"
+    ],
+    "mango": [
+      "Harumanis_Farm_ScalePaper (DEFICIT)"
+    ],
+    "negative_background": [
+      "FruitNet_Orange",
+      "FruitNet_Lime",
+      "FruitNet_Pomegranate",
+      "Oranges_In_Field_Canopy",
+      "Citrus_Disease_Foliage"
+    ]
+  },
+  "safety_invariants": {
+    "split_leakage": 0,
+    "stage2_held_out_sync": {
+      "guava": 346,
+      "banana": 297,
+      "apple": 408,
+      "mango": 46
+    },
+    "mango_status": "BLOCKED_GATED_DEFICIT"
+  }
+}

@@ -1,0 +1,554 @@
+[
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-37.jpeg",
+    "filename": "IMG-37.jpeg",
+    "stem": "img-37",
+    "class": "RIPE",
+    "group_id": "mango_cluster_0134",
+    "sha256": "b9a839c3873b3ed57f4c4d004927ae66ffc4ab518ba1e850fcbcdf8f18fddb73",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-81.jpg",
+    "filename": "IMG-81.jpg",
+    "stem": "img-81",
+    "class": "RIPE",
+    "group_id": "mango_cluster_0175",
+    "sha256": "5faaf7453593ae34213e48a447f35778aceaf454c27c6e6660daf5f8cef0c7e3",
+    "dimensions": [
+      2256,
+      4000
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-11.jpeg",
+    "filename": "IMG-11.jpeg",
+    "stem": "img-11",
+    "class": "RIPE",
+    "group_id": "mango_cluster_0012",
+    "sha256": "90254c834d0f0c7d248d0236874bbbd1a1ad03dd3501f278e046f9b2279067ba",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-153.jpeg",
+    "filename": "IMG-153.jpeg",
+    "stem": "img-153",
+    "class": "SEMI-RIPE",
+    "group_id": "mango_cluster_0012",
+    "sha256": "90254c834d0f0c7d248d0236874bbbd1a1ad03dd3501f278e046f9b2279067ba",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-34.jpeg",
+    "filename": "IMG-34.jpeg",
+    "stem": "img-34",
+    "class": "RIPE",
+    "group_id": "mango_cluster_0132",
+    "sha256": "ba895e185652e08e73c9e038c509ae7aad36ed991417ae3e568390ed90d43d08",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-99.jpg",
+    "filename": "IMG-99.jpg",
+    "stem": "img-99",
+    "class": "RIPE",
+    "group_id": "mango_cluster_0191",
+    "sha256": "4b38d4b514b8bb9028f339d0eb20777482ab027fca3fa0f6fe9083e5584991db",
+    "dimensions": [
+      4000,
+      2256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-125.jpg",
+    "filename": "IMG-125.jpg",
+    "stem": "img-125",
+    "class": "RIPE",
+    "group_id": "mango_cluster_0028",
+    "sha256": "9fb30a0f8760d3f5cf843050395c0fde9f45bdd02319eeb272f330ba64fb7b1c",
+    "dimensions": [
+      2256,
+      4000
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-152.jpg",
+    "filename": "IMG-152.jpg",
+    "stem": "img-152",
+    "class": "ROTTEN",
+    "group_id": "mango_cluster_0028",
+    "sha256": "9fb30a0f8760d3f5cf843050395c0fde9f45bdd02319eeb272f330ba64fb7b1c",
+    "dimensions": [
+      2256,
+      4000
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-93.jpg",
+    "filename": "IMG-93.jpg",
+    "stem": "img-93",
+    "class": "RIPE",
+    "group_id": "mango_cluster_0186",
+    "sha256": "d6a777964d4a75eb72c638cee1bb9112e766dc8cf5281918465a18a4caf2b96e",
+    "dimensions": [
+      651,
+      1156
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-108.jpg",
+    "filename": "IMG-108.jpg",
+    "stem": "img-108",
+    "class": "RIPE",
+    "group_id": "mango_cluster_0010",
+    "sha256": "d93a97e726c962c511f40ae4d3d7d76b11521851918f5bf56171226a87aab646",
+    "dimensions": [
+      2256,
+      4000
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-46.jpg",
+    "filename": "IMG-46.jpg",
+    "stem": "img-46",
+    "class": "RIPE",
+    "group_id": "mango_cluster_0141",
+    "sha256": "defbe66cd55f283649f73026c5c63a16cfce8105055fb20b70d5be568aec9149",
+    "dimensions": [
+      2256,
+      4000
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-127.jpg",
+    "filename": "IMG-127.jpg",
+    "stem": "img-127",
+    "class": "RIPE",
+    "group_id": "mango_cluster_0030",
+    "sha256": "d2a92c3bf6e806e6b4b0c728c6128b2c267de3fc6ee343dcd954d883412d3271",
+    "dimensions": [
+      2256,
+      4000
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-42.jpeg",
+    "filename": "IMG-42.jpeg",
+    "stem": "img-42",
+    "class": "RIPE",
+    "group_id": "mango_cluster_0139",
+    "sha256": "94a63b5fa6cf329662532e1bb43375e9312bf83829f22fc95c9ec8fb870a9b81",
+    "dimensions": [
+      651,
+      1156
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-62.jpg",
+    "filename": "IMG-62.jpg",
+    "stem": "img-62",
+    "class": "RIPE",
+    "group_id": "mango_cluster_0156",
+    "sha256": "638cc5b2fa35543b91094c9cda36cb54d2738399334500cb716db16cc54d7450",
+    "dimensions": [
+      2256,
+      4000
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-47.jpg",
+    "filename": "IMG-47.jpg",
+    "stem": "img-47",
+    "class": "RIPE",
+    "group_id": "mango_cluster_0142",
+    "sha256": "8b9e45a2a146eb4a042ae75c30db936614edcbfe78f19fc8376eefc082850f6c",
+    "dimensions": [
+      2256,
+      4000
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-104.jpg",
+    "filename": "IMG-104.jpg",
+    "stem": "img-104",
+    "class": "RIPE",
+    "group_id": "mango_cluster_0006",
+    "sha256": "1ce75e377a470c5b384a6b81294ba576de8854ce42fe6f4b76179fdca36a7376",
+    "dimensions": [
+      4000,
+      2256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-133.jpg",
+    "filename": "IMG-133.jpg",
+    "stem": "img-133",
+    "class": "ROTTEN",
+    "group_id": "mango_cluster_0006",
+    "sha256": "9592105b9d927120a69a02a6edef685468f98828436f78894f70d847d8bc0629",
+    "dimensions": [
+      4000,
+      2256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-50.jpg",
+    "filename": "IMG-50.jpg",
+    "stem": "img-50",
+    "class": "RIPE",
+    "group_id": "mango_cluster_0145",
+    "sha256": "167cb1bb983f0939da08048ab4079f2aecc15af35ce7deda6f97f76deaad9a3d",
+    "dimensions": [
+      2256,
+      4000
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-101.jpg",
+    "filename": "IMG-101.jpg",
+    "stem": "img-101",
+    "class": "RIPE",
+    "group_id": "mango_cluster_0003",
+    "sha256": "e0a212f25d2fdd65afc5f1a36694ad4ce36cba7e54d291a304b6ba47e1d220ab",
+    "dimensions": [
+      2256,
+      4000
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-147.jpg",
+    "filename": "IMG-147.jpg",
+    "stem": "img-147",
+    "class": "ROTTEN",
+    "group_id": "mango_cluster_0046",
+    "sha256": "312ab0919e7845798e7347b4a1c8169ee81fcaba24d3fc8be8951c4755fac435",
+    "dimensions": [
+      4000,
+      2256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-55.jpg",
+    "filename": "IMG-55.jpg",
+    "stem": "img-55",
+    "class": "RIPE",
+    "group_id": "mango_cluster_0046",
+    "sha256": "312ab0919e7845798e7347b4a1c8169ee81fcaba24d3fc8be8951c4755fac435",
+    "dimensions": [
+      4000,
+      2256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-141.jpeg",
+    "filename": "IMG-141.jpeg",
+    "stem": "img-141",
+    "class": "ROTTEN",
+    "group_id": "mango_cluster_0042",
+    "sha256": "9383432145b961bdcf0fa2e91e6bd175a142e60d458fc66ee3e3a8ffb22d95ae",
+    "dimensions": [
+      651,
+      1156
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-95.jpg",
+    "filename": "IMG-95.jpg",
+    "stem": "img-95",
+    "class": "RIPE",
+    "group_id": "mango_cluster_0042",
+    "sha256": "9383432145b961bdcf0fa2e91e6bd175a142e60d458fc66ee3e3a8ffb22d95ae",
+    "dimensions": [
+      651,
+      1156
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-184.jpeg",
+    "filename": "IMG-184.jpeg",
+    "stem": "img-184",
+    "class": "SEMI-RIPE",
+    "group_id": "mango_cluster_0073",
+    "sha256": "bae7b820e164d2d461ba9e28448fba8f7be13fc48195253f686292c1e7d73091",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-243.jpeg",
+    "filename": "IMG-243.jpeg",
+    "stem": "img-243",
+    "class": "UNRIPE",
+    "group_id": "mango_cluster_0073",
+    "sha256": "bae7b820e164d2d461ba9e28448fba8f7be13fc48195253f686292c1e7d73091",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-191.jpeg",
+    "filename": "IMG-191.jpeg",
+    "stem": "img-191",
+    "class": "SEMI-RIPE",
+    "group_id": "mango_cluster_0080",
+    "sha256": "36e8c9f39a33395c454fa4f42e51fa26933fe5f29a3061e91c655a1a1826e1c3",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-252.jpeg",
+    "filename": "IMG-252.jpeg",
+    "stem": "img-252",
+    "class": "UNRIPE",
+    "group_id": "mango_cluster_0080",
+    "sha256": "36e8c9f39a33395c454fa4f42e51fa26933fe5f29a3061e91c655a1a1826e1c3",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-178.jpeg",
+    "filename": "IMG-178.jpeg",
+    "stem": "img-178",
+    "class": "SEMI-RIPE",
+    "group_id": "mango_cluster_0067",
+    "sha256": "e7d150d0eca3ccbff095b8f1fb1d8b207b63a5d56e683ca7417afd4a9abaed15",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-237.jpeg",
+    "filename": "IMG-237.jpeg",
+    "stem": "img-237",
+    "class": "UNRIPE",
+    "group_id": "mango_cluster_0067",
+    "sha256": "e7d150d0eca3ccbff095b8f1fb1d8b207b63a5d56e683ca7417afd4a9abaed15",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-179.jpeg",
+    "filename": "IMG-179.jpeg",
+    "stem": "img-179",
+    "class": "SEMI-RIPE",
+    "group_id": "mango_cluster_0068",
+    "sha256": "f01742dfde0e38d9ab072e40c1f849310186783bab8ad5c46df752bcadf1830b",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-238.jpeg",
+    "filename": "IMG-238.jpeg",
+    "stem": "img-238",
+    "class": "UNRIPE",
+    "group_id": "mango_cluster_0068",
+    "sha256": "f01742dfde0e38d9ab072e40c1f849310186783bab8ad5c46df752bcadf1830b",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-211.jpeg",
+    "filename": "IMG-211.jpeg",
+    "stem": "img-211",
+    "class": "SEMI-RIPE",
+    "group_id": "mango_cluster_0099",
+    "sha256": "5ad44df4ad57f768c42e503cb7399e0f3dc4670a727df699a34712a1c892a3f8",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-9.jpeg",
+    "filename": "IMG-9.jpeg",
+    "stem": "img-9",
+    "class": "RIPE",
+    "group_id": "mango_cluster_0099",
+    "sha256": "5ad44df4ad57f768c42e503cb7399e0f3dc4670a727df699a34712a1c892a3f8",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-170.jpeg",
+    "filename": "IMG-170.jpeg",
+    "stem": "img-170",
+    "class": "SEMI-RIPE",
+    "group_id": "mango_cluster_0060",
+    "sha256": "1da9d5a460fdc520d6314b6df1c4eed781ed4fe9990da606f4a9e686c48714ad",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-172.jpeg",
+    "filename": "IMG-172.jpeg",
+    "stem": "img-172",
+    "class": "SEMI-RIPE",
+    "group_id": "mango_cluster_0060",
+    "sha256": "2a0c1f814c4433e01e8101cc92f73e5911ef498f5c3284a3abd1569d9844082f",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-28.jpeg",
+    "filename": "IMG-28.jpeg",
+    "stem": "img-28",
+    "class": "RIPE",
+    "group_id": "mango_cluster_0060",
+    "sha256": "1da9d5a460fdc520d6314b6df1c4eed781ed4fe9990da606f4a9e686c48714ad",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-31.jpeg",
+    "filename": "IMG-31.jpeg",
+    "stem": "img-31",
+    "class": "RIPE",
+    "group_id": "mango_cluster_0060",
+    "sha256": "2a0c1f814c4433e01e8101cc92f73e5911ef498f5c3284a3abd1569d9844082f",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-160.jpeg",
+    "filename": "IMG-160.jpeg",
+    "stem": "img-160",
+    "class": "SEMI-RIPE",
+    "group_id": "mango_cluster_0050",
+    "sha256": "f914f1db2c83a337f1da3cead95bcaa34d62bfc33d1d8aa78c8420d8e24bb0e7",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-18.jpeg",
+    "filename": "IMG-18.jpeg",
+    "stem": "img-18",
+    "class": "RIPE",
+    "group_id": "mango_cluster_0050",
+    "sha256": "f914f1db2c83a337f1da3cead95bcaa34d62bfc33d1d8aa78c8420d8e24bb0e7",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-216.jpeg",
+    "filename": "IMG-216.jpeg",
+    "stem": "img-216",
+    "class": "UNRIPE",
+    "group_id": "mango_cluster_0050",
+    "sha256": "f914f1db2c83a337f1da3cead95bcaa34d62bfc33d1d8aa78c8420d8e24bb0e7",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-270.jpeg",
+    "filename": "IMG-270.jpeg",
+    "stem": "img-270",
+    "class": "UNRIPE",
+    "group_id": "mango_cluster_0126",
+    "sha256": "d2950578179039a4f66e4bf1a1ed500adf31dd069cdc143e3e87e7258b0cbbc3",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-233.jpeg",
+    "filename": "IMG-233.jpeg",
+    "stem": "img-233",
+    "class": "UNRIPE",
+    "group_id": "mango_cluster_0111",
+    "sha256": "ece440335c1507d1b06435ab2bae48461c9eb6f0ede271dd5621751739981262",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-254.jpeg",
+    "filename": "IMG-254.jpeg",
+    "stem": "img-254",
+    "class": "UNRIPE",
+    "group_id": "mango_cluster_0114",
+    "sha256": "bd1274d6f0ccd34b3230b9968d0840257c95c0aa320baebb1c0eb178f6029d6e",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-255.jpeg",
+    "filename": "IMG-255.jpeg",
+    "stem": "img-255",
+    "class": "UNRIPE",
+    "group_id": "mango_cluster_0114",
+    "sha256": "bd1274d6f0ccd34b3230b9968d0840257c95c0aa320baebb1c0eb178f6029d6e",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-266.jpeg",
+    "filename": "IMG-266.jpeg",
+    "stem": "img-266",
+    "class": "UNRIPE",
+    "group_id": "mango_cluster_0122",
+    "sha256": "9e7e9e56242e92ec1abfa05185081fc3cafb18e246fa52c75658e4559cbad115",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\mango\\original\\IMG-223.jpeg",
+    "filename": "IMG-223.jpeg",
+    "stem": "img-223",
+    "class": "UNRIPE",
+    "group_id": "mango_cluster_0105",
+    "sha256": "599153dd13508899952103b0e7aa4b584ef8292f3a9e8b61e973959ea9c15899",
+    "dimensions": [
+      1443,
+      2560
+    ]
+  }
+]

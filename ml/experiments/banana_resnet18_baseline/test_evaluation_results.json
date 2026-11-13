@@ -1,0 +1,75 @@
+{
+  "evaluation_split": "test",
+  "total_test_samples": 297,
+  "overall_accuracy": 0.8182,
+  "macro_precision": 0.8181,
+  "macro_recall": 0.8285,
+  "macro_f1": 0.8146,
+  "per_class": {
+    "Unripe": {
+      "support": 62,
+      "precision": 0.725,
+      "recall": 0.9355,
+      "f1": 0.8169
+    },
+    "Half_Ripe": {
+      "support": 75,
+      "precision": 0.8,
+      "recall": 0.64,
+      "f1": 0.7111
+    },
+    "Ripe": {
+      "support": 92,
+      "precision": 0.9351,
+      "recall": 0.7826,
+      "f1": 0.8521
+    },
+    "Overripe": {
+      "support": 68,
+      "precision": 0.8125,
+      "recall": 0.9559,
+      "f1": 0.8784
+    }
+  },
+  "confusion_matrix": [
+    [
+      58,
+      4,
+      0,
+      0
+    ],
+    [
+      20,
+      48,
+      2,
+      5
+    ],
+    [
+      2,
+      8,
+      72,
+      10
+    ],
+    [
+      0,
+      0,
+      3,
+      65
+    ]
+  ],
+  "classes_order": [
+    "Unripe",
+    "Half_Ripe",
+    "Ripe",
+    "Overripe"
+  ],
+  "inference_latency_ms": {
+    "mean": 2.38,
+    "p95": 14.94,
+    "device": "cuda"
+  },
+  "model_file_size_mb": 122.83,
+  "checkpoint_sha256": "3b296ba8556d88bd934f74fee1e88860921fe69dd5b4869984fd0c529f339dae",
+  "best_epoch": 24,
+  "best_val_macro_f1": 0.8136
+}

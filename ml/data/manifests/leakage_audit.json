@@ -1,0 +1,47 @@
+{
+  "audit_version": "1.0.0",
+  "phase": "Phase 14C: Dataset Preparation and Leakage Audit",
+  "random_seed": 42,
+  "guava_checkpoint_certified": true,
+  "guava_checkpoint_sha256": "b213059f6b9744915ef921f2be70de9ae1eb0dd6c50a3fb0edce0e2cb710f5b4",
+  "banana_cross_dataset_overlap": {
+    "exact_sha256_overlap_count": 1960,
+    "overlap_percentage": 100.0,
+    "leakage_risk": "HIGH",
+    "resolution": "Synchronized deterministic group-aware split assignments across Ripeness and Variety."
+  },
+  "apple_annotations_audit": {
+    "total_orchard_images": 1406,
+    "total_instance_masks": 2575,
+    "instance_classes": {
+      "mature apple": 839,
+      "semi-mature apple": 814,
+      "immature apple": 921,
+      "unknown": 1
+    },
+    "mixed_stage_orchard_images": 108,
+    "mixed_stage_percentage": 7.68,
+    "unknown_label_instances": 1,
+    "degraded_polygons": 0,
+    "out_of_bounds_polygons": 0,
+    "crop_feasibility": "FEASIBLE_WITH_CAVEATS",
+    "median_crop_size": "92x91",
+    "architectural_finding": "Whole-orchard classification is structurally flawed because 33.7% of orchard images contain multiple stages. Stage 2 maturity evaluation MUST operate on individual-fruit bounding box crops."
+  },
+  "mango_sample_deficit_audit": {
+    "total_images": 272,
+    "class_distribution": {
+      "RIPE": 129,
+      "ROTTEN": 23,
+      "SEMI-RIPE": 61,
+      "UNRIPE": 59
+    },
+    "rotten_sample_count": 23,
+    "test_rotten_sample_count": 4,
+    "readiness_status": "BLOCKED_FOR_PRODUCTION",
+    "recommendation": "Use exclusively for preliminary transfer-learning benchmark or acquire supplemental Indian Alphonso/Dashehari datasets."
+  },
+  "discrepancies": [
+    "Apple dataset contains 1 mask labeled 'unknown' in test/IMG_54350.jpg"
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "experiment_name": "guava_resnet18_v2_grouped",
+  "version": "2.0.0",
+  "target_crop": "guava",
+  "cultivar": "Local Sindhi, Thadhrami, Riyali",
+  "dataset_manifests": {
+    "train": "ml/data/manifests/v2_grouped/train.json",
+    "val": "ml/data/manifests/v2_grouped/val.json",
+    "test": "ml/data/manifests/v2_grouped/test.json"
+  },
+  "model": {
+    "architecture": "resnet18",
+    "pretrained": true,
+    "num_classes": 3,
+    "class_to_idx": {
+      "Green": 0,
+      "Mature Green": 1,
+      "Ripe": 2
+    },
+    "idx_to_class": {
+      "0": "Green",
+      "1": "Mature Green",
+      "2": "Ripe"
+    },
+    "freeze_stages": ["conv1", "bn1", "layer1", "layer2"],
+    "trainable_stages": ["layer3", "layer4", "fc"],
+    "dropout": 0.2
+  },
+  "training": {
+    "random_seed": 42,
+    "batch_size": 32,
+    "num_workers": 0,
+    "epochs": 20,
+    "device": "cuda",
+    "mixed_precision": true,
+    "optimizer": {
+      "type": "AdamW",
+      "lr_head": 0.0001,
+      "lr_backbone": 0.00001,
+      "weight_decay": 0.01
+    },
+    "lr_scheduler": {
+      "type": "CosineAnnealingLR",
+      "T_max": 20,
+      "eta_min": 1e-6
+    },
+    "loss": {
+      "type": "WeightedCrossEntropyLoss",
+      "label_smoothing": 0.05
+    },
+    "early_stopping": {
+      "enabled": true,
+      "patience": 5,
+      "monitor_metric": "val_macro_f1",
+      "mode": "max",
+      "min_delta": 0.001
+    }
+  },
+  "preprocessing": {
+    "input_size": [3, 224, 224],
+    "train_transforms": {
+      "resize": [256, 256],
+      "random_crop": [224, 224],
+      "random_horizontal_flip_prob": 0.5,
+      "random_vertical_flip_prob": 0.5,
+      "random_rotation_degrees": 15,
+      "color_jitter": {
+        "brightness": 0.10,
+        "contrast": 0.10,
+        "saturation": 0.08,
+        "hue": 0.0
+      },
+      "normalization": {
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225]
+      }
+    },
+    "eval_transforms": {
+      "resize": [256, 256],
+      "center_crop": [224, 224],
+      "normalization": {
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225]
+      }
+    }
+  },
+  "evaluation_metrics": [
+    "top1_accuracy",
+    "macro_precision",
+    "macro_recall",
+    "macro_f1",
+    "per_class_recall",
+    "confusion_matrix",
+    "inference_latency_ms"
+  ],
+  "checkpointing": {
+    "best_checkpoint_path": "ml/artifacts/best_guava_resnet18.pth",
+    "latest_checkpoint_path": "ml/artifacts/latest_guava_resnet18_checkpoint.pth",
+    "save_optimizer_state": true,
+    "save_metadata": true
+  }
+}

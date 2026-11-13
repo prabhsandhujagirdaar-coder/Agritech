@@ -1,0 +1,1375 @@
+{
+  "timestamp": "2026-10-30T22:12:08+0530",
+  "random_seed": 42,
+  "classes": [
+    "guava",
+    "banana",
+    "apple",
+    "mango",
+    "negative_background"
+  ],
+  "class_weights": [
+    0.8776807980049876,
+    0.9675601374570447,
+    0.7862608209997207,
+    14.897354497354497,
+    0.671980906921241
+  ],
+  "architectures_benchmarked": [
+    "resnet18",
+    "efficientnet_b0",
+    "mobilenet_v3_large"
+  ],
+  "model_evaluations": {
+    "resnet18": {
+      "architecture": "resnet18",
+      "checkpoint_path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\ml\\experiments\\phase16b\\fruit_identifier_v2\\resnet18\\best_resnet18.pth",
+      "checkpoint_sha256": "045be051443a36f850e737ba284f992f5640e340a5e715473d1e28ea94cdc57b",
+      "checkpoint_size_mb": 42.72138500213623,
+      "peak_vram_mb": 996.79345703125,
+      "training_duration_sec": 1140.0220751000015,
+      "best_epoch": 4,
+      "best_val_macro_f1": 0.9985812344176305,
+      "calibration": {
+        "optimal_temperature": 1.2719687223434448,
+        "val_ece_raw": 0.0018032152099499493,
+        "val_ece_calibrated": 0.00486081304080389,
+        "test_ece_calibrated": 0.002377433705416277
+      },
+      "latency_ms": {
+        "batch_size_1": 5.09300966665857,
+        "batch_size_32_per_sample": 0.6587214374997075,
+        "cpu_batch_size_1": 18.180655000014667,
+        "cpu_batch_size_32_per_sample": 12.618719687498015
+      },
+      "tier2_test_metrics": {
+        "accuracy": 0.9957194599934146,
+        "macro_precision": 0.9965512571137376,
+        "macro_recall": 0.9965294894941401,
+        "macro_f1": 0.9965368919520191,
+        "per_class": {
+          "0": {
+            "precision": 0.9956772334293948,
+            "recall": 0.992816091954023,
+            "f1": 0.9942446043165468,
+            "support": 696
+          },
+          "1": {
+            "precision": 0.9936507936507937,
+            "recall": 0.9984051036682615,
+            "f1": 0.9960222752585521,
+            "support": 627
+          },
+          "2": {
+            "precision": 1.0,
+            "recall": 0.9947229551451188,
+            "f1": 0.9973544973544973,
+            "support": 758
+          },
+          "3": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 46
+          },
+          "4": {
+            "precision": 0.9934282584884995,
+            "recall": 0.9967032967032967,
+            "f1": 0.9950630828304992,
+            "support": 910
+          }
+        },
+        "confusion_matrix": [
+          [
+            691,
+            0,
+            0,
+            0,
+            5
+          ],
+          [
+            0,
+            626,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            4,
+            754,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            46,
+            0
+          ],
+          [
+            3,
+            0,
+            0,
+            0,
+            907
+          ]
+        ]
+      },
+      "tier1_stage2_sync_metrics": {
+        "samples": 1097,
+        "accuracy": 1.0,
+        "macro_f1": 0.8
+      },
+      "error_analysis": {
+        "false_fruit_acceptance_count": 3,
+        "false_fruit_acceptance_rate": 0.0032967032967032967,
+        "false_bg_rejection_count": 6,
+        "false_bg_rejection_rate": 0.0028208744710860366
+      },
+      "training_history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.12709796317276298,
+          "train_acc": 0.950561159255576,
+          "val_loss": 0.0799087942936261,
+          "val_acc": 0.9750992421508481,
+          "val_macro_f1": 0.9431830280537253,
+          "val_per_class_f1": {
+            "0": 0.9808259587020649,
+            "1": 0.9928286852589641,
+            "2": 0.9647283126787416,
+            "3": 0.8043478260869564,
+            "4": 0.9731843575418995
+          }
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.025633214410310877,
+          "train_acc": 0.9901974712317091,
+          "val_loss": 0.031847598310123064,
+          "val_acc": 0.9909779862865391,
+          "val_macro_f1": 0.9926884513850908,
+          "val_per_class_f1": {
+            "0": 0.9926578560939794,
+            "1": 0.9991980753809142,
+            "2": 0.9837008628954937,
+            "3": 1.0,
+            "4": 0.9878854625550662
+          }
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.008409181165787172,
+          "train_acc": 0.9965904247762466,
+          "val_loss": 0.02123288740105665,
+          "val_acc": 0.991699747383616,
+          "val_macro_f1": 0.9930658019356156,
+          "val_per_class_f1": {
+            "0": 0.9978118161925601,
+            "1": 1.0,
+            "2": 0.9795918367346939,
+            "3": 1.0,
+            "4": 0.9879253567508233
+          }
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.0028665443874705313,
+          "train_acc": 0.9993607046455463,
+          "val_loss": 0.0065634088489654975,
+          "val_acc": 0.9981955972573078,
+          "val_macro_f1": 0.9985812344176305,
+          "val_per_class_f1": {
+            "0": 0.9985422740524781,
+            "1": 1.0,
+            "2": 0.9971401334604386,
+            "3": 1.0,
+            "4": 0.9972237645752359
+          }
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.0019257887874734297,
+          "train_acc": 0.9994317374627077,
+          "val_loss": 0.011410591463437045,
+          "val_acc": 0.9960303139660772,
+          "val_macro_f1": 0.9967660966948954,
+          "val_per_class_f1": {
+            "0": 0.9985401459854015,
+            "1": 1.0,
+            "2": 0.9913710450623202,
+            "3": 1.0,
+            "4": 0.9939192924267551
+          }
+        }
+      ],
+      "detailed_latency": {
+        "gpu": {
+          "mean_latency_bs1_ms": 5.858865000100195,
+          "median_latency_bs1_ms": 5.922749998717336,
+          "p95_latency_bs1_ms": 6.873560000531143,
+          "batch_size_32_batch_ms": 21.394691666318977,
+          "batch_size_32_per_sample_ms": 0.668584114572468,
+          "throughput_samples_per_sec": 1495.6981151720286
+        },
+        "cpu": {
+          "mean_latency_bs1_ms": 26.68286000007356,
+          "median_latency_bs1_ms": 26.796100000865408,
+          "p95_latency_bs1_ms": 27.75087500012887,
+          "batch_size_32_batch_ms": 511.13050000009633,
+          "batch_size_32_per_sample_ms": 15.97282812500301,
+          "throughput_samples_per_sec": 62.606320694996626
+        }
+      }
+    },
+    "efficientnet_b0": {
+      "architecture": "efficientnet_b0",
+      "checkpoint_path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\ml\\experiments\\phase16b\\fruit_identifier_v2\\efficientnet_b0\\best_efficientnet_b0.pth",
+      "checkpoint_sha256": "e3fbe7624a1eb569b0d5a431defcff67a05355a4c1fd45a4bf4560f3707b4270",
+      "checkpoint_size_mb": 15.601384162902832,
+      "peak_vram_mb": 2972.34326171875,
+      "training_duration_sec": 1226.6991285000004,
+      "best_epoch": 5,
+      "best_val_macro_f1": 0.9974183701766052,
+      "calibration": {
+        "optimal_temperature": 1.3672785758972168,
+        "val_ece_raw": 0.0017713383835001482,
+        "val_ece_calibrated": 0.002985999552793131,
+        "test_ece_calibrated": 0.0004434219150901441
+      },
+      "latency_ms": {
+        "batch_size_1": 15.247090000084427,
+        "batch_size_32_per_sample": 1.0525530729220616,
+        "cpu_batch_size_1": 23.990370000137773,
+        "cpu_batch_size_32_per_sample": 12.960046666671587
+      },
+      "detailed_latency": {
+        "gpu": {
+          "mean_latency_bs1_ms": 15.247090000084427,
+          "median_latency_bs1_ms": 14.976099999330472,
+          "p95_latency_bs1_ms": 19.07963499925245,
+          "batch_size_32_batch_ms": 33.68169833350597,
+          "batch_size_32_per_sample_ms": 1.0525530729220616,
+          "throughput_samples_per_sec": 950.0708569724038
+        },
+        "cpu": {
+          "mean_latency_bs1_ms": 23.990370000137773,
+          "median_latency_bs1_ms": 23.783850001564133,
+          "p95_latency_bs1_ms": 25.637934998121633,
+          "batch_size_32_batch_ms": 414.7214933334908,
+          "batch_size_32_per_sample_ms": 12.960046666671587,
+          "throughput_samples_per_sec": 77.16021598684729
+        }
+      },
+      "confidence_distribution": {
+        "mean": 0.9975433945655823,
+        "std": 0.01204424537718296,
+        "min": 0.7025336623191833,
+        "percentile_25": 0.9982779026031494,
+        "median": 0.9992702603340149,
+        "percentile_75": 0.9997405409812927,
+        "percentile_90": 0.9999025464057922,
+        "max": 0.999996542930603
+      },
+      "tier2_test_metrics": {
+        "accuracy": 0.9976950938426078,
+        "macro_precision": 0.9901788158213604,
+        "macro_recall": 0.9982176742676241,
+        "macro_f1": 0.9941060172552808,
+        "per_class": {
+          "0": {
+            "precision": 1.0,
+            "recall": 0.9985632183908046,
+            "f1": 0.9992810927390366,
+            "support": 696
+          },
+          "1": {
+            "precision": 0.993660855784469,
+            "recall": 1.0,
+            "f1": 0.9968203497615262,
+            "support": 627
+          },
+          "2": {
+            "precision": 1.0,
+            "recall": 0.9947229551451188,
+            "f1": 0.9973544973544973,
+            "support": 758
+          },
+          "3": {
+            "precision": 0.9583333333333334,
+            "recall": 1.0,
+            "f1": 0.9787234042553191,
+            "support": 46
+          },
+          "4": {
+            "precision": 0.9988998899889989,
+            "recall": 0.9978021978021978,
+            "f1": 0.9983507421660253,
+            "support": 910
+          }
+        },
+        "confusion_matrix": [
+          [
+            695,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            627,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            754,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            46,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            908
+          ]
+        ]
+      },
+      "tier1_stage2_sync_metrics": {
+        "samples": 1097,
+        "accuracy": 1.0,
+        "macro_f1": 0.8
+      },
+      "error_analysis": {
+        "false_fruit_acceptance_count": 2,
+        "false_fruit_acceptance_rate": 0.002197802197802198,
+        "false_bg_rejection_count": 1,
+        "false_bg_rejection_rate": 0.0004701457451810061
+      },
+      "training_history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.13271352411743287,
+          "train_acc": 0.9591561301321211,
+          "val_loss": 0.025110888653070148,
+          "val_acc": 0.9909779862865391,
+          "val_macro_f1": 0.9928857133706902,
+          "val_per_class_f1": {
+            "0": 0.9889462048636698,
+            "1": 1.0,
+            "2": 0.9875835721107927,
+            "3": 1.0,
+            "4": 0.9878987898789879
+          }
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.02021511872622511,
+          "train_acc": 0.9933229151868163,
+          "val_loss": 0.016886727328550705,
+          "val_acc": 0.9935041501263082,
+          "val_macro_f1": 0.9921392474750913,
+          "val_per_class_f1": {
+            "0": 0.9978086194302411,
+            "1": 1.0,
+            "2": 0.9856184084372005,
+            "3": 0.9866666666666666,
+            "4": 0.9906025428413489
+          }
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.006106423231691576,
+          "train_acc": 0.9978690154851542,
+          "val_loss": 0.015331625878453865,
+          "val_acc": 0.9945867917719234,
+          "val_macro_f1": 0.995753300588922,
+          "val_per_class_f1": {
+            "0": 0.9941348973607038,
+            "1": 1.0,
+            "2": 0.9923664122137406,
+            "3": 1.0,
+            "4": 0.9922651933701657
+          }
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.0034216879407202383,
+          "train_acc": 0.9987214092910924,
+          "val_loss": 0.010288078855811032,
+          "val_acc": 0.9956694334175388,
+          "val_macro_f1": 0.9965099660476836,
+          "val_per_class_f1": {
+            "0": 0.9978086194302411,
+            "1": 1.0,
+            "2": 0.9913710450623202,
+            "3": 1.0,
+            "4": 0.9933701657458563
+          }
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.0016907135677305403,
+          "train_acc": 0.9995027702798693,
+          "val_loss": 0.008360904678766632,
+          "val_acc": 0.9967520750631541,
+          "val_macro_f1": 0.9974183701766052,
+          "val_per_class_f1": {
+            "0": 0.9978086194302411,
+            "1": 1.0,
+            "2": 0.994263862332696,
+            "3": 1.0,
+            "4": 0.9950193691200887
+          }
+        }
+      ]
+    },
+    "mobilenet_v3_large": {
+      "architecture": "mobilenet_v3_large",
+      "checkpoint_path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\ml\\experiments\\phase16b\\fruit_identifier_v2\\mobilenet_v3_large\\best_mobilenet_v3_large.pth",
+      "checkpoint_sha256": "273674bcebad518ecde2dc55aee558d452ac2d4c09dd1924ad61f4328ab81356",
+      "checkpoint_size_mb": 16.25504970550537,
+      "peak_vram_mb": 1537.19921875,
+      "training_duration_sec": 1238.4580057999992,
+      "best_epoch": 4,
+      "best_val_macro_f1": 0.9974991005504897,
+      "calibration": {
+        "optimal_temperature": 1.500133752822876,
+        "val_ece_raw": 0.0036682238091805897,
+        "val_ece_calibrated": 0.00277636936105831,
+        "test_ece_calibrated": 0.001218081639320899
+      },
+      "latency_ms": {
+        "batch_size_1": 11.235549499815534,
+        "batch_size_32_per_sample": 0.6873207812456409,
+        "cpu_batch_size_1": 19.01676249990487,
+        "cpu_batch_size_32_per_sample": 7.755642291643501
+      },
+      "detailed_latency": {
+        "gpu": {
+          "mean_latency_bs1_ms": 11.235549499815534,
+          "median_latency_bs1_ms": 10.74749999861524,
+          "p95_latency_bs1_ms": 13.668179998785485,
+          "batch_size_32_batch_ms": 21.99426499986051,
+          "batch_size_32_per_sample_ms": 0.6873207812456409,
+          "throughput_samples_per_sec": 1454.9247269778257
+        },
+        "cpu": {
+          "mean_latency_bs1_ms": 19.01676249990487,
+          "median_latency_bs1_ms": 18.908550000560354,
+          "p95_latency_bs1_ms": 20.22775999903388,
+          "batch_size_32_batch_ms": 248.18055333259204,
+          "batch_size_32_per_sample_ms": 7.755642291643501,
+          "throughput_samples_per_sec": 128.93838606732461
+        }
+      },
+      "confidence_distribution": {
+        "mean": 0.9968644976615906,
+        "std": 0.025936808437108994,
+        "min": 0.4868018329143524,
+        "percentile_25": 0.9998102784156799,
+        "median": 0.9999713897705078,
+        "percentile_75": 0.9999969005584717,
+        "percentile_90": 0.9999997615814209,
+        "max": 1.0
+      },
+      "tier2_test_metrics": {
+        "accuracy": 0.9976950938426078,
+        "macro_precision": 0.9979830486255932,
+        "macro_recall": 0.9982176742676241,
+        "macro_f1": 0.9980978345555105,
+        "per_class": {
+          "0": {
+            "precision": 1.0,
+            "recall": 0.9985632183908046,
+            "f1": 0.9992810927390366,
+            "support": 696
+          },
+          "1": {
+            "precision": 0.993660855784469,
+            "recall": 1.0,
+            "f1": 0.9968203497615262,
+            "support": 627
+          },
+          "2": {
+            "precision": 0.9973544973544973,
+            "recall": 0.9947229551451188,
+            "f1": 0.9960369881109643,
+            "support": 758
+          },
+          "3": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 46
+          },
+          "4": {
+            "precision": 0.9988998899889989,
+            "recall": 0.9978021978021978,
+            "f1": 0.9983507421660253,
+            "support": 910
+          }
+        },
+        "confusion_matrix": [
+          [
+            695,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            627,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            754,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            46,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            908
+          ]
+        ]
+      },
+      "tier1_stage2_sync_metrics": {
+        "samples": 1097,
+        "accuracy": 1.0,
+        "macro_f1": 0.8
+      },
+      "error_analysis": {
+        "false_fruit_acceptance_count": 2,
+        "false_fruit_acceptance_rate": 0.002197802197802198,
+        "false_bg_rejection_count": 1,
+        "false_bg_rejection_rate": 0.0004701457451810061
+      },
+      "training_history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.09939116729254512,
+          "train_acc": 0.9630629350760052,
+          "val_loss": 0.017532470249222266,
+          "val_acc": 0.9938650306748467,
+          "val_macro_f1": 0.9927104101734148,
+          "val_per_class_f1": {
+            "0": 0.9949238578680203,
+            "1": 1.0,
+            "2": 0.9914853358561967,
+            "3": 0.9866666666666666,
+            "4": 0.9904761904761905
+          }
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.008297679473004022,
+          "train_acc": 0.996235260690439,
+          "val_loss": 0.014907845994910709,
+          "val_acc": 0.9935041501263082,
+          "val_macro_f1": 0.9951444992540777,
+          "val_per_class_f1": {
+            "0": 0.9897058823529412,
+            "1": 0.9991967871485944,
+            "2": 0.9961759082217974,
+            "3": 1.0,
+            "4": 0.9906439185470556
+          }
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.010816253272330866,
+          "train_acc": 0.9988634749254155,
+          "val_loss": 0.023864966127999425,
+          "val_acc": 0.9935041501263082,
+          "val_macro_f1": 0.9950430484194346,
+          "val_per_class_f1": {
+            "0": 0.9897209985315712,
+            "1": 0.9975903614457832,
+            "2": 0.9962049335863379,
+            "3": 1.0,
+            "4": 0.991698948533481
+          }
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.0019367030491617438,
+          "train_acc": 0.9992896718283847,
+          "val_loss": 0.014202292911066297,
+          "val_acc": 0.9967520750631541,
+          "val_macro_f1": 0.9974991005504897,
+          "val_per_class_f1": {
+            "0": 0.9948867786705625,
+            "1": 0.9983922829581994,
+            "2": 0.9980988593155894,
+            "3": 1.0,
+            "4": 0.9961175818080976
+          }
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.0008132280373181692,
+          "train_acc": 0.9997158687313539,
+          "val_loss": 0.011601623180905041,
+          "val_acc": 0.9953085528690003,
+          "val_macro_f1": 0.9963380895534218,
+          "val_per_class_f1": {
+            "0": 0.9941520467836257,
+            "1": 0.9983922829581994,
+            "2": 0.9952335557673976,
+            "3": 1.0,
+            "4": 0.993912562257886
+          }
+        }
+      ]
+    }
+  },
+  "ood_stress_evaluations": {
+    "resnet18": {
+      "architecture": "resnet18",
+      "temperature": 1.2719687223434448,
+      "validation_calibration_profile": {
+        "msp_operating_points": {
+          "0.5": {
+            "fruit_frr": 0.0
+          },
+          "0.6": {
+            "fruit_frr": 0.0016034206306787815
+          },
+          "0.7": {
+            "fruit_frr": 0.003206841261357563
+          },
+          "0.8": {
+            "fruit_frr": 0.0085515766969535
+          },
+          "0.85": {
+            "fruit_frr": 0.01122394441475147
+          },
+          "0.9": {
+            "fruit_frr": 0.014965259219668627
+          },
+          "0.95": {
+            "fruit_frr": 0.02779262426509888
+          },
+          "0.98": {
+            "fruit_frr": 0.04008551576696953
+          }
+        },
+        "margin_operating_points": {
+          "0.2": {
+            "fruit_frr": 0.0010689470871191875
+          },
+          "0.35": {
+            "fruit_frr": 0.002137894174238375
+          },
+          "0.5": {
+            "fruit_frr": 0.0037413148049171567
+          },
+          "0.65": {
+            "fruit_frr": 0.009620523784072688
+          },
+          "0.8": {
+            "fruit_frr": 0.014430785676109033
+          },
+          "0.9": {
+            "fruit_frr": 0.024585783003741316
+          }
+        },
+        "energy_operating_points": {
+          "-4.0": {
+            "fruit_frr": 0.0016034206306787815
+          },
+          "-6.0": {
+            "fruit_frr": 0.027258150721539285
+          },
+          "-8.0": {
+            "fruit_frr": 0.09353287012292892
+          },
+          "-10.0": {
+            "fruit_frr": 0.3169428113308391
+          },
+          "-12.0": {
+            "fruit_frr": 0.6386958845537146
+          },
+          "-14.0": {
+            "fruit_frr": 0.8861571352218065
+          }
+        }
+      },
+      "suites": {
+        "suite_1_canopy_illumination_stress": {
+          "samples": 1500,
+          "description": "Outdoor orchard tree canopy without target fruits across rainy, night, and direct noon illumination.",
+          "expected_behavior": "Rejection as negative_background (TNR >= 95%); 0% false acceptance as apple.",
+          "raw_architecture_rejection": {
+            "assigned_negative_background_rate": 0.9973333333333333,
+            "tnr": 0.9973333333333333,
+            "raw_false_fruit_acceptance_rate": 0.0026666666666666666,
+            "predicted_class_breakdown": {
+              "4": 1496,
+              "2": 3,
+              "0": 1
+            }
+          },
+          "ood_detection_metrics": {
+            "auroc_energy": 0.6606005701051132,
+            "auroc_msp": 0.5304099412079102,
+            "aupr_in_distribution": 0.7620741511424571
+          },
+          "score_distributions": {
+            "msp_mean": 0.9952225500941276,
+            "msp_std": 0.033338573628720905,
+            "margin_mean": 0.9918397821187973,
+            "margin_std": 0.059008451878459704,
+            "energy_mean": -9.900925453821818,
+            "energy_std": 1.6944946088887027
+          },
+          "calibrated_threshold_far": {
+            "msp": {
+              "0.5": 0.0026666666666666666,
+              "0.6": 0.0026666666666666666,
+              "0.7": 0.002,
+              "0.8": 0.0,
+              "0.85": 0.0,
+              "0.9": 0.0,
+              "0.95": 0.0,
+              "0.98": 0.0
+            },
+            "margin": {
+              "0.2": 0.0026666666666666666,
+              "0.35": 0.0026666666666666666,
+              "0.5": 0.002,
+              "0.65": 0.0006666666666666666,
+              "0.8": 0.0,
+              "0.9": 0.0
+            },
+            "energy": {
+              "-4.0": 0.002,
+              "-6.0": 0.0,
+              "-8.0": 0.0,
+              "-10.0": 0.0,
+              "-12.0": 0.0,
+              "-14.0": 0.0
+            }
+          }
+        },
+        "suite_2_pathological_foliage_stress": {
+          "samples": 159,
+          "description": "Diseased citrus leaves and bark with canker, melanose, and greening lesions.",
+          "expected_behavior": "Rejection as negative_background (TNR >= 95%); 0% false acceptance as banana/mango.",
+          "raw_architecture_rejection": {
+            "assigned_negative_background_rate": 1.0,
+            "tnr": 1.0,
+            "raw_false_fruit_acceptance_rate": 0.0,
+            "predicted_class_breakdown": {
+              "4": 159
+            }
+          },
+          "ood_detection_metrics": {
+            "auroc_energy": 0.685040455277338,
+            "auroc_msp": 0.6099334765319054,
+            "aupr_in_distribution": 0.9633073871026051
+          },
+          "score_distributions": {
+            "msp_mean": 0.9958217743807619,
+            "msp_std": 0.02548195981487272,
+            "margin_mean": 0.9925254598353643,
+            "margin_std": 0.048461440573980934,
+            "energy_mean": -9.72833130794501,
+            "energy_std": 1.7803791435307752
+          },
+          "calibrated_threshold_far": {
+            "msp": {
+              "0.5": 0.0,
+              "0.6": 0.0,
+              "0.7": 0.0,
+              "0.8": 0.0,
+              "0.85": 0.0,
+              "0.9": 0.0,
+              "0.95": 0.0,
+              "0.98": 0.0
+            },
+            "margin": {
+              "0.2": 0.0,
+              "0.35": 0.0,
+              "0.5": 0.0,
+              "0.65": 0.0,
+              "0.8": 0.0,
+              "0.9": 0.0
+            },
+            "energy": {
+              "-4.0": 0.0,
+              "-6.0": 0.0,
+              "-8.0": 0.0,
+              "-10.0": 0.0,
+              "-12.0": 0.0,
+              "-14.0": 0.0
+            }
+          }
+        },
+        "suite_3_retail_non_target_produce": {
+          "samples": 2000,
+          "description": "Exotic non-target retail produce displays in market crates and wire baskets.",
+          "expected_behavior": "Rejection as negative_background (TNR >= 99%).",
+          "raw_architecture_rejection": {
+            "assigned_negative_background_rate": 0.9905,
+            "tnr": 0.9905,
+            "raw_false_fruit_acceptance_rate": 0.0095,
+            "predicted_class_breakdown": {
+              "4": 1981,
+              "2": 15,
+              "0": 3,
+              "1": 1
+            }
+          },
+          "ood_detection_metrics": {
+            "auroc_energy": 0.7700420897915552,
+            "auroc_msp": 0.6953363174772849,
+            "aupr_in_distribution": 0.7608536222349894
+          },
+          "score_distributions": {
+            "msp_mean": 0.9854957556277514,
+            "msp_std": 0.06375042980013583,
+            "margin_mean": 0.9759075528234243,
+            "margin_std": 0.10844487864468982,
+            "energy_mean": -8.857282103776932,
+            "energy_std": 2.119436022486899
+          },
+          "calibrated_threshold_far": {
+            "msp": {
+              "0.5": 0.007,
+              "0.6": 0.0055,
+              "0.7": 0.0035,
+              "0.8": 0.002,
+              "0.85": 0.002,
+              "0.9": 0.0015,
+              "0.95": 0.001,
+              "0.98": 0.0
+            },
+            "margin": {
+              "0.2": 0.006,
+              "0.35": 0.005,
+              "0.5": 0.003,
+              "0.65": 0.002,
+              "0.8": 0.0015,
+              "0.9": 0.001
+            },
+            "energy": {
+              "-4.0": 0.004,
+              "-6.0": 0.001,
+              "-8.0": 0.0,
+              "-10.0": 0.0,
+              "-12.0": 0.0,
+              "-14.0": 0.0
+            }
+          }
+        }
+      }
+    },
+    "efficientnet_b0": {
+      "architecture": "efficientnet_b0",
+      "temperature": 1.3672785758972168,
+      "validation_calibration_profile": {
+        "msp_operating_points": {
+          "0.5": {
+            "fruit_frr": 0.0010689470871191875
+          },
+          "0.6": {
+            "fruit_frr": 0.002672367717797969
+          },
+          "0.7": {
+            "fruit_frr": 0.00427578834847675
+          },
+          "0.8": {
+            "fruit_frr": 0.0074826296098343134
+          },
+          "0.85": {
+            "fruit_frr": 0.009086050240513094
+          },
+          "0.9": {
+            "fruit_frr": 0.010689470871191877
+          },
+          "0.95": {
+            "fruit_frr": 0.013361838588989846
+          },
+          "0.98": {
+            "fruit_frr": 0.021378941742383754
+          }
+        },
+        "margin_operating_points": {
+          "0.2": {
+            "fruit_frr": 0.002672367717797969
+          },
+          "0.35": {
+            "fruit_frr": 0.0037413148049171567
+          },
+          "0.5": {
+            "fruit_frr": 0.004810261892036344
+          },
+          "0.65": {
+            "fruit_frr": 0.008017103153393906
+          },
+          "0.8": {
+            "fruit_frr": 0.010154997327632281
+          },
+          "0.9": {
+            "fruit_frr": 0.013361838588989846
+          }
+        },
+        "energy_operating_points": {
+          "-4.0": {
+            "fruit_frr": 0.00427578834847675
+          },
+          "-6.0": {
+            "fruit_frr": 0.01870657402458578
+          },
+          "-8.0": {
+            "fruit_frr": 0.1207910208444682
+          },
+          "-10.0": {
+            "fruit_frr": 0.6819882415820417
+          },
+          "-12.0": {
+            "fruit_frr": 0.9241047568145376
+          },
+          "-14.0": {
+            "fruit_frr": 0.9909139497594869
+          }
+        }
+      },
+      "suites": {
+        "suite_1_canopy_illumination_stress": {
+          "samples": 1500,
+          "description": "Outdoor orchard tree canopy without target fruits across rainy, night, and direct noon illumination.",
+          "expected_behavior": "Rejection as negative_background (TNR >= 95%); 0% false acceptance as apple.",
+          "raw_architecture_rejection": {
+            "assigned_negative_background_rate": 1.0,
+            "tnr": 1.0,
+            "raw_false_fruit_acceptance_rate": 0.0,
+            "predicted_class_breakdown": {
+              "4": 1500
+            }
+          },
+          "ood_detection_metrics": {
+            "auroc_energy": 0.6860933547122752,
+            "auroc_msp": 0.6505015143417068,
+            "aupr_in_distribution": 0.7455370259794538
+          },
+          "score_distributions": {
+            "msp_mean": 0.9971677468617757,
+            "msp_std": 0.0141818332466623,
+            "margin_mean": 0.9958036267360052,
+            "margin_std": 0.021672370806274877,
+            "energy_mean": -8.59480159107844,
+            "energy_std": 1.1457103881587705
+          },
+          "calibrated_threshold_far": {
+            "msp": {
+              "0.5": 0.0,
+              "0.6": 0.0,
+              "0.7": 0.0,
+              "0.8": 0.0,
+              "0.85": 0.0,
+              "0.9": 0.0,
+              "0.95": 0.0,
+              "0.98": 0.0
+            },
+            "margin": {
+              "0.2": 0.0,
+              "0.35": 0.0,
+              "0.5": 0.0,
+              "0.65": 0.0,
+              "0.8": 0.0,
+              "0.9": 0.0
+            },
+            "energy": {
+              "-4.0": 0.0,
+              "-6.0": 0.0,
+              "-8.0": 0.0,
+              "-10.0": 0.0,
+              "-12.0": 0.0,
+              "-14.0": 0.0
+            }
+          }
+        },
+        "suite_2_pathological_foliage_stress": {
+          "samples": 159,
+          "description": "Diseased citrus leaves and bark with canker, melanose, and greening lesions.",
+          "expected_behavior": "Rejection as negative_background (TNR >= 95%); 0% false acceptance as banana/mango.",
+          "raw_architecture_rejection": {
+            "assigned_negative_background_rate": 0.9874213836477987,
+            "tnr": 0.9874213836477987,
+            "raw_false_fruit_acceptance_rate": 0.012578616352201259,
+            "predicted_class_breakdown": {
+              "4": 157,
+              "2": 1,
+              "3": 1
+            }
+          },
+          "ood_detection_metrics": {
+            "auroc_energy": 0.8205513481170733,
+            "auroc_msp": 0.8092937890140476,
+            "aupr_in_distribution": 0.9802134701271794
+          },
+          "score_distributions": {
+            "msp_mean": 0.9870360118787993,
+            "msp_std": 0.048996716727209504,
+            "margin_mean": 0.977621872095192,
+            "margin_std": 0.09615184997524137,
+            "energy_mean": -7.737122283791596,
+            "energy_std": 1.2631312539732729
+          },
+          "calibrated_threshold_far": {
+            "msp": {
+              "0.5": 0.012578616352201259,
+              "0.6": 0.012578616352201259,
+              "0.7": 0.012578616352201259,
+              "0.8": 0.012578616352201259,
+              "0.85": 0.012578616352201259,
+              "0.9": 0.006289308176100629,
+              "0.95": 0.0,
+              "0.98": 0.0
+            },
+            "margin": {
+              "0.2": 0.012578616352201259,
+              "0.35": 0.012578616352201259,
+              "0.5": 0.012578616352201259,
+              "0.65": 0.012578616352201259,
+              "0.8": 0.006289308176100629,
+              "0.9": 0.0
+            },
+            "energy": {
+              "-4.0": 0.012578616352201259,
+              "-6.0": 0.0,
+              "-8.0": 0.0,
+              "-10.0": 0.0,
+              "-12.0": 0.0,
+              "-14.0": 0.0
+            }
+          }
+        },
+        "suite_3_retail_non_target_produce": {
+          "samples": 2000,
+          "description": "Exotic non-target retail produce displays in market crates and wire baskets.",
+          "expected_behavior": "Rejection as negative_background (TNR >= 99%).",
+          "raw_architecture_rejection": {
+            "assigned_negative_background_rate": 0.998,
+            "tnr": 0.998,
+            "raw_false_fruit_acceptance_rate": 0.002,
+            "predicted_class_breakdown": {
+              "4": 1996,
+              "2": 4
+            }
+          },
+          "ood_detection_metrics": {
+            "auroc_energy": 0.5875754943880278,
+            "auroc_msp": 0.5419306520577232,
+            "aupr_in_distribution": 0.5767936579877402
+          },
+          "score_distributions": {
+            "msp_mean": 0.9943236506134272,
+            "msp_std": 0.03080911146330638,
+            "margin_mean": 0.9906263524144888,
+            "margin_std": 0.05324942073272232,
+            "energy_mean": -8.934967614173889,
+            "energy_std": 1.583026454978321
+          },
+          "calibrated_threshold_far": {
+            "msp": {
+              "0.5": 0.002,
+              "0.6": 0.002,
+              "0.7": 0.0015,
+              "0.8": 0.0005,
+              "0.85": 0.0005,
+              "0.9": 0.0005,
+              "0.95": 0.0005,
+              "0.98": 0.0
+            },
+            "margin": {
+              "0.2": 0.002,
+              "0.35": 0.002,
+              "0.5": 0.001,
+              "0.65": 0.0005,
+              "0.8": 0.0005,
+              "0.9": 0.0005
+            },
+            "energy": {
+              "-4.0": 0.001,
+              "-6.0": 0.0,
+              "-8.0": 0.0,
+              "-10.0": 0.0,
+              "-12.0": 0.0,
+              "-14.0": 0.0
+            }
+          }
+        }
+      }
+    },
+    "mobilenet_v3_large": {
+      "architecture": "mobilenet_v3_large",
+      "temperature": 1.500133752822876,
+      "validation_calibration_profile": {
+        "msp_operating_points": {
+          "0.5": {
+            "fruit_frr": 0.0
+          },
+          "0.6": {
+            "fruit_frr": 0.0010689470871191875
+          },
+          "0.7": {
+            "fruit_frr": 0.003206841261357563
+          },
+          "0.8": {
+            "fruit_frr": 0.004810261892036344
+          },
+          "0.85": {
+            "fruit_frr": 0.005344735435595938
+          },
+          "0.9": {
+            "fruit_frr": 0.009086050240513094
+          },
+          "0.95": {
+            "fruit_frr": 0.014965259219668627
+          },
+          "0.98": {
+            "fruit_frr": 0.025654730090860504
+          }
+        },
+        "margin_operating_points": {
+          "0.2": {
+            "fruit_frr": 0.0010689470871191875
+          },
+          "0.35": {
+            "fruit_frr": 0.002672367717797969
+          },
+          "0.5": {
+            "fruit_frr": 0.0037413148049171567
+          },
+          "0.65": {
+            "fruit_frr": 0.004810261892036344
+          },
+          "0.8": {
+            "fruit_frr": 0.008017103153393906
+          },
+          "0.9": {
+            "fruit_frr": 0.012292891501870658
+          }
+        },
+        "energy_operating_points": {
+          "-4.0": {
+            "fruit_frr": 0.0
+          },
+          "-6.0": {
+            "fruit_frr": 0.00694815606627472
+          },
+          "-8.0": {
+            "fruit_frr": 0.02351683591662213
+          },
+          "-10.0": {
+            "fruit_frr": 0.06627471940138963
+          },
+          "-12.0": {
+            "fruit_frr": 0.16835916622127206
+          },
+          "-14.0": {
+            "fruit_frr": 0.3778727952966328
+          }
+        }
+      },
+      "suites": {
+        "suite_1_canopy_illumination_stress": {
+          "samples": 1500,
+          "description": "Outdoor orchard tree canopy without target fruits across rainy, night, and direct noon illumination.",
+          "expected_behavior": "Rejection as negative_background (TNR >= 95%); 0% false acceptance as apple.",
+          "raw_architecture_rejection": {
+            "assigned_negative_background_rate": 1.0,
+            "tnr": 1.0,
+            "raw_false_fruit_acceptance_rate": 0.0,
+            "predicted_class_breakdown": {
+              "4": 1500
+            }
+          },
+          "ood_detection_metrics": {
+            "auroc_energy": 0.6983242472830928,
+            "auroc_msp": 0.6476869766613219,
+            "aupr_in_distribution": 0.7915653534494439
+          },
+          "score_distributions": {
+            "msp_mean": 0.9982098962068557,
+            "msp_std": 0.016886077686658178,
+            "margin_mean": 0.997106407225132,
+            "margin_std": 0.027446199507280635,
+            "energy_mean": -13.082175779660544,
+            "energy_std": 2.5987256691974303
+          },
+          "calibrated_threshold_far": {
+            "msp": {
+              "0.5": 0.0,
+              "0.6": 0.0,
+              "0.7": 0.0,
+              "0.8": 0.0,
+              "0.85": 0.0,
+              "0.9": 0.0,
+              "0.95": 0.0,
+              "0.98": 0.0
+            },
+            "margin": {
+              "0.2": 0.0,
+              "0.35": 0.0,
+              "0.5": 0.0,
+              "0.65": 0.0,
+              "0.8": 0.0,
+              "0.9": 0.0
+            },
+            "energy": {
+              "-4.0": 0.0,
+              "-6.0": 0.0,
+              "-8.0": 0.0,
+              "-10.0": 0.0,
+              "-12.0": 0.0,
+              "-14.0": 0.0
+            }
+          }
+        },
+        "suite_2_pathological_foliage_stress": {
+          "samples": 159,
+          "description": "Diseased citrus leaves and bark with canker, melanose, and greening lesions.",
+          "expected_behavior": "Rejection as negative_background (TNR >= 95%); 0% false acceptance as banana/mango.",
+          "raw_architecture_rejection": {
+            "assigned_negative_background_rate": 0.9937106918238994,
+            "tnr": 0.9937106918238994,
+            "raw_false_fruit_acceptance_rate": 0.006289308176100629,
+            "predicted_class_breakdown": {
+              "4": 158,
+              "2": 1
+            }
+          },
+          "ood_detection_metrics": {
+            "auroc_energy": 0.49880499783185256,
+            "auroc_msp": 0.49073915338046104,
+            "aupr_in_distribution": 0.9388888870173434
+          },
+          "score_distributions": {
+            "msp_mean": 0.9990153728791002,
+            "msp_std": 0.0067662998117957625,
+            "margin_mean": 0.9982103068123823,
+            "margin_std": 0.013018823318893279,
+            "energy_mean": -15.621033170688078,
+            "energy_std": 2.800293177936617
+          },
+          "calibrated_threshold_far": {
+            "msp": {
+              "0.5": 0.006289308176100629,
+              "0.6": 0.006289308176100629,
+              "0.7": 0.006289308176100629,
+              "0.8": 0.006289308176100629,
+              "0.85": 0.006289308176100629,
+              "0.9": 0.006289308176100629,
+              "0.95": 0.0,
+              "0.98": 0.0
+            },
+            "margin": {
+              "0.2": 0.006289308176100629,
+              "0.35": 0.006289308176100629,
+              "0.5": 0.006289308176100629,
+              "0.65": 0.006289308176100629,
+              "0.8": 0.006289308176100629,
+              "0.9": 0.0
+            },
+            "energy": {
+              "-4.0": 0.006289308176100629,
+              "-6.0": 0.006289308176100629,
+              "-8.0": 0.0,
+              "-10.0": 0.0,
+              "-12.0": 0.0,
+              "-14.0": 0.0
+            }
+          }
+        },
+        "suite_3_retail_non_target_produce": {
+          "samples": 2000,
+          "description": "Exotic non-target retail produce displays in market crates and wire baskets.",
+          "expected_behavior": "Rejection as negative_background (TNR >= 99%).",
+          "raw_architecture_rejection": {
+            "assigned_negative_background_rate": 0.996,
+            "tnr": 0.996,
+            "raw_false_fruit_acceptance_rate": 0.004,
+            "predicted_class_breakdown": {
+              "4": 1992,
+              "2": 7,
+              "0": 1
+            }
+          },
+          "ood_detection_metrics": {
+            "auroc_energy": 0.5717859433458043,
+            "auroc_msp": 0.5402636290753607,
+            "aupr_in_distribution": 0.5596973462453201
+          },
+          "score_distributions": {
+            "msp_mean": 0.9953107318729162,
+            "msp_std": 0.03593585617154419,
+            "margin_mean": 0.9914808815121651,
+            "margin_std": 0.06665752021683127,
+            "energy_mean": -14.898571558952332,
+            "energy_std": 4.197103814527414
+          },
+          "calibrated_threshold_far": {
+            "msp": {
+              "0.5": 0.003,
+              "0.6": 0.002,
+              "0.7": 0.0015,
+              "0.8": 0.0015,
+              "0.85": 0.001,
+              "0.9": 0.001,
+              "0.95": 0.001,
+              "0.98": 0.0005
+            },
+            "margin": {
+              "0.2": 0.0025,
+              "0.35": 0.002,
+              "0.5": 0.0015,
+              "0.65": 0.0015,
+              "0.8": 0.001,
+              "0.9": 0.001
+            },
+            "energy": {
+              "-4.0": 0.004,
+              "-6.0": 0.002,
+              "-8.0": 0.0015,
+              "-10.0": 0.0,
+              "-12.0": 0.0,
+              "-14.0": 0.0
+            }
+          }
+        }
+      }
+    }
+  }
+}

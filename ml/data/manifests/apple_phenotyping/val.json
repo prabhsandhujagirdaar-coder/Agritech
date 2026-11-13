@@ -1,0 +1,4114 @@
+[
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\251_brightness.jpg",
+    "filename": "251_brightness.jpg",
+    "group_id": "apple_orchard_251_brightness.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          121,
+          49,
+          310,
+          216
+        ],
+        "width": 189,
+        "height": 167,
+        "points_count": 39
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\2150_brightness.jpg",
+    "filename": "2150_brightness.jpg",
+    "group_id": "apple_orchard_2150_brightness.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          90,
+          54,
+          265,
+          209
+        ],
+        "width": 175,
+        "height": 155,
+        "points_count": 41
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\2040_brightness.jpg",
+    "filename": "2040_brightness.jpg",
+    "group_id": "apple_orchard_2040_brightness.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          151,
+          49,
+          281,
+          175
+        ],
+        "width": 130,
+        "height": 126,
+        "points_count": 32
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\3110_brightness.jpg",
+    "filename": "3110_brightness.jpg",
+    "group_id": "apple_orchard_3110_brightness.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          119,
+          68,
+          295,
+          226
+        ],
+        "width": 176,
+        "height": 158,
+        "points_count": 50
+      },
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          0,
+          245,
+          94,
+          277
+        ],
+        "width": 94,
+        "height": 32,
+        "points_count": 12
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\1360_brightness.jpg",
+    "filename": "1360_brightness.jpg",
+    "group_id": "apple_orchard_1360_brightness.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          97,
+          101,
+          235,
+          225
+        ],
+        "width": 138,
+        "height": 124,
+        "points_count": 38
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\1560_brightness.jpg",
+    "filename": "1560_brightness.jpg",
+    "group_id": "apple_orchard_1560_brightness.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          94,
+          41,
+          307,
+          252
+        ],
+        "width": 213,
+        "height": 211,
+        "points_count": 46
+      },
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          31,
+          206,
+          141,
+          277
+        ],
+        "width": 110,
+        "height": 71,
+        "points_count": 31
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_1390_brightness.jpg",
+    "filename": "IMG_1390_brightness.jpg",
+    "group_id": "apple_orchard_IMG_1390_brightness.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          74,
+          48,
+          282,
+          278
+        ],
+        "width": 208,
+        "height": 230,
+        "points_count": 68
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\2640_brightness.jpg",
+    "filename": "2640_brightness.jpg",
+    "group_id": "apple_orchard_2640_brightness.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          94,
+          41,
+          307,
+          251
+        ],
+        "width": 213,
+        "height": 210,
+        "points_count": 48
+      },
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          31,
+          205,
+          141,
+          277
+        ],
+        "width": 110,
+        "height": 72,
+        "points_count": 30
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\2950_brightness.jpg",
+    "filename": "2950_brightness.jpg",
+    "group_id": "apple_orchard_2950_brightness.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          155,
+          76,
+          300,
+          205
+        ],
+        "width": 145,
+        "height": 129,
+        "points_count": 47
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\2520_brightness.jpg",
+    "filename": "2520_brightness.jpg",
+    "group_id": "apple_orchard_2520_brightness.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          135,
+          75,
+          282,
+          202
+        ],
+        "width": 147,
+        "height": 127,
+        "points_count": 32
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\192_brightness.jpg",
+    "filename": "192_brightness.jpg",
+    "group_id": "apple_orchard_192_brightness.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          113,
+          95,
+          211,
+          197
+        ],
+        "width": 98,
+        "height": 102,
+        "points_count": 37
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\2710_brightness.jpg",
+    "filename": "2710_brightness.jpg",
+    "group_id": "apple_orchard_2710_brightness.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          134,
+          59,
+          315,
+          231
+        ],
+        "width": 181,
+        "height": 172,
+        "points_count": 43
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\2910_brightness.jpg",
+    "filename": "2910_brightness.jpg",
+    "group_id": "apple_orchard_2910_brightness.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          144,
+          16,
+          303,
+          184
+        ],
+        "width": 159,
+        "height": 168,
+        "points_count": 34
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\2590_brightness.jpg",
+    "filename": "2590_brightness.jpg",
+    "group_id": "apple_orchard_2590_brightness.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          33,
+          9,
+          244,
+          226
+        ],
+        "width": 211,
+        "height": 217,
+        "points_count": 40
+      },
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          216,
+          71,
+          358,
+          215
+        ],
+        "width": 142,
+        "height": 144,
+        "points_count": 48
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\1450_brightness.jpg",
+    "filename": "1450_brightness.jpg",
+    "group_id": "apple_orchard_1450_brightness.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          119,
+          72,
+          279,
+          218
+        ],
+        "width": 160,
+        "height": 146,
+        "points_count": 40
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\227_brightness.jpg",
+    "filename": "227_brightness.jpg",
+    "group_id": "apple_orchard_227_brightness.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          119,
+          50,
+          273,
+          212
+        ],
+        "width": 154,
+        "height": 162,
+        "points_count": 48
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\2200_brightness.jpg",
+    "filename": "2200_brightness.jpg",
+    "group_id": "apple_orchard_2200_brightness.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          92,
+          42,
+          263,
+          207
+        ],
+        "width": 171,
+        "height": 165,
+        "points_count": 36
+      },
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          39,
+          59,
+          108,
+          166
+        ],
+        "width": 69,
+        "height": 107,
+        "points_count": 21
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\2210_brightness.jpg",
+    "filename": "2210_brightness.jpg",
+    "group_id": "apple_orchard_2210_brightness.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          128,
+          43,
+          297,
+          212
+        ],
+        "width": 169,
+        "height": 169,
+        "points_count": 34
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_1406_brightness.jpg",
+    "filename": "IMG_1406_brightness.jpg",
+    "group_id": "apple_orchard_IMG_1406_brightness.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          119,
+          66,
+          296,
+          263
+        ],
+        "width": 177,
+        "height": 197,
+        "points_count": 92
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\1400_noise.jpg",
+    "filename": "1400_noise.jpg",
+    "group_id": "apple_orchard_1400_noise.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          142,
+          84,
+          271,
+          208
+        ],
+        "width": 129,
+        "height": 124,
+        "points_count": 39
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\1310_noise.jpg",
+    "filename": "1310_noise.jpg",
+    "group_id": "apple_orchard_1310_noise.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          132,
+          88,
+          273,
+          220
+        ],
+        "width": 141,
+        "height": 132,
+        "points_count": 37
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\2970_noise.jpg",
+    "filename": "2970_noise.jpg",
+    "group_id": "apple_orchard_2970_noise.jpg",
+    "dimensions": [
+      277,
+      369
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          82,
+          57,
+          172,
+          151
+        ],
+        "width": 90,
+        "height": 94,
+        "points_count": 36
+      },
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          63,
+          176,
+          181,
+          295
+        ],
+        "width": 118,
+        "height": 119,
+        "points_count": 40
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\2150_noise.jpg",
+    "filename": "2150_noise.jpg",
+    "group_id": "apple_orchard_2150_noise.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          90,
+          54,
+          265,
+          209
+        ],
+        "width": 175,
+        "height": 155,
+        "points_count": 41
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\172_noise.jpg",
+    "filename": "172_noise.jpg",
+    "group_id": "apple_orchard_172_noise.jpg",
+    "dimensions": [
+      277,
+      326
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          77,
+          116,
+          253,
+          283
+        ],
+        "width": 176,
+        "height": 167,
+        "points_count": 51
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\1560_noise.jpg",
+    "filename": "1560_noise.jpg",
+    "group_id": "apple_orchard_1560_noise.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          94,
+          41,
+          307,
+          252
+        ],
+        "width": 213,
+        "height": 211,
+        "points_count": 46
+      },
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          31,
+          206,
+          141,
+          277
+        ],
+        "width": 110,
+        "height": 71,
+        "points_count": 31
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\194_noise.jpg",
+    "filename": "194_noise.jpg",
+    "group_id": "apple_orchard_194_noise.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          105,
+          89,
+          250,
+          230
+        ],
+        "width": 145,
+        "height": 141,
+        "points_count": 51
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\223_noise.jpg",
+    "filename": "223_noise.jpg",
+    "group_id": "apple_orchard_223_noise.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          108,
+          49,
+          286,
+          230
+        ],
+        "width": 178,
+        "height": 181,
+        "points_count": 34
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\266_noise.jpg",
+    "filename": "266_noise.jpg",
+    "group_id": "apple_orchard_266_noise.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          145,
+          116,
+          246,
+          210
+        ],
+        "width": 101,
+        "height": 94,
+        "points_count": 38
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\2640_noise.jpg",
+    "filename": "2640_noise.jpg",
+    "group_id": "apple_orchard_2640_noise.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          94,
+          41,
+          307,
+          251
+        ],
+        "width": 213,
+        "height": 210,
+        "points_count": 48
+      },
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          31,
+          205,
+          141,
+          277
+        ],
+        "width": 110,
+        "height": 72,
+        "points_count": 30
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\2950_noise.jpg",
+    "filename": "2950_noise.jpg",
+    "group_id": "apple_orchard_2950_noise.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          155,
+          76,
+          300,
+          205
+        ],
+        "width": 145,
+        "height": 129,
+        "points_count": 47
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\1770_noise.jpg",
+    "filename": "1770_noise.jpg",
+    "group_id": "apple_orchard_1770_noise.jpg",
+    "dimensions": [
+      277,
+      369
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          78,
+          154,
+          165,
+          238
+        ],
+        "width": 87,
+        "height": 84,
+        "points_count": 33
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_1387_noise.jpg",
+    "filename": "IMG_1387_noise.jpg",
+    "group_id": "apple_orchard_IMG_1387_noise.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          102,
+          93,
+          264,
+          253
+        ],
+        "width": 162,
+        "height": 160,
+        "points_count": 75
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_1419_noise.jpg",
+    "filename": "IMG_1419_noise.jpg",
+    "group_id": "apple_orchard_IMG_1419_noise.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          121,
+          29,
+          356,
+          254
+        ],
+        "width": 235,
+        "height": 225,
+        "points_count": 67
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\1550_noise.jpg",
+    "filename": "1550_noise.jpg",
+    "group_id": "apple_orchard_1550_noise.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          0,
+          69,
+          136,
+          187
+        ],
+        "width": 136,
+        "height": 118,
+        "points_count": 32
+      },
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          205,
+          96,
+          318,
+          208
+        ],
+        "width": 113,
+        "height": 112,
+        "points_count": 71
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\256_noise.jpg",
+    "filename": "256_noise.jpg",
+    "group_id": "apple_orchard_256_noise.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          84,
+          34,
+          282,
+          212
+        ],
+        "width": 198,
+        "height": 178,
+        "points_count": 40
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\1290_noise.jpg",
+    "filename": "1290_noise.jpg",
+    "group_id": "apple_orchard_1290_noise.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 3,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          144,
+          99,
+          271,
+          207
+        ],
+        "width": 127,
+        "height": 108,
+        "points_count": 37
+      },
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          70,
+          221,
+          145,
+          277
+        ],
+        "width": 75,
+        "height": 56,
+        "points_count": 26
+      },
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          222,
+          245,
+          301,
+          277
+        ],
+        "width": 79,
+        "height": 32,
+        "points_count": 22
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\288_noise.jpg",
+    "filename": "288_noise.jpg",
+    "group_id": "apple_orchard_288_noise.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          121,
+          75,
+          254,
+          204
+        ],
+        "width": 133,
+        "height": 129,
+        "points_count": 36
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\267_noise.jpg",
+    "filename": "267_noise.jpg",
+    "group_id": "apple_orchard_267_noise.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          149,
+          65,
+          320,
+          219
+        ],
+        "width": 171,
+        "height": 154,
+        "points_count": 36
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\1460_noise.jpg",
+    "filename": "1460_noise.jpg",
+    "group_id": "apple_orchard_1460_noise.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          111,
+          37,
+          300,
+          214
+        ],
+        "width": 189,
+        "height": 177,
+        "points_count": 49
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_13650_noise.jpg",
+    "filename": "IMG_13650_noise.jpg",
+    "group_id": "apple_orchard_IMG_13650_noise.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          79,
+          54,
+          258,
+          244
+        ],
+        "width": 179,
+        "height": 190,
+        "points_count": 77
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\2340_noise.jpg",
+    "filename": "2340_noise.jpg",
+    "group_id": "apple_orchard_2340_noise.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 4,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          59,
+          32,
+          257,
+          235
+        ],
+        "width": 198,
+        "height": 203,
+        "points_count": 37
+      },
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          0,
+          1,
+          75,
+          128
+        ],
+        "width": 75,
+        "height": 127,
+        "points_count": 48
+      },
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          136,
+          9,
+          217,
+          49
+        ],
+        "width": 81,
+        "height": 40,
+        "points_count": 19
+      },
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          165,
+          0,
+          234,
+          51
+        ],
+        "width": 69,
+        "height": 51,
+        "points_count": 17
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\207_noise.jpg",
+    "filename": "207_noise.jpg",
+    "group_id": "apple_orchard_207_noise.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          107,
+          55,
+          246,
+          200
+        ],
+        "width": 139,
+        "height": 145,
+        "points_count": 50
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\2400_noise.jpg",
+    "filename": "2400_noise.jpg",
+    "group_id": "apple_orchard_2400_noise.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          132,
+          88,
+          272,
+          219
+        ],
+        "width": 140,
+        "height": 131,
+        "points_count": 46
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_6772.jpg",
+    "filename": "IMG_6772.jpg",
+    "group_id": "apple_orchard_IMG_6772.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          174,
+          95,
+          227,
+          152
+        ],
+        "width": 53,
+        "height": 57,
+        "points_count": 31
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_6780.jpg",
+    "filename": "IMG_6780.jpg",
+    "group_id": "apple_orchard_IMG_6780.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          184,
+          44,
+          238,
+          101
+        ],
+        "width": 54,
+        "height": 57,
+        "points_count": 26
+      },
+      {
+        "class": "immature apple",
+        "bbox": [
+          231,
+          70,
+          276,
+          119
+        ],
+        "width": 45,
+        "height": 49,
+        "points_count": 34
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_6782.jpg",
+    "filename": "IMG_6782.jpg",
+    "group_id": "apple_orchard_IMG_6782.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          194,
+          111,
+          286,
+          200
+        ],
+        "width": 92,
+        "height": 89,
+        "points_count": 34
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_6800.jpg",
+    "filename": "IMG_6800.jpg",
+    "group_id": "apple_orchard_IMG_6800.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          132,
+          103,
+          179,
+          151
+        ],
+        "width": 47,
+        "height": 48,
+        "points_count": 31
+      },
+      {
+        "class": "immature apple",
+        "bbox": [
+          0,
+          50,
+          33,
+          87
+        ],
+        "width": 33,
+        "height": 37,
+        "points_count": 26
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_6801.jpg",
+    "filename": "IMG_6801.jpg",
+    "group_id": "apple_orchard_IMG_6801.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          127,
+          105,
+          174,
+          152
+        ],
+        "width": 47,
+        "height": 47,
+        "points_count": 35
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_6803.jpg",
+    "filename": "IMG_6803.jpg",
+    "group_id": "apple_orchard_IMG_6803.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          109,
+          35,
+          212,
+          143
+        ],
+        "width": 103,
+        "height": 108,
+        "points_count": 48
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_6809.jpg",
+    "filename": "IMG_6809.jpg",
+    "group_id": "apple_orchard_IMG_6809.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          86,
+          66,
+          188,
+          166
+        ],
+        "width": 102,
+        "height": 100,
+        "points_count": 36
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_6815.jpg",
+    "filename": "IMG_6815.jpg",
+    "group_id": "apple_orchard_IMG_6815.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 3,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          0,
+          93,
+          78,
+          185
+        ],
+        "width": 78,
+        "height": 92,
+        "points_count": 30
+      },
+      {
+        "class": "immature apple",
+        "bbox": [
+          95,
+          48,
+          168,
+          113
+        ],
+        "width": 73,
+        "height": 65,
+        "points_count": 26
+      },
+      {
+        "class": "immature apple",
+        "bbox": [
+          287,
+          83,
+          347,
+          149
+        ],
+        "width": 60,
+        "height": 66,
+        "points_count": 41
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_6806.jpg",
+    "filename": "IMG_6806.jpg",
+    "group_id": "apple_orchard_IMG_6806.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 4,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          35,
+          66,
+          97,
+          139
+        ],
+        "width": 62,
+        "height": 73,
+        "points_count": 40
+      },
+      {
+        "class": "immature apple",
+        "bbox": [
+          184,
+          81,
+          251,
+          149
+        ],
+        "width": 67,
+        "height": 68,
+        "points_count": 32
+      },
+      {
+        "class": "immature apple",
+        "bbox": [
+          281,
+          40,
+          337,
+          97
+        ],
+        "width": 56,
+        "height": 57,
+        "points_count": 33
+      },
+      {
+        "class": "immature apple",
+        "bbox": [
+          251,
+          199,
+          304,
+          254
+        ],
+        "width": 53,
+        "height": 55,
+        "points_count": 32
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_6833.jpg",
+    "filename": "IMG_6833.jpg",
+    "group_id": "apple_orchard_IMG_6833.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          224,
+          126,
+          289,
+          181
+        ],
+        "width": 65,
+        "height": 55,
+        "points_count": 35
+      },
+      {
+        "class": "immature apple",
+        "bbox": [
+          275,
+          143,
+          341,
+          207
+        ],
+        "width": 66,
+        "height": 64,
+        "points_count": 34
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_6839.jpg",
+    "filename": "IMG_6839.jpg",
+    "group_id": "apple_orchard_IMG_6839.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          113,
+          84,
+          234,
+          200
+        ],
+        "width": 121,
+        "height": 116,
+        "points_count": 40
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_6882.jpg",
+    "filename": "IMG_6882.jpg",
+    "group_id": "apple_orchard_IMG_6882.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          133,
+          88,
+          273,
+          230
+        ],
+        "width": 140,
+        "height": 142,
+        "points_count": 47
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_1260.jpg",
+    "filename": "IMG_1260.jpg",
+    "group_id": "apple_orchard_IMG_1260.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          160,
+          85,
+          299,
+          236
+        ],
+        "width": 139,
+        "height": 151,
+        "points_count": 43
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_12400.jpg",
+    "filename": "IMG_12400.jpg",
+    "group_id": "apple_orchard_IMG_12400.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          198,
+          0,
+          319,
+          125
+        ],
+        "width": 121,
+        "height": 125,
+        "points_count": 33
+      },
+      {
+        "class": "mature apple",
+        "bbox": [
+          160,
+          175,
+          265,
+          284
+        ],
+        "width": 105,
+        "height": 109,
+        "points_count": 29
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_12460.jpg",
+    "filename": "IMG_12460.jpg",
+    "group_id": "apple_orchard_IMG_12460.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          178,
+          109,
+          307,
+          243
+        ],
+        "width": 129,
+        "height": 134,
+        "points_count": 35
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_12590.jpg",
+    "filename": "IMG_12590.jpg",
+    "group_id": "apple_orchard_IMG_12590.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          167,
+          84,
+          301,
+          226
+        ],
+        "width": 134,
+        "height": 142,
+        "points_count": 32
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_12650.jpg",
+    "filename": "IMG_12650.jpg",
+    "group_id": "apple_orchard_IMG_12650.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          114,
+          118,
+          222,
+          222
+        ],
+        "width": 108,
+        "height": 104,
+        "points_count": 41
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_12720.jpg",
+    "filename": "IMG_12720.jpg",
+    "group_id": "apple_orchard_IMG_12720.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          155,
+          93,
+          265,
+          215
+        ],
+        "width": 110,
+        "height": 122,
+        "points_count": 35
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_12810.jpg",
+    "filename": "IMG_12810.jpg",
+    "group_id": "apple_orchard_IMG_12810.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          159,
+          77,
+          305,
+          229
+        ],
+        "width": 146,
+        "height": 152,
+        "points_count": 49
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_1459.jpg",
+    "filename": "IMG_1459.jpg",
+    "group_id": "apple_orchard_IMG_1459.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          115,
+          53,
+          278,
+          246
+        ],
+        "width": 163,
+        "height": 193,
+        "points_count": 68
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_1460.jpg",
+    "filename": "IMG_1460.jpg",
+    "group_id": "apple_orchard_IMG_1460.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          136,
+          55,
+          306,
+          224
+        ],
+        "width": 170,
+        "height": 169,
+        "points_count": 64
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_1381.jpg",
+    "filename": "IMG_1381.jpg",
+    "group_id": "apple_orchard_IMG_1381.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          224,
+          64,
+          366,
+          194
+        ],
+        "width": 142,
+        "height": 130,
+        "points_count": 54
+      },
+      {
+        "class": "mature apple",
+        "bbox": [
+          110,
+          118,
+          233,
+          242
+        ],
+        "width": 123,
+        "height": 124,
+        "points_count": 78
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_13180.jpg",
+    "filename": "IMG_13180.jpg",
+    "group_id": "apple_orchard_IMG_13180.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          126,
+          24,
+          348,
+          253
+        ],
+        "width": 222,
+        "height": 229,
+        "points_count": 77
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_13220.jpg",
+    "filename": "IMG_13220.jpg",
+    "group_id": "apple_orchard_IMG_13220.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          144,
+          116,
+          298,
+          284
+        ],
+        "width": 154,
+        "height": 168,
+        "points_count": 81
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_13380.jpg",
+    "filename": "IMG_13380.jpg",
+    "group_id": "apple_orchard_IMG_13380.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          129,
+          60,
+          314,
+          277
+        ],
+        "width": 185,
+        "height": 217,
+        "points_count": 69
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_13700.jpg",
+    "filename": "IMG_13700.jpg",
+    "group_id": "apple_orchard_IMG_13700.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          73,
+          54,
+          297,
+          274
+        ],
+        "width": 224,
+        "height": 220,
+        "points_count": 80
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_13930.jpg",
+    "filename": "IMG_13930.jpg",
+    "group_id": "apple_orchard_IMG_13930.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          137,
+          116,
+          350,
+          303
+        ],
+        "width": 213,
+        "height": 187,
+        "points_count": 50
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_13960.jpg",
+    "filename": "IMG_13960.jpg",
+    "group_id": "apple_orchard_IMG_13960.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          54,
+          51,
+          255,
+          274
+        ],
+        "width": 201,
+        "height": 223,
+        "points_count": 96
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_14040.jpg",
+    "filename": "IMG_14040.jpg",
+    "group_id": "apple_orchard_IMG_14040.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          74,
+          59,
+          313,
+          260
+        ],
+        "width": 239,
+        "height": 201,
+        "points_count": 76
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_5385.jpg",
+    "filename": "IMG_5385.jpg",
+    "group_id": "apple_orchard_IMG_5385.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          147,
+          82,
+          296,
+          209
+        ],
+        "width": 149,
+        "height": 127,
+        "points_count": 49
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_5441.jpg",
+    "filename": "IMG_5441.jpg",
+    "group_id": "apple_orchard_IMG_5441.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          140,
+          67,
+          275,
+          184
+        ],
+        "width": 135,
+        "height": 117,
+        "points_count": 54
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_5467.jpg",
+    "filename": "IMG_5467.jpg",
+    "group_id": "apple_orchard_IMG_5467.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          105,
+          71,
+          224,
+          192
+        ],
+        "width": 119,
+        "height": 121,
+        "points_count": 68
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_5480.jpg",
+    "filename": "IMG_5480.jpg",
+    "group_id": "apple_orchard_IMG_5480.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          124,
+          111,
+          218,
+          211
+        ],
+        "width": 94,
+        "height": 100,
+        "points_count": 52
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_54130.jpg",
+    "filename": "IMG_54130.jpg",
+    "group_id": "apple_orchard_IMG_54130.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          98,
+          90,
+          255,
+          217
+        ],
+        "width": 157,
+        "height": 127,
+        "points_count": 52
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_54500.jpg",
+    "filename": "IMG_54500.jpg",
+    "group_id": "apple_orchard_IMG_54500.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          148,
+          102,
+          277,
+          217
+        ],
+        "width": 129,
+        "height": 115,
+        "points_count": 54
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_12330.jpg",
+    "filename": "IMG_12330.jpg",
+    "group_id": "apple_orchard_IMG_12330.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          112,
+          43,
+          290,
+          243
+        ],
+        "width": 178,
+        "height": 200,
+        "points_count": 70
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_54920.jpg",
+    "filename": "IMG_54920.jpg",
+    "group_id": "apple_orchard_IMG_54920.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          183,
+          46,
+          301,
+          166
+        ],
+        "width": 118,
+        "height": 120,
+        "points_count": 47
+      },
+      {
+        "class": "immature apple",
+        "bbox": [
+          134,
+          115,
+          236,
+          200
+        ],
+        "width": 102,
+        "height": 85,
+        "points_count": 47
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_54940.jpg",
+    "filename": "IMG_54940.jpg",
+    "group_id": "apple_orchard_IMG_54940.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          10,
+          114,
+          116,
+          206
+        ],
+        "width": 106,
+        "height": 92,
+        "points_count": 43
+      },
+      {
+        "class": "immature apple",
+        "bbox": [
+          296,
+          59,
+          379,
+          132
+        ],
+        "width": 83,
+        "height": 73,
+        "points_count": 32
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_55120.jpg",
+    "filename": "IMG_55120.jpg",
+    "group_id": "apple_orchard_IMG_55120.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          159,
+          104,
+          255,
+          191
+        ],
+        "width": 96,
+        "height": 87,
+        "points_count": 44
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_55140.jpg",
+    "filename": "IMG_55140.jpg",
+    "group_id": "apple_orchard_IMG_55140.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          155,
+          85,
+          259,
+          185
+        ],
+        "width": 104,
+        "height": 100,
+        "points_count": 42
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_55210.jpg",
+    "filename": "IMG_55210.jpg",
+    "group_id": "apple_orchard_IMG_55210.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          126,
+          107,
+          243,
+          224
+        ],
+        "width": 117,
+        "height": 117,
+        "points_count": 49
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_55230.jpg",
+    "filename": "IMG_55230.jpg",
+    "group_id": "apple_orchard_IMG_55230.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          139,
+          53,
+          295,
+          198
+        ],
+        "width": 156,
+        "height": 145,
+        "points_count": 50
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_55260.jpg",
+    "filename": "IMG_55260.jpg",
+    "group_id": "apple_orchard_IMG_55260.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          108,
+          181,
+          145,
+          218
+        ],
+        "width": 37,
+        "height": 37,
+        "points_count": 20
+      },
+      {
+        "class": "immature apple",
+        "bbox": [
+          190,
+          42,
+          329,
+          173
+        ],
+        "width": 139,
+        "height": 131,
+        "points_count": 37
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_55270.jpg",
+    "filename": "IMG_55270.jpg",
+    "group_id": "apple_orchard_IMG_55270.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          115,
+          76,
+          264,
+          209
+        ],
+        "width": 149,
+        "height": 133,
+        "points_count": 45
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_55630.jpg",
+    "filename": "IMG_55630.jpg",
+    "group_id": "apple_orchard_IMG_55630.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          25,
+          216,
+          86,
+          274
+        ],
+        "width": 61,
+        "height": 58,
+        "points_count": 32
+      },
+      {
+        "class": "immature apple",
+        "bbox": [
+          302,
+          3,
+          394,
+          91
+        ],
+        "width": 92,
+        "height": 88,
+        "points_count": 37
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_55730.jpg",
+    "filename": "IMG_55730.jpg",
+    "group_id": "apple_orchard_IMG_55730.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 3,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          90,
+          128,
+          200,
+          236
+        ],
+        "width": 110,
+        "height": 108,
+        "points_count": 43
+      },
+      {
+        "class": "immature apple",
+        "bbox": [
+          201,
+          115,
+          345,
+          242
+        ],
+        "width": 144,
+        "height": 127,
+        "points_count": 44
+      },
+      {
+        "class": "immature apple",
+        "bbox": [
+          252,
+          255,
+          345,
+          303
+        ],
+        "width": 93,
+        "height": 48,
+        "points_count": 31
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_55880.jpg",
+    "filename": "IMG_55880.jpg",
+    "group_id": "apple_orchard_IMG_55880.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          26,
+          158,
+          78,
+          204
+        ],
+        "width": 52,
+        "height": 46,
+        "points_count": 29
+      },
+      {
+        "class": "immature apple",
+        "bbox": [
+          337,
+          96,
+          395,
+          145
+        ],
+        "width": 58,
+        "height": 49,
+        "points_count": 31
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_56300.jpg",
+    "filename": "IMG_56300.jpg",
+    "group_id": "apple_orchard_IMG_56300.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          202,
+          91,
+          304,
+          186
+        ],
+        "width": 102,
+        "height": 95,
+        "points_count": 38
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\IMG_56310.jpg",
+    "filename": "IMG_56310.jpg",
+    "group_id": "apple_orchard_IMG_56310.jpg",
+    "dimensions": [
+      404,
+      303
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          201,
+          90,
+          304,
+          186
+        ],
+        "width": 103,
+        "height": 96,
+        "points_count": 37
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\416.jpg",
+    "filename": "416.jpg",
+    "group_id": "apple_orchard_416.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          116,
+          75,
+          184,
+          141
+        ],
+        "width": 68,
+        "height": 66,
+        "points_count": 33
+      },
+      {
+        "class": "immature apple",
+        "bbox": [
+          185,
+          56,
+          257,
+          129
+        ],
+        "width": 72,
+        "height": 73,
+        "points_count": 33
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\411.jpg",
+    "filename": "411.jpg",
+    "group_id": "apple_orchard_411.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          74,
+          132,
+          142,
+          190
+        ],
+        "width": 68,
+        "height": 58,
+        "points_count": 36
+      },
+      {
+        "class": "mature apple",
+        "bbox": [
+          190,
+          94,
+          300,
+          192
+        ],
+        "width": 110,
+        "height": 98,
+        "points_count": 38
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\397.jpg",
+    "filename": "397.jpg",
+    "group_id": "apple_orchard_397.jpg",
+    "dimensions": [
+      277,
+      369
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          110,
+          135,
+          212,
+          229
+        ],
+        "width": 102,
+        "height": 94,
+        "points_count": 37
+      },
+      {
+        "class": "immature apple",
+        "bbox": [
+          91,
+          334,
+          140,
+          369
+        ],
+        "width": 49,
+        "height": 35,
+        "points_count": 29
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\385.jpg",
+    "filename": "385.jpg",
+    "group_id": "apple_orchard_385.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          85,
+          44,
+          244,
+          187
+        ],
+        "width": 159,
+        "height": 143,
+        "points_count": 39
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\384.jpg",
+    "filename": "384.jpg",
+    "group_id": "apple_orchard_384.jpg",
+    "dimensions": [
+      277,
+      369
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          74,
+          166,
+          164,
+          244
+        ],
+        "width": 90,
+        "height": 78,
+        "points_count": 36
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\379.jpg",
+    "filename": "379.jpg",
+    "group_id": "apple_orchard_379.jpg",
+    "dimensions": [
+      277,
+      369
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          101,
+          172,
+          236,
+          284
+        ],
+        "width": 135,
+        "height": 112,
+        "points_count": 35
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\340.jpg",
+    "filename": "340.jpg",
+    "group_id": "apple_orchard_340.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          126,
+          88,
+          274,
+          232
+        ],
+        "width": 148,
+        "height": 144,
+        "points_count": 35
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\336.jpg",
+    "filename": "336.jpg",
+    "group_id": "apple_orchard_336.jpg",
+    "dimensions": [
+      277,
+      369
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          68,
+          92,
+          234,
+          260
+        ],
+        "width": 166,
+        "height": 168,
+        "points_count": 41
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\3210.jpg",
+    "filename": "3210.jpg",
+    "group_id": "apple_orchard_3210.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          163,
+          131,
+          273,
+          230
+        ],
+        "width": 110,
+        "height": 99,
+        "points_count": 41
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\3310.jpg",
+    "filename": "3310.jpg",
+    "group_id": "apple_orchard_3310.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          150,
+          102,
+          240,
+          182
+        ],
+        "width": 90,
+        "height": 80,
+        "points_count": 34
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\3320.jpg",
+    "filename": "3320.jpg",
+    "group_id": "apple_orchard_3320.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          148,
+          96,
+          271,
+          207
+        ],
+        "width": 123,
+        "height": 111,
+        "points_count": 37
+      },
+      {
+        "class": "mature apple",
+        "bbox": [
+          109,
+          50,
+          180,
+          90
+        ],
+        "width": 71,
+        "height": 40,
+        "points_count": 31
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\3450.jpg",
+    "filename": "3450.jpg",
+    "group_id": "apple_orchard_3450.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 3,
+    "stages_present": [
+      "mature apple",
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          100,
+          84,
+          231,
+          202
+        ],
+        "width": 131,
+        "height": 118,
+        "points_count": 42
+      },
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          1,
+          127,
+          64,
+          159
+        ],
+        "width": 63,
+        "height": 32,
+        "points_count": 25
+      },
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          86,
+          16,
+          125,
+          57
+        ],
+        "width": 39,
+        "height": 41,
+        "points_count": 24
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\3720.jpg",
+    "filename": "3720.jpg",
+    "group_id": "apple_orchard_3720.jpg",
+    "dimensions": [
+      277,
+      369
+    ],
+    "instance_count": 3,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          74,
+          95,
+          175,
+          204
+        ],
+        "width": 101,
+        "height": 109,
+        "points_count": 39
+      },
+      {
+        "class": "immature apple",
+        "bbox": [
+          196,
+          0,
+          277,
+          22
+        ],
+        "width": 81,
+        "height": 22,
+        "points_count": 13
+      },
+      {
+        "class": "immature apple",
+        "bbox": [
+          225,
+          14,
+          277,
+          101
+        ],
+        "width": 52,
+        "height": 87,
+        "points_count": 22
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\3860.jpg",
+    "filename": "3860.jpg",
+    "group_id": "apple_orchard_3860.jpg",
+    "dimensions": [
+      277,
+      369
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          34,
+          103,
+          169,
+          225
+        ],
+        "width": 135,
+        "height": 122,
+        "points_count": 40
+      },
+      {
+        "class": "immature apple",
+        "bbox": [
+          175,
+          0,
+          271,
+          44
+        ],
+        "width": 96,
+        "height": 44,
+        "points_count": 27
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\3870.jpg",
+    "filename": "3870.jpg",
+    "group_id": "apple_orchard_3870.jpg",
+    "dimensions": [
+      277,
+      369
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          82,
+          100,
+          198,
+          207
+        ],
+        "width": 116,
+        "height": 107,
+        "points_count": 37
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\3880.jpg",
+    "filename": "3880.jpg",
+    "group_id": "apple_orchard_3880.jpg",
+    "dimensions": [
+      277,
+      369
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          102,
+          125,
+          193,
+          214
+        ],
+        "width": 91,
+        "height": 89,
+        "points_count": 32
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\4141.jpg",
+    "filename": "4141.jpg",
+    "group_id": "apple_orchard_4141.jpg",
+    "dimensions": [
+      277,
+      369
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          123,
+          39,
+          230,
+          145
+        ],
+        "width": 107,
+        "height": 106,
+        "points_count": 35
+      },
+      {
+        "class": "immature apple",
+        "bbox": [
+          86,
+          191,
+          187,
+          284
+        ],
+        "width": 101,
+        "height": 93,
+        "points_count": 39
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\3460.jpg",
+    "filename": "3460.jpg",
+    "group_id": "apple_orchard_3460.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 4,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          175,
+          54,
+          327,
+          209
+        ],
+        "width": 152,
+        "height": 155,
+        "points_count": 36
+      },
+      {
+        "class": "mature apple",
+        "bbox": [
+          298,
+          154,
+          349,
+          207
+        ],
+        "width": 51,
+        "height": 53,
+        "points_count": 24
+      },
+      {
+        "class": "mature apple",
+        "bbox": [
+          337,
+          157,
+          369,
+          218
+        ],
+        "width": 32,
+        "height": 61,
+        "points_count": 15
+      },
+      {
+        "class": "mature apple",
+        "bbox": [
+          0,
+          164,
+          78,
+          277
+        ],
+        "width": 78,
+        "height": 113,
+        "points_count": 54
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\170.jpg",
+    "filename": "170.jpg",
+    "group_id": "apple_orchard_170.jpg",
+    "dimensions": [
+      277,
+      369
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          88,
+          80,
+          239,
+          228
+        ],
+        "width": 151,
+        "height": 148,
+        "points_count": 71
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\166.jpg",
+    "filename": "166.jpg",
+    "group_id": "apple_orchard_166.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          135,
+          69,
+          274,
+          206
+        ],
+        "width": 139,
+        "height": 137,
+        "points_count": 46
+      },
+      {
+        "class": "immature apple",
+        "bbox": [
+          0,
+          200,
+          15,
+          245
+        ],
+        "width": 15,
+        "height": 45,
+        "points_count": 14
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\1870.jpg",
+    "filename": "1870.jpg",
+    "group_id": "apple_orchard_1870.jpg",
+    "dimensions": [
+      277,
+      369
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          69,
+          129,
+          208,
+          253
+        ],
+        "width": 139,
+        "height": 124,
+        "points_count": 48
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\114.jpg",
+    "filename": "114.jpg",
+    "group_id": "apple_orchard_114.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 3,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          34,
+          30,
+          227,
+          227
+        ],
+        "width": 193,
+        "height": 197,
+        "points_count": 47
+      },
+      {
+        "class": "mature apple",
+        "bbox": [
+          212,
+          92,
+          297,
+          217
+        ],
+        "width": 85,
+        "height": 125,
+        "points_count": 44
+      },
+      {
+        "class": "mature apple",
+        "bbox": [
+          329,
+          37,
+          369,
+          128
+        ],
+        "width": 40,
+        "height": 91,
+        "points_count": 27
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\111.jpg",
+    "filename": "111.jpg",
+    "group_id": "apple_orchard_111.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          81,
+          39,
+          286,
+          232
+        ],
+        "width": 205,
+        "height": 193,
+        "points_count": 45
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\1090.jpg",
+    "filename": "1090.jpg",
+    "group_id": "apple_orchard_1090.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          118,
+          57,
+          250,
+          192
+        ],
+        "width": 132,
+        "height": 135,
+        "points_count": 36
+      },
+      {
+        "class": "mature apple",
+        "bbox": [
+          155,
+          225,
+          223,
+          277
+        ],
+        "width": 68,
+        "height": 52,
+        "points_count": 20
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\1130.jpg",
+    "filename": "1130.jpg",
+    "group_id": "apple_orchard_1130.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 3,
+    "stages_present": [
+      "mature apple",
+      "semi-mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          94,
+          79,
+          231,
+          213
+        ],
+        "width": 137,
+        "height": 134,
+        "points_count": 37
+      },
+      {
+        "class": "semi-mature apple",
+        "bbox": [
+          338,
+          36,
+          369,
+          100
+        ],
+        "width": 31,
+        "height": 64,
+        "points_count": 25
+      },
+      {
+        "class": "mature apple",
+        "bbox": [
+          153,
+          256,
+          206,
+          277
+        ],
+        "width": 53,
+        "height": 21,
+        "points_count": 18
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\1180.jpg",
+    "filename": "1180.jpg",
+    "group_id": "apple_orchard_1180.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          106,
+          16,
+          301,
+          190
+        ],
+        "width": 195,
+        "height": 174,
+        "points_count": 42
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\1210.jpg",
+    "filename": "1210.jpg",
+    "group_id": "apple_orchard_1210.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          115,
+          81,
+          255,
+          217
+        ],
+        "width": 140,
+        "height": 136,
+        "points_count": 39
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\1220.jpg",
+    "filename": "1220.jpg",
+    "group_id": "apple_orchard_1220.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          174,
+          79,
+          286,
+          193
+        ],
+        "width": 112,
+        "height": 114,
+        "points_count": 34
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\107.jpg",
+    "filename": "107.jpg",
+    "group_id": "apple_orchard_107.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 1,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          148,
+          71,
+          283,
+          188
+        ],
+        "width": 135,
+        "height": 117,
+        "points_count": 49
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\22000.jpg",
+    "filename": "22000.jpg",
+    "group_id": "apple_orchard_22000.jpg",
+    "dimensions": [
+      369,
+      277
+    ],
+    "instance_count": 5,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          0,
+          128,
+          32,
+          223
+        ],
+        "width": 32,
+        "height": 95,
+        "points_count": 12
+      },
+      {
+        "class": "mature apple",
+        "bbox": [
+          45,
+          79,
+          74,
+          112
+        ],
+        "width": 29,
+        "height": 33,
+        "points_count": 17
+      },
+      {
+        "class": "mature apple",
+        "bbox": [
+          75,
+          96,
+          174,
+          187
+        ],
+        "width": 99,
+        "height": 91,
+        "points_count": 36
+      },
+      {
+        "class": "mature apple",
+        "bbox": [
+          165,
+          114,
+          272,
+          225
+        ],
+        "width": 107,
+        "height": 111,
+        "points_count": 34
+      },
+      {
+        "class": "mature apple",
+        "bbox": [
+          58,
+          255,
+          125,
+          277
+        ],
+        "width": 67,
+        "height": 22,
+        "points_count": 11
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\78.jpg",
+    "filename": "78.jpg",
+    "group_id": "apple_orchard_78.jpg",
+    "dimensions": [
+      277,
+      369
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          149,
+          136,
+          270,
+          252
+        ],
+        "width": 121,
+        "height": 116,
+        "points_count": 35
+      },
+      {
+        "class": "mature apple",
+        "bbox": [
+          63,
+          142,
+          154,
+          236
+        ],
+        "width": 91,
+        "height": 94,
+        "points_count": 36
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\79.jpg",
+    "filename": "79.jpg",
+    "group_id": "apple_orchard_79.jpg",
+    "dimensions": [
+      277,
+      369
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          55,
+          83,
+          155,
+          194
+        ],
+        "width": 100,
+        "height": 111,
+        "points_count": 39
+      },
+      {
+        "class": "mature apple",
+        "bbox": [
+          149,
+          111,
+          263,
+          222
+        ],
+        "width": 114,
+        "height": 111,
+        "points_count": 37
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\8100.jpg",
+    "filename": "8100.jpg",
+    "group_id": "apple_orchard_8100.jpg",
+    "dimensions": [
+      277,
+      369
+    ],
+    "instance_count": 3,
+    "stages_present": [
+      "mature apple"
+    ],
+    "instances": [
+      {
+        "class": "mature apple",
+        "bbox": [
+          77,
+          105,
+          214,
+          249
+        ],
+        "width": 137,
+        "height": 144,
+        "points_count": 37
+      },
+      {
+        "class": "mature apple",
+        "bbox": [
+          145,
+          54,
+          240,
+          152
+        ],
+        "width": 95,
+        "height": 98,
+        "points_count": 32
+      },
+      {
+        "class": "mature apple",
+        "bbox": [
+          192,
+          21,
+          251,
+          82
+        ],
+        "width": 59,
+        "height": 61,
+        "points_count": 34
+      }
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\apple\\dataset\\dataset-20260508\\val\\3810.jpg",
+    "filename": "3810.jpg",
+    "group_id": "apple_orchard_3810.jpg",
+    "dimensions": [
+      277,
+      369
+    ],
+    "instance_count": 2,
+    "stages_present": [
+      "immature apple"
+    ],
+    "instances": [
+      {
+        "class": "immature apple",
+        "bbox": [
+          57,
+          167,
+          217,
+          323
+        ],
+        "width": 160,
+        "height": 156,
+        "points_count": 42
+      },
+      {
+        "class": "immature apple",
+        "bbox": [
+          152,
+          0,
+          277,
+          43
+        ],
+        "width": 125,
+        "height": 43,
+        "points_count": 14
+      }
+    ]
+  }
+]

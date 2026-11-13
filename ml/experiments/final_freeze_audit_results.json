@@ -1,0 +1,220 @@
+{
+  "timestamp": "2026-11-01T15:46:20Z",
+  "runtime_stack": {
+    "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+    "pytorch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "os": "Microsoft Windows 11 Home Single Language (Build 26300, x86_64)",
+    "node": "v22.19.0",
+    "nextjs": "14.2.35",
+    "active_persistence": "Authoritative JSON State Ledger (.persisted_session.json)",
+    "inactive_persistence": "PostgreSQL 16 / PostGIS 3.4 (Offline on host: port 5432 closed)"
+  },
+  "checkpoints": {
+    "best_guava_resnet18.pth": {
+      "hash": "b213059f6b9744915ef921f2be70de9ae1eb0dd6c50a3fb0edce0e2cb710f5b4",
+      "verified": true
+    },
+    "best_banana_resnet18.pth": {
+      "hash": "3b296ba8556d88bd934f74fee1e88860921fe69dd5b4869984fd0c529f339dae",
+      "verified": true
+    },
+    "best_fruit_identifier_mobilenet_v3_large.pth": {
+      "hash": "273674bcebad518ecde2dc55aee558d452ac2d4c09dd1924ad61f4328ab81356",
+      "verified": true
+    },
+    "best_fruit_identifier_resnet18.pth": {
+      "hash": "07150d1ddb92ea8ce7018e08fa6c3d21b6b6de6aac9c5feb838d6f9dc28a8967",
+      "verified": true
+    },
+    "best_apple_yolov8n.pt": {
+      "hash": "02a89b45ead457a8aedfd36fd78e23dd959c410becdd380c61ffef0b3e21d8e2",
+      "verified": true
+    }
+  },
+  "farmer_workflows": {
+    "guava": {
+      "predicted_class": "Mature Green",
+      "class_index": 1,
+      "label": "Mature Green",
+      "confidence": 0.8147,
+      "probabilities": {
+        "Green": 0.1683,
+        "Mature Green": 0.8147,
+        "Ripe": 0.017
+      },
+      "target_crop": "guava",
+      "model_name": "resnet18",
+      "model_version": "2.0.0",
+      "device": "cuda",
+      "inference_ms": 1482.75,
+      "detected_fruit": null,
+      "fruit_confidence": null,
+      "fruit_probabilities": null,
+      "ripeness": "Mature Green",
+      "status": "ready",
+      "is_validated": true,
+      "warnings": null
+    },
+    "banana": {
+      "predicted_class": "Ripe",
+      "class_index": 2,
+      "label": "Ripe",
+      "confidence": 0.8989,
+      "probabilities": {
+        "Unripe": 0.0038,
+        "Half_Ripe": 0.0638,
+        "Ripe": 0.8989,
+        "Overripe": 0.0334
+      },
+      "target_crop": "banana",
+      "model_name": "resnet18",
+      "model_version": "1.0.0",
+      "device": "cuda",
+      "inference_ms": 12.62,
+      "detected_fruit": null,
+      "fruit_confidence": null,
+      "fruit_probabilities": null,
+      "ripeness": "Ripe",
+      "status": "ready",
+      "is_validated": true,
+      "warnings": null
+    },
+    "apple": {
+      "task": "object_detection",
+      "detected_apples_count": 2,
+      "boxes": [
+        {
+          "x1": 127.8,
+          "y1": 98.9,
+          "x2": 251.4,
+          "y2": 207.3,
+          "confidence": 0.9609,
+          "class_id": 0,
+          "class_name": "apple"
+        },
+        {
+          "x1": 104.2,
+          "y1": 0.0,
+          "x2": 166.2,
+          "y2": 34.4,
+          "confidence": 0.8126,
+          "class_id": 0,
+          "class_name": "apple"
+        }
+      ],
+      "average_confidence": 0.8867,
+      "model_name": "yolov8n",
+      "model_version": "1.0.0-experimental",
+      "license": "Academic / Non-Commercial Research Only (CC BY-NC 4.0)",
+      "scope_disclaimer": "This experimental model performs orchard object detection and instance counting only. It does NOT evaluate maturity stages, ripeness, sweetness, disease, or commercial market grade."
+    },
+    "mango": {
+      "status": "unavailable",
+      "reason": "Mango maturity prediction is unavailable. Awaiting validated multi-stage harvest dataset. In compliance with AgriChain AI integrity standards, cross-crop proxy models and synthetic predictions are strictly disabled."
+    },
+    "auto_id": {
+      "predicted_fruit": "guava",
+      "confidence": 1.0,
+      "probabilities": {
+        "guava": 1.0,
+        "banana": 0.0,
+        "apple": 0.0,
+        "mango": 0.0,
+        "negative_background": 0.0
+      },
+      "is_uncertain": false,
+      "uncertainty_reason": null,
+      "model_name": "mobilenet_v3_large",
+      "model_version": "2.0.0"
+    },
+    "foliage_fallback": {
+      "predicted_fruit": "negative_background",
+      "confidence": 1.0,
+      "probabilities": {
+        "guava": 0.0,
+        "banana": 0.0,
+        "apple": 0.0,
+        "mango": 0.0,
+        "negative_background": 1.0
+      },
+      "is_uncertain": true,
+      "uncertainty_reason": "Non-fruit canopy or background foliage detected. Please upload an image centered on produce.",
+      "model_name": "mobilenet_v3_large",
+      "model_version": "2.0.0"
+    }
+  },
+  "logistics_workflows": {
+    "shipment_id": "SHP-2026-047",
+    "waypoints_count": 3,
+    "telemetry_count": 3,
+    "srid": 4326
+  },
+  "dealer_workflows": {
+    "facility_id": "FAC-DL-AZD-01",
+    "facility_name": "Azadpur APMC Fruit & Vegetable Mega Mandi",
+    "operation": "market_auction",
+    "crop": "guava",
+    "suitable": true,
+    "suitability_status": "verified_guava_trading",
+    "capabilities": {
+      "guava_trading": "verified",
+      "guava_handling": "not_verified",
+      "guava_cold_chain": "partially_verified",
+      "operational_availability": "active"
+    },
+    "warnings": [],
+    "evidence_summary": "Facility 'Azadpur APMC Fruit & Vegetable Mega Mandi' (MANDI): Trading=VERIFIED, Handling=NOT_VERIFIED, ColdChain=PARTIALLY_VERIFIED, Availability=ACTIVE.",
+    "source_citation": {
+      "source_name": "APMC Azadpur (Market of National Importance) / Govt of NCT of Delhi",
+      "source_record": "APMC Azadpur Terminal Market Directory & e-NAM Trading Hub",
+      "source_url": "https://apmcazadpurdelhi.com/",
+      "source_citation_type": "official_portal",
+      "verification_status": "verified",
+      "coordinate_source": "Azadpur APMC Market Office Complex, WGS84 Geocode",
+      "geocoding_confidence": "facility_campus"
+    }
+  },
+  "buyer_workflows": {
+    "id": "ORD-2026-0030",
+    "listing_id": "LST-GUA-001",
+    "produce_title": "Guava Premium Crate (Ripe)",
+    "variety": "Allahabad Safeda",
+    "ripeness_stage": "Ripe",
+    "quantity_crates": 4,
+    "total_weight_kg": 80,
+    "unit_price_inr": 1200,
+    "total_price_inr": 4800,
+    "currency": "INR",
+    "buyer_name": "Final Freeze Demo Retailer",
+    "buyer_organization": "Delhi Agro Co-op",
+    "shipping_destination": "Azadpur Mandi, Delhi",
+    "status": "confirmed",
+    "is_demo_order": true,
+    "simulation_notice": "DEMO WORKFLOW SIMULATION \u2014 No real payment processed and no legal financial obligation created.",
+    "created_at": "2026-11-01T15:46:25.153793+00:00"
+  },
+  "admin_workflows": {
+    "status": "ready",
+    "target_crop": "guava",
+    "model_available": true,
+    "model_name": "resnet18",
+    "model_version": "2.0.0",
+    "weights_path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\ml\\artifacts\\best_guava_resnet18.pth",
+    "weights_exist": true,
+    "device": "cuda",
+    "class_mapping_verified": true,
+    "class_mapping_status": "VERIFIED_GROUND_TRUTH_METADATA",
+    "message": "Model loaded successfully on cuda for guava."
+  },
+  "persistence_audit": {
+    "verified_resilient": true,
+    "shipment_id": "SHP-2026-047",
+    "waypoints_preserved": 3,
+    "telemetry_preserved": 3,
+    "active_subsystem": "JSON-based persistent state ledger",
+    "inactive_subsystem": "PostgreSQL/PostGIS deployment schema"
+  },
+  "overall_status": "VERIFIED_FROZEN_READY"
+}

@@ -1,0 +1,3269 @@
+[
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Half_Ripe_Bottom_0004.jpg",
+    "filename": "Ambon_Half_Ripe_Bottom_0004.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0003",
+    "sha256": "183034d766a31dc712b281310e3ffd010ddafdbe673ececfacec9f23cbdebe0c",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Half_Ripe_Bottom_0013.jpg",
+    "filename": "Ambon_Half_Ripe_Bottom_0013.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0012",
+    "sha256": "b44348241a13815a1bb36ea6a912937bdcdbc32f08f30df2ae03139273c40761",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Half_Ripe_Bottom_0014.jpg",
+    "filename": "Ambon_Half_Ripe_Bottom_0014.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0013",
+    "sha256": "56b849a7b4e12d9a54fd85adf1bd8782cfe5fcab4e24eef1c3906004fc17fcdf",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Half_Ripe_Bottom_0016.jpg",
+    "filename": "Ambon_Half_Ripe_Bottom_0016.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0015",
+    "sha256": "84339607ab68602a55c6cbc5a52af3f22d1e3ca7ac11266919e2da1eb1404b14",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Half_Ripe_Bottom_0017.jpg",
+    "filename": "Ambon_Half_Ripe_Bottom_0017.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0016",
+    "sha256": "68245c3dd1dc6802f7f4050a9c1c7fe818b51efd3b4bf6d4701c722f4a64b419",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Half_Ripe_Bottom_0023.jpg",
+    "filename": "Ambon_Half_Ripe_Bottom_0023.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0022",
+    "sha256": "e273d78400262427a1b8802f8e02f3a2c1db1d0ab378db7745e6b85c163d10ca",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Half_Ripe_Left_0009.jpg",
+    "filename": "Ambon_Half_Ripe_Left_0009.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0040",
+    "sha256": "dc9442e07d029e25edc4f75505bd6ceb59fdda16f562118fe25be8e49ad81ddc",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Half_Ripe_Left_0013.jpg",
+    "filename": "Ambon_Half_Ripe_Left_0013.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0044",
+    "sha256": "596260d1b7ce228254a312183ee33d62b5db30fa2a86c1be7fe8d4bdc37a7665",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Half_Ripe_Left_0016.jpg",
+    "filename": "Ambon_Half_Ripe_Left_0016.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0047",
+    "sha256": "9744ae63307d7a8ef6baec989aaae30471315c7fb399ae3c90dd7026092e754b",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Half_Ripe_Left_0018.jpg",
+    "filename": "Ambon_Half_Ripe_Left_0018.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0049",
+    "sha256": "5439a0d19cd43ea1946f1bf10a2ad05c0b8e37f742c036d0e2549192ca1a08a2",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Half_Ripe_Left_0021.jpg",
+    "filename": "Ambon_Half_Ripe_Left_0021.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0052",
+    "sha256": "2e6376b5bd60783f0ba8b4b7a0341feb6bcae4916534be01ca8d070a1cb01170",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Half_Ripe_Left_0026.jpg",
+    "filename": "Ambon_Half_Ripe_Left_0026.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0057",
+    "sha256": "40127c35e8bc26ec90b891ce5888787375c26eddb66da1c928c3a72333e396d6",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Half_Ripe_Left_0032.jpg",
+    "filename": "Ambon_Half_Ripe_Left_0032.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0063",
+    "sha256": "6e6add62c6a99815eb6a34b44ca2234d7be52725da7a8b8697226b46f62e9ec3",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Half_Ripe_Right_0007.jpg",
+    "filename": "Ambon_Half_Ripe_Right_0007.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0071",
+    "sha256": "ea6551ada3974fa74bfb616699a7e76a0b7f37b5f34672832b1b8ba002799f4d",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Half_Ripe_Right_0015.jpg",
+    "filename": "Ambon_Half_Ripe_Right_0015.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0079",
+    "sha256": "880baf1702dedcbc30413b618ebffa6b7f56b6eda7dc5918ebe73e5de81e6e4c",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Half_Ripe_Right_0017.jpg",
+    "filename": "Ambon_Half_Ripe_Right_0017.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0081",
+    "sha256": "4e01037003fa7da6f3969ef99c0df4afb5a5aac75fda5a3e4ad288149bf1b0e0",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Half_Ripe_Top_0001.jpg",
+    "filename": "Ambon_Half_Ripe_Top_0001.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0098",
+    "sha256": "198130d85914b5cca4af5979c616649eacb3932291b251b297c48bf1de7106a0",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Half_Ripe_Top_0004.jpg",
+    "filename": "Ambon_Half_Ripe_Top_0004.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0101",
+    "sha256": "a01daae6459467c5463d9e180f083cdbf52bed6f145d6d64ac432aaad12ccbe2",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Half_Ripe_Top_0013.jpg",
+    "filename": "Ambon_Half_Ripe_Top_0013.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0110",
+    "sha256": "a232ace9dfabc44bc1643bfa41f8f82086d8b26c6894418543200553d2d6264e",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Half_Ripe_Top_0014.jpg",
+    "filename": "Ambon_Half_Ripe_Top_0014.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0111",
+    "sha256": "52a7fc303b70a71f3f3a5a0ad58c9fb70234512acdbf7cf0423515c3515ebaf5",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Half_Ripe_Top_0015.jpg",
+    "filename": "Ambon_Half_Ripe_Top_0015.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0112",
+    "sha256": "73c4d8f15f9a7b35de9aeeab9c2d494548258b0bbfb5316e1cbc10772cdf4ebd",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Half_Ripe_Top_0017.jpg",
+    "filename": "Ambon_Half_Ripe_Top_0017.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0114",
+    "sha256": "1382b4d58caa6934357f51004d57fd7480211802ae27743e26be05f03e11a717",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Half_Ripe_Top_0022.jpg",
+    "filename": "Ambon_Half_Ripe_Top_0022.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0119",
+    "sha256": "487a76ece8167e7dc07923762b804f6f4abce9d66f7179f729c31ebc4a421c4c",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Half_Ripe_Top_0028.jpg",
+    "filename": "Ambon_Half_Ripe_Top_0028.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0125",
+    "sha256": "782a9cb31d869ef8f996ae54d8a43cc89385de71d91af716fa426d0edb5592cc",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Overripe_Bottom_0001.jpg",
+    "filename": "Ambon_Overripe_Bottom_0001.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0476",
+    "sha256": "55eee7d26f807876a8bb9b0b2fde772c3f9dbec65cfc2948442370ade5845bf1",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Overripe_Bottom_0015.jpg",
+    "filename": "Ambon_Overripe_Bottom_0015.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0490",
+    "sha256": "ea5b7252fbae6e8fe1b584531dee11a7e7ed6725711cd9d7f69d7acf7ca9f9be",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Overripe_Bottom_0020.jpg",
+    "filename": "Ambon_Overripe_Bottom_0020.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0495",
+    "sha256": "976d9c9eb0e7bbf052da99db7ba45cdba9b750fadfc1ce39ec2fa7a16740b745",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Overripe_Bottom_0023.jpg",
+    "filename": "Ambon_Overripe_Bottom_0023.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0498",
+    "sha256": "41508c000db7b50c9c96de48266afcf003822353db14cb3cf56833e9caa07e57",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Overripe_Left_0013.jpg",
+    "filename": "Ambon_Overripe_Left_0013.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0511",
+    "sha256": "86514b6f452c5bfecaff7d07df3af9a2b4076b7182a4918e56cdc7b11d88d4f9",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Overripe_Right_0010.jpg",
+    "filename": "Ambon_Overripe_Right_0010.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0531",
+    "sha256": "97b10c472e5205aff64cc33f48d97b91dbc50fabc5d729703740ef8785315ddd",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Overripe_Right_0014.jpg",
+    "filename": "Ambon_Overripe_Right_0014.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0535",
+    "sha256": "c6a05708a5b762841e5cee22821b0137c465aa722d82dc9500a3d2d0ce95a22c",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Overripe_Right_0018.jpg",
+    "filename": "Ambon_Overripe_Right_0018.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0539",
+    "sha256": "06895c9c8eef6fa4d81df664bc7175816fe0c181e6db207173af223297a3da11",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Overripe_Right_0020.jpg",
+    "filename": "Ambon_Overripe_Right_0020.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0541",
+    "sha256": "f384f4134919451ff2ba61bf07a5d73fd59c5b233a4cee55ab8d34b92a5ba4fe",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Ripe_Bottom_0003.jpg",
+    "filename": "Ambon_Ripe_Bottom_0003.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0921",
+    "sha256": "dbe56d43f035ff489168a9adf01ca40538c0849100a19a495fabd59dd70fa75f",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Ripe_Bottom_0022.jpg",
+    "filename": "Ambon_Ripe_Bottom_0022.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0940",
+    "sha256": "1d1a6914726bbb02a6fbf57182a464f92d449f0feade3068fcadd0ad84d1afbc",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Ripe_Bottom_0027.jpg",
+    "filename": "Ambon_Ripe_Bottom_0027.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0945",
+    "sha256": "3dda516b211f9cf8b86c5d10b430410774c61c66f2a110a2600dc90b660d4c3c",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Ripe_Bottom_0034.jpg",
+    "filename": "Ambon_Ripe_Bottom_0034.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0952",
+    "sha256": "449e82a042cf9cb37da86b140d6d7e294fa9e46faca2791ce3db3c27dd1c4a3e",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Ripe_Left_0001.jpg",
+    "filename": "Ambon_Ripe_Left_0001.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0959",
+    "sha256": "b8cca2fbdc1d6fb7453b994550ae53d0f899b88a9438df487b0f94e95ebd455a",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Ripe_Left_0002.jpg",
+    "filename": "Ambon_Ripe_Left_0002.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0960",
+    "sha256": "a71a2649176f2fbbfb606175199a4943fbca743c90c760a495fca3500826dd0a",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Ripe_Left_0023.jpg",
+    "filename": "Ambon_Ripe_Left_0023.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0980",
+    "sha256": "b97b20fb4a7ee5be1dcd9e0f5db92ed2505bc8fa973f2245348780232d6ed43a",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Ripe_Left_0034.jpg",
+    "filename": "Ambon_Ripe_Left_0034.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0991",
+    "sha256": "0310e897ea018de86279c9ffa80bca12778d40b6e879df88fe45f9926aef89ec",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Ripe_Left_0035.jpg",
+    "filename": "Ambon_Ripe_Left_0035.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0992",
+    "sha256": "829b870125753afa5efd208881e40c188ed56ca745c332007904aaad063c5e41",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Ripe_Left_0039.jpg",
+    "filename": "Ambon_Ripe_Left_0039.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_0995",
+    "sha256": "57f4122f4ba968777ddab9be4405593be83f0dccbd6a0cd83f658511e85eb000",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Ripe_Right_0005.jpg",
+    "filename": "Ambon_Ripe_Right_0005.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1001",
+    "sha256": "dfcd9ff53e93deeb8b6191f021f6c518fc78d260e708416a88dae846ee852af8",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Ripe_Right_0006.jpg",
+    "filename": "Ambon_Ripe_Right_0006.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1002",
+    "sha256": "c600d4378a3d06afe7197bf70da28855c9348a9a4a355fc5d8400bab2d7051d4",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Ripe_Right_0010.jpg",
+    "filename": "Ambon_Ripe_Right_0010.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1006",
+    "sha256": "a578510c2d2f34d4ddb2a8d5536e52348115fa3d0b2e0c3d5110a2622c35d665",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Ripe_Right_0016.jpg",
+    "filename": "Ambon_Ripe_Right_0016.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1012",
+    "sha256": "4ac4ce95db32fb3c6282fc3f0ef6dfbd9dcf268276c280f967625a9a0ae9e6b1",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Ripe_Right_0024.jpg",
+    "filename": "Ambon_Ripe_Right_0024.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1020",
+    "sha256": "95df987b90af7987f321d62451e0a74bf5cd4d8c7ad10df6e3783cc637dda1b8",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Ripe_Right_0030.jpg",
+    "filename": "Ambon_Ripe_Right_0030.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1026",
+    "sha256": "307520efc811a2bd67d6cbac0fc35bcc66aaa730deec5ebb58990356b7642b04",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Ripe_Top_0001.jpg",
+    "filename": "Ambon_Ripe_Top_0001.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1036",
+    "sha256": "b29154804ad0b07c357881d8632b92287c219ced07deb7867df6ca3584a21fb7",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Ripe_Top_0005.jpg",
+    "filename": "Ambon_Ripe_Top_0005.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1040",
+    "sha256": "170401535e89a9e71f4df20607f0b660172a54a0c164a78472854de7c9c5f916",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Ripe_Top_0011.jpg",
+    "filename": "Ambon_Ripe_Top_0011.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1046",
+    "sha256": "fdb487ff86d182a2cf5b5dcd25a2d375ffa5dabe7b42a45a8c5b49d193cde2d0",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Ripe_Top_0029.jpg",
+    "filename": "Ambon_Ripe_Top_0029.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1064",
+    "sha256": "9eef6a1157e64eec7a779e9f68f7355ae92d5d3bbbde35a55a924837ab07b630",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Ripe_Top_0036.jpg",
+    "filename": "Ambon_Ripe_Top_0036.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1071",
+    "sha256": "40997ae1f3320ab042562bf4d1dbbc2f26f0cdf57581b9785aabc0e775f8510c",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Ripe_Top_0039.jpg",
+    "filename": "Ambon_Ripe_Top_0039.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1074",
+    "sha256": "ccf1464a48ed1889b5fbe1109ccd50ccbdb1d97fad7a69fa3f6f6113adb8deac",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Unripe_Bottom_0004.jpg",
+    "filename": "Ambon_Unripe_Bottom_0004.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1528",
+    "sha256": "1ab0838cb035a9b3dda20077ed90ca84231c853ab5f47f3c9929af7eec1f12c9",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Unripe_Bottom_0009.jpg",
+    "filename": "Ambon_Unripe_Bottom_0009.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1083",
+    "sha256": "9ce2e53f2ad10d9b05999822d40244b80ed80853b67799f374cfba0fbfed3e2d",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Unripe_Bottom_0015.jpg",
+    "filename": "Ambon_Unripe_Bottom_0015.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1538",
+    "sha256": "0e6dd6e3097f92b3134a965d11a27c4eebbc7c902437f6177b7c4ed694571db3",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Unripe_Bottom_0016.jpg",
+    "filename": "Ambon_Unripe_Bottom_0016.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1539",
+    "sha256": "0324683b8b71b3c206067b0b7abecf5b02c0fbf96d24cdbe83ae6a8ff1e8890d",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Unripe_Bottom_0017.jpg",
+    "filename": "Ambon_Unripe_Bottom_0017.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1540",
+    "sha256": "e0d59d675b8017a8a39f94d449316b1e481598aa3eb6c1deabb4894835c42949",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Unripe_Left_0006.jpg",
+    "filename": "Ambon_Unripe_Left_0006.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1550",
+    "sha256": "ba54470fd688d09afbe6402edca9797b203539c34c5f0948b4859ea6acfde942",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Unripe_Left_0007.jpg",
+    "filename": "Ambon_Unripe_Left_0007.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1551",
+    "sha256": "99d5988673553d7a9c924e746b84fad6667e85213d27b031271fe5421ff85890",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Unripe_Left_0016.jpg",
+    "filename": "Ambon_Unripe_Left_0016.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1560",
+    "sha256": "bd852b4221a2a5dcfc98c27066bbf6e13ecde6cdd992734e06e1747f7c2285fe",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Unripe_Right_0001.jpg",
+    "filename": "Ambon_Unripe_Right_0001.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1566",
+    "sha256": "908e11603c2e0697e02ddbc19d32764feb9a06bbaf1b7b985c40e2256c497c1d",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Unripe_Right_0003.jpg",
+    "filename": "Ambon_Unripe_Right_0003.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1568",
+    "sha256": "ea11d68848c32b1e1022b365ef9da78fb3bbe3606720802ad92b112baf391238",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Unripe_Right_0006.jpg",
+    "filename": "Ambon_Unripe_Right_0006.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1571",
+    "sha256": "96ebd70c44480b8142f39245c19733b002d3b8cf3f6e7abc9cc9ebd90f380cde",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Unripe_Right_0015.jpg",
+    "filename": "Ambon_Unripe_Right_0015.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1580",
+    "sha256": "4ba8c5237d9e3eb8f532637cee8ce157ed79d2d55ecc2a24dda0b579194096d5",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Unripe_Right_0018.jpg",
+    "filename": "Ambon_Unripe_Right_0018.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1583",
+    "sha256": "13df7694f35412dc5ab51b218ddb17f0b19f8b5e5fe3cd801374090572467832",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Unripe_Top_0011.jpg",
+    "filename": "Ambon_Unripe_Top_0011.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1597",
+    "sha256": "147fa7c9018d22738e5fdb44c4dd60506c4c2617eb5c737050d483e860dd84d1",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Unripe_Top_0012.jpg",
+    "filename": "Ambon_Unripe_Top_0012.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1598",
+    "sha256": "6383c4f14dd77fb741e42e3148de6cca1ede714cc1a130ea6cf087b68f52e448",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Unripe_Top_0018.jpg",
+    "filename": "Ambon_Unripe_Top_0018.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1604",
+    "sha256": "4633d5d6c19085327235b07b570e454b24e0b2600184390853bc64aa4e2ad5eb",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Ambon\\Ambon_Unripe_Top_0019.jpg",
+    "filename": "Ambon_Unripe_Top_0019.jpg",
+    "class": "Ambon",
+    "group_id": "banana_cluster_1605",
+    "sha256": "77aac7e8fe8c98e92600f3e1b5d19ab25181c21182e02943adabefc15429d766",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Half_Ripe_Bottom_0005.jpg",
+    "filename": "Cavendish_Half_Ripe_Bottom_0005.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0135",
+    "sha256": "80dd1e5a527c998b165754f4c883d24bc193e2de99c63cb91a5246a324e9ee0a",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Half_Ripe_Bottom_0010.jpg",
+    "filename": "Cavendish_Half_Ripe_Bottom_0010.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0140",
+    "sha256": "a6107c590d37cdffbc71b62b996390564ab1027209dc102fe328c963f104afd1",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Half_Ripe_Bottom_0012.jpg",
+    "filename": "Cavendish_Half_Ripe_Bottom_0012.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0142",
+    "sha256": "2bb53022f0f228aabd7b4ac2602e7b7c9d59fe0443b4697b6a5f5bae3eef13b3",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Half_Ripe_Bottom_0020.jpg",
+    "filename": "Cavendish_Half_Ripe_Bottom_0020.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0150",
+    "sha256": "15048769aa03a12c1943bc49ee98d4bfe7a3899197ed546b177b85508f9c3d42",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Half_Ripe_Left_0018.jpg",
+    "filename": "Cavendish_Half_Ripe_Left_0018.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0172",
+    "sha256": "273df95587ef407c422b4a273c8a4533fe9346b64ed7548ae75672e3ebd874ae",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Half_Ripe_Left_0020.jpg",
+    "filename": "Cavendish_Half_Ripe_Left_0020.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0174",
+    "sha256": "6807c27f75a8d2fbe9139d3aa16ad65715d33e59b2ed4faec21a277a87b6c8ba",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Half_Ripe_Left_0022.jpg",
+    "filename": "Cavendish_Half_Ripe_Left_0022.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0176",
+    "sha256": "5afe0bb7ebf386c494ee73ad48734d35a4bc23fbc1d2552c93fd9f13271f9e0d",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Half_Ripe_Right_0005.jpg",
+    "filename": "Cavendish_Half_Ripe_Right_0005.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0183",
+    "sha256": "d8c69bfdf7a5a3d04eec8b13707cc8938bc8d5f2897e11f34d579a4598294b03",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Half_Ripe_Right_0007.jpg",
+    "filename": "Cavendish_Half_Ripe_Right_0007.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0185",
+    "sha256": "a032f8ceaf4f9faf455120f2bed84a69579f4969413fc6e62b33114e76f88555",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Half_Ripe_Right_0015.jpg",
+    "filename": "Cavendish_Half_Ripe_Right_0015.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0193",
+    "sha256": "5abfe9f252391dc762fe60b5084d6a5442e641788ffae4f8b58236c438f64134",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Half_Ripe_Right_0016.jpg",
+    "filename": "Cavendish_Half_Ripe_Right_0016.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0194",
+    "sha256": "689178404462120cef47d3f2f3853c76f621dc86fef084e002713c3461678769",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Half_Ripe_Top_0012.jpg",
+    "filename": "Cavendish_Half_Ripe_Top_0012.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0214",
+    "sha256": "b7b63eca671a718939583fb2d6a27dbdc6b0a963089d9528fdaa6a7d138f73dd",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Half_Ripe_Top_0014.jpg",
+    "filename": "Cavendish_Half_Ripe_Top_0014.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0216",
+    "sha256": "dbca4d905d961800f6da1bcd47216198869856ab180b0a23f72eda978d1d59e0",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Overripe_Bottom_0001.jpg",
+    "filename": "Cavendish_Overripe_Bottom_0001.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0567",
+    "sha256": "091e85f79c091f86a0eb5bb8c9e318c7657226ee0e25c6174ceb1c24f9cfe9b8",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Overripe_Bottom_0007.jpg",
+    "filename": "Cavendish_Overripe_Bottom_0007.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0573",
+    "sha256": "31c8ae7c0b987e005db8fd06ca9ba46f88720afed0df0559ad227c18cc01fd9d",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Overripe_Bottom_0008.jpg",
+    "filename": "Cavendish_Overripe_Bottom_0008.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0574",
+    "sha256": "1bfc54cd477d29fc4ab9c7b5b6089e1f068cedb8da5204488702597ce64f41de",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Overripe_Bottom_0010.jpg",
+    "filename": "Cavendish_Overripe_Bottom_0010.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0576",
+    "sha256": "e4ef715adb8893e587ef7950f1def3bfb8f7d40cbf05207dc1c8dfebc38a475a",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Overripe_Right_0002.jpg",
+    "filename": "Cavendish_Overripe_Right_0002.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0606",
+    "sha256": "ada666f70cfa07546b452d36e25c7b31fbb0557b0cbf2eb4a21e2c112dea3b1d",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Overripe_Right_0005.jpg",
+    "filename": "Cavendish_Overripe_Right_0005.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0609",
+    "sha256": "85b585fdb24b5fb2e16c800a2caa654a02019a22bd6ac92e9d2be4eefee49ae4",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Overripe_Right_0007.jpg",
+    "filename": "Cavendish_Overripe_Right_0007.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0611",
+    "sha256": "32dc9a2c4c12a510e1f0fb03037170759d9ff2e129ec8eb8c9b7a005c2951c56",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Overripe_Right_0015.jpg",
+    "filename": "Cavendish_Overripe_Right_0015.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0618",
+    "sha256": "5a187560de559d97c94126fc551caf239f2d61a6aa088d358e86dbb82b79e15b",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Overripe_Top_0005.jpg",
+    "filename": "Cavendish_Overripe_Top_0005.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0627",
+    "sha256": "bd48b258727261354f365aed3d6fd39327c37f5e18d866d7499c2d5831dcda54",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Overripe_Top_0007.jpg",
+    "filename": "Cavendish_Overripe_Top_0007.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0629",
+    "sha256": "8f279503ad3e34f9de865f1ab8ee91b1553a61659e9409974430203932fc03dc",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Overripe_Top_0012.jpg",
+    "filename": "Cavendish_Overripe_Top_0012.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0634",
+    "sha256": "f19f8ab693fbd49bb8beae6699c19e5174f0ff3385b3a2eee08c664dd0c56abc",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Overripe_Top_0014.jpg",
+    "filename": "Cavendish_Overripe_Top_0014.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_0636",
+    "sha256": "887ec0cc725307d6315db7c124c1ecf9ca1f1fb6b3bbdaf7bd107785a2d50aa6",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Ripe_Bottom_0004.jpg",
+    "filename": "Cavendish_Ripe_Bottom_0004.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1079",
+    "sha256": "77acbcf1e25c57245957e57478fb425b13cc9f0959c558046b263a307385cbcd",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Ripe_Bottom_0009.jpg",
+    "filename": "Cavendish_Ripe_Bottom_0009.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1083",
+    "sha256": "c8c42a1bdf273eaac81bfb08739330d86e7ac883398e0d525e2caf52a8e2f4a4",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Ripe_Bottom_0014.jpg",
+    "filename": "Cavendish_Ripe_Bottom_0014.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1088",
+    "sha256": "10796878777f504bfc707342134efd3f972634608ea38c54ff39f8589ff7fba4",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Ripe_Bottom_0022.jpg",
+    "filename": "Cavendish_Ripe_Bottom_0022.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1096",
+    "sha256": "6c15b0ac25639dd9b28673a51cc03768b2e711718e00e4ad82529d6faa23ac14",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Ripe_Bottom_0024.jpg",
+    "filename": "Cavendish_Ripe_Bottom_0024.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1098",
+    "sha256": "2467cfce42cdbef778fc039d0bd21237dbc2cf026a747150c7ab85b75568a2f8",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Ripe_Bottom_0030.jpg",
+    "filename": "Cavendish_Ripe_Bottom_0030.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1104",
+    "sha256": "ee863bfd1d6f0a0ab399f2d53942928e3d6d9eb2831a44b2b6289997cb7570ad",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Ripe_Left_0016.jpg",
+    "filename": "Cavendish_Ripe_Left_0016.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1121",
+    "sha256": "a00bf323824ac5956bfa85ec70d99b91bb6c97c29cba03f5ba5e3a7d35a1406c",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Ripe_Left_0026.jpg",
+    "filename": "Cavendish_Ripe_Left_0026.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1131",
+    "sha256": "7baa3d4d08bba016a82d466696c0831ec67f1f2bec78b30656a9f74b7d89b927",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Ripe_Left_0030.jpg",
+    "filename": "Cavendish_Ripe_Left_0030.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1135",
+    "sha256": "a4eec473332baf9be601a71eb9c2d69bb1a6abeb55d43372749bb0e37b3b49f3",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Ripe_Right_0013.jpg",
+    "filename": "Cavendish_Ripe_Right_0013.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1149",
+    "sha256": "c6ddf721f89eea94d6d74c250de3db30755174fbe0c022c22fa2dee8048e850c",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Ripe_Right_0014.jpg",
+    "filename": "Cavendish_Ripe_Right_0014.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1150",
+    "sha256": "7ecc8fb0a636af79fcebe6d0a4ca08058743790aee90d7d4e23d68cab0c263a9",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Ripe_Right_0017.jpg",
+    "filename": "Cavendish_Ripe_Right_0017.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1153",
+    "sha256": "5f8fe33660d21096a424683e25434ff7ff29e049ec0ec78643c7d497af675954",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Ripe_Right_0020.jpg",
+    "filename": "Cavendish_Ripe_Right_0020.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1156",
+    "sha256": "b1961bb6b73b20187a076fcd0c456e6c456b6e53b695e3847ffcf32d3a805d85",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Ripe_Right_0022.jpg",
+    "filename": "Cavendish_Ripe_Right_0022.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1158",
+    "sha256": "9ee0c6f482cf44ced8a41a66026b278eba4e1f39dc8410d6af78682d3ab90f89",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Ripe_Right_0028.jpg",
+    "filename": "Cavendish_Ripe_Right_0028.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1164",
+    "sha256": "65b790dafbcee47637a9a00861b380a47402df6722ea91e6582136b4bd56ea06",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Ripe_Top_0006.jpg",
+    "filename": "Cavendish_Ripe_Top_0006.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1173",
+    "sha256": "28c5b3535dca609cd3439675e513694e29033add4ffcfb9b4864ed49c6daa307",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Ripe_Top_0008.jpg",
+    "filename": "Cavendish_Ripe_Top_0008.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1175",
+    "sha256": "191f8a8077b8d8b6729786c469c2c3a93dd5bb34754f4e847ed0258c7cfa4fa6",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Ripe_Top_0022.jpg",
+    "filename": "Cavendish_Ripe_Top_0022.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1189",
+    "sha256": "c57344b6f24a194102b95a781c602b989bac1d3bd4398d0d8f900984529c0577",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Ripe_Top_0024.jpg",
+    "filename": "Cavendish_Ripe_Top_0024.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1191",
+    "sha256": "c12c3a65d74cfbbeb01c6b8e957bab17e3167a89de79a663a48ace0b94f54381",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Ripe_Top_0027.jpg",
+    "filename": "Cavendish_Ripe_Top_0027.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1194",
+    "sha256": "23614ad9158789637b9fa811ef7a57df852c7ab49fd1e9ec724153af131d7611",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Ripe_Top_0030.jpg",
+    "filename": "Cavendish_Ripe_Top_0030.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1197",
+    "sha256": "f12494d0b7fa70d12d080c384d8f642ddb9a64c712c1562594611f7f9d94e6e0",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Unripe_Bottom_0010.jpg",
+    "filename": "Cavendish_Unripe_Bottom_0010.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1617",
+    "sha256": "38c8e5a49ae5f1c8134ece2bc53fd303bddf909c7d1a99e09fa9f0b202fb114c",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Unripe_Left_0007.jpg",
+    "filename": "Cavendish_Unripe_Left_0007.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1635",
+    "sha256": "c501e3f6c9214157a107b5acd295dd5e46f259d6f9e059f5331bf1f0a1504de0",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Unripe_Left_0011.jpg",
+    "filename": "Cavendish_Unripe_Left_0011.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1639",
+    "sha256": "32adf2c5238c7666b64ec2de736b52f949b9c58d2f470c5d1e274966fac00670",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Unripe_Left_0012.jpg",
+    "filename": "Cavendish_Unripe_Left_0012.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1640",
+    "sha256": "b862b82f786670eab34886d45c242183602c4e0329dbb564a120fdb65566aa3a",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Unripe_Right_0012.jpg",
+    "filename": "Cavendish_Unripe_Right_0012.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1661",
+    "sha256": "9cea46a3b020f15f85a421fe79e7d0d558374bbdae7dcc90305940dd5023a6c1",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Unripe_Right_0015.jpg",
+    "filename": "Cavendish_Unripe_Right_0015.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1664",
+    "sha256": "98f8f8f39847a63f3e9ff67eef3dbd5f7e0d54c40bf2f6b882624ed8ff37b483",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Unripe_Right_0018.jpg",
+    "filename": "Cavendish_Unripe_Right_0018.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1667",
+    "sha256": "e36497167af78b5da55f0d344a5f491e3018407198cf7accf915e4f99c4ba070",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Unripe_Top_0013.jpg",
+    "filename": "Cavendish_Unripe_Top_0013.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1683",
+    "sha256": "d074ac81749a56da840a733f36e3c8bed95677fdaed263cbcfafe54beee9cfdb",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Unripe_Top_0014.jpg",
+    "filename": "Cavendish_Unripe_Top_0014.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1684",
+    "sha256": "d0c290a7d734b37f5b4181173ba522d71210c3dd6c6e7163747a4a23d1fbec92",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Cavendish\\Cavendish_Unripe_Top_0021.jpg",
+    "filename": "Cavendish_Unripe_Top_0021.jpg",
+    "class": "Cavendish",
+    "group_id": "banana_cluster_1691",
+    "sha256": "35172a112cc6647d6ea27e782cdf898104e763e9e911f070ee900c4e06450f04",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Half_Ripe_Bottom_0003.jpg",
+    "filename": "Mas_Half_Ripe_Bottom_0003.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0229",
+    "sha256": "5df66e462c2f987306700d0e56cf0e9283edc8c5ab9a09a504b473939d05fd09",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Half_Ripe_Bottom_0009.jpg",
+    "filename": "Mas_Half_Ripe_Bottom_0009.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0235",
+    "sha256": "78688cff3e0b64f792d7530c10befd64e79eb3fb44f30f82777451c1bf64c8ee",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Half_Ripe_Left_0001.jpg",
+    "filename": "Mas_Half_Ripe_Left_0001.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0258",
+    "sha256": "692266a3377f3bfc3b69d954c236ce13b42c0a4b1b9f5abcc406afa4a6a75c83",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Half_Ripe_Left_0018.jpg",
+    "filename": "Mas_Half_Ripe_Left_0018.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0274",
+    "sha256": "7624388d5ecee0d4f6fdbeb6f3f756c86052aa058dce055fc06c33d4138fdc51",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Half_Ripe_Left_0023.jpg",
+    "filename": "Mas_Half_Ripe_Left_0023.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0279",
+    "sha256": "3396f0699adec6333898afbb4910deac7c4e3a6e51660cf82802130c3e4241fe",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Half_Ripe_Left_0026.jpg",
+    "filename": "Mas_Half_Ripe_Left_0026.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0282",
+    "sha256": "14edc866e78f1f6f537165e464a595c68825fe52aa43b0d7f96968e8fb1e88fa",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Half_Ripe_Right_0001.jpg",
+    "filename": "Mas_Half_Ripe_Right_0001.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0229",
+    "sha256": "1588bc54c85fa826672b447af0d04a7706cf66bfe2f5bfdb1ea4714ee5e3cba2",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Half_Ripe_Right_0002.jpg",
+    "filename": "Mas_Half_Ripe_Right_0002.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0287",
+    "sha256": "3fcf4f6b6f39769503f62ad39de9286c2346d7ff86711d9645c1495094fcb745",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Half_Ripe_Right_0011.jpg",
+    "filename": "Mas_Half_Ripe_Right_0011.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0295",
+    "sha256": "dc1ed989d1f891e87192a7ca332a1a7f45649665d310d8cf10fbc9e3162182dc",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Half_Ripe_Right_0017.jpg",
+    "filename": "Mas_Half_Ripe_Right_0017.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0301",
+    "sha256": "c7b4a80ad4ee952e728a58a473cbfc0cc7dc4310576727b6ac573a0a0959a58f",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Half_Ripe_Right_0018.jpg",
+    "filename": "Mas_Half_Ripe_Right_0018.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0302",
+    "sha256": "cf924b96db149f6e8288c8bdca22e31f8c223b984c7c050b950a6f7949ed5049",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Half_Ripe_Right_0024.jpg",
+    "filename": "Mas_Half_Ripe_Right_0024.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0308",
+    "sha256": "59358fecbe6cf9195d8870aea1a6357b64f3e78b15c782703b92c9a1fbba0d50",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Half_Ripe_Right_0026.jpg",
+    "filename": "Mas_Half_Ripe_Right_0026.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0309",
+    "sha256": "2d86b4cbd6dd2ca2f868d445ea8b68fce5956fcfb02d8ed57b1e7fe98aa1c14b",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Half_Ripe_Right_0029.jpg",
+    "filename": "Mas_Half_Ripe_Right_0029.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0194",
+    "sha256": "6593ad4e5d654c353141f6a8910e44cb7fb9a67977dff7d8403b7843be099866",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Half_Ripe_Top_0003.jpg",
+    "filename": "Mas_Half_Ripe_Top_0003.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0316",
+    "sha256": "9cf88c6e6530c6de849ea7a47e0ab8ed590e160a1cba7d2f0c31fbd43fa4fa4f",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Half_Ripe_Top_0009.jpg",
+    "filename": "Mas_Half_Ripe_Top_0009.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0321",
+    "sha256": "f6ee84b2c68fb97d63389d2d6bcd1016a42ff729b686abd4f60bde1f2017c1d7",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Half_Ripe_Top_0016.jpg",
+    "filename": "Mas_Half_Ripe_Top_0016.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0327",
+    "sha256": "dcd543c5308c0fbb8a134116cae75ecd1ff82e299cf0f564a5cbf227509ce9a0",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Half_Ripe_Top_0022.jpg",
+    "filename": "Mas_Half_Ripe_Top_0022.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0332",
+    "sha256": "9af90f2fb390abd70bb3e904f1d75558e13010eb9b8328ed56ac42df38c974cc",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Overripe_Bottom_0002.jpg",
+    "filename": "Mas_Overripe_Bottom_0002.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0643",
+    "sha256": "0eb5049a07686238eddaf950de9b96a89143d4dd7b1070d2ad5ec2c7ea096ec3",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Overripe_Bottom_0004.jpg",
+    "filename": "Mas_Overripe_Bottom_0004.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0645",
+    "sha256": "e6ce46900a9b1e35abef05fdddcebafb93c6e7503301d5dde8c9d2e3c2a4567e",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Overripe_Bottom_0011.jpg",
+    "filename": "Mas_Overripe_Bottom_0011.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0652",
+    "sha256": "0f47728dff76655d3797b4a94363962aa1374dcbf9bbf3711154299853daec7a",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Overripe_Bottom_0014.jpg",
+    "filename": "Mas_Overripe_Bottom_0014.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0655",
+    "sha256": "3ad9c0c483f5baabfe9f6cb4bc8b25b7f2c78d81e94bb729816af5f880669e3d",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Overripe_Left_0007.jpg",
+    "filename": "Mas_Overripe_Left_0007.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0662",
+    "sha256": "3813dcbb08cc101f07ae0cf0ca917804c7e7dff6156ecb8142025618c4149a26",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Overripe_Right_0005.jpg",
+    "filename": "Mas_Overripe_Right_0005.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0673",
+    "sha256": "16563d78e65a86a6fac0f2d108835fa05b577bbdf427fe8d67640d1726491385",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Overripe_Right_0013.jpg",
+    "filename": "Mas_Overripe_Right_0013.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0680",
+    "sha256": "1d9418ebf1d3ef436a2bf300c107f220f0eb015b006c8bc5ea1604a484eb4008",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Overripe_Top_0001.jpg",
+    "filename": "Mas_Overripe_Top_0001.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0682",
+    "sha256": "b62cd7f326e2bb104985399dabca0aed22938465afd02ae5f1a7c66bf173d897",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Overripe_Top_0004.jpg",
+    "filename": "Mas_Overripe_Top_0004.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_0685",
+    "sha256": "92fa96c9a373be31357c33edc6ce5f16dbb44f9b2a2d567e80644ca029e30f9a",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Ripe_Bottom_0005.jpg",
+    "filename": "Mas_Ripe_Bottom_0005.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1203",
+    "sha256": "af95fefd0a27e0791af36d4085666a49bbc1c7cfba5608b597cf2f08b1639742",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Ripe_Bottom_0012.jpg",
+    "filename": "Mas_Ripe_Bottom_0012.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1208",
+    "sha256": "5be13e46aecaba934406510d7a431368861583955d7db981c1452d26682b98d4",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Ripe_Bottom_0018.jpg",
+    "filename": "Mas_Ripe_Bottom_0018.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1214",
+    "sha256": "a2c4d31de83c4c9aa0ac4eee8f03b266e05b562bf522a0c54dddc0f530795a68",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Ripe_Left_0001.jpg",
+    "filename": "Mas_Ripe_Left_0001.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1217",
+    "sha256": "72ed9814b694f0d4ce68e2e91ba7e9346f774562421bd9cc3a25f9280f14643f",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Ripe_Left_0007.jpg",
+    "filename": "Mas_Ripe_Left_0007.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1223",
+    "sha256": "41a95decd717107714adcdfeab49315f7498e44a6b34f10dea4e606ee7e388ca",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Ripe_Left_0014.jpg",
+    "filename": "Mas_Ripe_Left_0014.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1230",
+    "sha256": "9267f3b098b571be415bd7a4ceb9ad86b201b6446da7d8d9c9630adf26204cbd",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Ripe_Left_0015.jpg",
+    "filename": "Mas_Ripe_Left_0015.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1231",
+    "sha256": "86d8985e4f18f3daaade6931fc3ec539d650837b3137c07829d2883b3eb89aa2",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Ripe_Left_0017.jpg",
+    "filename": "Mas_Ripe_Left_0017.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1233",
+    "sha256": "447d8b67faa2a80631debef0d8d4ebbffe8db5110f611293bdc15c857a2e628e",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Ripe_Right_0011.jpg",
+    "filename": "Mas_Ripe_Right_0011.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1247",
+    "sha256": "1a4d7475bc5318429148e787496be2b6b16254f04945d0cfdb2c69320284aada",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Ripe_Right_0013.jpg",
+    "filename": "Mas_Ripe_Right_0013.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1249",
+    "sha256": "6f1bc52f5051c218eb750e28186eec78a98df4cdd66cb8669d63b808421952af",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Ripe_Top_0004.jpg",
+    "filename": "Mas_Ripe_Top_0004.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1260",
+    "sha256": "0caaf459876e2fc44464b87255bff221cc236009024fabdb46500bda69590a3e",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Ripe_Top_0019.jpg",
+    "filename": "Mas_Ripe_Top_0019.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1275",
+    "sha256": "a903fe8092d1c65f0896a7d562db3d18de26b9c3f12607dee05f7a52fad03ccd",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Unripe_Bottom_0012.jpg",
+    "filename": "Mas_Unripe_Bottom_0012.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1698",
+    "sha256": "55ef6ff52d5bdab6b38cd2d85cc4f98a6574a4db99759d2df64341d8f2e5746d",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Unripe_Bottom_0013.jpg",
+    "filename": "Mas_Unripe_Bottom_0013.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1699",
+    "sha256": "24b998f5596323fcf562948ae8c5fe39ccd291dc9305b48f34e3e5917fd89960",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Unripe_Bottom_0014.jpg",
+    "filename": "Mas_Unripe_Bottom_0014.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1699",
+    "sha256": "c28c1adbf51ea02c24a0d30e78d1fecc656247dc23253e9175f8012d320740ae",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Unripe_Bottom_0019.jpg",
+    "filename": "Mas_Unripe_Bottom_0019.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1704",
+    "sha256": "a48d8a07de4296fba2fce17132d8033ad3f0a04d742f862dd7872cd6f38b3dc5",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Unripe_Bottom_0029.jpg",
+    "filename": "Mas_Unripe_Bottom_0029.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1713",
+    "sha256": "9a9c69adf71fe462dc6f89b442eaf4742cb9e9e33047153c63ee656e77c1873c",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Unripe_Left_0001.jpg",
+    "filename": "Mas_Unripe_Left_0001.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1714",
+    "sha256": "fc22d34ad41e71e72f5242bb5e295fa99fc35043ebbb5985dbc90372948ff4b5",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Unripe_Left_0006.jpg",
+    "filename": "Mas_Unripe_Left_0006.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1717",
+    "sha256": "9ae7d88509d776121122344a0a291051f3352f3d872475f2efce6a24efdb283b",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Unripe_Left_0011.jpg",
+    "filename": "Mas_Unripe_Left_0011.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1698",
+    "sha256": "27224934daa950b799da4525ed7d2286bed69cafa2ae7954e163cb5c946604b2",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Unripe_Left_0021.jpg",
+    "filename": "Mas_Unripe_Left_0021.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1730",
+    "sha256": "ebb04e8d4a34fb80a0f661c365265d16b94dc3e897a08d47f82247ca99a140f5",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Unripe_Right_0004.jpg",
+    "filename": "Mas_Unripe_Right_0004.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1739",
+    "sha256": "9ffcc7d21b1c02e41bdd69ba4c82f23277503762ac315f1caf96c0b147d21801",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Unripe_Right_0009.jpg",
+    "filename": "Mas_Unripe_Right_0009.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1742",
+    "sha256": "3753fcf7f068668193ba715378dacf1c1252d0d9add5ea7b190058c94b7f700f",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Unripe_Right_0011.jpg",
+    "filename": "Mas_Unripe_Right_0011.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1742",
+    "sha256": "4944b197255c4fe5cb39ec19a90d9f985120f84abc587252022ef8b53a835b4e",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Unripe_Right_0013.jpg",
+    "filename": "Mas_Unripe_Right_0013.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1744",
+    "sha256": "f57134aadab90a11afee0d8d9fd82dbbd4109f60fc21b73e949dd7b2ace3f9da",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Unripe_Right_0022.jpg",
+    "filename": "Mas_Unripe_Right_0022.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1751",
+    "sha256": "e81351b218b4286331faa6ff023900da76c2555439ac66f18694d282666ce422",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Mas\\Mas_Unripe_Top_0004.jpg",
+    "filename": "Mas_Unripe_Top_0004.jpg",
+    "class": "Mas",
+    "group_id": "banana_cluster_1757",
+    "sha256": "31f55b469079b1c7d00d34e570a8777e3f7c6f306eb2b6af41f8307c09814143",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Half_Ripe_Bottom_0006.jpg",
+    "filename": "Raja_Half_Ripe_Bottom_0006.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0346",
+    "sha256": "909714171be9076b67076d8c3038f79a2ead6efa6bbb7069b5145607003dec11",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Half_Ripe_Bottom_0017.jpg",
+    "filename": "Raja_Half_Ripe_Bottom_0017.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0357",
+    "sha256": "913178b107d9ad5160467511696973713b0ec5a9e089070dd60ba04ab63ddb50",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Half_Ripe_Bottom_0019.jpg",
+    "filename": "Raja_Half_Ripe_Bottom_0019.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0359",
+    "sha256": "81349b09a27e9146c8d9fe48ba9f9b2ad9166d86e091674e2eab2c18313f08e0",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Half_Ripe_Left_0001.jpg",
+    "filename": "Raja_Half_Ripe_Left_0001.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0360",
+    "sha256": "0f15601d5f7451a0e027481293bd105f7c47ef0becfb57f036d48ab4dcf07e67",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Half_Ripe_Left_0008.jpg",
+    "filename": "Raja_Half_Ripe_Left_0008.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0366",
+    "sha256": "5f1a47fa05b4e93a81df81ca58faa777a52204c65c75fc9d34db696b0d6de66b",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Half_Ripe_Left_0015.jpg",
+    "filename": "Raja_Half_Ripe_Left_0015.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0373",
+    "sha256": "43462ef6d7524da86955fb05f48d327f23f2c252994030a6e4f47830dab74132",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Half_Ripe_Left_0019.jpg",
+    "filename": "Raja_Half_Ripe_Left_0019.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0377",
+    "sha256": "689a931b3bc31b62f7624eb17e5133d60ee3144923250b8731d75f0103df05d7",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Half_Ripe_Right_0002.jpg",
+    "filename": "Raja_Half_Ripe_Right_0002.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0379",
+    "sha256": "b130aeaaa2004af9614e4c0b90c375f4dbf781a055fa5cb3d230ea50f047b7fc",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Half_Ripe_Right_0011.jpg",
+    "filename": "Raja_Half_Ripe_Right_0011.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0388",
+    "sha256": "220891db6d6203bf471ef8aa65cc052163aca4ff7b9f2badb8547b9bf3f9d182",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Half_Ripe_Right_0013.jpg",
+    "filename": "Raja_Half_Ripe_Right_0013.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0390",
+    "sha256": "64af14634fdd89386f5fc929ff809c7acab351cf8e6c5e245db19732c2b82fe4",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Half_Ripe_Top_0016.jpg",
+    "filename": "Raja_Half_Ripe_Top_0016.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0412",
+    "sha256": "4e09287aac65e0ad57180f9d2c9cbc219bbeb7434e56a3e8888d77367d4548bd",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Half_Ripe_Top_0017.jpg",
+    "filename": "Raja_Half_Ripe_Top_0017.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0413",
+    "sha256": "9891779381eb06a5f8224c302ad3cd332dca295f13fe9fb51294e8f6990a58df",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Half_Ripe_Top_0018.jpg",
+    "filename": "Raja_Half_Ripe_Top_0018.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0414",
+    "sha256": "8c2d01bd32d5cb16ed956ff4bd18ca96ab01897622adb42b1f51554d879ef7b5",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Overripe_Bottom_0001.jpg",
+    "filename": "Raja_Overripe_Bottom_0001.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0696",
+    "sha256": "dd22b3c58c48f0532a7b54e5af444119b576ef6b3fc5e7dff308f4a111324b0b",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Overripe_Bottom_0003.jpg",
+    "filename": "Raja_Overripe_Bottom_0003.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0698",
+    "sha256": "8f37d4a8d9c3d652e8d17653b4b6d6bafd0774970e8c47d040a0f5ffdfd7a5e1",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Overripe_Bottom_0004.jpg",
+    "filename": "Raja_Overripe_Bottom_0004.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0699",
+    "sha256": "2f3d005215356a395a2c0d74a8e68da2eb0612cc0493d87c2143515908f214bb",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Overripe_Left_0007.jpg",
+    "filename": "Raja_Overripe_Left_0007.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0735",
+    "sha256": "ef0546c6b21ee610801e94e7a4e67897000d8dd0a76738f8a2670b6ced6e71ed",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Overripe_Left_0008.jpg",
+    "filename": "Raja_Overripe_Left_0008.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0736",
+    "sha256": "722da86bcfd705edc3ec099262f0f2f34cacb61b3b763b187d373797fbf77e04",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Overripe_Left_0009.jpg",
+    "filename": "Raja_Overripe_Left_0009.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0737",
+    "sha256": "f90dda4cc2b507e9094d9700706e710a5a41fbe95cbb58386d073917f954eac1",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Overripe_Left_0014.jpg",
+    "filename": "Raja_Overripe_Left_0014.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0742",
+    "sha256": "840a3df143a1631249447e7c43dcdbbe17deb24c203c31c56c1986c3ffd05bf3",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Overripe_Left_0022.jpg",
+    "filename": "Raja_Overripe_Left_0022.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0750",
+    "sha256": "9be86173f86a81823deb4f66dcc4345eb925ebd01912933ad6870f27d8d715d4",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Overripe_Left_0023.jpg",
+    "filename": "Raja_Overripe_Left_0023.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0751",
+    "sha256": "bc439999dd191b2c002f146c2f99a2fd21d87ef325924651084f3a226454932f",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Overripe_Left_0031.jpg",
+    "filename": "Raja_Overripe_Left_0031.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0759",
+    "sha256": "559277538e7357705f63407c151668527cd8aa74c5f5a782162c89f8b04270d9",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Overripe_Right_0010.jpg",
+    "filename": "Raja_Overripe_Right_0010.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0771",
+    "sha256": "759e1adb1eac35ef6fc048815432ac24853ad3f344711c04dc785130216a3bf5",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Overripe_Right_0012.jpg",
+    "filename": "Raja_Overripe_Right_0012.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0773",
+    "sha256": "020581827f6daf1a093a24d9a16905ef64c3bdec60bfd99380f3212a544d1e0f",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Overripe_Right_0020.jpg",
+    "filename": "Raja_Overripe_Right_0020.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0781",
+    "sha256": "43eb8ed18eac28d7b8bbe167781d437cc6a9fd79cd0eefdfbecc69aa9d1084a4",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Overripe_Right_0025.jpg",
+    "filename": "Raja_Overripe_Right_0025.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0786",
+    "sha256": "bd083095dcf170341e5e3ab2cd35e575e13980fbac05d6384be62b935f6d4a45",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Overripe_Top_0001.jpg",
+    "filename": "Raja_Overripe_Top_0001.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0795",
+    "sha256": "291059605568e2ae9ea120d4d112c136f2be21a927fdc03dcc65f0431aaee32e",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Overripe_Top_0010.jpg",
+    "filename": "Raja_Overripe_Top_0010.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0804",
+    "sha256": "31698f8faa307ef8faeec12743c49d8e67230992bc8efa852f43add8fbb9de44",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Overripe_Top_0021.jpg",
+    "filename": "Raja_Overripe_Top_0021.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0815",
+    "sha256": "26b9c2cf1042a1df344add33a0c525caadfff4fd53e3f37bfa5bd8408e5d5cb5",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Overripe_Top_0022.jpg",
+    "filename": "Raja_Overripe_Top_0022.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0816",
+    "sha256": "98d4a4b44cc639627ef70e67c6cb65ef0d84b5df270fce42721752b203b56fc5",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Overripe_Top_0023.jpg",
+    "filename": "Raja_Overripe_Top_0023.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0817",
+    "sha256": "df4174b4446ebfcf4a5d8d789c605c474e48dc32872b573b1a234411e29755bc",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Overripe_Top_0025.jpg",
+    "filename": "Raja_Overripe_Top_0025.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0819",
+    "sha256": "b2c227268b5bf8e848a43b14590ff1f49b259415339fba221c2e8c19af2bee97",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Overripe_Top_0029.jpg",
+    "filename": "Raja_Overripe_Top_0029.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0823",
+    "sha256": "022392eb236e5162091dd5965fabb86f5f1b2457fd63009311b5e20295eb5a4b",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Overripe_Top_0033.jpg",
+    "filename": "Raja_Overripe_Top_0033.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_0827",
+    "sha256": "9cd08491eeadf67513d8b616da729006aea4aeebe0d3527d58c4eea0f3947186",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Ripe_Bottom_0033.jpg",
+    "filename": "Raja_Ripe_Bottom_0033.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1308",
+    "sha256": "7d63e7a227cdd17abafdd2f5f87e9f358b5a9a1109a6c94d920b377a93d47231",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Ripe_Left_0020.jpg",
+    "filename": "Raja_Ripe_Left_0020.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1331",
+    "sha256": "201968d54d933f94a8625f6ca58c083620755b894025923bf61ddfc92dd6d227",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Ripe_Left_0026.jpg",
+    "filename": "Raja_Ripe_Left_0026.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1337",
+    "sha256": "a1102db2923932f3f1c50e18e84b383151012f1e630bd09528008393f112a91f",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Ripe_Left_0034.jpg",
+    "filename": "Raja_Ripe_Left_0034.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1345",
+    "sha256": "aba709e7138a81bed867bb849f21c48b547114172ee3475af93b15536b119abd",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Ripe_Right_0007.jpg",
+    "filename": "Raja_Ripe_Right_0007.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1354",
+    "sha256": "bc40d1e9135bc3a4881dc683ab4196fb150d88be19eb2f5c20cdad0177b13a95",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Ripe_Right_0011.jpg",
+    "filename": "Raja_Ripe_Right_0011.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1358",
+    "sha256": "6a90f189bf7063e9e39e86002ddabfd5c04f63c98b5743e8738ad1e27bb6d2bd",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Ripe_Right_0014.jpg",
+    "filename": "Raja_Ripe_Right_0014.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1361",
+    "sha256": "a2ad14ab18f8aea27e76796a682d4b9c2a320e97874eb91e11d01db65ff92eb9",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Ripe_Right_0018.jpg",
+    "filename": "Raja_Ripe_Right_0018.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1365",
+    "sha256": "3a87cd89f87052473fb59e079742d564f577076db4cf1a4844a612ba7754860d",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Ripe_Right_0020.jpg",
+    "filename": "Raja_Ripe_Right_0020.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1367",
+    "sha256": "9a81c706bf866753b6b894923c19de6a1c01858cde28772f5480e5149906ffd2",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Ripe_Right_0021.jpg",
+    "filename": "Raja_Ripe_Right_0021.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1368",
+    "sha256": "28ceddc0185b8adacc4bf7906ca4b85a5ed55994b21d3a7da10e2a2d27ead7cb",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Ripe_Right_0024.jpg",
+    "filename": "Raja_Ripe_Right_0024.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1371",
+    "sha256": "14d861dc584886e4d40712018801534614c05f8e6575eda3f4597be4e9c32217",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Ripe_Right_0025.jpg",
+    "filename": "Raja_Ripe_Right_0025.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1372",
+    "sha256": "ef21d201995220edd4f45d13bdaa5d8c46218ce9e7a7122c78882845c4b3e57d",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Ripe_Right_0026.jpg",
+    "filename": "Raja_Ripe_Right_0026.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1337",
+    "sha256": "6ac335c5d901ee2f5e097760d9c9fbbb6cc2a87073c6d40124f3de04b092234c",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Ripe_Right_0034.jpg",
+    "filename": "Raja_Ripe_Right_0034.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1380",
+    "sha256": "b8ef13ba77c3f81c95b7fca856cad74a274ab39826bf41a78db51d830498c666",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Ripe_Top_0001.jpg",
+    "filename": "Raja_Ripe_Top_0001.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1383",
+    "sha256": "3f7682488c8ef18cbc8225e3417d525d793c2548fb07e155a71b2706759dc8eb",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Ripe_Top_0016.jpg",
+    "filename": "Raja_Ripe_Top_0016.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1398",
+    "sha256": "02c99d75bd73e422a0a5ad09918cecd9bfbee55b7c4cf1808520d6812f584cb7",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Ripe_Top_0018.jpg",
+    "filename": "Raja_Ripe_Top_0018.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1400",
+    "sha256": "899617154739b1e2bfdc961b79abb6996b631f89777c84e67e00e28ba0d2ecfb",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Unripe_Left_0009.jpg",
+    "filename": "Raja_Unripe_Left_0009.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1796",
+    "sha256": "1c56213c4ea52b489eaec82b01ab48e21bb76d20e00243ad5f6cc50ab50e4d98",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Unripe_Right_0004.jpg",
+    "filename": "Raja_Unripe_Right_0004.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1809",
+    "sha256": "cb11ea895c096147bcfbef4670b27360a0e27f7b836899801a91cbbf58ae09cd",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Unripe_Right_0005.jpg",
+    "filename": "Raja_Unripe_Right_0005.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1810",
+    "sha256": "ccee5fd7d4fb8c292aca468249f7404e65976a0c70e3d2dd6a21216d0fdc8051",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Unripe_Right_0007.jpg",
+    "filename": "Raja_Unripe_Right_0007.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1812",
+    "sha256": "5cc2765e9fb34164c6acfeb2938b0e3afc82d897d51e5145776ed526a3777e3b",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Unripe_Right_0009.jpg",
+    "filename": "Raja_Unripe_Right_0009.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1814",
+    "sha256": "3058803b436a669f3af0733acafd68e3934a7428ecfe56725585bb23bb6df062",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Unripe_Right_0010.jpg",
+    "filename": "Raja_Unripe_Right_0010.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1815",
+    "sha256": "a75596324180062aff003fe9d7d4cd1668456be246fc1f54d50071c1921ca0c1",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Unripe_Right_0013.jpg",
+    "filename": "Raja_Unripe_Right_0013.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1818",
+    "sha256": "d027032c99498cd9864a08506cb3da5a0c01e5643a208c39f55bfeedf44bc9ec",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Unripe_Top_0007.jpg",
+    "filename": "Raja_Unripe_Top_0007.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1830",
+    "sha256": "5cf5e72b5409296082f66d8287c2a838a7afd59f616278bfc238c7f53745bf16",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Unripe_Top_0014.jpg",
+    "filename": "Raja_Unripe_Top_0014.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1836",
+    "sha256": "e8b2a125f51123507ecb1c0d923ee0e1b5a04090b2cc09972ea9e37a5117a649",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Raja\\Raja_Unripe_Top_0017.jpg",
+    "filename": "Raja_Unripe_Top_0017.jpg",
+    "class": "Raja",
+    "group_id": "banana_cluster_1839",
+    "sha256": "16e01e2273565ae74859a6fda5f19fb697b4c041f0379abbf42da3d9e484def0",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Half_Ripe_Left_0010.jpg",
+    "filename": "Saba_Half_Ripe_Left_0010.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_0440",
+    "sha256": "c0bc52dbac03d28d5165662ff455a81873d728cd937cfbc6bf5dd53e34ea4f4b",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Half_Ripe_Right_0011.jpg",
+    "filename": "Saba_Half_Ripe_Right_0011.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_0456",
+    "sha256": "a010800d9ff22d9bf0f429c46c2a728ad0aea471c3abf76b3d2d98102a718cd3",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Half_Ripe_Right_0014.jpg",
+    "filename": "Saba_Half_Ripe_Right_0014.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_0459",
+    "sha256": "8b242e3c4d465d47d6ea7b142e8cefdfc9c55a4a68a698f62970639fcffbfa29",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Half_Ripe_Top_0002.jpg",
+    "filename": "Saba_Half_Ripe_Top_0002.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_0462",
+    "sha256": "15b62345efbcf345b2ac7b20fe8c0a6205563a0b5744044673d9616eb2f40f7b",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Half_Ripe_Top_0003.jpg",
+    "filename": "Saba_Half_Ripe_Top_0003.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_0463",
+    "sha256": "73085be92cb25e9957024351214871a60518a4d96c9af54f3d4a38c6afa44670",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Half_Ripe_Top_0006.jpg",
+    "filename": "Saba_Half_Ripe_Top_0006.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_0466",
+    "sha256": "97c06b374d8ccefee4947659ab7b2e00eaceb6388a17275bdb0537768a19994e",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Half_Ripe_Top_0012.jpg",
+    "filename": "Saba_Half_Ripe_Top_0012.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_0472",
+    "sha256": "af092c98a14280b2b57ce0dc9c82e406d05b351a955d0ff5a02e18fd6f43916d",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Overripe_Bottom_0005.jpg",
+    "filename": "Saba_Overripe_Bottom_0005.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_0832",
+    "sha256": "461815f753110d4f374f5e9b18ba8addfd6986c3b2cf0f98c9434aa2a55f0b84",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Overripe_Bottom_0011.jpg",
+    "filename": "Saba_Overripe_Bottom_0011.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_0838",
+    "sha256": "4ed66e58ce9aca90ad619adfd98df0a915db29577c2e2850219413de94d70a5a",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Overripe_Bottom_0017.jpg",
+    "filename": "Saba_Overripe_Bottom_0017.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_0844",
+    "sha256": "98b4c806b03796419c1d65c7a5c8394ba45b07dd93f8b7cb977a44c591a42d41",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Overripe_Bottom_0022.jpg",
+    "filename": "Saba_Overripe_Bottom_0022.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_0849",
+    "sha256": "09e994cc854a467c17e593b055532c46f3a52ef6961611dad5714c17a3ce7dbd",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Overripe_Left_0003.jpg",
+    "filename": "Saba_Overripe_Left_0003.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_0853",
+    "sha256": "a8c77f8c4442e91b22c6b2e64232b13c1fcd705666b55f6f4ce55e270293a399",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Overripe_Left_0005.jpg",
+    "filename": "Saba_Overripe_Left_0005.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_0855",
+    "sha256": "b9e50200cd8552a0c04aebae96de95a3e59b003abd185cf1f33630908a05fd03",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Overripe_Left_0021.jpg",
+    "filename": "Saba_Overripe_Left_0021.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_0871",
+    "sha256": "083b39dbdb7364b19fe9f6343008a07eaea7fe9c20e3cd0afd9070fa2c926846",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Overripe_Right_0004.jpg",
+    "filename": "Saba_Overripe_Right_0004.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_0877",
+    "sha256": "b1c02bb46ffca989ad4fe2fb9aa3f6565779d7c4a4b0ac0c4269fe02af7c2e1d",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Overripe_Right_0005.jpg",
+    "filename": "Saba_Overripe_Right_0005.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_0878",
+    "sha256": "f8c2a804f85c7c213febef68bfb2fae03e03ff4bf7645e7f9a5a0cdcc9b63f87",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Overripe_Right_0019.jpg",
+    "filename": "Saba_Overripe_Right_0019.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_0892",
+    "sha256": "6f0a8fac311a772105c6207858062cd33b2dd9040ebcd9002cfb26ffc7c4b28a",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Overripe_Right_0020.jpg",
+    "filename": "Saba_Overripe_Right_0020.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_0893",
+    "sha256": "fcce17518e36fe534af2c21678af76e102aad9f73637187409598cd3dffb1f38",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Overripe_Top_0009.jpg",
+    "filename": "Saba_Overripe_Top_0009.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_0905",
+    "sha256": "59e0b616bd5264794f3bc863c5f05dffe9df8a1fd4f97ca2e2e7f6305cdfba75",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Overripe_Top_0011.jpg",
+    "filename": "Saba_Overripe_Top_0011.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_0907",
+    "sha256": "306acaa811ef46a3c40a1cc529d47c114850c1d618c34f54c9ef1cf22d2c8ab7",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Overripe_Top_0014.jpg",
+    "filename": "Saba_Overripe_Top_0014.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_0909",
+    "sha256": "7a8643ec97e429c162c14c154b21c67ab683c3f573a8c03057e0402f573c5dba",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Overripe_Top_0022.jpg",
+    "filename": "Saba_Overripe_Top_0022.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_0917",
+    "sha256": "98712cdc2448ef7cb3e4ba73e8de0815195e0c0b4fd1309dc16d4bb8ce1eaae8",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Overripe_Top_0023.jpg",
+    "filename": "Saba_Overripe_Top_0023.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_0918",
+    "sha256": "1f491e85f4fd4cbbc1ca6ea1a3c26354b96fc2da2bde51b31c2bc18db1d3f148",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Ripe_Bottom_0005.jpg",
+    "filename": "Saba_Ripe_Bottom_0005.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1422",
+    "sha256": "77c6f1780728c2f4efe0843a08b0af7d84c0f84fec9453ea7828bfc9a9ffeb79",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Ripe_Bottom_0007.jpg",
+    "filename": "Saba_Ripe_Bottom_0007.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1424",
+    "sha256": "c59c537398588b47b71671148cceb7a6eba012184d888e7a5495c26840c5d3cb",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Ripe_Bottom_0014.jpg",
+    "filename": "Saba_Ripe_Bottom_0014.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1431",
+    "sha256": "cd9736554f0c6fb6df70a688c470e70ed906fc94400e9a295478f422a4515b53",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Ripe_Left_0003.jpg",
+    "filename": "Saba_Ripe_Left_0003.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1447",
+    "sha256": "1145775ff46ee6901f3c0456e155bbace307f104d83c88bd0e076a525f2efde3",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Ripe_Left_0009.jpg",
+    "filename": "Saba_Ripe_Left_0009.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1453",
+    "sha256": "e7e11914e128c285ef1fe5120b7775cc30f33ec9738b4640a542a953fa7b4800",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Ripe_Left_0010.jpg",
+    "filename": "Saba_Ripe_Left_0010.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1454",
+    "sha256": "fb1184afd6e38f7c6676ef7962f3109153c5c08dfd17e87b9d8dc3a7553c8750",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Ripe_Right_0005.jpg",
+    "filename": "Saba_Ripe_Right_0005.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1476",
+    "sha256": "e121e80e95bbb17505fea841a1f3eec9637a561efa9ddadcf97ef95ddbb4e8ff",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Ripe_Right_0013.jpg",
+    "filename": "Saba_Ripe_Right_0013.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1484",
+    "sha256": "f0ec170add7ef0f77bc61906b8b9df8b0617999ff7db4f536886e3a8882ec065",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Ripe_Right_0016.jpg",
+    "filename": "Saba_Ripe_Right_0016.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1487",
+    "sha256": "a7d374404b7f6f5b088d2154c3e0e37ee33e945a028701c79c45f02b4a94ccaa",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Ripe_Right_0019.jpg",
+    "filename": "Saba_Ripe_Right_0019.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1490",
+    "sha256": "8d1ec7c270587ac9346e2a27f12cd0f0b7aa555475b3870a5726fa78552ebed9",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Ripe_Right_0020.jpg",
+    "filename": "Saba_Ripe_Right_0020.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1491",
+    "sha256": "e4743c2dc0bc962d13d3e81b0b9f0643f2799018fa79c7e91ed92b195ce254a1",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Ripe_RIght_0022.jpg",
+    "filename": "Saba_Ripe_RIght_0022.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1493",
+    "sha256": "bfd1b3fc8865319345be5e800c52d843ac2b41acdb5b169a2ebd36d0cdfbb4df",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Ripe_Right_0024.jpg",
+    "filename": "Saba_Ripe_Right_0024.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1495",
+    "sha256": "910157506cc621206319f8f748daff9d9655cd610405d2bd086758ed96a6dedc",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Ripe_Top_0002.jpg",
+    "filename": "Saba_Ripe_Top_0002.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1500",
+    "sha256": "ecfb664611861ecf622541164eabe6e2e26363505ee9f57c9124ff4870881f54",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Ripe_Top_0003.jpg",
+    "filename": "Saba_Ripe_Top_0003.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1501",
+    "sha256": "ad0a7af44a2a7545d4e6106119235102f6e81f67a7654b9708022e70d925d9ab",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Ripe_Top_0004.jpg",
+    "filename": "Saba_Ripe_Top_0004.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1502",
+    "sha256": "faf3702dfcff861e77f0d091c7b8c34fe4c85d9e0c671a9ba2587b3bd9e9e985",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Ripe_Top_0008.jpg",
+    "filename": "Saba_Ripe_Top_0008.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1506",
+    "sha256": "9d21a05009614a1e66010eee3b9ea85b3104f54730fc71f4a471ff408e2525d6",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Ripe_Top_0014.jpg",
+    "filename": "Saba_Ripe_Top_0014.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1512",
+    "sha256": "a398ca84a2957bf710d97ae0f187916977c8f0687cadbb76814a7520be8c2c95",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Ripe_Top_0023.jpg",
+    "filename": "Saba_Ripe_Top_0023.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1521",
+    "sha256": "31a89a8b4aac871bb8f55dcf97ed948548efb27b45a583b4ec8fa8d29c11a3de",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Ripe_Top_0025.jpg",
+    "filename": "Saba_Ripe_Top_0025.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1523",
+    "sha256": "dad70b8ab0807bbd3ef3c7b2927e0268a6141e19bee5e02cc8774765e6dff844",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Unripe_Bottom_0003.jpg",
+    "filename": "Saba_Unripe_Bottom_0003.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1843",
+    "sha256": "7bfe18701b90dda62bcfea8cc4fbd922861a77977a5b8a6e65185df29fc10179",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Unripe_Bottom_0009.jpg",
+    "filename": "Saba_Unripe_Bottom_0009.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1849",
+    "sha256": "905c22bf447638734156ad7ef667b37e32c607d2bda4ebd74b69d5c4559eec39",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Unripe_Left_0001.jpg",
+    "filename": "Saba_Unripe_Left_0001.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1854",
+    "sha256": "29dee3a9478051bf3f7a135aa0e89f9ab7d036369870efc3ca26f3f2238bfe17",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Unripe_Left_0005.jpg",
+    "filename": "Saba_Unripe_Left_0005.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1858",
+    "sha256": "e5fe7e2be31e103a1a32889fe12dc68bf6ffd8f6a95148a356a2877a18f40aa2",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Unripe_Left_0008.jpg",
+    "filename": "Saba_Unripe_Left_0008.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1861",
+    "sha256": "ac792e0209f27203a5904b4d5545ff779c6670da60c072a8a66db1c898dfbb11",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Unripe_Right_0004.jpg",
+    "filename": "Saba_Unripe_Right_0004.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1870",
+    "sha256": "bded64db3f830bbb223449091492c3ce2d226299107d110b61760d6e7092553f",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Unripe_Right_0005.jpg",
+    "filename": "Saba_Unripe_Right_0005.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1871",
+    "sha256": "d2af68ff27dd7566100dcfaf0c9543b15a2188c157023596dbc0d151d414d94c",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Unripe_Right_0008.jpg",
+    "filename": "Saba_Unripe_Right_0008.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1874",
+    "sha256": "018de9911796dd762b673a3b9b5fe1a8abccb7a1709a8036d358b2d13ffa8949",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Unripe_Right_0013.jpg",
+    "filename": "Saba_Unripe_Right_0013.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1879",
+    "sha256": "4f34cc516819dd12c0a79f4c3c13f868d48e46186763f45e2c21c235f2525502",
+    "dimensions": [
+      384,
+      256
+    ]
+  },
+  {
+    "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset\\Saba\\Saba_Unripe_Top_0011.jpg",
+    "filename": "Saba_Unripe_Top_0011.jpg",
+    "class": "Saba",
+    "group_id": "banana_cluster_1890",
+    "sha256": "a2e127f41eb8c6ceb32b08c92627b310fa0a1513c5c40edd8bceb896082fe4b5",
+    "dimensions": [
+      384,
+      256
+    ]
+  }
+]

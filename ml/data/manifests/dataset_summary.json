@@ -1,0 +1,44 @@
+{
+  "total_images": 2309,
+  "random_seed": 42,
+  "ratios": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "split_counts": {
+    "train": 1618,
+    "val": 346,
+    "test": 345
+  },
+  "train_class_distribution": {
+    "Green": 163,
+    "Mature Green": 581,
+    "Ripe": 874
+  },
+  "val_class_distribution": {
+    "Green": 35,
+    "Mature Green": 124,
+    "Ripe": 187
+  },
+  "test_class_distribution": {
+    "Green": 34,
+    "Mature Green": 124,
+    "Ripe": 187
+  },
+  "train_variety_distribution": {
+    "Local Sindhi": 498,
+    "Riyali": 459,
+    "Thadhrami": 661
+  },
+  "val_variety_distribution": {
+    "Local Sindhi": 107,
+    "Riyali": 98,
+    "Thadhrami": 141
+  },
+  "test_variety_distribution": {
+    "Local Sindhi": 106,
+    "Riyali": 98,
+    "Thadhrami": 141
+  }
+}

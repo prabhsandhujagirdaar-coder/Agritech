@@ -1,0 +1,34 @@
+{
+  "dataset": "Mango Harumanis",
+  "seed": 42,
+  "total_samples": 272,
+  "splits": {
+    "train": {
+      "count": 189,
+      "classes": {
+        "RIPE": 89,
+        "ROTTEN": 17,
+        "SEMI-RIPE": 43,
+        "UNRIPE": 40
+      }
+    },
+    "val": {
+      "count": 37,
+      "classes": {
+        "RIPE": 18,
+        "SEMI-RIPE": 9,
+        "ROTTEN": 2,
+        "UNRIPE": 8
+      }
+    },
+    "test": {
+      "count": 46,
+      "classes": {
+        "RIPE": 22,
+        "SEMI-RIPE": 9,
+        "ROTTEN": 4,
+        "UNRIPE": 11
+      }
+    }
+  }
+}

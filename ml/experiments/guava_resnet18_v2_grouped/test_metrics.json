@@ -1,0 +1,129 @@
+{
+  "evaluation_protocol": "v2_grouped_held_out_test",
+  "best_epoch": 3,
+  "device": "cuda",
+  "model_architecture": "resnet18",
+  "model_size_mb": 42.72,
+  "median_inference_latency_ms": 4.95,
+  "test_samples": 346,
+  "test_loss": 0.622,
+  "accuracy": 0.8324,
+  "macro_precision": 0.782,
+  "macro_recall": 0.8656,
+  "macro_f1": 0.8122,
+  "per_class": {
+    "Green (0)": {
+      "precision": 0.6444,
+      "recall": 0.9667,
+      "f1": 0.7733,
+      "support": 30
+    },
+    "Mature Green (1)": {
+      "precision": 0.7669,
+      "recall": 0.7907,
+      "f1": 0.7786,
+      "support": 129
+    },
+    "Ripe (2)": {
+      "precision": 0.9345,
+      "recall": 0.8396,
+      "f1": 0.8845,
+      "support": 187
+    }
+  },
+  "confusion_matrix": [
+    [
+      29,
+      1,
+      0
+    ],
+    [
+      16,
+      102,
+      11
+    ],
+    [
+      0,
+      30,
+      157
+    ]
+  ],
+  "confusion_matrix_labels": [
+    "Green",
+    "Mature Green",
+    "Ripe"
+  ],
+  "total_misclassifications": 58,
+  "sample_misclassifications": [
+    {
+      "rel_path": "Local Sindhi/Mature Green/246.jpg",
+      "true_label": "Mature Green",
+      "pred_label": "Green",
+      "confidence": 0.931,
+      "true_class_prob": 0.0671
+    },
+    {
+      "rel_path": "Local Sindhi/Ripe/184.jpg",
+      "true_label": "Ripe",
+      "pred_label": "Mature Green",
+      "confidence": 0.4485,
+      "true_class_prob": 0.4043
+    },
+    {
+      "rel_path": "Local Sindhi/Ripe/190.jpg",
+      "true_label": "Ripe",
+      "pred_label": "Mature Green",
+      "confidence": 0.5081,
+      "true_class_prob": 0.3536
+    },
+    {
+      "rel_path": "Local Sindhi/Ripe/180.jpg",
+      "true_label": "Ripe",
+      "pred_label": "Mature Green",
+      "confidence": 0.4578,
+      "true_class_prob": 0.4119
+    },
+    {
+      "rel_path": "Local Sindhi/Ripe/185.jpg",
+      "true_label": "Ripe",
+      "pred_label": "Mature Green",
+      "confidence": 0.5019,
+      "true_class_prob": 0.3202
+    },
+    {
+      "rel_path": "Local Sindhi/Ripe/195.jpg",
+      "true_label": "Ripe",
+      "pred_label": "Mature Green",
+      "confidence": 0.52,
+      "true_class_prob": 0.3438
+    },
+    {
+      "rel_path": "Local Sindhi/Ripe/192.jpg",
+      "true_label": "Ripe",
+      "pred_label": "Mature Green",
+      "confidence": 0.5565,
+      "true_class_prob": 0.3371
+    },
+    {
+      "rel_path": "Local Sindhi/Ripe/191.jpg",
+      "true_label": "Ripe",
+      "pred_label": "Mature Green",
+      "confidence": 0.4806,
+      "true_class_prob": 0.424
+    },
+    {
+      "rel_path": "Local Sindhi/Ripe/183.jpg",
+      "true_label": "Ripe",
+      "pred_label": "Mature Green",
+      "confidence": 0.462,
+      "true_class_prob": 0.4311
+    },
+    {
+      "rel_path": "Local Sindhi/Ripe/5.jpg",
+      "true_label": "Ripe",
+      "pred_label": "Mature Green",
+      "confidence": 0.6086,
+      "true_class_prob": 0.2378
+    }
+  ]
+}

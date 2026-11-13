@@ -1,0 +1,303 @@
+{
+  "audit_phase": "15D",
+  "timestamp": "2026-10-30T15:55:00+0530",
+  "random_seed": 42,
+  "checkpoint_integrity": {
+    "stage1_fruit_identifier": {
+      "path": "ml\\artifacts\\best_fruit_identifier_resnet18.pth",
+      "size_bytes": 128800363,
+      "sha256": "07150d1ddb92ea8ce7018e08fa6c3d21b6b6de6aac9c5feb838d6f9dc28a8967",
+      "verified_against_phase15c": true
+    },
+    "guava_production_baseline": {
+      "path": "ml\\artifacts\\best_guava_resnet18.pth",
+      "sha256": "b213059f6b9744915ef921f2be70de9ae1eb0dd6c50a3fb0edce0e2cb710f5b4",
+      "verified_against_baseline": true
+    },
+    "banana_baseline": {
+      "path": "ml\\artifacts\\best_banana_resnet18.pth",
+      "size_bytes": 128791659,
+      "sha256": "3b296ba8556d88bd934f74fee1e88860921fe69dd5b4869984fd0c529f339dae",
+      "verified_against_phase14f": true,
+      "discrepancy_root_cause": "In Phase 14E, a preliminary hash (9559ec84...) was documented from an intermediate in-memory dictionary calculation prior to the final serialized PyTorch checkpoint write. In Phase 14F, the physical checkpoint file (ml/artifacts/best_banana_resnet18.pth, 128,791,659 bytes) was verified and hashed on disk to 3b296ba8556d88bd934f74fee1e88860921fe69dd5b4869984fd0c529f339dae. The physical file on disk has never been altered, retrained, or overwritten since Phase 14E. Thus 3b296ba8556d... is the sole canonical cryptographic hash of the saved Banana model."
+    }
+  },
+  "test_results_reverification": {
+    "total_test_samples": 2882,
+    "overall_accuracy": 1.0,
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0,
+    "negative_rejection_rate": 1.0,
+    "per_class": {
+      "guava": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 346
+      },
+      "banana": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 297
+      },
+      "apple": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 408
+      },
+      "mango": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 46
+      },
+      "negative_background": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1785
+      }
+    },
+    "confusion_matrix": [
+      [
+        346,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        297,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        408,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        46,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1785
+      ]
+    ],
+    "reproducibility_check": "PASS (Exact Match)"
+  },
+  "near_duplicate_audit": {
+    "train_samples_count": 8982,
+    "val_samples_count": 7460,
+    "test_samples_count": 2882,
+    "path_leakage_train_test": 0,
+    "path_leakage_val_test": 0,
+    "sha256_sample_collisions": 0,
+    "perceptual_near_dupes_sampled": 0,
+    "split_disjointness_status": "PASS (Zero Exact Leaks)"
+  },
+  "single_source_monopoly": {
+    "guava": {
+      "primary_source": "SAU_Sindh_Guava",
+      "primary_count": 2309,
+      "total_count": 2309,
+      "monopoly_pct": 100.0,
+      "all_sources": {
+        "SAU_Sindh_Guava": 2309
+      }
+    },
+    "banana": {
+      "primary_source": "BananaID_Ripeness",
+      "primary_count": 1960,
+      "total_count": 1960,
+      "monopoly_pct": 100.0,
+      "all_sources": {
+        "BananaID_Ripeness": 1960
+      }
+    },
+    "apple": {
+      "primary_source": "Apple_Phenotyping_Crops",
+      "primary_count": 2574,
+      "total_count": 2574,
+      "monopoly_pct": 100.0,
+      "all_sources": {
+        "Apple_Phenotyping_Crops": 2574
+      }
+    },
+    "mango": {
+      "primary_source": "Harumanis_Mango",
+      "primary_count": 272,
+      "total_count": 272,
+      "monopoly_pct": 100.0,
+      "all_sources": {
+        "Harumanis_Mango": 272
+      }
+    },
+    "negative_background": {
+      "primary_source": "FruitNet_Supplemental",
+      "primary_count": 12209,
+      "total_count": 12209,
+      "monopoly_pct": 100.0,
+      "all_sources": {
+        "FruitNet_Supplemental": 12209
+      }
+    }
+  },
+  "cross_domain_shortcut_evaluation": {
+    "FruitNet_Guava": {
+      "true_identity": "guava",
+      "total_samples": 2281,
+      "correct_identity_count": 0,
+      "correct_identity_pct": 0.0,
+      "negative_background_count": 2214,
+      "negative_background_pct": 97.06,
+      "prediction_distribution": {
+        "negative_background": 2214,
+        "mango": 2,
+        "apple": 65
+      },
+      "mean_confidence": 0.8341,
+      "mean_energy": -3.2103,
+      "shortcut_evidence": "CONFIRMED SHORTCUT LEARNING"
+    },
+    "FruitNet_Banana": {
+      "true_identity": "banana",
+      "total_samples": 2200,
+      "correct_identity_count": 465,
+      "correct_identity_pct": 21.14,
+      "negative_background_count": 1427,
+      "negative_background_pct": 64.86,
+      "prediction_distribution": {
+        "mango": 21,
+        "apple": 243,
+        "banana": 465,
+        "negative_background": 1427,
+        "guava": 44
+      },
+      "mean_confidence": 0.4723,
+      "mean_energy": -2.3328,
+      "shortcut_evidence": "CONFIRMED SHORTCUT LEARNING"
+    },
+    "FruitNet_Apple": {
+      "true_identity": "apple",
+      "total_samples": 2290,
+      "correct_identity_count": 17,
+      "correct_identity_pct": 0.74,
+      "negative_background_count": 2265,
+      "negative_background_pct": 98.91,
+      "prediction_distribution": {
+        "negative_background": 2265,
+        "mango": 7,
+        "apple": 17,
+        "banana": 1
+      },
+      "mean_confidence": 0.8352,
+      "mean_energy": -3.2015,
+      "shortcut_evidence": "CONFIRMED SHORTCUT LEARNING"
+    }
+  },
+  "background_shortcut_evaluation": {
+    "dataset": "Oranges_in_field_canopy",
+    "total_images": 5025,
+    "prediction_distribution": {
+      "negative_background": 1003,
+      "apple": 3233,
+      "mango": 606,
+      "banana": 172,
+      "guava": 11
+    },
+    "negative_background_pct": 19.96,
+    "apple_false_acceptance_pct": 64.34,
+    "guava_false_acceptance_pct": 0.22
+  },
+  "robustness_environmental_evaluation": {
+    "citrus_disease_foliage": {
+      "total_images": 759,
+      "rejection_rate_pct": 13.18,
+      "distribution": {
+        "banana": 415,
+        "mango": 184,
+        "negative_background": 100,
+        "guava": 12,
+        "apple": 48
+      }
+    },
+    "unsupported_produce": {
+      "FruitNet_Orange": {
+        "total_samples": 2375,
+        "rejection_rate_pct": 100.0,
+        "prediction_distribution": {
+          "negative_background": 2375
+        },
+        "mean_confidence": 0.9264,
+        "mean_energy": -3.5379
+      },
+      "FruitNet_Lime": {
+        "total_samples": 2179,
+        "rejection_rate_pct": 100.0,
+        "prediction_distribution": {
+          "negative_background": 2179
+        },
+        "mean_confidence": 0.9213,
+        "mean_energy": -3.3916
+      },
+      "FruitNet_Pomegranate": {
+        "total_samples": 7127,
+        "rejection_rate_pct": 99.65,
+        "prediction_distribution": {
+          "negative_background": 7102,
+          "apple": 17,
+          "mango": 8
+        },
+        "mean_confidence": 0.8236,
+        "mean_energy": -3.2105
+      }
+    }
+  },
+  "ood_calibration_verification": {
+    "temperature": 1.2942,
+    "tau_energy": -3.303,
+    "confidence_threshold": 0.8,
+    "test_target_pass_rate_pct": 97.27,
+    "test_neg_rejection_rate_pct": 52.44,
+    "ood_cross_domain_energy": {
+      "FruitNet_Guava": {
+        "mean_energy": -3.2103,
+        "pass_gate_pct": 43.01,
+        "flagged_ood_pct": 56.99
+      },
+      "FruitNet_Banana": {
+        "mean_energy": -2.3328,
+        "pass_gate_pct": 0.14,
+        "flagged_ood_pct": 99.86
+      },
+      "FruitNet_Apple": {
+        "mean_energy": -3.2015,
+        "pass_gate_pct": 37.03,
+        "flagged_ood_pct": 62.97
+      }
+    }
+  },
+  "overall_conclusions": {
+    "final_decision": "BLOCKED_FOR_PRODUCTION",
+    "production_status": "GATED (is_validated=False)",
+    "in_domain_generalization": "VALIDATED (100% on locked test split)",
+    "out_of_domain_generalization": "FAILED (Empirical shortcut learning proven)",
+    "root_cause": "Single-source dataset monopoly per commodity coupled with dataset-level background bias",
+    "detailed_reasoning": "1. In-domain verification CONFIRMED: 100.00% accuracy and 1.0000 macro-F1 on fruit_identifier_v1/test.json (N=2,882). 2. Zero physical split leakage: test images share 0 paths and 0 exact SHA-256 hashes with training/validation sets. 3. Dataset-source shortcut learning EMPIRICALLY CONFIRMED: Each target class was trained exclusively on a single dataset (Guava from Sindh SAU, Banana from BananaID, Apple from Apple Mendeley, Mango from Harumanis). When evaluated on unseen out-of-domain sources of the exact same botanical species (FruitNet Guava, FruitNet Banana, FruitNet Apple), the model severely degrades, frequently classifying them as 'negative_background' because the model associated FruitNet camera/compression/tabletop signatures with the negative class. 4. Architectural Solution Required: Multi-dataset cross-source training, background augmentation (CutMix/Mosaic), and a Stage 1A YOLOv8n object detection localization step to crop isolated fruit boundaries and eliminate background context shortcuts before species classification."
+  }
+}

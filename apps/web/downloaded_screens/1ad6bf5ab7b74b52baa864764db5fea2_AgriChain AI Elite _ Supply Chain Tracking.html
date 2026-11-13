@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AgriChain AI - Supply Chain Tracking</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* Custom Scrollbar for side panel */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: #e4e2df; /* surface-variant */
+            border-radius: 4px;
+        }
+        
+        /* Map route animation */
+        @keyframes pulse-ring {
+            0% { transform: scale(0.8); opacity: 0.5; }
+            100% { transform: scale(2); opacity: 0; }
+        }
+        .animate-ping-slow {
+            animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+        
+        /* Glassmorphism utility */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+<!-- Tailwind Config -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-primary-fixed-variant": "#0b513d",
+                "surface-container-high": "#eae8e5",
+                "primary-fixed-dim": "#95d3ba",
+                "on-error": "#ffffff",
+                "tertiary-fixed": "#e5e2dc",
+                "on-secondary-fixed": "#002113",
+                "background": "#fbf9f6",
+                "on-tertiary-fixed": "#1c1c18",
+                "on-secondary-container": "#00714d",
+                "digital-mint": "#10b981",
+                "on-secondary-fixed-variant": "#005236",
+                "primary": "#003527",
+                "primary-container": "#064e3b",
+                "on-error-container": "#93000a",
+                "secondary-fixed": "#6ffbbe",
+                "on-tertiary": "#ffffff",
+                "warm-earth": "#78716c",
+                "on-primary": "#ffffff",
+                "surface-container": "#efeeeb",
+                "secondary": "#006c49",
+                "on-primary-fixed": "#002117",
+                "surface-variant": "#e4e2df",
+                "secondary-fixed-dim": "#4edea3",
+                "inverse-on-surface": "#f2f0ed",
+                "surface-dim": "#dbdad7",
+                "on-tertiary-container": "#b4b1ab",
+                "primary-fixed": "#b0f0d6",
+                "emerald-forest": "#064e3b",
+                "outline-variant": "#bfc9c3",
+                "error": "#ba1a1a",
+                "surface-container-highest": "#e4e2df",
+                "surface-bright": "#fbf9f6",
+                "surface-tint": "#2b6954",
+                "on-surface-variant": "#404944",
+                "on-secondary": "#ffffff",
+                "surface-container-low": "#f5f3f0",
+                "inverse-surface": "#30312f",
+                "tertiary-container": "#454440",
+                "surface-cream": "#fcfaf7",
+                "tertiary-fixed-dim": "#c9c6c0",
+                "on-tertiary-fixed-variant": "#484742",
+                "surface-container-lowest": "#ffffff",
+                "sand-stone": "#d4d1cb",
+                "outline": "#707974",
+                "on-surface": "#1b1c1a",
+                "surface": "#fbf9f6",
+                "tertiary": "#2e2e2a",
+                "on-background": "#1b1c1a",
+                "error-container": "#ffdad6",
+                "secondary-container": "#6cf8bb",
+                "on-primary-container": "#80bea6",
+                "inverse-primary": "#95d3ba"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "unit": "8px",
+                "container-max": "1600px",
+                "margin-desktop": "64px",
+                "margin-tablet": "32px",
+                "margin-mobile": "20px",
+                "gutter-md": "32px"
+        },
+        "fontFamily": {
+                "body-lg": [
+                        "Plus Jakarta Sans"
+                ],
+                "label-sm": [
+                        "Plus Jakarta Sans"
+                ],
+                "body-md": [
+                        "Plus Jakarta Sans"
+                ],
+                "label-caps": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-lg-mobile": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-lg": [
+                        "Plus Jakarta Sans"
+                ],
+                "display-lg": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-md": [
+                        "Plus Jakarta Sans"
+                ]
+        },
+        "fontSize": {
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-sm": [
+                        "13px",
+                        {
+                                "lineHeight": "18px",
+                                "letterSpacing": "0.02em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-caps": [
+                        "11px",
+                        {
+                                "lineHeight": "16px",
+                                "letterSpacing": "0.08em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "28px",
+                        {
+                                "lineHeight": "36px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "display-lg": [
+                        "56px",
+                        {
+                                "lineHeight": "64px",
+                                "letterSpacing": "-0.03em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "600"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-hidden flex h-screen">
+<!-- Shared Component: SideNavBar -->
+<nav class="bg-surface-container-low border-r border-outline-variant h-screen w-64 fixed left-0 top-0 flex flex-col py-unit z-40">
+<!-- Brand Header -->
+<div class="px-6 py-6 mb-4 flex flex-col gap-2">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+<div>
+<h1 class="font-headline-md text-headline-md font-bold text-primary">AgriChain Admin</h1>
+<p class="font-label-caps text-label-caps text-secondary">AI Service Online</p>
+</div>
+</div>
+</div>
+<!-- Navigation Tabs -->
+<div class="flex-1 flex flex-col px-2 gap-1 overflow-y-auto">
+<!-- Inactive: Dashboard -->
+<a class="text-on-surface-variant mx-2 my-1 px-4 py-3 flex items-center gap-3 rounded-xl hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-body-md text-body-md">Dashboard</span>
+</a>
+<!-- Inactive: Inventory -->
+<a class="text-on-surface-variant mx-2 my-1 px-4 py-3 flex items-center gap-3 rounded-xl hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined">inventory_2</span>
+<span class="font-body-md text-body-md">Inventory</span>
+</a>
+<!-- Active: Logistics -->
+<a class="bg-secondary-container text-on-secondary-container rounded-xl mx-2 my-1 px-4 py-3 flex items-center gap-3 shadow-sm" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+<span class="font-body-md text-body-md font-bold">Logistics</span>
+</a>
+<!-- Inactive: Analytics -->
+<a class="text-on-surface-variant mx-2 my-1 px-4 py-3 flex items-center gap-3 rounded-xl hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined">monitoring</span>
+<span class="font-body-md text-body-md">Analytics</span>
+</a>
+<!-- Inactive: Messages -->
+<a class="text-on-surface-variant mx-2 my-1 px-4 py-3 flex items-center gap-3 rounded-xl hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined">chat_bubble</span>
+<span class="font-body-md text-body-md">Messages</span>
+</a>
+<!-- Inactive: Settings -->
+<a class="text-on-surface-variant mx-2 my-1 px-4 py-3 flex items-center gap-3 rounded-xl hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-body-md text-body-md">Settings</span>
+</a>
+</div>
+<!-- CTA & Footer Tabs -->
+<div class="mt-auto px-4 py-4 border-t border-outline-variant/30 flex flex-col gap-4">
+<button class="w-full bg-primary text-on-primary py-3 rounded-xl font-label-caps text-label-caps hover:bg-surface-tint hover:text-white transition-colors flex justify-center items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">biotech</span>
+                Analyze Produce
+            </button>
+<div class="flex flex-col gap-1">
+<a class="text-on-surface-variant mx-2 my-1 px-2 py-2 flex items-center gap-3 rounded-xl hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">help</span>
+<span class="font-label-caps text-label-caps">Support</span>
+</a>
+<a class="text-on-surface-variant mx-2 my-1 px-2 py-2 flex items-center gap-3 rounded-xl hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">logout</span>
+<span class="font-label-caps text-label-caps">Log Out</span>
+</a>
+</div>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="ml-64 flex-1 flex w-full h-full relative">
+<!-- Large Map View (Left/Main Split) -->
+<section class="flex-1 relative bg-surface-container-lowest overflow-hidden">
+<!-- Map Background Layer -->
+<div class="absolute inset-0 bg-cover bg-center grayscale-[0.2] contrast-125 brightness-[0.9]" data-alt="A highly detailed, ultra-modern digital satellite map showing sprawling agricultural regions in the California Central Valley. The map employs a clean, high-tech light mode aesthetic with subtle topographic contours in pale greys, interspersed with distinct, sharp geometric field patterns. Lighting is soft and even, evoking a pristine, data-driven command center environment. Accent colors are restricted to precise, high-contrast markers." data-location="California Central Valley" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAisaqNbRob4XVhJcq_kbdQJuIVfZNfqbC8qd_LbPza7Cvfeg0GhboVWfzYvkM1VwDD5iOziuEFsfHrPzX-C-16f34BdS_pt8vn4m__sK1Iyy8JoykBcN0-ousqN48Ehw1w-T43HNznxPISBw2OM0bSEg-JUoRi_4DRMgLkt-YB73pdMRKljgE39cBicpAy259LaO6O5wrMQ7nMZ_dEzxp86IxgWSv_V7Ftuf2QbLuV9lmieCsZFDap')">
+</div>
+<!-- Map Overlay UI - Top Bar -->
+<div class="absolute top-6 left-6 right-6 flex justify-between items-start pointer-events-none z-10">
+<!-- Architecture Hint -->
+<div class="glass-panel px-4 py-2 rounded-full flex items-center gap-2 text-primary shadow-sm pointer-events-auto">
+<span class="material-symbols-outlined text-[16px] text-secondary-container" style="font-variation-settings: 'FILL' 1;">satellite_alt</span>
+<span class="font-label-caps text-label-caps text-xs tracking-wider uppercase">Future GPS Architecture Active</span>
+</div>
+<!-- Map Controls (mock) -->
+<div class="flex flex-col gap-2 pointer-events-auto">
+<button class="w-10 h-10 glass-panel rounded-xl flex items-center justify-center text-on-surface hover:bg-white hover:text-secondary transition-colors shadow-sm">
+<span class="material-symbols-outlined">add</span>
+</button>
+<button class="w-10 h-10 glass-panel rounded-xl flex items-center justify-center text-on-surface hover:bg-white hover:text-secondary transition-colors shadow-sm">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<button class="w-10 h-10 glass-panel rounded-xl flex items-center justify-center text-on-surface hover:bg-white hover:text-secondary transition-colors shadow-sm mt-2">
+<span class="material-symbols-outlined">my_location</span>
+</button>
+</div>
+</div>
+<!-- Route Visualization (SVG Overlay) -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none z-0" style="filter: drop-shadow(0 4px 6px rgba(0,24,12,0.1));">
+<!-- Route Path -->
+<path class="opacity-60" d="M 250,500 C 400,450 500,200 700,250 S 900,100 1100,300" fill="none" stroke="#006c49" stroke-dasharray="8 8" stroke-width="4"></path>
+<path d="M 250,500 C 400,450 500,200 600,230" fill="none" stroke="#6cf8bb" stroke-width="6"></path>
+<!-- Pickup Node -->
+<g transform="translate(250,500)">
+<circle cx="0" cy="0" fill="#ffffff" r="12" stroke="#bfc9c3" stroke-width="2"></circle>
+<circle cx="0" cy="0" fill="#003527" r="4"></circle>
+</g>
+<!-- Destination Node -->
+<g transform="translate(1100,300)">
+<circle cx="0" cy="0" fill="#064e3b" r="16"></circle>
+<path d="M-4,-4 L4,4 M-4,4 L4,-4" stroke="#ffffff" stroke-width="2"></path>
+</g>
+</svg>
+<!-- Vehicle Marker (Active) -->
+<div class="absolute z-10" style="left: 600px; top: 230px; transform: translate(-50%, -50%);">
+<!-- Ping Effect -->
+<div class="absolute inset-0 rounded-full bg-secondary-container animate-ping-slow"></div>
+<!-- Marker Body -->
+<div class="relative w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-secondary-container">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+</div>
+<!-- Floating Label -->
+<div class="absolute top-14 left-1/2 -translate-x-1/2 whitespace-nowrap bg-surface-container-highest px-3 py-1 rounded-lg text-xs font-label-caps text-on-surface shadow-sm font-bold border border-outline-variant/50">
+                    ID-8834 • 65 mph
+                </div>
+</div>
+<!-- Contextual Data Overlay Bottom Left -->
+<div class="absolute bottom-6 left-6 flex gap-4 pointer-events-auto z-10">
+<div class="glass-panel px-6 py-4 rounded-2xl shadow-sm border border-outline-variant/30 flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center border border-outline-variant">
+<span class="material-symbols-outlined text-on-surface-variant">thermostat</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-on-surface-variant">Ambient Zone A</p>
+<p class="font-headline-md text-headline-md font-bold text-primary">34.2°F</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Side Panel (Right Split) -->
+<aside class="w-[420px] h-full bg-surface border-l border-outline-variant shadow-[-20px_0_40px_rgba(3,20,39,0.03)] flex flex-col z-20">
+<!-- Panel Header -->
+<header class="px-6 py-6 border-b border-outline-variant/50 bg-surface-container-lowest">
+<div class="flex justify-between items-center mb-2">
+<h2 class="font-headline-lg text-headline-lg text-primary">Live Tracking</h2>
+<span class="bg-secondary-fixed/20 text-secondary px-3 py-1 rounded-full font-label-caps text-[10px] tracking-widest border border-secondary-fixed/30 flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></span>
+                        IN TRANSIT
+                    </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Batch ID: <span class="font-label-caps font-bold text-primary">#AG-8834-V2</span></p>
+</header>
+<!-- Scrollable Content -->
+<div class="flex-1 overflow-y-auto custom-scrollbar p-6 flex flex-col gap-6">
+<!-- ETA & Route Summary -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 border border-outline-variant shadow-sm relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-fixed-dim/10 rounded-bl-full -z-10"></div>
+<h3 class="font-label-sm text-label-sm text-on-surface-variant mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                        Estimated Arrival
+                    </h3>
+<div class="flex items-baseline gap-2 mb-6">
+<span class="font-display-lg text-display-lg text-primary">14:30</span>
+<span class="font-body-md text-on-surface-variant">PST</span>
+</div>
+<!-- Timeline -->
+<div class="relative pl-6 border-l-2 border-surface-variant flex flex-col gap-6">
+<!-- Origin -->
+<div class="relative">
+<div class="absolute -left-[31px] w-4 h-4 rounded-full bg-surface border-2 border-outline-variant"></div>
+<p class="font-label-caps text-label-caps text-on-surface-variant mb-1">08:00 AM • Picked Up</p>
+<p class="font-body-md text-body-md font-bold text-on-surface">Salinas Valley Farm, CA</p>
+</div>
+<!-- Current -->
+<div class="relative">
+<div class="absolute -left-[31px] w-4 h-4 rounded-full bg-secondary-container border-2 border-secondary-fixed shadow-[0_0_10px_rgba(108,248,187,0.5)]"></div>
+<p class="font-label-caps text-label-caps text-secondary mb-1">Current Location</p>
+<p class="font-body-md text-body-md font-bold text-on-surface">I-5 Northbound, Mile 240</p>
+</div>
+<!-- Destination -->
+<div class="relative">
+<div class="absolute -left-[31px] w-4 h-4 rounded-full bg-surface border-2 border-outline-variant"></div>
+<p class="font-label-caps text-label-caps text-on-surface-variant mb-1">Pending</p>
+<p class="font-body-md text-body-md font-bold text-on-surface">Seattle Dist. Hub, WA</p>
+</div>
+</div>
+</div>
+<!-- Cold Chain Telemetry -->
+<div class="bg-primary text-on-primary rounded-2xl p-5 shadow-sm relative overflow-hidden group">
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-label-sm text-label-sm flex items-center gap-2 text-primary-fixed">
+<span class="material-symbols-outlined text-[16px]">ac_unit</span>
+                            Cold Chain Telemetry
+                        </h3>
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex items-end gap-4 mb-4">
+<div>
+<span class="block font-label-caps text-[10px] uppercase tracking-wider opacity-80 mb-1">Internal Temp</span>
+<span class="font-headline-lg text-headline-lg text-white">34.2°</span>
+</div>
+<div class="pb-1">
+<span class="block font-label-caps text-[10px] uppercase tracking-wider opacity-80 mb-1">Target</span>
+<span class="font-body-md text-body-md">33.0° - 36.0°</span>
+</div>
+</div>
+<!-- Mini Chart (CSS constructed) -->
+<div class="h-12 w-full flex items-end gap-1 opacity-80">
+<div class="w-full bg-secondary-fixed/20 h-full rounded-t-sm relative">
+<!-- Trend Line Mock -->
+<svg class="absolute inset-0 w-full h-full" preserveaspectratio="none" viewbox="0 0 100 100">
+<path d="M0,50 L20,45 L40,55 L60,48 L80,52 L100,50" fill="none" stroke="#6ffbbe" stroke-width="3" vector-effect="non-scaling-stroke"></path>
+</svg>
+<!-- Target Zone overlay -->
+<div class="absolute top-1/4 bottom-1/4 w-full bg-primary-fixed/5 border-y border-primary-fixed/20"></div>
+</div>
+</div>
+</div>
+<!-- Transport Partner -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 border border-outline-variant shadow-sm flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-surface-variant overflow-hidden shrink-0 border border-outline">
+<img class="w-full h-full object-cover" data-alt="A close up portrait of a professional logistics driver in a modern vehicle cabin. The lighting is crisp and natural, highlighting a sense of reliability and expertise. The aesthetic is clean and corporate, fitting a high-tech agricultural supply chain platform. The colors are neutral with subtle hints of vibrant mint green in the uniform or dashboard details." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADAxstPIbUc0By0FNtIrzVjgTTVnO1bcZlM_jxHrb5_x0q__GBByf5vdaE0568qwCjUcU8Tx8c_2sE8fE_JNgtShT80pzhnCYCq2FZMOrtK9X7asn1ErZ5lidxhIcrBHr1dmJcWA3oEUsw8en1hs3fpf1NrT-zNkLWyD3AsGV_jOB9-cPvAJ16-cv5cncgcHmlrQti5Sls4aBzrPnAssaaDx5YzzBM8v7M5E6BMSF0rYPIwIfDuVnx"/>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-body-md text-[16px] leading-snug text-primary truncate">Marcus Chen</h4>
+<p class="font-body-md text-[14px] text-on-surface-variant truncate">Elite Freight Logistics</p>
+<div class="flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps text-[12px] text-on-surface">4.9 / 5.0</span>
+</div>
+</div>
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</button>
+</div>
+<hr class="border-outline-variant/40"/>
+<!-- Other Active Shipments List -->
+<div>
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-label-sm text-label-sm text-on-surface-variant">Other Active Shipments (3)</h3>
+<button class="text-secondary font-label-caps text-[12px] hover:underline">View All</button>
+</div>
+<div class="flex flex-col gap-3">
+<!-- List Item 1 -->
+<div class="p-3 rounded-xl hover:bg-surface-container-high transition-colors cursor-pointer border border-transparent hover:border-outline-variant flex items-center justify-between group">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+</div>
+<div>
+<p class="font-label-caps text-[14px] font-bold text-primary">#AG-7721</p>
+<p class="font-body-md text-[12px] text-on-surface-variant">Organic Strawberries</p>
+</div>
+</div>
+<div class="text-right">
+<p class="font-label-caps text-[10px] text-on-surface-variant mb-1">ETA</p>
+<p class="font-label-caps text-[12px] font-bold">16:45</p>
+</div>
+</div>
+<!-- List Item 2 -->
+<div class="p-3 rounded-xl hover:bg-surface-container-high transition-colors cursor-pointer border border-transparent hover:border-outline-variant flex items-center justify-between group">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">eco</span>
+</div>
+<div>
+<p class="font-label-caps text-[14px] font-bold text-primary">#AG-9002</p>
+<p class="font-body-md text-[12px] text-on-surface-variant">Romaine Lettuce</p>
+</div>
+</div>
+<div class="text-right">
+<span class="px-2 py-1 bg-surface-variant rounded-md font-label-caps text-[9px] text-on-surface-variant">LOADING</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</main>
+</body></html>

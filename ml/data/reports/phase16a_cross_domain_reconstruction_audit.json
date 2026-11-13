@@ -1,0 +1,182 @@
+{
+  "phase": "16A",
+  "timestamp": "2026-10-30T19:23:11+0530",
+  "random_seed": 42,
+  "source_inventory": {
+    "guava": {
+      "SAU_Sindh_Laboratory": 2309,
+      "FruitNet_Market_Retail": 2281,
+      "total_available": 4590,
+      "independent_sources": 2
+    },
+    "banana": {
+      "BananaID_Studio_BlueCloth": 1960,
+      "FruitNet_Market_Retail": 2200,
+      "total_available": 4160,
+      "independent_sources": 2
+    },
+    "apple": {
+      "Apple_Mendeley_Orchard_Scenes": 1406,
+      "Apple_Mendeley_Orchard_Crops": 2574,
+      "FruitNet_Market_Retail": 2290,
+      "total_available_crops_and_images": 4864,
+      "independent_sources": 2
+    },
+    "mango": {
+      "Harumanis_Farm_ScalePaper": 272,
+      "total_available": 272,
+      "independent_sources": 1,
+      "status": "DATA_DEFICIT_BLOCKED"
+    },
+    "negative_pool": {
+      "fruitnet_orange": 2500,
+      "fruitnet_lime": 2179,
+      "fruitnet_pomegranate": 7252,
+      "oranges_in_field_canopy": 5025,
+      "citrus_disease_foliage": 759,
+      "total_available": 17715
+    }
+  },
+  "detection_data_preparation": {
+    "apple_yolo_conversion": {
+      "splits": {
+        "train": {
+          "scenes": 1041,
+          "instances": 1981
+        },
+        "val": {
+          "scenes": 126,
+          "instances": 185
+        },
+        "test": {
+          "scenes": 239,
+          "instances": 409
+        }
+      },
+      "total_scenes": 1406,
+      "total_instances": 2575,
+      "degenerate_instances_filtered": 0,
+      "instances_by_stage": {
+        "mature apple": 839,
+        "semi-mature apple": 814,
+        "immature apple": 921,
+        "apple": 1
+      }
+    },
+    "annotation_readiness_matrix": {
+      "apple": {
+        "status": "READY_YOLO",
+        "annotation_type": "instance_polygon_to_bbox",
+        "annotated_scenes": 1406,
+        "annotated_instances": 2575,
+        "converted_yolo_labels": "ml\\data\\processed\\apple_detection_yolo\\labels",
+        "commercial_license": "CC BY-NC 4.0 (Non-Commercial Research Only)"
+      },
+      "guava": {
+        "status": "MISSING_BBOX",
+        "annotation_type": "whole_image_classification_only",
+        "annotated_scenes": 0,
+        "annotated_instances": 0,
+        "gap_remediation": "Phase 16B planned pseudo-labeling / weak supervision / manual bounding box annotation."
+      },
+      "banana": {
+        "status": "MISSING_BBOX",
+        "annotation_type": "whole_image_classification_only",
+        "annotated_scenes": 0,
+        "annotated_instances": 0,
+        "gap_remediation": "Phase 16B planned pseudo-labeling / bunch-level segmentation."
+      },
+      "mango": {
+        "status": "MISSING_BBOX",
+        "annotation_type": "whole_image_classification_only",
+        "annotated_scenes": 0,
+        "annotated_instances": 0,
+        "gap_remediation": "Phase 16B planned scale-paper grid segmentation & bounding box extraction."
+      }
+    }
+  },
+  "classification_reconstruction_v2": {
+    "dataset_name": "fruit_identifier_v2",
+    "created_at": "2026-10-30T19:23:23+0530",
+    "total_records": 19886,
+    "split_counts": {
+      "train": 14078,
+      "val": 2771,
+      "test": 3037
+    },
+    "class_counts_by_split": {
+      "train": {
+        "guava": 3208,
+        "banana": 2910,
+        "apple": 3581,
+        "mango": 189,
+        "negative_background": 4190
+      },
+      "val": {
+        "guava": 686,
+        "banana": 623,
+        "apple": 525,
+        "mango": 37,
+        "negative_background": 900
+      },
+      "test": {
+        "guava": 696,
+        "banana": 627,
+        "apple": 758,
+        "mango": 46,
+        "negative_background": 910
+      }
+    },
+    "source_domains": {
+      "guava": [
+        "SAU_Sindh_Laboratory",
+        "FruitNet_Market_Retail"
+      ],
+      "banana": [
+        "BananaID_Studio_BlueCloth",
+        "FruitNet_Market_Retail"
+      ],
+      "apple": [
+        "Apple_Mendeley_Orchard_Canopy",
+        "FruitNet_Market_Retail"
+      ],
+      "mango": [
+        "Harumanis_Farm_ScalePaper (DEFICIT)"
+      ],
+      "negative_background": [
+        "FruitNet_Orange",
+        "FruitNet_Lime",
+        "FruitNet_Pomegranate",
+        "Oranges_In_Field_Canopy",
+        "Citrus_Disease_Foliage"
+      ]
+    },
+    "safety_invariants": {
+      "split_leakage": 0,
+      "stage2_held_out_sync": {
+        "guava": 346,
+        "banana": 297,
+        "apple": 408,
+        "mango": 46
+      },
+      "mango_status": "BLOCKED_GATED_DEFICIT"
+    }
+  },
+  "leakage_and_split_safety": {
+    "train_val_test_disjoint": true,
+    "stage2_held_out_locked_sync": true
+  },
+  "external_evaluation_plan": {
+    "suite_1_canopy_stress_count": 1500,
+    "suite_2_pathological_foliage_count": 159,
+    "suite_3_retail_produce_count": 2000
+  },
+  "lifecycle_decisions": {
+    "production_status": "GATED (is_validated=False)",
+    "active_guava_checkpoint": "ml/artifacts/best_guava_resnet18.pth (PRESERVED)",
+    "banana_checkpoint": "ml/artifacts/best_banana_resnet18.pth (PRESERVED)",
+    "stage1_v1_checkpoint": "ml/artifacts/best_fruit_identifier_resnet18.pth (PRESERVED)",
+    "mango_readiness": "BLOCKED FOR PRODUCTION (Severe data deficit: 272 samples)",
+    "training_execution": "PROHIBITED IN PHASE 16A (Dataset preparation & audit only)"
+  }
+}

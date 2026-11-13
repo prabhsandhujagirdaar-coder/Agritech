@@ -1,0 +1,87 @@
+{
+  "audit_phase": "16A.1",
+  "timestamp": "2026-10-30T19:27:01+0530",
+  "random_seed": 42,
+  "pre_audit_checkpoint_hashes": {
+    "best_guava_resnet18.pth": "b213059f6b9744915ef921f2be70de9ae1eb0dd6c50a3fb0edce0e2cb710f5b4",
+    "best_banana_resnet18.pth": "3b296ba8556d88bd934f74fee1e88860921fe69dd5b4869984fd0c529f339dae",
+    "best_fruit_identifier_resnet18.pth": "07150d1ddb92ea8ce7018e08fa6c3d21b6b6de6aac9c5feb838d6f9dc28a8967"
+  },
+  "post_audit_checkpoint_hashes": {
+    "best_guava_resnet18.pth": "b213059f6b9744915ef921f2be70de9ae1eb0dd6c50a3fb0edce0e2cb710f5b4",
+    "best_banana_resnet18.pth": "3b296ba8556d88bd934f74fee1e88860921fe69dd5b4869984fd0c529f339dae",
+    "best_fruit_identifier_resnet18.pth": "07150d1ddb92ea8ce7018e08fa6c3d21b6b6de6aac9c5feb838d6f9dc28a8967"
+  },
+  "checkpoints_unaltered": true,
+  "source_split_matrix_summary": {
+    "total_records": 19886,
+    "classes": [
+      "guava",
+      "banana",
+      "apple",
+      "mango",
+      "negative_background"
+    ],
+    "groups_crossing_splits": 0
+  },
+  "historical_test_contamination": {
+    "fruitnet_contamination_finding": "FruitNet images used as external test in Phase 15D are now 70% in training set of v2. FruitNet is internal, not external.",
+    "stage2_locked_test_sync": "100% matched for Guava, Banana, Apple, Mango"
+  },
+  "external_evaluation_audit": {
+    "suite_1_canopy_stress": {
+      "source": "Oranges in the field",
+      "samples": 1500,
+      "unseen_independence_status": "PARTIALLY_INDEPENDENT (Shares tree orchard with training field images, but under rain/night extremes)",
+      "exact_leakage": 0
+    },
+    "suite_2_pathological_foliage_stress": {
+      "source": "Citrus Disease",
+      "samples": 159,
+      "unseen_independence_status": "HELD_OUT_INTERNAL (Remaining 159 images from citrus disease pool)",
+      "exact_leakage": 0
+    },
+    "suite_3_retail_non_target_produce": {
+      "source": "FruitNet Pomegranate",
+      "samples": 2000,
+      "unseen_independence_status": "NOT_EXTERNAL (Same market stall sessions & dates as training pomegranates)",
+      "exact_leakage": 0,
+      "session_overlap": [
+        "_2019082",
+        "20200728"
+      ]
+    }
+  },
+  "apple_yolo_validation": {
+    "scenes_audited": 1406,
+    "instances_audited": 2575,
+    "malformed_instances": 0,
+    "previews_generated": 80
+  },
+  "dataset_quality": {
+    "missing_files": 0,
+    "corrupt_files": 0,
+    "exact_sha256_leaks": 0
+  },
+  "license_register_summary": {
+    "commercial_safe_commodities": [
+      "guava",
+      "banana"
+    ],
+    "restricted_commodities": [
+      "apple (CC BY-NC 4.0)"
+    ],
+    "deficit_blocked_commodities": [
+      "mango (272 samples)"
+    ]
+  },
+  "training_readiness_summary": {
+    "stage_1a_apple_detector_yolov8n": "READY_WITH_RESTRICTIONS",
+    "stage_1_fruit_identifier_resnet18_v2": "READY_FOR_EXPERIMENTAL_TRAINING",
+    "stage_2_guava_classifier": "READY_WITH_RESTRICTIONS",
+    "stage_2_banana_classifier": "READY_WITH_RESTRICTIONS",
+    "stage_2_apple_classifier": "BLOCKED",
+    "stage_2_mango_classifier": "BLOCKED"
+  },
+  "phase_16b_safe_to_begin": true
+}

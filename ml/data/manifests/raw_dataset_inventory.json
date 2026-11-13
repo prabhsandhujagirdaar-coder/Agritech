@@ -1,0 +1,241 @@
+{
+  "manifest_version": "1.0.0",
+  "phase": "14B: Dataset Acquisition and Verification",
+  "generated_at": "2026-10-29",
+  "target_commodities": [
+    "Guava",
+    "Banana",
+    "Apple",
+    "Mango"
+  ],
+  "commodities": {
+    "guava": {
+      "commodity": "Guava (Psidium guajava)",
+      "source": "Sindh Agriculture University / Local Orchard Harvest Dataset",
+      "license": "Internal Academic / AgriChain AI Research",
+      "status": "CERTIFIED_ACTIVE",
+      "taxonomy": [
+        "Green",
+        "Mature Green",
+        "Ripe"
+      ],
+      "varieties": [
+        "Local Sindhi",
+        "Riyali",
+        "Thadhrami"
+      ],
+      "total_images": 2309,
+      "class_distribution": {
+        "Green": 232,
+        "Mature Green": 829,
+        "Ripe": 1248
+      },
+      "corrupted_images": 0,
+      "model_checkpoint": {
+        "path": "ml\\artifacts\\best_guava_resnet18.pth",
+        "size_bytes": 44796363,
+        "sha256": "b213059f6b9744915ef921f2be70de9ae1eb0dd6c50a3fb0edce0e2cb710f5b4",
+        "status": "CERTIFIED_ACTIVE"
+      }
+    },
+    "banana": {
+      "commodity": "Banana (Musa acuminata / paradisiaca)",
+      "dataset_name": "BananaID: An image dataset of banana varieties and ripeness stages in Indonesia designed for classification",
+      "doi": "10.17632/h6n5srjjyw.1",
+      "official_url": "https://data.mendeley.com/datasets/h6n5srjjyw/1",
+      "authors": "Siti Mutrofin, et al. (Dec 2025)",
+      "license": "CC BY 4.0",
+      "status": "ACQUIRED_RAW_VERIFIED",
+      "archives": [
+        {
+          "name": "Banana_Ripeness_Dataset.zip",
+          "size_bytes": 25998413,
+          "sha256": "ee5c165ab6d117c646419ad0e500c01783db68723dddf90c97b64727a7096c12"
+        },
+        {
+          "name": "Banana_Variety_Dataset.zip",
+          "size_bytes": 25957121,
+          "sha256": "1f4c59a46a09838e6c220f928182a4aa0cce25dd26f9db1396cb89b0d9efef74"
+        }
+      ],
+      "ripeness_subset": {
+        "path": "ml\\data\\raw\\banana\\ripeness\\Banana Ripeness Classification Dataset",
+        "classes": {
+          "Half_Ripe": 488,
+          "Overripe": 448,
+          "Ripe": 616,
+          "Unripe": 408
+        },
+        "total_images": 1960,
+        "resolutions": [
+          "384x256"
+        ],
+        "corrupted_images": 0
+      },
+      "variety_subset": {
+        "path": "ml\\data\\raw\\banana\\variety\\Banana Classification Dataset",
+        "classes": {
+          "Ambon": 468,
+          "Cavendish": 380,
+          "Mas": 376,
+          "Raja": 424,
+          "Saba": 312
+        },
+        "total_images": 1960,
+        "resolutions": [
+          "384x256"
+        ],
+        "corrupted_images": 0
+      },
+      "notes": "Acquired exclusively original unaugmented images (24.8 MB Ripeness + 24.8 MB Variety). Augmented duplicates (635 MB) excluded per protocol."
+    },
+    "apple": {
+      "commodity": "Apple (Malus domestica)",
+      "dataset_name": "A multi-stage, pixel-level annotated apple dataset for precision agriculture research",
+      "doi": "10.17632/gfcmdbvw65.4",
+      "official_url": "https://data.mendeley.com/datasets/gfcmdbvw65/4",
+      "authors": "Dandan Wang, Bo Wang (Data in Brief, June 2026)",
+      "license": "CC BY-NC 4.0",
+      "status": "ACQUIRED_RAW_VERIFIED",
+      "archives": [
+        {
+          "name": "dataset-20260508.zip",
+          "size_bytes": 290131787,
+          "sha256": "049591afd4fc3529aedbd31ef9119f5ec0601ebcb8cbbd4a25b7e883fde147ce"
+        }
+      ],
+      "taxonomy": [
+        "immature apple",
+        "semi-mature apple",
+        "mature apple"
+      ],
+      "total_orchard_images": 1406,
+      "total_instance_masks": 2575,
+      "instance_distribution": {
+        "mature apple": 839,
+        "semi-mature apple": 814,
+        "immature apple": 921,
+        "unknown": 1
+      },
+      "split_counts": {
+        "train": 1041,
+        "val": 126,
+        "test": 239,
+        "train_resize": 1041,
+        "val_resize": 126,
+        "test_resize": 239
+      },
+      "via_annotations": {
+        "train": {
+          "file": "train.json",
+          "size_bytes": 936265,
+          "images": 1041,
+          "instances": 1981,
+          "stages": {
+            "mature apple": 650,
+            "semi-mature apple": 618,
+            "immature apple": 713
+          }
+        },
+        "val": {
+          "file": "val.json",
+          "size_bytes": 90702,
+          "images": 126,
+          "instances": 185,
+          "stages": {
+            "semi-mature apple": 60,
+            "immature apple": 67,
+            "mature apple": 58
+          }
+        },
+        "test": {
+          "file": "test.json",
+          "size_bytes": 207419,
+          "images": 239,
+          "instances": 409,
+          "stages": {
+            "mature apple": 131,
+            "semi-mature apple": 136,
+            "immature apple": 141,
+            "unknown": 1
+          }
+        },
+        "train_resize": {
+          "file": "train_resize.json",
+          "size_bytes": 958537,
+          "images": 1041,
+          "instances": 1981,
+          "stages": {
+            "mature apple": 650,
+            "semi-mature apple": 618,
+            "immature apple": 713
+          }
+        },
+        "val_resize": {
+          "file": "val_resize.json",
+          "size_bytes": 92862,
+          "images": 126,
+          "instances": 185,
+          "stages": {
+            "semi-mature apple": 60,
+            "immature apple": 67,
+            "mature apple": 58
+          }
+        },
+        "test_resize": {
+          "file": "test_resize.json",
+          "size_bytes": 212368,
+          "images": 239,
+          "instances": 409,
+          "stages": {
+            "mature apple": 131,
+            "semi-mature apple": 136,
+            "immature apple": 141,
+            "unknown": 1
+          }
+        }
+      },
+      "corrupted_images": 0,
+      "notes": "Original VIA JSON polygon instance masks preserved intact. Multiple resolutions (original ~369x277/404x303 and resized 640x480) available for Stage 2 instance segmentation and maturity classification."
+    },
+    "mango": {
+      "commodity": "Mango (Mangifera indica cv. Harumanis)",
+      "dataset_name": "Dataset of Harumanis mango images for multi-modal maturity classification using ventral texture and size features",
+      "doi": "10.17632/x6bcr3fkj5.4",
+      "official_url": "https://data.mendeley.com/datasets/x6bcr3fkj5/4",
+      "authors": "Nur Atiqa Basaruddin (Mendeley Data V4, 2026)",
+      "license": "CC BY 4.0",
+      "status": "ACQUIRED_RAW_VERIFIED",
+      "metadata_files_count": 14,
+      "total_original_images": 272,
+      "taxonomy": [
+        "UNRIPE",
+        "SEMI-RIPE",
+        "RIPE",
+        "ROTTEN"
+      ],
+      "class_distribution": {
+        "RIPE": 129,
+        "ROTTEN": 23,
+        "SEMI-RIPE": 61,
+        "UNRIPE": 59
+      },
+      "resolutions": [
+        "651x1156",
+        "721x1280",
+        "1280x721",
+        "1443x2560",
+        "2256x4000",
+        "2560x1443",
+        "4000x2256"
+      ],
+      "corrupted_images": 0,
+      "sample_deficit_warning": {
+        "is_deficit": true,
+        "average_samples_per_class": 68.0,
+        "minority_class": "ROTTEN (23 samples)",
+        "recommendation": "Harumanis Mango sample volume (272 total, ~68/class) is insufficient on its own for robust production deep learning. Must be combined with supplemental datasets (e.g. Indian Alphonso/Dashehari datasets) or used exclusively for preliminary benchmark evaluation before production certification."
+      }
+    }
+  }
+}

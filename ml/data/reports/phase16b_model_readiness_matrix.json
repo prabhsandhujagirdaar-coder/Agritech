@@ -1,0 +1,23 @@
+{
+  "resnet18": {
+    "macro_f1_ge_95": true,
+    "macro_recall_ge_95": true,
+    "false_fruit_acceptance_le_1pct": true,
+    "calibrated_ece_le_0_05": true,
+    "overall_status": "VALIDATED_MULTI_SOURCE"
+  },
+  "efficientnet_b0": {
+    "macro_f1_ge_95": true,
+    "macro_recall_ge_95": true,
+    "false_fruit_acceptance_le_1pct": true,
+    "calibrated_ece_le_0_05": true,
+    "overall_status": "VALIDATED_MULTI_SOURCE"
+  },
+  "mobilenet_v3_large": {
+    "macro_f1_ge_95": true,
+    "macro_recall_ge_95": true,
+    "false_fruit_acceptance_le_1pct": true,
+    "calibrated_ece_le_0_05": true,
+    "overall_status": "VALIDATED_MULTI_SOURCE"
+  }
+}

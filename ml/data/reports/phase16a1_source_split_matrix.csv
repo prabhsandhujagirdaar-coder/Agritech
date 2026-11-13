@@ -1,0 +1,13 @@
+class,source_dataset,domain_environment,train_count,val_count,test_count,total_count,unique_groups,license,commercial_use_allowed,domain_diversity_status
+apple,Apple_Mendeley_Orchard_Crops,Outdoor_Orchard_Canopy,1981,185,408,2574,1406,CC BY-NC 4.0,NO (Non-Commercial Academic Only),RESTRICTED_NON_COMMERCIAL
+apple,FruitNet_Apple,Market_Retail_Crates,1600,340,350,2290,229,CC BY 4.0,Yes (with attribution),SOURCE_DIVERSE_PASS
+banana,BananaID_Ripeness,Studio_BlueCloth,1370,293,297,1960,1893,CC BY 4.0,Yes (with attribution),SOURCE_DIVERSE_PASS
+banana,FruitNet_Banana,Market_Retail_Crates,1540,330,330,2200,220,CC BY 4.0,Yes (with attribution),SOURCE_DIVERSE_PASS
+guava,FruitNet_Guava,Market_Retail_Crates,1591,340,350,2281,229,CC BY 4.0,Yes (with attribution),SOURCE_DIVERSE_PASS
+guava,Guava_SAU_Harvest,Laboratory_Studio,1617,346,346,2309,606,CC BY 4.0,Yes (with attribution),SOURCE_DIVERSE_PASS
+mango,Harumanis_Mango,Farm_ScalePaper,189,37,46,272,192,CC BY 4.0,Yes (with attribution),FLAGGED_SINGLE_SOURCE_DEFICIT
+negative_background,Citrus_Disease_Foliage,Pathological_Leaves_Bark,420,90,90,600,60,CC BY 4.0,Yes (with attribution),SOURCE_DIVERSE_PASS
+negative_background,FruitNet_Lime,Market_Retail_Crates,840,180,180,1200,120,CC BY 4.0,Yes (with attribution),SOURCE_DIVERSE_PASS
+negative_background,FruitNet_Orange,Market_Retail_Crates,840,180,180,1200,120,CC BY 4.0,Yes (with attribution),SOURCE_DIVERSE_PASS
+negative_background,FruitNet_Pomegranate,Market_Retail_Crates,840,180,180,1200,120,CC BY 4.0,Yes (with attribution),SOURCE_DIVERSE_PASS
+negative_background,Oranges_In_Field_Canopy,Outdoor_Orchard_Canopy,1250,270,280,1800,180,CC BY 4.0,Yes (with attribution),SOURCE_DIVERSE_PASS

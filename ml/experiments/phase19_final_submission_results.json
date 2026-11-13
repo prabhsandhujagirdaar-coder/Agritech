@@ -1,0 +1,684 @@
+{
+  "audit_timestamp": "2026-10-31T10:00:34Z",
+  "task1_clean_start": {
+    "health": {
+      "status": "healthy",
+      "service": "AgriChain AI Backend",
+      "version": "1.0.0",
+      "target_crop": "guava",
+      "cnn_ready": true,
+      "device": "cuda",
+      "database": {
+        "enabled": false,
+        "connected": null,
+        "message": "File-based ledger persistence active."
+      }
+    },
+    "frontend_status": 200,
+    "model_registry": {
+      "supported_fruits": [
+        "guava",
+        "mango",
+        "banana",
+        "apple"
+      ],
+      "available_fruits": [
+        "guava",
+        "banana",
+        "apple"
+      ],
+      "production_crop": "guava",
+      "fruits": {
+        "guava": {
+          "fruit": "guava",
+          "common_name": "Guava",
+          "scientific_name": "Psidium guajava L.",
+          "cultivar": "Local Sindhi / Allahabad Safeda",
+          "supported": true,
+          "available": true,
+          "is_validated": true,
+          "status": "CERTIFIED_ACTIVE",
+          "architecture": "resnet18",
+          "task_type": "classification",
+          "model_version": "2.0.0",
+          "classes": [
+            "Green",
+            "Mature Green",
+            "Ripe"
+          ],
+          "class_labels": {
+            "0": "Green",
+            "1": "Mature Green",
+            "2": "Ripe"
+          },
+          "num_classes": 3,
+          "weights_path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\ml\\artifacts\\best_guava_resnet18.pth",
+          "weights_exist": true,
+          "message": "Certified Guava model v2.0.0 ready at 'best_guava_resnet18.pth'."
+        },
+        "mango": {
+          "fruit": "mango",
+          "common_name": "Mango",
+          "scientific_name": "Mangifera indica L.",
+          "cultivar": "Harumanis / Chaunsa / Dashehari",
+          "supported": true,
+          "available": false,
+          "is_validated": false,
+          "status": "GATED_DEFICIT",
+          "architecture": "resnet18",
+          "task_type": "classification",
+          "model_version": null,
+          "classes": [
+            "unripe",
+            "semi-ripe",
+            "ripe",
+            "rotten"
+          ],
+          "class_labels": {
+            "0": "unripe",
+            "1": "semi-ripe",
+            "2": "ripe",
+            "3": "rotten"
+          },
+          "num_classes": 4,
+          "weights_path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\ml\\artifacts\\best_mango_resnet18.pth",
+          "weights_exist": false,
+          "message": "No certified checkpoint found for Mango. Training required."
+        },
+        "banana": {
+          "fruit": "banana",
+          "common_name": "Banana",
+          "scientific_name": "Musa acuminata / Musa balbisiana",
+          "cultivar": "Cavendish / Ambon",
+          "supported": true,
+          "available": true,
+          "is_validated": true,
+          "status": "BASELINE_VERIFIED",
+          "architecture": "resnet18",
+          "task_type": "classification",
+          "model_version": "1.0.0",
+          "classes": [
+            "Unripe",
+            "Half_Ripe",
+            "Ripe",
+            "Overripe"
+          ],
+          "class_labels": {
+            "0": "Unripe",
+            "1": "Half_Ripe",
+            "2": "Ripe",
+            "3": "Overripe"
+          },
+          "num_classes": 4,
+          "weights_path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\ml\\artifacts\\best_banana_resnet18.pth",
+          "weights_exist": true,
+          "message": "Certified Banana model v1.0.0 ready at 'best_banana_resnet18.pth'."
+        },
+        "apple": {
+          "fruit": "apple",
+          "common_name": "Apple",
+          "scientific_name": "Malus domestica Borkh.",
+          "cultivar": "Fuji / Gala",
+          "supported": true,
+          "available": true,
+          "is_validated": true,
+          "status": "EXPERIMENTAL_DETECTION",
+          "architecture": "yolov8n",
+          "task_type": "object_detection",
+          "model_version": "1.0.0-experimental",
+          "classes": [
+            "apple"
+          ],
+          "class_labels": {
+            "0": "apple"
+          },
+          "num_classes": 1,
+          "weights_path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\ml\\artifacts\\best_apple_yolov8n.pt",
+          "weights_exist": true,
+          "message": "Certified Apple model v1.0.0-experimental ready at 'best_apple_yolov8n.pt'."
+        }
+      },
+      "stage1_identifier": {
+        "supported": true,
+        "available": true,
+        "status": "BENCHMARK_VERIFIED",
+        "checkpoint": "best_fruit_identifier_mobilenet_v3_large.pth",
+        "architecture": "mobilenet_v3_large",
+        "version": "2.0.0",
+        "classes": [
+          "guava",
+          "banana",
+          "apple",
+          "mango",
+          "negative_background"
+        ],
+        "weights_path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\ml\\artifacts\\best_fruit_identifier_mobilenet_v3_large.pth",
+        "weights_exist": true,
+        "message": "Stage 1 fruit identifier (mobilenet_v3_large) v2.0.0 active."
+      }
+    },
+    "runtime_versions": {
+      "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "win32",
+      "node": "v22.19.0",
+      "npm": "10.9.3",
+      "pytorch": "2.11.0+cu128",
+      "torchvision": "0.26.0+cu128",
+      "cuda_version": "12.8",
+      "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU (6GB VRAM)",
+      "os": "Windows 11 Home Single Language (10.0.26300)"
+    }
+  },
+  "task2_browser_and_api_acceptance": {
+    "guava_inspection": {
+      "mode": "manual",
+      "target_fruit": "guava",
+      "task_type": "classification",
+      "status": "ready",
+      "identified_fruit": null,
+      "identification": null,
+      "classification": {
+        "predicted_class": "Mature Green",
+        "class_index": 1,
+        "label": "Mature Green",
+        "confidence": 0.8147,
+        "probabilities": {
+          "Green": 0.1683,
+          "Mature Green": 0.8147,
+          "Ripe": 0.017
+        },
+        "target_crop": "guava",
+        "model_name": "resnet18",
+        "model_version": "2.0.0",
+        "device": "cuda",
+        "inference_ms": 21.23,
+        "detected_fruit": null,
+        "fruit_confidence": null,
+        "fruit_probabilities": null,
+        "ripeness": "Mature Green",
+        "status": "ready",
+        "is_validated": true,
+        "warnings": null
+      },
+      "detection": null,
+      "unavailable_reason": null,
+      "warnings": [],
+      "device": "cuda",
+      "inference_ms": 33.78
+    },
+    "banana_inspection": {
+      "mode": "manual",
+      "target_fruit": "banana",
+      "task_type": "classification",
+      "status": "ready",
+      "identified_fruit": null,
+      "identification": null,
+      "classification": {
+        "predicted_class": "Ripe",
+        "class_index": 2,
+        "label": "Ripe",
+        "confidence": 0.8989,
+        "probabilities": {
+          "Unripe": 0.0038,
+          "Half_Ripe": 0.0638,
+          "Ripe": 0.8989,
+          "Overripe": 0.0334
+        },
+        "target_crop": "banana",
+        "model_name": "resnet18",
+        "model_version": "1.0.0",
+        "device": "cuda",
+        "inference_ms": 9.49,
+        "detected_fruit": null,
+        "fruit_confidence": null,
+        "fruit_probabilities": null,
+        "ripeness": "Ripe",
+        "status": "ready",
+        "is_validated": true,
+        "warnings": null
+      },
+      "detection": null,
+      "unavailable_reason": null,
+      "warnings": [],
+      "device": "cuda",
+      "inference_ms": 23.74
+    },
+    "apple_detection": {
+      "mode": "manual",
+      "target_fruit": "apple",
+      "task_type": "object_detection",
+      "status": "ready",
+      "identified_fruit": null,
+      "identification": null,
+      "classification": null,
+      "detection": {
+        "task": "object_detection",
+        "detected_apples_count": 2,
+        "boxes": [
+          {
+            "x1": 127.8,
+            "y1": 98.9,
+            "x2": 251.4,
+            "y2": 207.3,
+            "confidence": 0.9609,
+            "class_id": 0,
+            "class_name": "apple"
+          },
+          {
+            "x1": 104.2,
+            "y1": 0.0,
+            "x2": 166.2,
+            "y2": 34.4,
+            "confidence": 0.8126,
+            "class_id": 0,
+            "class_name": "apple"
+          }
+        ],
+        "average_confidence": 0.8867,
+        "model_name": "yolov8n",
+        "model_version": "1.0.0-experimental",
+        "license": "Academic / Non-Commercial Research Only (CC BY-NC 4.0)",
+        "scope_disclaimer": "This experimental model performs orchard object detection and instance counting only. It does NOT evaluate maturity stages, ripeness, sweetness, disease, or commercial market grade."
+      },
+      "unavailable_reason": null,
+      "warnings": [],
+      "device": "cuda",
+      "inference_ms": 33.39
+    },
+    "mango_gated": {
+      "mode": "manual",
+      "target_fruit": "mango",
+      "task_type": "unavailable",
+      "status": "unavailable",
+      "identified_fruit": null,
+      "identification": null,
+      "classification": null,
+      "detection": null,
+      "unavailable_reason": "Mango maturity prediction is unavailable. Awaiting validated multi-stage harvest dataset. In compliance with AgriChain AI integrity standards, cross-crop proxy models and synthetic predictions are strictly disabled.",
+      "warnings": [
+        "Commodity gated due to training data deficit."
+      ],
+      "device": "cuda",
+      "inference_ms": 0.0
+    },
+    "auto_identification": {
+      "predicted_fruit": "guava",
+      "confidence": 1.0,
+      "probabilities": {
+        "guava": 1.0,
+        "banana": 0.0,
+        "apple": 0.0,
+        "mango": 0.0,
+        "negative_background": 0.0
+      },
+      "is_uncertain": false,
+      "uncertainty_reason": null,
+      "model_name": "mobilenet_v3_large",
+      "model_version": "2.0.0"
+    },
+    "uncertain_foliage_fallback": {
+      "predicted_fruit": "negative_background",
+      "confidence": 1.0,
+      "probabilities": {
+        "guava": 0.0,
+        "banana": 0.0,
+        "apple": 0.0,
+        "mango": 0.0,
+        "negative_background": 1.0
+      },
+      "is_uncertain": true,
+      "uncertainty_reason": "Non-fruit canopy or background foliage detected. Please upload an image centered on produce.",
+      "model_name": "mobilenet_v3_large",
+      "model_version": "2.0.0"
+    },
+    "dealer_suitability": {
+      "facility_id": "FAC-DL-AZD-01",
+      "facility_name": "Azadpur APMC Fruit & Vegetable Mega Mandi",
+      "operation": "market_auction",
+      "crop": "guava",
+      "suitable": true,
+      "suitability_status": "verified_guava_trading",
+      "capabilities": {
+        "guava_trading": "verified",
+        "guava_handling": "not_verified",
+        "guava_cold_chain": "partially_verified",
+        "operational_availability": "active"
+      },
+      "warnings": [],
+      "evidence_summary": "Facility 'Azadpur APMC Fruit & Vegetable Mega Mandi' (MANDI): Trading=VERIFIED, Handling=NOT_VERIFIED, ColdChain=PARTIALLY_VERIFIED, Availability=ACTIVE.",
+      "source_citation": {
+        "source_name": "APMC Azadpur (Market of National Importance) / Govt of NCT of Delhi",
+        "source_record": "APMC Azadpur Terminal Market Directory & e-NAM Trading Hub",
+        "source_url": "https://apmcazadpurdelhi.com/",
+        "source_citation_type": "official_portal",
+        "verification_status": "verified",
+        "coordinate_source": "Azadpur APMC Market Office Complex, WGS84 Geocode",
+        "geocoding_confidence": "facility_campus"
+      }
+    },
+    "buyer_order": {
+      "id": "ORD-2026-0020",
+      "listing_id": "LST-GUA-001",
+      "produce_title": "Guava Premium Crate (Ripe)",
+      "variety": "Allahabad Safeda",
+      "ripeness_stage": "Ripe",
+      "quantity_crates": 5,
+      "total_weight_kg": 100,
+      "unit_price_inr": 1200,
+      "total_price_inr": 6000,
+      "currency": "INR",
+      "buyer_name": "Academic Demo B2B Retailer",
+      "buyer_organization": "Delhi Perishables Consortium",
+      "shipping_destination": "Azadpur APMC Mega Mandi, Delhi",
+      "status": "confirmed",
+      "is_demo_order": true,
+      "simulation_notice": "DEMO WORKFLOW SIMULATION \u2014 No real payment processed and no legal financial obligation created.",
+      "created_at": "2026-10-31T10:00:02.000098+00:00"
+    },
+    "admin_status": {
+      "status": "ready",
+      "target_crop": "guava",
+      "model_available": true,
+      "model_name": "resnet18",
+      "model_version": "2.0.0",
+      "weights_path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\ml\\artifacts\\best_guava_resnet18.pth",
+      "weights_exist": true,
+      "device": "cuda",
+      "class_mapping_verified": true,
+      "class_mapping_status": "VERIFIED_GROUND_TRUTH_METADATA",
+      "message": "Model loaded successfully on cuda for guava."
+    }
+  },
+  "task3_database_persistence": {
+    "created_shipment": {
+      "id": "SHP-2026-037",
+      "produce_type": "Guava (Mature Green)",
+      "produce": "Guava (Mature Green)",
+      "origin": "Abohar Regional Packhouse, Punjab",
+      "destination": "Azadpur Terminal Mandi, Delhi",
+      "origin_facility_id": "FAC-PB-ABO-01",
+      "destination_facility_id": "FAC-DL-AZD-01",
+      "intermediate_facility_id": null,
+      "origin_operation": null,
+      "destination_operation": null,
+      "intermediate_operation": null,
+      "planned_departure": null,
+      "actual_departure": null,
+      "planned_arrival": null,
+      "actual_arrival": null,
+      "tracking_mode": "simulated",
+      "telemetry_mode": "unavailable",
+      "quantity": 2500,
+      "quantity_crates": 2500,
+      "status": "in_transit",
+      "temperature_c": 6,
+      "humidity_pct": 88,
+      "risk_index": 15,
+      "quality_grade": "Mature Green",
+      "inspection_verdict": {
+        "target_fruit": "guava",
+        "task_type": "classification",
+        "predicted_class": "Mature Green",
+        "stage": "Mature Green",
+        "confidence": 0.8147,
+        "probabilities": {
+          "Green": 0.1683,
+          "Mature Green": 0.8147,
+          "Ripe": 0.017
+        },
+        "model_version": "2.0.0",
+        "inspected_at": "2026-10-31T10:00:35Z",
+        "demonstration_note": "Academic demonstration test shipment created for Phase 19 final freeze."
+      },
+      "created_at": "2026-10-31T10:00:35.658411+00:00",
+      "last_update": "2026-10-31T10:00:35.658411+00:00",
+      "current_coordinates": null,
+      "latest_waypoint": null,
+      "origin_facility": {
+        "id": "FAC-PB-ABO-01",
+        "name": "PAGREXCO Kinnow Grading, Waxing & Packhouse Center",
+        "facility_type": "packhouse",
+        "address": "Village Alamgarh, Abohar-Ganganagar Road (NH-62)",
+        "village_or_city": "Alamgarh",
+        "district": "Fazilka",
+        "state": "Punjab",
+        "postal_code": "152116",
+        "latitude": 30.1227,
+        "longitude": 74.1566,
+        "coordinates": {
+          "latitude": 30.1227,
+          "longitude": 74.1566
+        },
+        "contact_phone": null,
+        "contact_email": "pagrexco@punjabagro.gov.in",
+        "capacity": null,
+        "capacity_unit": null,
+        "current_utilization": null,
+        "storage_temperature_min_c": null,
+        "storage_temperature_max_c": null,
+        "supported_commodities": [
+          "Kinnow",
+          "Citrus"
+        ],
+        "operational_status": "active",
+        "guava_suitability_category": "horticulture_unconfirmed",
+        "source_citation_type": "directory_level_reference",
+        "legal_entity_verification": "verified",
+        "physical_facility_verification": "verified",
+        "source_name": "Punjab Agro Export Corporation (PAGREXCO)",
+        "source_url": "https://punjabagro.gov.in/horticulture/",
+        "source_record": "PAGREXCO Horticultural Infrastructure Directory (Alamgarh Center, Abohar)",
+        "verification_status": "verified",
+        "verification_date": "2026-10-26",
+        "last_source_check": "2026-10-26",
+        "coordinate_source": "Village Alamgarh, NH-62 Abohar corridor approximate geocode",
+        "geocoding_confidence": "village_level",
+        "data_provenance": "Major mechanized citrus post-harvest center on NH-62 with washing, waxing, and electronic size grading lines. Sourced from PAGREXCO horticulture directory (directory-level reference). Engineered specifically for Kinnow/citrus; guava handling is not documented.",
+        "location_verification_status": "verified",
+        "created_at": "2026-10-18T10:00:00Z",
+        "updated_at": "2026-10-26T10:00:00Z"
+      },
+      "destination_facility": {
+        "id": "FAC-DL-AZD-01",
+        "name": "Azadpur APMC Fruit & Vegetable Mega Mandi",
+        "facility_type": "mandi",
+        "address": "Office Complex, New Fruit Market (NFM) Phase-II, Sarai Pipal Thala, Azadpur",
+        "village_or_city": "Azadpur",
+        "district": "North Delhi",
+        "state": "Delhi",
+        "postal_code": "110033",
+        "latitude": 28.7161,
+        "longitude": 77.1772,
+        "coordinates": {
+          "latitude": 28.7161,
+          "longitude": 77.1772
+        },
+        "contact_phone": "011-27691807",
+        "contact_email": "apmcazadpur.delhi@delhi.gov.in",
+        "capacity": null,
+        "capacity_unit": null,
+        "current_utilization": null,
+        "storage_temperature_min_c": null,
+        "storage_temperature_max_c": null,
+        "supported_commodities": [
+          "Guava",
+          "Kinnow",
+          "Citrus",
+          "Perishable Produce"
+        ],
+        "operational_status": "active",
+        "guava_suitability_category": "guava_confirmed",
+        "source_citation_type": "official_portal",
+        "legal_entity_verification": "verified",
+        "physical_facility_verification": "verified",
+        "source_name": "APMC Azadpur (Market of National Importance) / Govt of NCT of Delhi",
+        "source_url": "https://apmcazadpurdelhi.com/",
+        "source_record": "APMC Azadpur Terminal Market Directory & e-NAM Trading Hub",
+        "verification_status": "verified",
+        "verification_date": "2026-10-26",
+        "last_source_check": "2026-10-26",
+        "coordinate_source": "Azadpur APMC Market Office Complex, WGS84 Geocode",
+        "geocoding_confidence": "facility_campus",
+        "data_provenance": "Asia's largest wholesale fruits and vegetables market. CONFIRMED SUITABLE FOR GUAVA: primary northern terminal market handling commercial guava auction, ripening chambers, and cold-chain transfers from Punjab. Verified via official APMC portal.",
+        "location_verification_status": "verified",
+        "created_at": "2026-10-18T10:00:00Z",
+        "updated_at": "2026-10-26T10:00:00Z"
+      },
+      "intermediate_facility": null,
+      "origin_suitability": {
+        "facility_id": "FAC-PB-ABO-01",
+        "facility_name": "PAGREXCO Kinnow Grading, Waxing & Packhouse Center",
+        "operation": "harvesting_aggregation",
+        "crop": "guava",
+        "suitable": true,
+        "suitability_status": "verified",
+        "capabilities": {
+          "guava_trading": "not_verified",
+          "guava_handling": "unconfirmed",
+          "guava_cold_chain": "unconfirmed",
+          "operational_availability": "active"
+        },
+        "warnings": [],
+        "evidence_summary": "Facility 'PAGREXCO Kinnow Grading, Waxing & Packhouse Center' (PACKHOUSE): Trading=NOT_VERIFIED, Handling=UNCONFIRMED, ColdChain=UNCONFIRMED, Availability=ACTIVE.",
+        "source_citation": {
+          "source_name": "Punjab Agro Export Corporation (PAGREXCO)",
+          "source_record": "PAGREXCO Horticultural Infrastructure Directory (Alamgarh Center, Abohar)",
+          "source_url": "https://punjabagro.gov.in/horticulture/",
+          "source_citation_type": "directory_level_reference",
+          "verification_status": "verified",
+          "coordinate_source": "Village Alamgarh, NH-62 Abohar corridor approximate geocode",
+          "geocoding_confidence": "village_level"
+        }
+      },
+      "destination_suitability": {
+        "facility_id": "FAC-DL-AZD-01",
+        "facility_name": "Azadpur APMC Fruit & Vegetable Mega Mandi",
+        "operation": "market_auction",
+        "crop": "guava",
+        "suitable": true,
+        "suitability_status": "verified_guava_trading",
+        "capabilities": {
+          "guava_trading": "verified",
+          "guava_handling": "not_verified",
+          "guava_cold_chain": "partially_verified",
+          "operational_availability": "active"
+        },
+        "warnings": [],
+        "evidence_summary": "Facility 'Azadpur APMC Fruit & Vegetable Mega Mandi' (MANDI): Trading=VERIFIED, Handling=NOT_VERIFIED, ColdChain=PARTIALLY_VERIFIED, Availability=ACTIVE.",
+        "source_citation": {
+          "source_name": "APMC Azadpur (Market of National Importance) / Govt of NCT of Delhi",
+          "source_record": "APMC Azadpur Terminal Market Directory & e-NAM Trading Hub",
+          "source_url": "https://apmcazadpurdelhi.com/",
+          "source_citation_type": "official_portal",
+          "verification_status": "verified",
+          "coordinate_source": "Azadpur APMC Market Office Complex, WGS84 Geocode",
+          "geocoding_confidence": "facility_campus"
+        }
+      },
+      "intermediate_suitability": null,
+      "suitability_warnings": [],
+      "events_count": 3
+    },
+    "waypoints_count": 3,
+    "telemetry_count": 3,
+    "reloaded_check": {
+      "verified": true,
+      "shipment_id": "SHP-2026-037",
+      "inspection_associated": true,
+      "srid_verified": 4326
+    }
+  },
+  "task4_checkpoint_integrity": {
+    "checkpoints": {
+      "best_guava_resnet18.pth": {
+        "expected_hash": "b213059f6b9744915ef921f2be70de9ae1eb0dd6c50a3fb0edce0e2cb710f5b4",
+        "calculated_hash": "b213059f6b9744915ef921f2be70de9ae1eb0dd6c50a3fb0edce0e2cb710f5b4",
+        "match": true,
+        "size_bytes": 44796363
+      },
+      "best_banana_resnet18.pth": {
+        "expected_hash": "3b296ba8556d88bd934f74fee1e88860921fe69dd5b4869984fd0c529f339dae",
+        "calculated_hash": "3b296ba8556d88bd934f74fee1e88860921fe69dd5b4869984fd0c529f339dae",
+        "match": true,
+        "size_bytes": 128791659
+      },
+      "best_fruit_identifier_mobilenet_v3_large.pth": {
+        "expected_hash": "273674bcebad518ecde2dc55aee558d452ac2d4c09dd1924ad61f4328ab81356",
+        "calculated_hash": "273674bcebad518ecde2dc55aee558d452ac2d4c09dd1924ad61f4328ab81356",
+        "match": true,
+        "size_bytes": 17044655
+      },
+      "best_fruit_identifier_resnet18.pth": {
+        "expected_hash": "07150d1ddb92ea8ce7018e08fa6c3d21b6b6de6aac9c5feb838d6f9dc28a8967",
+        "calculated_hash": "07150d1ddb92ea8ce7018e08fa6c3d21b6b6de6aac9c5feb838d6f9dc28a8967",
+        "match": true,
+        "size_bytes": 128800363
+      },
+      "best_apple_yolov8n.pt": {
+        "expected_hash": "02a89b45ead457a8aedfd36fd78e23dd959c410becdd380c61ffef0b3e21d8e2",
+        "calculated_hash": "02a89b45ead457a8aedfd36fd78e23dd959c410becdd380c61ffef0b3e21d8e2",
+        "match": true,
+        "size_bytes": 6502250
+      }
+    }
+  },
+  "screenshots": {
+    "01_onboarding_role_selection.png": {
+      "description": "Interactive Role Selection Modal with Branded Shielding",
+      "url": "http://localhost:3000/dashboard",
+      "path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\docs\\screenshots\\phase19_final\\01_onboarding_role_selection.png",
+      "size_bytes": 120020,
+      "success": true
+    },
+    "02_farmer_produce_inspection.png": {
+      "description": "Farmer Produce Inspection Interface (Dual-Mode)",
+      "url": "http://localhost:3000/dashboard?role=Farmer&tab=analyze",
+      "path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\docs\\screenshots\\phase19_final\\02_farmer_produce_inspection.png",
+      "size_bytes": 177450,
+      "success": true
+    },
+    "03_farmer_harvest_dashboard.png": {
+      "description": "Farmer Harvest Management & Packhouse Intake",
+      "url": "http://localhost:3000/dashboard?role=Farmer&tab=farmer",
+      "path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\docs\\screenshots\\phase19_final\\03_farmer_harvest_dashboard.png",
+      "size_bytes": 125228,
+      "success": true
+    },
+    "04_logistics_tracking_map.png": {
+      "description": "Logistics PostGIS Route Corridor & Telemetry Map",
+      "url": "http://localhost:3000/dashboard?role=Logistics&tab=tracking",
+      "path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\docs\\screenshots\\phase19_final\\04_logistics_tracking_map.png",
+      "size_bytes": 397522,
+      "success": true
+    },
+    "05_dealer_mandi_intake.png": {
+      "description": "Dealer Mandi Arrival Intake & Quality Auctions",
+      "url": "http://localhost:3000/dashboard?role=Dealer&tab=dealer",
+      "path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\docs\\screenshots\\phase19_final\\05_dealer_mandi_intake.png",
+      "size_bytes": 106380,
+      "success": true
+    },
+    "06_buyer_marketplace.png": {
+      "description": "B2B Verified Produce Marketplace & Order Catalog",
+      "url": "http://localhost:3000/dashboard?role=Buyer&tab=marketplace",
+      "path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\docs\\screenshots\\phase19_final\\06_buyer_marketplace.png",
+      "size_bytes": 163172,
+      "success": true
+    },
+    "07_admin_hardware_diagnostics.png": {
+      "description": "Admin PyTorch CUDA Diagnostics & API Registry",
+      "url": "http://localhost:3000/dashboard?role=Admin&tab=status",
+      "path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\docs\\screenshots\\phase19_final\\07_admin_hardware_diagnostics.png",
+      "size_bytes": 98646,
+      "success": true
+    },
+    "08_access_restricted_safeguard.png": {
+      "description": "Access Restricted Safeguard: Tab 'dealer' Blocked for Farmer",
+      "url": "http://localhost:3000/dashboard?role=Farmer&tab=dealer",
+      "path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\docs\\screenshots\\phase19_final\\08_access_restricted_safeguard.png",
+      "size_bytes": 102536,
+      "success": true
+    }
+  },
+  "final_verdict": "ACCEPTED_ACADEMIC_DEMONSTRATION"
+}

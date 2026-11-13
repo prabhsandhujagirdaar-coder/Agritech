@@ -1,0 +1,43 @@
+{
+  "stage_1a_apple_detector_yolov8n": {
+    "model_role": "Stage 1A Bounding-Box Fruit Detector",
+    "architecture": "YOLOv8n Object Detector",
+    "dataset_prepared": "ml/data/processed/apple_detection_yolo/",
+    "total_scenes": 1406,
+    "total_instances": 2575,
+    "readiness_status": "READY_WITH_RESTRICTIONS",
+    "justification": "YOLO annotations are 100% verified, coordinates normalized, and 80 visual previews certified. Restriction: Apple dataset is CC BY-NC 4.0 (academic/experimental prototype only). Training image paths in data.yaml need resolution during Phase 16B training launch."
+  },
+  "stage_1_fruit_identifier_resnet18_v2": {
+    "model_role": "Stage 1 Multi-Commodity Botanical Gate",
+    "architecture": "ResNet18 5-Class Classifier",
+    "dataset_prepared": "ml/data/manifests/fruit_identifier_v2/",
+    "total_records": 19886,
+    "readiness_status": "READY_FOR_EXPERIMENTAL_TRAINING",
+    "justification": "Multi-source diversity achieved for Guava, Banana, Apple, and Negatives. Zero split leakage. Zero group crossing. Ready for experimental training in Phase 16B to benchmark against flawed Phase 15C baseline."
+  },
+  "stage_2_guava_classifier": {
+    "model_role": "Stage 2 Guava Ripeness Regressor / Classifier",
+    "architecture": "ResNet18 3-Class Classifier (Green, Mature Green, Ripe)",
+    "readiness_status": "READY_WITH_RESTRICTIONS",
+    "justification": "Active production model (best_guava_resnet18.pth) is fully validated. Retraining unnecessary until Stage 1 gating is certified."
+  },
+  "stage_2_banana_classifier": {
+    "model_role": "Stage 2 Banana Ripeness Classifier",
+    "architecture": "ResNet18 4-Class Classifier (Unripe, Half_Ripe, Ripe, Overripe)",
+    "readiness_status": "READY_WITH_RESTRICTIONS",
+    "justification": "Model trained in Phase 14E (best_banana_resnet18.pth) and integration tested in Phase 14F. Remains gated in model_registry.py awaiting Stage 1 gate."
+  },
+  "stage_2_apple_classifier": {
+    "model_role": "Stage 2 Apple Ripeness Classifier",
+    "architecture": "ResNet18 3-Class Classifier (Immature, Semi-mature, Mature)",
+    "readiness_status": "BLOCKED",
+    "justification": "Stage 2 Apple ripeness model not yet trained. Blocked by CC BY-NC 4.0 commercial restriction."
+  },
+  "stage_2_mango_classifier": {
+    "model_role": "Stage 2 Mango Ripeness Classifier",
+    "architecture": "ResNet18 4-Class Classifier (Unripe, Semi-ripe, Ripe, Rotten)",
+    "readiness_status": "BLOCKED",
+    "justification": "Extreme data deficit: only 272 physical images across 4 ripeness classes (65 per class) from a single farm session. High risk of severe overfitting. Mango remains strictly blocked from production."
+  }
+}

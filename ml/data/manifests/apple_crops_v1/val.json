@@ -1,0 +1,5922 @@
+[
+  {
+    "crop_id": "apple_crop_01982",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\251_brightness_inst00_semi_mature.jpg",
+    "filename": "251_brightness_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "251_brightness.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 39,
+    "raw_bbox": [
+      121,
+      49,
+      310,
+      216
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      112,
+      41,
+      319,
+      224
+    ],
+    "crop_dimensions": [
+      207,
+      183
+    ],
+    "sha256": "c43139ca44ccf2872b1e091241545ca0f04d666f3fa07a96a8c1ab1210fccb9d"
+  },
+  {
+    "crop_id": "apple_crop_01983",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\2150_brightness_inst00_semi_mature.jpg",
+    "filename": "2150_brightness_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "2150_brightness.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 41,
+    "raw_bbox": [
+      90,
+      54,
+      265,
+      209
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      81,
+      46,
+      274,
+      217
+    ],
+    "crop_dimensions": [
+      193,
+      171
+    ],
+    "sha256": "fec54a9c5d9ef4968c0dbc5845f8198d659508842f88473716e4478168ac3f49"
+  },
+  {
+    "crop_id": "apple_crop_01984",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\2040_brightness_inst00_semi_mature.jpg",
+    "filename": "2040_brightness_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "2040_brightness.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 32,
+    "raw_bbox": [
+      151,
+      49,
+      281,
+      175
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      145,
+      43,
+      287,
+      181
+    ],
+    "crop_dimensions": [
+      142,
+      138
+    ],
+    "sha256": "1ac060e3956120805784a1163ef20169c479693aed92a1ece82aa3f88196eb9c"
+  },
+  {
+    "crop_id": "apple_crop_01985",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\3110_brightness_inst00_semi_mature.jpg",
+    "filename": "3110_brightness_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "3110_brightness.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 50,
+    "raw_bbox": [
+      119,
+      68,
+      295,
+      226
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      110,
+      60,
+      304,
+      234
+    ],
+    "crop_dimensions": [
+      194,
+      174
+    ],
+    "sha256": "3893fba32be3e36d42eeb5d11374affb2623a0c27029ee7de79b698c7d293a0f"
+  },
+  {
+    "crop_id": "apple_crop_01986",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\3110_brightness_inst01_semi_mature.jpg",
+    "filename": "3110_brightness_inst01_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "3110_brightness.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 12,
+    "raw_bbox": [
+      0,
+      245,
+      94,
+      277
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      0,
+      243,
+      99,
+      277
+    ],
+    "crop_dimensions": [
+      99,
+      34
+    ],
+    "sha256": "cda952775facb2a40cbe4de7551d04004c58eff776d3834b373f300b9cca3139"
+  },
+  {
+    "crop_id": "apple_crop_01987",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\1360_brightness_inst00_semi_mature.jpg",
+    "filename": "1360_brightness_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "1360_brightness.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 38,
+    "raw_bbox": [
+      97,
+      101,
+      235,
+      225
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      90,
+      95,
+      242,
+      231
+    ],
+    "crop_dimensions": [
+      152,
+      136
+    ],
+    "sha256": "59b4cc6f2820025191800e662cf431f5751a6382b397f1d1a6d82f997cba1ded"
+  },
+  {
+    "crop_id": "apple_crop_01988",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\1560_brightness_inst00_semi_mature.jpg",
+    "filename": "1560_brightness_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "1560_brightness.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 46,
+    "raw_bbox": [
+      94,
+      41,
+      307,
+      252
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      83,
+      30,
+      318,
+      263
+    ],
+    "crop_dimensions": [
+      235,
+      233
+    ],
+    "sha256": "6021c06d86297cf9f05d0f67532e1b1ed0b7d690c6423924b511684e616ebeef"
+  },
+  {
+    "crop_id": "apple_crop_01989",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\1560_brightness_inst01_semi_mature.jpg",
+    "filename": "1560_brightness_inst01_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "1560_brightness.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 31,
+    "raw_bbox": [
+      31,
+      206,
+      141,
+      277
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      25,
+      202,
+      147,
+      277
+    ],
+    "crop_dimensions": [
+      122,
+      75
+    ],
+    "sha256": "7eb10de1916c5dd34c3e439996f495e9613012d2a809ba1770aebb6821d36459"
+  },
+  {
+    "crop_id": "apple_crop_01990",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\IMG_1390_brightness_inst00_semi_mature.jpg",
+    "filename": "IMG_1390_brightness_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "IMG_1390_brightness.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 68,
+    "raw_bbox": [
+      74,
+      48,
+      282,
+      278
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      64,
+      36,
+      292,
+      290
+    ],
+    "crop_dimensions": [
+      228,
+      254
+    ],
+    "sha256": "d939229cfe5ae872c9970c4a755d799d7b3bf17be5cc8e64cfa36367e06ff517"
+  },
+  {
+    "crop_id": "apple_crop_01991",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\2640_brightness_inst00_semi_mature.jpg",
+    "filename": "2640_brightness_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "2640_brightness.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 48,
+    "raw_bbox": [
+      94,
+      41,
+      307,
+      251
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      83,
+      31,
+      318,
+      261
+    ],
+    "crop_dimensions": [
+      235,
+      230
+    ],
+    "sha256": "fa79170d26ddc61d348518a2fd0b6aee052692cc999167fc5c41ebe6bd6dc3df"
+  },
+  {
+    "crop_id": "apple_crop_01992",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\2640_brightness_inst01_semi_mature.jpg",
+    "filename": "2640_brightness_inst01_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "2640_brightness.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 30,
+    "raw_bbox": [
+      31,
+      205,
+      141,
+      277
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      25,
+      201,
+      147,
+      277
+    ],
+    "crop_dimensions": [
+      122,
+      76
+    ],
+    "sha256": "b8960b9f753a210f625fe6ba2bfaf8c54faac81c3adc9eb89ec3eed0fc17126e"
+  },
+  {
+    "crop_id": "apple_crop_01993",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\2950_brightness_inst00_semi_mature.jpg",
+    "filename": "2950_brightness_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "2950_brightness.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 47,
+    "raw_bbox": [
+      155,
+      76,
+      300,
+      205
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      148,
+      70,
+      307,
+      211
+    ],
+    "crop_dimensions": [
+      159,
+      141
+    ],
+    "sha256": "cc89c40eaab095f91357ac9f1c3ba20c9722ef9f76ac183790e93de0468f8fc5"
+  },
+  {
+    "crop_id": "apple_crop_01994",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\2520_brightness_inst00_semi_mature.jpg",
+    "filename": "2520_brightness_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "2520_brightness.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 32,
+    "raw_bbox": [
+      135,
+      75,
+      282,
+      202
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      128,
+      69,
+      289,
+      208
+    ],
+    "crop_dimensions": [
+      161,
+      139
+    ],
+    "sha256": "fe197c04a7157e66c6561e08450d32e9ccdc5d5dce960eab5b3cfa819a5be440"
+  },
+  {
+    "crop_id": "apple_crop_01995",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\192_brightness_inst00_semi_mature.jpg",
+    "filename": "192_brightness_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "192_brightness.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 37,
+    "raw_bbox": [
+      113,
+      95,
+      211,
+      197
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      108,
+      90,
+      216,
+      202
+    ],
+    "crop_dimensions": [
+      108,
+      112
+    ],
+    "sha256": "0fa8cb8673eb670d4c0483707d1fe52622ad030ab1993d4ac5b47a0451445ec3"
+  },
+  {
+    "crop_id": "apple_crop_01996",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\2710_brightness_inst00_semi_mature.jpg",
+    "filename": "2710_brightness_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "2710_brightness.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 43,
+    "raw_bbox": [
+      134,
+      59,
+      315,
+      231
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      125,
+      50,
+      324,
+      240
+    ],
+    "crop_dimensions": [
+      199,
+      190
+    ],
+    "sha256": "51cc65129ee290b713e2f308d870e3ae9f866818ff1d8eceefd2cbbb5ef90802"
+  },
+  {
+    "crop_id": "apple_crop_01997",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\2910_brightness_inst00_semi_mature.jpg",
+    "filename": "2910_brightness_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "2910_brightness.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 34,
+    "raw_bbox": [
+      144,
+      16,
+      303,
+      184
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      136,
+      8,
+      311,
+      192
+    ],
+    "crop_dimensions": [
+      175,
+      184
+    ],
+    "sha256": "dc180c1543cf5b26f11a579f99b4c7db09450411821a3f188cce0d26049796d4"
+  },
+  {
+    "crop_id": "apple_crop_01998",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\2590_brightness_inst00_semi_mature.jpg",
+    "filename": "2590_brightness_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "2590_brightness.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 40,
+    "raw_bbox": [
+      33,
+      9,
+      244,
+      226
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      22,
+      0,
+      255,
+      237
+    ],
+    "crop_dimensions": [
+      233,
+      237
+    ],
+    "sha256": "99de09d1e8ba63facd44d39cdb60157c0119d0af795f31e00301901e0d49d29e"
+  },
+  {
+    "crop_id": "apple_crop_01999",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\2590_brightness_inst01_semi_mature.jpg",
+    "filename": "2590_brightness_inst01_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "2590_brightness.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 48,
+    "raw_bbox": [
+      216,
+      71,
+      358,
+      215
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      209,
+      64,
+      365,
+      222
+    ],
+    "crop_dimensions": [
+      156,
+      158
+    ],
+    "sha256": "b5caec04db1400cba15125f382e349171d3c642e47ed3ba0782aae8cdfec5bc1"
+  },
+  {
+    "crop_id": "apple_crop_02000",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\1450_brightness_inst00_semi_mature.jpg",
+    "filename": "1450_brightness_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "1450_brightness.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 40,
+    "raw_bbox": [
+      119,
+      72,
+      279,
+      218
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      111,
+      65,
+      287,
+      225
+    ],
+    "crop_dimensions": [
+      176,
+      160
+    ],
+    "sha256": "6b6aba33f35f4a243872ee22e5a94f24a366fa9de51c8ba8fd863f114eeac9a2"
+  },
+  {
+    "crop_id": "apple_crop_02001",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\227_brightness_inst00_semi_mature.jpg",
+    "filename": "227_brightness_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "227_brightness.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 48,
+    "raw_bbox": [
+      119,
+      50,
+      273,
+      212
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      111,
+      42,
+      281,
+      220
+    ],
+    "crop_dimensions": [
+      170,
+      178
+    ],
+    "sha256": "9c4c8a81a363ad8717eec293dc02ed6bdaa8d280cd471e41f2b481faa47e2f71"
+  },
+  {
+    "crop_id": "apple_crop_02002",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\2200_brightness_inst00_semi_mature.jpg",
+    "filename": "2200_brightness_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "2200_brightness.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 36,
+    "raw_bbox": [
+      92,
+      42,
+      263,
+      207
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      83,
+      34,
+      272,
+      215
+    ],
+    "crop_dimensions": [
+      189,
+      181
+    ],
+    "sha256": "8d36e81a41ab750cfb51e3a912cac5cc065833c1174e1e3ab9a9873aaf3a80d1"
+  },
+  {
+    "crop_id": "apple_crop_02003",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\2200_brightness_inst01_semi_mature.jpg",
+    "filename": "2200_brightness_inst01_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "2200_brightness.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 21,
+    "raw_bbox": [
+      39,
+      59,
+      108,
+      166
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      36,
+      54,
+      111,
+      171
+    ],
+    "crop_dimensions": [
+      75,
+      117
+    ],
+    "sha256": "aa7e43dbd7ae25d40f5f41e8e1a431d3afe5075a9b5c628ae874f096abf6ef83"
+  },
+  {
+    "crop_id": "apple_crop_02004",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\2210_brightness_inst00_semi_mature.jpg",
+    "filename": "2210_brightness_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "2210_brightness.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 34,
+    "raw_bbox": [
+      128,
+      43,
+      297,
+      212
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      120,
+      35,
+      305,
+      220
+    ],
+    "crop_dimensions": [
+      185,
+      185
+    ],
+    "sha256": "14521cf2ee9dfe9eec7d24dac9913aa748afc960af6f9205392aa5ceaae186ce"
+  },
+  {
+    "crop_id": "apple_crop_02005",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\IMG_1406_brightness_inst00_semi_mature.jpg",
+    "filename": "IMG_1406_brightness_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "IMG_1406_brightness.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 92,
+    "raw_bbox": [
+      119,
+      66,
+      296,
+      263
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      110,
+      56,
+      305,
+      273
+    ],
+    "crop_dimensions": [
+      195,
+      217
+    ],
+    "sha256": "e06ed721396a436c5a7688553645783eb3f3f263e60e307a68a037a38ceb7dec"
+  },
+  {
+    "crop_id": "apple_crop_02006",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\1400_noise_inst00_semi_mature.jpg",
+    "filename": "1400_noise_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "1400_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 39,
+    "raw_bbox": [
+      142,
+      84,
+      271,
+      208
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      136,
+      78,
+      277,
+      214
+    ],
+    "crop_dimensions": [
+      141,
+      136
+    ],
+    "sha256": "9befef22b0822e56c6564d434061250766d527dc4d830a4afb81bbddfb23304c"
+  },
+  {
+    "crop_id": "apple_crop_02007",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\1310_noise_inst00_semi_mature.jpg",
+    "filename": "1310_noise_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "1310_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 37,
+    "raw_bbox": [
+      132,
+      88,
+      273,
+      220
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      125,
+      81,
+      280,
+      227
+    ],
+    "crop_dimensions": [
+      155,
+      146
+    ],
+    "sha256": "25b2b9cdbb957100570bec4c88b6c407f7002334c5772c3ecbb02dce952dd7b8"
+  },
+  {
+    "crop_id": "apple_crop_02008",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\2970_noise_inst00_semi_mature.jpg",
+    "filename": "2970_noise_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "2970_noise.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 36,
+    "raw_bbox": [
+      82,
+      57,
+      172,
+      151
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      78,
+      52,
+      176,
+      156
+    ],
+    "crop_dimensions": [
+      98,
+      104
+    ],
+    "sha256": "01731ec09b7f40695d9ef49d0be4ec7bc6b976f09a838505286e13dbb55ab556"
+  },
+  {
+    "crop_id": "apple_crop_02009",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\2970_noise_inst01_semi_mature.jpg",
+    "filename": "2970_noise_inst01_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "2970_noise.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 40,
+    "raw_bbox": [
+      63,
+      176,
+      181,
+      295
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      57,
+      170,
+      187,
+      301
+    ],
+    "crop_dimensions": [
+      130,
+      131
+    ],
+    "sha256": "887e0a1e3df11e9cac0a62aa5f750bca890fd14526956e13b2014712c56ac0d9"
+  },
+  {
+    "crop_id": "apple_crop_02010",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\2150_noise_inst00_semi_mature.jpg",
+    "filename": "2150_noise_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "2150_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 41,
+    "raw_bbox": [
+      90,
+      54,
+      265,
+      209
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      81,
+      46,
+      274,
+      217
+    ],
+    "crop_dimensions": [
+      193,
+      171
+    ],
+    "sha256": "04fbc8465d279f8b8e518ed848fee94d1523dce427d8a3f7a121cc60bfcf2141"
+  },
+  {
+    "crop_id": "apple_crop_02011",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\172_noise_inst00_semi_mature.jpg",
+    "filename": "172_noise_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "172_noise.jpg",
+    "source_image_dimensions": [
+      277,
+      326
+    ],
+    "source_polygon_points": 51,
+    "raw_bbox": [
+      77,
+      116,
+      253,
+      283
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      68,
+      108,
+      262,
+      291
+    ],
+    "crop_dimensions": [
+      194,
+      183
+    ],
+    "sha256": "90af73c45c60b5902d651c8e351de56e0c2cbd117c734fb652930682fd7e4576"
+  },
+  {
+    "crop_id": "apple_crop_02012",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\1560_noise_inst00_semi_mature.jpg",
+    "filename": "1560_noise_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "1560_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 46,
+    "raw_bbox": [
+      94,
+      41,
+      307,
+      252
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      83,
+      30,
+      318,
+      263
+    ],
+    "crop_dimensions": [
+      235,
+      233
+    ],
+    "sha256": "5d0ff4c2260bde540e24495a7b047db515ddb92ee8a4c90ac25662f9119c8b1f"
+  },
+  {
+    "crop_id": "apple_crop_02013",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\1560_noise_inst01_semi_mature.jpg",
+    "filename": "1560_noise_inst01_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "1560_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 31,
+    "raw_bbox": [
+      31,
+      206,
+      141,
+      277
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      25,
+      202,
+      147,
+      277
+    ],
+    "crop_dimensions": [
+      122,
+      75
+    ],
+    "sha256": "9d690749294b19f3b421e00d67ca656f2fc58e925f4a0a4bac1738d78ffada06"
+  },
+  {
+    "crop_id": "apple_crop_02014",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\194_noise_inst00_semi_mature.jpg",
+    "filename": "194_noise_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "194_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 51,
+    "raw_bbox": [
+      105,
+      89,
+      250,
+      230
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      98,
+      82,
+      257,
+      237
+    ],
+    "crop_dimensions": [
+      159,
+      155
+    ],
+    "sha256": "1921f0a046dc3109d84ef8000939a4ccc94ea91fcf5697f085c1db79a93e6b83"
+  },
+  {
+    "crop_id": "apple_crop_02015",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\223_noise_inst00_semi_mature.jpg",
+    "filename": "223_noise_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "223_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 34,
+    "raw_bbox": [
+      108,
+      49,
+      286,
+      230
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      99,
+      40,
+      295,
+      239
+    ],
+    "crop_dimensions": [
+      196,
+      199
+    ],
+    "sha256": "6cc1142c023bb3e92424cf31cbc547393998efab82425a613dcba74f159a540b"
+  },
+  {
+    "crop_id": "apple_crop_02016",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\266_noise_inst00_semi_mature.jpg",
+    "filename": "266_noise_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "266_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 38,
+    "raw_bbox": [
+      145,
+      116,
+      246,
+      210
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      140,
+      111,
+      251,
+      215
+    ],
+    "crop_dimensions": [
+      111,
+      104
+    ],
+    "sha256": "9edf4460e088b1c9169e625a6ffabee39b0c829b3433ac1bfdfa0bd851115810"
+  },
+  {
+    "crop_id": "apple_crop_02017",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\2640_noise_inst00_semi_mature.jpg",
+    "filename": "2640_noise_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "2640_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 48,
+    "raw_bbox": [
+      94,
+      41,
+      307,
+      251
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      83,
+      31,
+      318,
+      261
+    ],
+    "crop_dimensions": [
+      235,
+      230
+    ],
+    "sha256": "b4909e48c9e68ed575a20690ccf606e1a5fd970f5ec61b3b2810a8f5d2e57f48"
+  },
+  {
+    "crop_id": "apple_crop_02018",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\2640_noise_inst01_semi_mature.jpg",
+    "filename": "2640_noise_inst01_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "2640_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 30,
+    "raw_bbox": [
+      31,
+      205,
+      141,
+      277
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      25,
+      201,
+      147,
+      277
+    ],
+    "crop_dimensions": [
+      122,
+      76
+    ],
+    "sha256": "559925d9f7e997e635f8c554e567946734474e91599275a642196122caba49b2"
+  },
+  {
+    "crop_id": "apple_crop_02019",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\2950_noise_inst00_semi_mature.jpg",
+    "filename": "2950_noise_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "2950_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 47,
+    "raw_bbox": [
+      155,
+      76,
+      300,
+      205
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      148,
+      70,
+      307,
+      211
+    ],
+    "crop_dimensions": [
+      159,
+      141
+    ],
+    "sha256": "572af194be20b9e994128069c384b5028136fd27f09207d05031e76e9638a281"
+  },
+  {
+    "crop_id": "apple_crop_02020",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\1770_noise_inst00_semi_mature.jpg",
+    "filename": "1770_noise_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "1770_noise.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 33,
+    "raw_bbox": [
+      78,
+      154,
+      165,
+      238
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      74,
+      150,
+      169,
+      242
+    ],
+    "crop_dimensions": [
+      95,
+      92
+    ],
+    "sha256": "1a1138c8d615811e30840b434c4c6daa3936b628617b6f10b18231d1ab62d2d7"
+  },
+  {
+    "crop_id": "apple_crop_02021",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\IMG_1387_noise_inst00_semi_mature.jpg",
+    "filename": "IMG_1387_noise_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "IMG_1387_noise.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 75,
+    "raw_bbox": [
+      102,
+      93,
+      264,
+      253
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      94,
+      85,
+      272,
+      261
+    ],
+    "crop_dimensions": [
+      178,
+      176
+    ],
+    "sha256": "3cb15b832414c2a9b4d75c42ae422db60a10726611cb03f95cb114f9668d10dd"
+  },
+  {
+    "crop_id": "apple_crop_02022",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\IMG_1419_noise_inst00_semi_mature.jpg",
+    "filename": "IMG_1419_noise_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "IMG_1419_noise.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 67,
+    "raw_bbox": [
+      121,
+      29,
+      356,
+      254
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      109,
+      18,
+      368,
+      265
+    ],
+    "crop_dimensions": [
+      259,
+      247
+    ],
+    "sha256": "c0ff60876deda9696992d5b7c9053d259ace6d03bc6a08eb13b69830bd5a2172"
+  },
+  {
+    "crop_id": "apple_crop_02023",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\1550_noise_inst00_semi_mature.jpg",
+    "filename": "1550_noise_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "1550_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 32,
+    "raw_bbox": [
+      0,
+      69,
+      136,
+      187
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      0,
+      63,
+      143,
+      193
+    ],
+    "crop_dimensions": [
+      143,
+      130
+    ],
+    "sha256": "42bedc46aaf5e5231ae77412fe1fccb3b27ca9b4ae11f17765d63f44b9f121f4"
+  },
+  {
+    "crop_id": "apple_crop_02024",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\1550_noise_inst01_semi_mature.jpg",
+    "filename": "1550_noise_inst01_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "1550_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 71,
+    "raw_bbox": [
+      205,
+      96,
+      318,
+      208
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      199,
+      90,
+      324,
+      214
+    ],
+    "crop_dimensions": [
+      125,
+      124
+    ],
+    "sha256": "3ef23db43d08ff9a93dde6668b916094b6d2341622ce3a3fccec577fc75b1672"
+  },
+  {
+    "crop_id": "apple_crop_02025",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\256_noise_inst00_semi_mature.jpg",
+    "filename": "256_noise_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "256_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 40,
+    "raw_bbox": [
+      84,
+      34,
+      282,
+      212
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      74,
+      25,
+      292,
+      221
+    ],
+    "crop_dimensions": [
+      218,
+      196
+    ],
+    "sha256": "06d3736cbf8d75aa29c164793de6b06988535bfe302bd4e8c482e733ed1311ad"
+  },
+  {
+    "crop_id": "apple_crop_02026",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\1290_noise_inst00_semi_mature.jpg",
+    "filename": "1290_noise_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "1290_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 37,
+    "raw_bbox": [
+      144,
+      99,
+      271,
+      207
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      138,
+      94,
+      277,
+      212
+    ],
+    "crop_dimensions": [
+      139,
+      118
+    ],
+    "sha256": "685de29ff529394f3ff8373b351d620ef51f6af03581018242e6823fe619bde7"
+  },
+  {
+    "crop_id": "apple_crop_02027",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\1290_noise_inst01_semi_mature.jpg",
+    "filename": "1290_noise_inst01_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "1290_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 26,
+    "raw_bbox": [
+      70,
+      221,
+      145,
+      277
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      66,
+      218,
+      149,
+      277
+    ],
+    "crop_dimensions": [
+      83,
+      59
+    ],
+    "sha256": "bc6b6f9eef0c867edab6c9cbd8b866c878c6dd0331013ce8c286782621d74d8f"
+  },
+  {
+    "crop_id": "apple_crop_02028",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\1290_noise_inst02_semi_mature.jpg",
+    "filename": "1290_noise_inst02_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "1290_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 22,
+    "raw_bbox": [
+      222,
+      245,
+      301,
+      277
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      218,
+      243,
+      305,
+      277
+    ],
+    "crop_dimensions": [
+      87,
+      34
+    ],
+    "sha256": "d80cbb3b3e7f70d5a8222eeb7b7cd1b7981b10e8ea2cb6b82205a88bc9eda917"
+  },
+  {
+    "crop_id": "apple_crop_02029",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\288_noise_inst00_semi_mature.jpg",
+    "filename": "288_noise_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "288_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 36,
+    "raw_bbox": [
+      121,
+      75,
+      254,
+      204
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      114,
+      69,
+      261,
+      210
+    ],
+    "crop_dimensions": [
+      147,
+      141
+    ],
+    "sha256": "b47b3b8061c4f51ee2beed808e1269d618aad78c29d4cf2be71b92c501c01090"
+  },
+  {
+    "crop_id": "apple_crop_02030",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\267_noise_inst00_semi_mature.jpg",
+    "filename": "267_noise_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "267_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 36,
+    "raw_bbox": [
+      149,
+      65,
+      320,
+      219
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      140,
+      57,
+      329,
+      227
+    ],
+    "crop_dimensions": [
+      189,
+      170
+    ],
+    "sha256": "42c91c3ffc724b9a30508d28f684bdae73730052a85ebe8d7e4df98b16b710bb"
+  },
+  {
+    "crop_id": "apple_crop_02031",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\1460_noise_inst00_semi_mature.jpg",
+    "filename": "1460_noise_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "1460_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 49,
+    "raw_bbox": [
+      111,
+      37,
+      300,
+      214
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      102,
+      28,
+      309,
+      223
+    ],
+    "crop_dimensions": [
+      207,
+      195
+    ],
+    "sha256": "37cc357fe4164a9fccc22e44890350fed15bae4d378bfc41ef5732f234e318cc"
+  },
+  {
+    "crop_id": "apple_crop_02032",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\IMG_13650_noise_inst00_semi_mature.jpg",
+    "filename": "IMG_13650_noise_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "IMG_13650_noise.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 77,
+    "raw_bbox": [
+      79,
+      54,
+      258,
+      244
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      70,
+      44,
+      267,
+      254
+    ],
+    "crop_dimensions": [
+      197,
+      210
+    ],
+    "sha256": "6a06c5be751874e584bab8c1b21e0918bb523c5fa835556e93ce21ab3345c15f"
+  },
+  {
+    "crop_id": "apple_crop_02033",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\2340_noise_inst00_semi_mature.jpg",
+    "filename": "2340_noise_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "2340_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 37,
+    "raw_bbox": [
+      59,
+      32,
+      257,
+      235
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      49,
+      22,
+      267,
+      245
+    ],
+    "crop_dimensions": [
+      218,
+      223
+    ],
+    "sha256": "a8d12fa58b0ffa8d95d1dbc72f481ad4fbc1e5bd974d15a6aa302692be4c353d"
+  },
+  {
+    "crop_id": "apple_crop_02034",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\2340_noise_inst01_semi_mature.jpg",
+    "filename": "2340_noise_inst01_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "2340_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 48,
+    "raw_bbox": [
+      0,
+      1,
+      75,
+      128
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      0,
+      0,
+      79,
+      134
+    ],
+    "crop_dimensions": [
+      79,
+      134
+    ],
+    "sha256": "6bc1f3546107e06ba2fa42d179fe02395a8c980cfd7bed6a84a1e256c176a690"
+  },
+  {
+    "crop_id": "apple_crop_02035",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\2340_noise_inst02_semi_mature.jpg",
+    "filename": "2340_noise_inst02_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "2340_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 19,
+    "raw_bbox": [
+      136,
+      9,
+      217,
+      49
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      132,
+      7,
+      221,
+      51
+    ],
+    "crop_dimensions": [
+      89,
+      44
+    ],
+    "sha256": "0f1e8cbcd7e8ce362f09ebe011cc6d8cff9ec9e1e98daaabdd90a4a1e776ebf9"
+  },
+  {
+    "crop_id": "apple_crop_02036",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\2340_noise_inst03_semi_mature.jpg",
+    "filename": "2340_noise_inst03_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "2340_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 17,
+    "raw_bbox": [
+      165,
+      0,
+      234,
+      51
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      162,
+      0,
+      237,
+      54
+    ],
+    "crop_dimensions": [
+      75,
+      54
+    ],
+    "sha256": "102cb6344935c19ca0ec5945f28b7837b2e13625c813b4d691732b7035177430"
+  },
+  {
+    "crop_id": "apple_crop_02037",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\207_noise_inst00_semi_mature.jpg",
+    "filename": "207_noise_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "207_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 50,
+    "raw_bbox": [
+      107,
+      55,
+      246,
+      200
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      100,
+      48,
+      253,
+      207
+    ],
+    "crop_dimensions": [
+      153,
+      159
+    ],
+    "sha256": "670dbb494bab44dc1958da2b8ddac94f8e14c7fab8450cb5be4ddff69d937269"
+  },
+  {
+    "crop_id": "apple_crop_02038",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\2400_noise_inst00_semi_mature.jpg",
+    "filename": "2400_noise_inst00_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "2400_noise.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 46,
+    "raw_bbox": [
+      132,
+      88,
+      272,
+      219
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      125,
+      81,
+      279,
+      226
+    ],
+    "crop_dimensions": [
+      154,
+      145
+    ],
+    "sha256": "0785cdaebf8a250242626294f0822b32e3c44309357116cb6e74b45c7429b9d4"
+  },
+  {
+    "crop_id": "apple_crop_02039",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_6772_inst00_immature.jpg",
+    "filename": "IMG_6772_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_6772.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 31,
+    "raw_bbox": [
+      174,
+      95,
+      227,
+      152
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      171,
+      92,
+      230,
+      155
+    ],
+    "crop_dimensions": [
+      59,
+      63
+    ],
+    "sha256": "2ae9fb8a743f93095d739e7954ad62ab0475ee6cb9842fb537c4527ebfdb342c"
+  },
+  {
+    "crop_id": "apple_crop_02040",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_6780_inst00_immature.jpg",
+    "filename": "IMG_6780_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_6780.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 26,
+    "raw_bbox": [
+      184,
+      44,
+      238,
+      101
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      181,
+      41,
+      241,
+      104
+    ],
+    "crop_dimensions": [
+      60,
+      63
+    ],
+    "sha256": "3c80bcca4f38cbcdc45ffc6be271c1007cf4dfd146f2fee9459cfd5cd8a5978c"
+  },
+  {
+    "crop_id": "apple_crop_02041",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_6780_inst01_immature.jpg",
+    "filename": "IMG_6780_inst01_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_6780.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 34,
+    "raw_bbox": [
+      231,
+      70,
+      276,
+      119
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      229,
+      68,
+      278,
+      121
+    ],
+    "crop_dimensions": [
+      49,
+      53
+    ],
+    "sha256": "02ce25eaf6c206856600f4594e62a5567611f86197e06272e2290efc248690f1"
+  },
+  {
+    "crop_id": "apple_crop_02042",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_6782_inst00_immature.jpg",
+    "filename": "IMG_6782_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_6782.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 34,
+    "raw_bbox": [
+      194,
+      111,
+      286,
+      200
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      189,
+      107,
+      291,
+      204
+    ],
+    "crop_dimensions": [
+      102,
+      97
+    ],
+    "sha256": "e9f886d8fd36de6b3eb02d9142a91614b9f83b2981f8e85dd87c28c396b03f8d"
+  },
+  {
+    "crop_id": "apple_crop_02043",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_6800_inst00_immature.jpg",
+    "filename": "IMG_6800_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_6800.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 31,
+    "raw_bbox": [
+      132,
+      103,
+      179,
+      151
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      130,
+      101,
+      181,
+      153
+    ],
+    "crop_dimensions": [
+      51,
+      52
+    ],
+    "sha256": "93805901be46678f6fd0cfc373a1a277a13aa6321d9c75d4502644b78180f8d7"
+  },
+  {
+    "crop_id": "apple_crop_02044",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_6800_inst01_immature.jpg",
+    "filename": "IMG_6800_inst01_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_6800.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 26,
+    "raw_bbox": [
+      0,
+      50,
+      33,
+      87
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      0,
+      48,
+      35,
+      89
+    ],
+    "crop_dimensions": [
+      35,
+      41
+    ],
+    "sha256": "e51bdeba5bbcca98bf2c88740680c414e4c35351865fff1ed3f1408678e9ae8c"
+  },
+  {
+    "crop_id": "apple_crop_02045",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_6801_inst00_immature.jpg",
+    "filename": "IMG_6801_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_6801.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 35,
+    "raw_bbox": [
+      127,
+      105,
+      174,
+      152
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      125,
+      103,
+      176,
+      154
+    ],
+    "crop_dimensions": [
+      51,
+      51
+    ],
+    "sha256": "7ae20cfaaf94f64ae9f92c67ce429b0c700699afc730e2439a473aa631d23003"
+  },
+  {
+    "crop_id": "apple_crop_02046",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_6803_inst00_immature.jpg",
+    "filename": "IMG_6803_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_6803.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 48,
+    "raw_bbox": [
+      109,
+      35,
+      212,
+      143
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      104,
+      30,
+      217,
+      148
+    ],
+    "crop_dimensions": [
+      113,
+      118
+    ],
+    "sha256": "5207ea7a886d57cbfa51c953dc909264b00654f09a90803e9660be0f24b9ecb2"
+  },
+  {
+    "crop_id": "apple_crop_02047",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_6809_inst00_immature.jpg",
+    "filename": "IMG_6809_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_6809.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 36,
+    "raw_bbox": [
+      86,
+      66,
+      188,
+      166
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      81,
+      61,
+      193,
+      171
+    ],
+    "crop_dimensions": [
+      112,
+      110
+    ],
+    "sha256": "748bf6e800f5df621b3bb4eab44da7355019c451e38e7bc4013aa02514123486"
+  },
+  {
+    "crop_id": "apple_crop_02048",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_6815_inst00_immature.jpg",
+    "filename": "IMG_6815_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_6815.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 30,
+    "raw_bbox": [
+      0,
+      93,
+      78,
+      185
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      0,
+      88,
+      82,
+      190
+    ],
+    "crop_dimensions": [
+      82,
+      102
+    ],
+    "sha256": "e8fd59cc70ad9380db463080d3b984141cc8df4ba0da46a947d6ad61ed36905b"
+  },
+  {
+    "crop_id": "apple_crop_02049",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_6815_inst01_immature.jpg",
+    "filename": "IMG_6815_inst01_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_6815.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 26,
+    "raw_bbox": [
+      95,
+      48,
+      168,
+      113
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      91,
+      45,
+      172,
+      116
+    ],
+    "crop_dimensions": [
+      81,
+      71
+    ],
+    "sha256": "6159c9f014692c182ba340806cfb7dcb1f4f56024c2a5cb9e6b7334bf096f046"
+  },
+  {
+    "crop_id": "apple_crop_02050",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_6815_inst02_immature.jpg",
+    "filename": "IMG_6815_inst02_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_6815.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 41,
+    "raw_bbox": [
+      287,
+      83,
+      347,
+      149
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      284,
+      80,
+      350,
+      152
+    ],
+    "crop_dimensions": [
+      66,
+      72
+    ],
+    "sha256": "bfff10a5f4dc9fedf23ade2dc87687c0bf6a9db945465fc23e0f17a6b40b6174"
+  },
+  {
+    "crop_id": "apple_crop_02051",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_6806_inst00_immature.jpg",
+    "filename": "IMG_6806_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_6806.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 40,
+    "raw_bbox": [
+      35,
+      66,
+      97,
+      139
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      32,
+      62,
+      100,
+      143
+    ],
+    "crop_dimensions": [
+      68,
+      81
+    ],
+    "sha256": "ac8708d7e53019efc28bfdd4f2f59da2bd8d94707fb6b9850edecbe3d56a1c56"
+  },
+  {
+    "crop_id": "apple_crop_02052",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_6806_inst01_immature.jpg",
+    "filename": "IMG_6806_inst01_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_6806.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 32,
+    "raw_bbox": [
+      184,
+      81,
+      251,
+      149
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      181,
+      78,
+      254,
+      152
+    ],
+    "crop_dimensions": [
+      73,
+      74
+    ],
+    "sha256": "2a3743f6443f51dd8ee8dbfa17d241d31a6310f1775b07c42dc920fb1079c784"
+  },
+  {
+    "crop_id": "apple_crop_02053",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_6806_inst02_immature.jpg",
+    "filename": "IMG_6806_inst02_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_6806.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 33,
+    "raw_bbox": [
+      281,
+      40,
+      337,
+      97
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      278,
+      37,
+      340,
+      100
+    ],
+    "crop_dimensions": [
+      62,
+      63
+    ],
+    "sha256": "f51ef811275042b9f1e632ef3237d1d180ecb657b1aef4202bfaebc5e7312380"
+  },
+  {
+    "crop_id": "apple_crop_02054",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_6806_inst03_immature.jpg",
+    "filename": "IMG_6806_inst03_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_6806.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 32,
+    "raw_bbox": [
+      251,
+      199,
+      304,
+      254
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      248,
+      196,
+      307,
+      257
+    ],
+    "crop_dimensions": [
+      59,
+      61
+    ],
+    "sha256": "f15dbc67bdf752a7d4ed7918407ceffff70a1f49fe3b92c38d93d8bdc33fdada"
+  },
+  {
+    "crop_id": "apple_crop_02055",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_6833_inst00_immature.jpg",
+    "filename": "IMG_6833_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_6833.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 35,
+    "raw_bbox": [
+      224,
+      126,
+      289,
+      181
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      221,
+      123,
+      292,
+      184
+    ],
+    "crop_dimensions": [
+      71,
+      61
+    ],
+    "sha256": "3bfd450233f565ca2a96f3d4b6bb26d73ef421f2478b213d3765959bd002a85f"
+  },
+  {
+    "crop_id": "apple_crop_02056",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_6833_inst01_immature.jpg",
+    "filename": "IMG_6833_inst01_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_6833.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 34,
+    "raw_bbox": [
+      275,
+      143,
+      341,
+      207
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      272,
+      140,
+      344,
+      210
+    ],
+    "crop_dimensions": [
+      72,
+      70
+    ],
+    "sha256": "d84634c1cfdf84517e05073323019f5f9e7cfef87737728eef89a3e9c9663d4f"
+  },
+  {
+    "crop_id": "apple_crop_02057",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_6839_inst00_immature.jpg",
+    "filename": "IMG_6839_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_6839.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 40,
+    "raw_bbox": [
+      113,
+      84,
+      234,
+      200
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      107,
+      78,
+      240,
+      206
+    ],
+    "crop_dimensions": [
+      133,
+      128
+    ],
+    "sha256": "6b625a6a2a6dc843a3ea409360619be5edbc274b175c57eb0867f21f1527f797"
+  },
+  {
+    "crop_id": "apple_crop_02058",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_6882_inst00_immature.jpg",
+    "filename": "IMG_6882_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_6882.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 47,
+    "raw_bbox": [
+      133,
+      88,
+      273,
+      230
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      126,
+      81,
+      280,
+      237
+    ],
+    "crop_dimensions": [
+      154,
+      156
+    ],
+    "sha256": "9857296fc02dba73236d5dbad134cba474018301c68ccf83d8ab5d1b0135be40"
+  },
+  {
+    "crop_id": "apple_crop_02059",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\IMG_1260_inst00_mature.jpg",
+    "filename": "IMG_1260_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "IMG_1260.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 43,
+    "raw_bbox": [
+      160,
+      85,
+      299,
+      236
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      153,
+      77,
+      306,
+      244
+    ],
+    "crop_dimensions": [
+      153,
+      167
+    ],
+    "sha256": "104514a0e7c76a8818e14d2a782b73f35df72c085e5ee73d0a4eeedd8d9cc8be"
+  },
+  {
+    "crop_id": "apple_crop_02060",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\IMG_12400_inst00_mature.jpg",
+    "filename": "IMG_12400_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "IMG_12400.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 33,
+    "raw_bbox": [
+      198,
+      0,
+      319,
+      125
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      192,
+      0,
+      325,
+      131
+    ],
+    "crop_dimensions": [
+      133,
+      131
+    ],
+    "sha256": "78275dc448118cf459cbe0327092b3f51e74693ee698fd3ae2503be5cf7c784e"
+  },
+  {
+    "crop_id": "apple_crop_02061",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\IMG_12400_inst01_mature.jpg",
+    "filename": "IMG_12400_inst01_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "IMG_12400.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 29,
+    "raw_bbox": [
+      160,
+      175,
+      265,
+      284
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      155,
+      170,
+      270,
+      289
+    ],
+    "crop_dimensions": [
+      115,
+      119
+    ],
+    "sha256": "413864d31b24d60b67e3c7608551142f9ea3317bc6827fff381385601731a315"
+  },
+  {
+    "crop_id": "apple_crop_02062",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\IMG_12460_inst00_mature.jpg",
+    "filename": "IMG_12460_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "IMG_12460.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 35,
+    "raw_bbox": [
+      178,
+      109,
+      307,
+      243
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      172,
+      102,
+      313,
+      250
+    ],
+    "crop_dimensions": [
+      141,
+      148
+    ],
+    "sha256": "a9dc711b5657b2ffccd8a00d8056b691bed1198e0340fcf8a5013db2f9ba6343"
+  },
+  {
+    "crop_id": "apple_crop_02063",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\IMG_12590_inst00_mature.jpg",
+    "filename": "IMG_12590_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "IMG_12590.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 32,
+    "raw_bbox": [
+      167,
+      84,
+      301,
+      226
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      160,
+      77,
+      308,
+      233
+    ],
+    "crop_dimensions": [
+      148,
+      156
+    ],
+    "sha256": "8e4d73bd9c2c7a9495730c40b785a0dcc7a86d41aba79f6e11cce986023971ad"
+  },
+  {
+    "crop_id": "apple_crop_02064",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\IMG_12650_inst00_mature.jpg",
+    "filename": "IMG_12650_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "IMG_12650.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 41,
+    "raw_bbox": [
+      114,
+      118,
+      222,
+      222
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      109,
+      113,
+      227,
+      227
+    ],
+    "crop_dimensions": [
+      118,
+      114
+    ],
+    "sha256": "17b6fa29b5cb10697d50dc8846740a88aab401a34c172bf6d455c6b26e7b8687"
+  },
+  {
+    "crop_id": "apple_crop_02065",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\IMG_12720_inst00_mature.jpg",
+    "filename": "IMG_12720_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "IMG_12720.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 35,
+    "raw_bbox": [
+      155,
+      93,
+      265,
+      215
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      149,
+      87,
+      271,
+      221
+    ],
+    "crop_dimensions": [
+      122,
+      134
+    ],
+    "sha256": "d6d18fd9e4a316389dbba5f28f5ad6d2c0a9f4d3185a6c2ded2cf8a7cb04eb76"
+  },
+  {
+    "crop_id": "apple_crop_02066",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\IMG_12810_inst00_mature.jpg",
+    "filename": "IMG_12810_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "IMG_12810.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 49,
+    "raw_bbox": [
+      159,
+      77,
+      305,
+      229
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      152,
+      69,
+      312,
+      237
+    ],
+    "crop_dimensions": [
+      160,
+      168
+    ],
+    "sha256": "ff815a72912312e2ae7b4bb1e0bc65037ac72c2f061676f97f650aaf9cea07cf"
+  },
+  {
+    "crop_id": "apple_crop_02067",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_1459_inst00_immature.jpg",
+    "filename": "IMG_1459_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_1459.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 68,
+    "raw_bbox": [
+      115,
+      53,
+      278,
+      246
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      107,
+      43,
+      286,
+      256
+    ],
+    "crop_dimensions": [
+      179,
+      213
+    ],
+    "sha256": "67f3aa6b97360d096e280885dd7597ced498acfb8c35d36e52b312f4de642dbb"
+  },
+  {
+    "crop_id": "apple_crop_02068",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_1460_inst00_immature.jpg",
+    "filename": "IMG_1460_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_1460.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 64,
+    "raw_bbox": [
+      136,
+      55,
+      306,
+      224
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      128,
+      47,
+      314,
+      232
+    ],
+    "crop_dimensions": [
+      186,
+      185
+    ],
+    "sha256": "8e0cc94b1e5a1baa3bab23c2758b98b368aeb64905d3271cef1afebf7bb9f234"
+  },
+  {
+    "crop_id": "apple_crop_02069",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\IMG_1381_inst00_mature.jpg",
+    "filename": "IMG_1381_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "IMG_1381.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 54,
+    "raw_bbox": [
+      224,
+      64,
+      366,
+      194
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      217,
+      58,
+      373,
+      200
+    ],
+    "crop_dimensions": [
+      156,
+      142
+    ],
+    "sha256": "47d63f983f8639b754aae6244676960489045fe2ac93e15c9f3736fcdd1bb813"
+  },
+  {
+    "crop_id": "apple_crop_02070",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\IMG_1381_inst01_mature.jpg",
+    "filename": "IMG_1381_inst01_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "IMG_1381.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 78,
+    "raw_bbox": [
+      110,
+      118,
+      233,
+      242
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      104,
+      112,
+      239,
+      248
+    ],
+    "crop_dimensions": [
+      135,
+      136
+    ],
+    "sha256": "9986f5d36bb36db7e2278e443aaacb76f07a0548f69e802a18e17121f5fdd552"
+  },
+  {
+    "crop_id": "apple_crop_02071",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\IMG_13180_inst00_mature.jpg",
+    "filename": "IMG_13180_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "IMG_13180.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 77,
+    "raw_bbox": [
+      126,
+      24,
+      348,
+      253
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      115,
+      13,
+      359,
+      264
+    ],
+    "crop_dimensions": [
+      244,
+      251
+    ],
+    "sha256": "70e778ae94570ae2545767a657b6447b6b7f9a6ba39c0548a78bf0640488ff6d"
+  },
+  {
+    "crop_id": "apple_crop_02072",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\IMG_13220_inst00_mature.jpg",
+    "filename": "IMG_13220_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "IMG_13220.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 81,
+    "raw_bbox": [
+      144,
+      116,
+      298,
+      284
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      136,
+      108,
+      306,
+      292
+    ],
+    "crop_dimensions": [
+      170,
+      184
+    ],
+    "sha256": "a1e8854021a79f4de077f310fa23dd717d60b5a724e1554c4a6308f86d4f9634"
+  },
+  {
+    "crop_id": "apple_crop_02073",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\IMG_13380_inst00_mature.jpg",
+    "filename": "IMG_13380_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "IMG_13380.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 69,
+    "raw_bbox": [
+      129,
+      60,
+      314,
+      277
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      120,
+      49,
+      323,
+      288
+    ],
+    "crop_dimensions": [
+      203,
+      239
+    ],
+    "sha256": "7c5e130cbf465e9f4ddef27973741d6b32429ff0d05891e89e99d4e2c983439a"
+  },
+  {
+    "crop_id": "apple_crop_02074",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\IMG_13700_inst00_mature.jpg",
+    "filename": "IMG_13700_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "IMG_13700.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 80,
+    "raw_bbox": [
+      73,
+      54,
+      297,
+      274
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      62,
+      43,
+      308,
+      285
+    ],
+    "crop_dimensions": [
+      246,
+      242
+    ],
+    "sha256": "2bd1227a1e48af9b576f0e5cf6a1165a316deae71f91c0afdcbb37a113a45a32"
+  },
+  {
+    "crop_id": "apple_crop_02075",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\IMG_13930_inst00_mature.jpg",
+    "filename": "IMG_13930_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "IMG_13930.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 50,
+    "raw_bbox": [
+      137,
+      116,
+      350,
+      303
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      126,
+      107,
+      361,
+      303
+    ],
+    "crop_dimensions": [
+      235,
+      196
+    ],
+    "sha256": "e0daf82746a2c7cd91fde269fd8ea3f1622c2690977cc77b194d17909d9c3806"
+  },
+  {
+    "crop_id": "apple_crop_02076",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\IMG_13960_inst00_mature.jpg",
+    "filename": "IMG_13960_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "IMG_13960.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 96,
+    "raw_bbox": [
+      54,
+      51,
+      255,
+      274
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      44,
+      40,
+      265,
+      285
+    ],
+    "crop_dimensions": [
+      221,
+      245
+    ],
+    "sha256": "dc3266b075d6b84d889fa696e45d6168adb4a53e7a6325ae45bd5442384892ea"
+  },
+  {
+    "crop_id": "apple_crop_02077",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\IMG_14040_inst00_mature.jpg",
+    "filename": "IMG_14040_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "IMG_14040.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 76,
+    "raw_bbox": [
+      74,
+      59,
+      313,
+      260
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      62,
+      49,
+      325,
+      270
+    ],
+    "crop_dimensions": [
+      263,
+      221
+    ],
+    "sha256": "53e14e6c7fb598e5ad9c648a37929de953e0a136c5e9d3f32d08c8f1715c3680"
+  },
+  {
+    "crop_id": "apple_crop_02078",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_5385_inst00_immature.jpg",
+    "filename": "IMG_5385_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_5385.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 49,
+    "raw_bbox": [
+      147,
+      82,
+      296,
+      209
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      140,
+      76,
+      303,
+      215
+    ],
+    "crop_dimensions": [
+      163,
+      139
+    ],
+    "sha256": "a5197e4475246306c9ff29c931469f388c062860cf78b459a5035cf1ddd22426"
+  },
+  {
+    "crop_id": "apple_crop_02079",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\IMG_5441_inst00_mature.jpg",
+    "filename": "IMG_5441_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "IMG_5441.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 54,
+    "raw_bbox": [
+      140,
+      67,
+      275,
+      184
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      133,
+      61,
+      282,
+      190
+    ],
+    "crop_dimensions": [
+      149,
+      129
+    ],
+    "sha256": "c6697669e510d7ca5570ab9a85bcd32d6adf2676c546b18898f93ea99a78761b"
+  },
+  {
+    "crop_id": "apple_crop_02080",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\IMG_5467_inst00_mature.jpg",
+    "filename": "IMG_5467_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "IMG_5467.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 68,
+    "raw_bbox": [
+      105,
+      71,
+      224,
+      192
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      99,
+      65,
+      230,
+      198
+    ],
+    "crop_dimensions": [
+      131,
+      133
+    ],
+    "sha256": "f401b48cfe29c9028c3c1a2508e0f2ad02b2178d5f8e1d0de7ddcdf513a90465"
+  },
+  {
+    "crop_id": "apple_crop_02081",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_5480_inst00_immature.jpg",
+    "filename": "IMG_5480_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_5480.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 52,
+    "raw_bbox": [
+      124,
+      111,
+      218,
+      211
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      119,
+      106,
+      223,
+      216
+    ],
+    "crop_dimensions": [
+      104,
+      110
+    ],
+    "sha256": "5ed2b2099ffef436b71f6a7089c8c7a356c421a3be99eb342c46b80c1c6d7996"
+  },
+  {
+    "crop_id": "apple_crop_02082",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_54130_inst00_immature.jpg",
+    "filename": "IMG_54130_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_54130.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 52,
+    "raw_bbox": [
+      98,
+      90,
+      255,
+      217
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      90,
+      84,
+      263,
+      223
+    ],
+    "crop_dimensions": [
+      173,
+      139
+    ],
+    "sha256": "516d9144b01b17ab626ff27bdcf91a3b1ac6d7c9c66bd02d69d2a45f0b35b1e3"
+  },
+  {
+    "crop_id": "apple_crop_02083",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_54500_inst00_immature.jpg",
+    "filename": "IMG_54500_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_54500.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 54,
+    "raw_bbox": [
+      148,
+      102,
+      277,
+      217
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      142,
+      96,
+      283,
+      223
+    ],
+    "crop_dimensions": [
+      141,
+      127
+    ],
+    "sha256": "3e0470bdd838a565c595fedbec331bf68b495aad9a6ae154e1d9d678b3fb8a1a"
+  },
+  {
+    "crop_id": "apple_crop_02084",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\IMG_12330_inst00_mature.jpg",
+    "filename": "IMG_12330_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "IMG_12330.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 70,
+    "raw_bbox": [
+      112,
+      43,
+      290,
+      243
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      103,
+      33,
+      299,
+      253
+    ],
+    "crop_dimensions": [
+      196,
+      220
+    ],
+    "sha256": "84a958233b6ce5ee40870a17d3fbc217fc26283331e275dd954e6ef86dc40a42"
+  },
+  {
+    "crop_id": "apple_crop_02085",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_54920_inst00_immature.jpg",
+    "filename": "IMG_54920_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_54920.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 47,
+    "raw_bbox": [
+      183,
+      46,
+      301,
+      166
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      177,
+      40,
+      307,
+      172
+    ],
+    "crop_dimensions": [
+      130,
+      132
+    ],
+    "sha256": "0ee8d443db35a0d56bf7a71ad3001c34901f6e42c1ebd4e964b000c3387a7397"
+  },
+  {
+    "crop_id": "apple_crop_02086",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_54920_inst01_immature.jpg",
+    "filename": "IMG_54920_inst01_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_54920.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 47,
+    "raw_bbox": [
+      134,
+      115,
+      236,
+      200
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      129,
+      111,
+      241,
+      204
+    ],
+    "crop_dimensions": [
+      112,
+      93
+    ],
+    "sha256": "50aa97344940d107b1ffb61c3f2c80325b534694cff8533f5fb4e80fa5083222"
+  },
+  {
+    "crop_id": "apple_crop_02087",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_54940_inst00_immature.jpg",
+    "filename": "IMG_54940_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_54940.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 43,
+    "raw_bbox": [
+      10,
+      114,
+      116,
+      206
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      5,
+      109,
+      121,
+      211
+    ],
+    "crop_dimensions": [
+      116,
+      102
+    ],
+    "sha256": "72af3b46a5c5bb5274ebf0d2b8f88366fece838426def8d737820bb41e76d2fc"
+  },
+  {
+    "crop_id": "apple_crop_02088",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_54940_inst01_immature.jpg",
+    "filename": "IMG_54940_inst01_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_54940.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 32,
+    "raw_bbox": [
+      296,
+      59,
+      379,
+      132
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      292,
+      55,
+      383,
+      136
+    ],
+    "crop_dimensions": [
+      91,
+      81
+    ],
+    "sha256": "474413e983519b8ac9c30eb9d44bb2d00c76b0e1a79aa76fc500c1684f684c20"
+  },
+  {
+    "crop_id": "apple_crop_02089",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_55120_inst00_immature.jpg",
+    "filename": "IMG_55120_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_55120.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 44,
+    "raw_bbox": [
+      159,
+      104,
+      255,
+      191
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      154,
+      100,
+      260,
+      195
+    ],
+    "crop_dimensions": [
+      106,
+      95
+    ],
+    "sha256": "32fb39801bc669ad4ff96ea1c5d4e95bcdc0caaa6a3d86a673595541d66c0c70"
+  },
+  {
+    "crop_id": "apple_crop_02090",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_55140_inst00_immature.jpg",
+    "filename": "IMG_55140_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_55140.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 42,
+    "raw_bbox": [
+      155,
+      85,
+      259,
+      185
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      150,
+      80,
+      264,
+      190
+    ],
+    "crop_dimensions": [
+      114,
+      110
+    ],
+    "sha256": "f6d55dc88fbf3b2d6e82d51ea287fc50090dd41074d519bb2d4bd9f0f6f7df9c"
+  },
+  {
+    "crop_id": "apple_crop_02091",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_55210_inst00_immature.jpg",
+    "filename": "IMG_55210_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_55210.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 49,
+    "raw_bbox": [
+      126,
+      107,
+      243,
+      224
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      120,
+      101,
+      249,
+      230
+    ],
+    "crop_dimensions": [
+      129,
+      129
+    ],
+    "sha256": "8ae8907e0d5979a898a251fa40ea4b08b636920d6b3236c53f9d7fcec1486dab"
+  },
+  {
+    "crop_id": "apple_crop_02092",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_55230_inst00_immature.jpg",
+    "filename": "IMG_55230_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_55230.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 50,
+    "raw_bbox": [
+      139,
+      53,
+      295,
+      198
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      131,
+      46,
+      303,
+      205
+    ],
+    "crop_dimensions": [
+      172,
+      159
+    ],
+    "sha256": "3b34558e698c4b64c1d5de23a9ddcca979eb7671e997b74b1cf640e936b415bd"
+  },
+  {
+    "crop_id": "apple_crop_02093",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_55260_inst00_immature.jpg",
+    "filename": "IMG_55260_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_55260.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 20,
+    "raw_bbox": [
+      108,
+      181,
+      145,
+      218
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      106,
+      179,
+      147,
+      220
+    ],
+    "crop_dimensions": [
+      41,
+      41
+    ],
+    "sha256": "07f69aead606d7bf69fe12ce3fc998bd55ca847bad0e7ea4d4b2f7b1bdb345fe"
+  },
+  {
+    "crop_id": "apple_crop_02094",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_55260_inst01_immature.jpg",
+    "filename": "IMG_55260_inst01_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_55260.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 37,
+    "raw_bbox": [
+      190,
+      42,
+      329,
+      173
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      183,
+      35,
+      336,
+      180
+    ],
+    "crop_dimensions": [
+      153,
+      145
+    ],
+    "sha256": "83ab726679dd9a5913d32f7eb1ae756fc6b982019a3e84bbce56b626d967ed62"
+  },
+  {
+    "crop_id": "apple_crop_02095",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_55270_inst00_immature.jpg",
+    "filename": "IMG_55270_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_55270.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 45,
+    "raw_bbox": [
+      115,
+      76,
+      264,
+      209
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      108,
+      69,
+      271,
+      216
+    ],
+    "crop_dimensions": [
+      163,
+      147
+    ],
+    "sha256": "efe2d0475fdaeb5a97308c037c0d3c4f5b0e10246d05d979d30b5bc02cbe12b4"
+  },
+  {
+    "crop_id": "apple_crop_02096",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_55630_inst00_immature.jpg",
+    "filename": "IMG_55630_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_55630.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 32,
+    "raw_bbox": [
+      25,
+      216,
+      86,
+      274
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      22,
+      213,
+      89,
+      277
+    ],
+    "crop_dimensions": [
+      67,
+      64
+    ],
+    "sha256": "06a2bda7ca2a654e0b1632102de164ad67021b4c002a3ddf640a9ec4496a754f"
+  },
+  {
+    "crop_id": "apple_crop_02097",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_55630_inst01_immature.jpg",
+    "filename": "IMG_55630_inst01_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_55630.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 37,
+    "raw_bbox": [
+      302,
+      3,
+      394,
+      91
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      297,
+      0,
+      399,
+      95
+    ],
+    "crop_dimensions": [
+      102,
+      95
+    ],
+    "sha256": "0b1580189e0a8e0c99b88f152974006dcc88f9d29f7eb9dbdeab657d59508878"
+  },
+  {
+    "crop_id": "apple_crop_02098",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_55730_inst00_immature.jpg",
+    "filename": "IMG_55730_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_55730.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 43,
+    "raw_bbox": [
+      90,
+      128,
+      200,
+      236
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      84,
+      123,
+      206,
+      241
+    ],
+    "crop_dimensions": [
+      122,
+      118
+    ],
+    "sha256": "ecc76f1321f57b683977b9286d205abfd737830a3215dc612b2f3ac828e6f3b6"
+  },
+  {
+    "crop_id": "apple_crop_02099",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_55730_inst01_immature.jpg",
+    "filename": "IMG_55730_inst01_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_55730.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 44,
+    "raw_bbox": [
+      201,
+      115,
+      345,
+      242
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      194,
+      109,
+      352,
+      248
+    ],
+    "crop_dimensions": [
+      158,
+      139
+    ],
+    "sha256": "6918b3c7a1f3205207af5fd4cd4e5baa7a838cbd1aaf44ab6c84c028adf938b0"
+  },
+  {
+    "crop_id": "apple_crop_02100",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_55730_inst02_immature.jpg",
+    "filename": "IMG_55730_inst02_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_55730.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 31,
+    "raw_bbox": [
+      252,
+      255,
+      345,
+      303
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      247,
+      253,
+      350,
+      303
+    ],
+    "crop_dimensions": [
+      103,
+      50
+    ],
+    "sha256": "78d78b0c1aac11e5e114a26a66f2af38df6c74cc89d6b7c5f2daef80ee8adc5a"
+  },
+  {
+    "crop_id": "apple_crop_02101",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_55880_inst00_immature.jpg",
+    "filename": "IMG_55880_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_55880.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 29,
+    "raw_bbox": [
+      26,
+      158,
+      78,
+      204
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      23,
+      156,
+      81,
+      206
+    ],
+    "crop_dimensions": [
+      58,
+      50
+    ],
+    "sha256": "e7c4c7ecdccbbbaa3ac08912c8435dea11114cac21f11f5e3bebe6a8ce4084db"
+  },
+  {
+    "crop_id": "apple_crop_02102",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_55880_inst01_immature.jpg",
+    "filename": "IMG_55880_inst01_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_55880.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 31,
+    "raw_bbox": [
+      337,
+      96,
+      395,
+      145
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      334,
+      94,
+      398,
+      147
+    ],
+    "crop_dimensions": [
+      64,
+      53
+    ],
+    "sha256": "f2f462a1d061e9b9c58b445c2d9243e4c91283c00a5be679ba1b363ff503ebc4"
+  },
+  {
+    "crop_id": "apple_crop_02103",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_56300_inst00_immature.jpg",
+    "filename": "IMG_56300_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_56300.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 38,
+    "raw_bbox": [
+      202,
+      91,
+      304,
+      186
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      197,
+      86,
+      309,
+      191
+    ],
+    "crop_dimensions": [
+      112,
+      105
+    ],
+    "sha256": "634aff97eb5d909bfd596fa00976d5a05cafe94e7b80cb0a643f00fac9bf60d3"
+  },
+  {
+    "crop_id": "apple_crop_02104",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\IMG_56310_inst00_immature.jpg",
+    "filename": "IMG_56310_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "IMG_56310.jpg",
+    "source_image_dimensions": [
+      404,
+      303
+    ],
+    "source_polygon_points": 37,
+    "raw_bbox": [
+      201,
+      90,
+      304,
+      186
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      196,
+      85,
+      309,
+      191
+    ],
+    "crop_dimensions": [
+      113,
+      106
+    ],
+    "sha256": "30eae75dbde5b83260ca2047b493def2241ce1a5b0d22fe6ce85fce7f82d1531"
+  },
+  {
+    "crop_id": "apple_crop_02105",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\416_inst00_immature.jpg",
+    "filename": "416_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "416.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 33,
+    "raw_bbox": [
+      116,
+      75,
+      184,
+      141
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      113,
+      72,
+      187,
+      144
+    ],
+    "crop_dimensions": [
+      74,
+      72
+    ],
+    "sha256": "d500543a24e5777acd6ce5eec2578506c9c2516a1d169e50b77facbdb9c0927f"
+  },
+  {
+    "crop_id": "apple_crop_02106",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\416_inst01_immature.jpg",
+    "filename": "416_inst01_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "416.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 33,
+    "raw_bbox": [
+      185,
+      56,
+      257,
+      129
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      181,
+      52,
+      261,
+      133
+    ],
+    "crop_dimensions": [
+      80,
+      81
+    ],
+    "sha256": "bf498523081b9f987ca489d7193b6bff840f610fe744ecaf14b109db9d497ed7"
+  },
+  {
+    "crop_id": "apple_crop_02107",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\411_inst00_mature.jpg",
+    "filename": "411_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "411.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 36,
+    "raw_bbox": [
+      74,
+      132,
+      142,
+      190
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      71,
+      129,
+      145,
+      193
+    ],
+    "crop_dimensions": [
+      74,
+      64
+    ],
+    "sha256": "b053891f90d591f7a8e5d6e82df0e5682b1fda457ec7c1f64a73dcab0fb7aba0"
+  },
+  {
+    "crop_id": "apple_crop_02108",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\411_inst01_mature.jpg",
+    "filename": "411_inst01_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "411.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 38,
+    "raw_bbox": [
+      190,
+      94,
+      300,
+      192
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      184,
+      89,
+      306,
+      197
+    ],
+    "crop_dimensions": [
+      122,
+      108
+    ],
+    "sha256": "fcdf56a19c091f11fa91eee970cf71e61538281ee573974879c6012f990299f2"
+  },
+  {
+    "crop_id": "apple_crop_02109",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\397_inst00_immature.jpg",
+    "filename": "397_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "397.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 37,
+    "raw_bbox": [
+      110,
+      135,
+      212,
+      229
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      105,
+      130,
+      217,
+      234
+    ],
+    "crop_dimensions": [
+      112,
+      104
+    ],
+    "sha256": "910c04d76b786229fc922ba72d3f06df138b9c2989b893ae6b00cd25cf73986b"
+  },
+  {
+    "crop_id": "apple_crop_02110",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\397_inst01_immature.jpg",
+    "filename": "397_inst01_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "397.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 29,
+    "raw_bbox": [
+      91,
+      334,
+      140,
+      369
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      89,
+      332,
+      142,
+      369
+    ],
+    "crop_dimensions": [
+      53,
+      37
+    ],
+    "sha256": "0a093c178262cfe7076f5d1f9981848b4390ddf893b78df7a7c693b8acd47cc2"
+  },
+  {
+    "crop_id": "apple_crop_02111",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\385_inst00_immature.jpg",
+    "filename": "385_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "385.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 39,
+    "raw_bbox": [
+      85,
+      44,
+      244,
+      187
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      77,
+      37,
+      252,
+      194
+    ],
+    "crop_dimensions": [
+      175,
+      157
+    ],
+    "sha256": "473def5a2b0fe7f095b79b96287b5429c259d2b6ed385701361885473c32327e"
+  },
+  {
+    "crop_id": "apple_crop_02112",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\384_inst00_immature.jpg",
+    "filename": "384_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "384.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 36,
+    "raw_bbox": [
+      74,
+      166,
+      164,
+      244
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      70,
+      162,
+      168,
+      248
+    ],
+    "crop_dimensions": [
+      98,
+      86
+    ],
+    "sha256": "14502f9d0d1b3ae344511edc7ea3c6f93cf6af17b75009a57357340be07b5cc6"
+  },
+  {
+    "crop_id": "apple_crop_02113",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\379_inst00_immature.jpg",
+    "filename": "379_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "379.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 35,
+    "raw_bbox": [
+      101,
+      172,
+      236,
+      284
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      94,
+      166,
+      243,
+      290
+    ],
+    "crop_dimensions": [
+      149,
+      124
+    ],
+    "sha256": "3f68baa41e04b3219c50a173ae656f806e9e50b08d78fc87caed6ed20d87678b"
+  },
+  {
+    "crop_id": "apple_crop_02114",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\340_inst00_mature.jpg",
+    "filename": "340_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "340.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 35,
+    "raw_bbox": [
+      126,
+      88,
+      274,
+      232
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      119,
+      81,
+      281,
+      239
+    ],
+    "crop_dimensions": [
+      162,
+      158
+    ],
+    "sha256": "050c7998b9780c8ed49961048e446b822aa5a7603e254838d205e94ab2cdeca2"
+  },
+  {
+    "crop_id": "apple_crop_02115",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\336_inst00_mature.jpg",
+    "filename": "336_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "336.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 41,
+    "raw_bbox": [
+      68,
+      92,
+      234,
+      260
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      60,
+      84,
+      242,
+      268
+    ],
+    "crop_dimensions": [
+      182,
+      184
+    ],
+    "sha256": "e85762853b0ae2f451f66ca3e5113a3977588fd90b04800ca708acde1c657318"
+  },
+  {
+    "crop_id": "apple_crop_02116",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\3210_inst00_mature.jpg",
+    "filename": "3210_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "3210.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 41,
+    "raw_bbox": [
+      163,
+      131,
+      273,
+      230
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      157,
+      126,
+      279,
+      235
+    ],
+    "crop_dimensions": [
+      122,
+      109
+    ],
+    "sha256": "5557c3a011c1c10acc3c41851e3bd95b64154a4edc44fb6275c6864f168d140c"
+  },
+  {
+    "crop_id": "apple_crop_02117",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\3310_inst00_mature.jpg",
+    "filename": "3310_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "3310.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 34,
+    "raw_bbox": [
+      150,
+      102,
+      240,
+      182
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      146,
+      98,
+      244,
+      186
+    ],
+    "crop_dimensions": [
+      98,
+      88
+    ],
+    "sha256": "9c84b0a9ca2d2080df5b69213da0bfd35c4843c7572513f99aa07efde06b5235"
+  },
+  {
+    "crop_id": "apple_crop_02118",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\3320_inst00_mature.jpg",
+    "filename": "3320_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "3320.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 37,
+    "raw_bbox": [
+      148,
+      96,
+      271,
+      207
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      142,
+      90,
+      277,
+      213
+    ],
+    "crop_dimensions": [
+      135,
+      123
+    ],
+    "sha256": "b312aee4988ba33f8ff8d628690b764dfe6d98e948d4c6f124e483ee9126aec7"
+  },
+  {
+    "crop_id": "apple_crop_02119",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\3320_inst01_mature.jpg",
+    "filename": "3320_inst01_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "3320.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 31,
+    "raw_bbox": [
+      109,
+      50,
+      180,
+      90
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      105,
+      48,
+      184,
+      92
+    ],
+    "crop_dimensions": [
+      79,
+      44
+    ],
+    "sha256": "e4ccbbb9c13290c65886c82381a8b1ddcba689a5103ff41a8e92918ea5b2e09e"
+  },
+  {
+    "crop_id": "apple_crop_02120",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\3450_inst00_mature.jpg",
+    "filename": "3450_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "3450.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 42,
+    "raw_bbox": [
+      100,
+      84,
+      231,
+      202
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      93,
+      78,
+      238,
+      208
+    ],
+    "crop_dimensions": [
+      145,
+      130
+    ],
+    "sha256": "ebd1528fa0330b6ae2a331d1e8c20552d7db10f093c22b127125e7fb59e3d0e5"
+  },
+  {
+    "crop_id": "apple_crop_02121",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\3450_inst01_semi_mature.jpg",
+    "filename": "3450_inst01_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "3450.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 25,
+    "raw_bbox": [
+      1,
+      127,
+      64,
+      159
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      0,
+      125,
+      67,
+      161
+    ],
+    "crop_dimensions": [
+      67,
+      36
+    ],
+    "sha256": "ded975f40296bb6a1cc7420d0c421d1f5dcc0a56bf67ae447b0b424ee5bf6036"
+  },
+  {
+    "crop_id": "apple_crop_02122",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\3450_inst02_semi_mature.jpg",
+    "filename": "3450_inst02_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "3450.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 24,
+    "raw_bbox": [
+      86,
+      16,
+      125,
+      57
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      84,
+      14,
+      127,
+      59
+    ],
+    "crop_dimensions": [
+      43,
+      45
+    ],
+    "sha256": "4f7492d4bc93ca19ac6549b2e47452ba097288a21d03381f0702088947325c23"
+  },
+  {
+    "crop_id": "apple_crop_02123",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\3720_inst00_immature.jpg",
+    "filename": "3720_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "3720.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 39,
+    "raw_bbox": [
+      74,
+      95,
+      175,
+      204
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      69,
+      90,
+      180,
+      209
+    ],
+    "crop_dimensions": [
+      111,
+      119
+    ],
+    "sha256": "ad0ae1e1e3da4c810c6e1a023d2727d77cd055f6b3ad15ed3ae46716a0f03f1c"
+  },
+  {
+    "crop_id": "apple_crop_02124",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\3720_inst01_immature.jpg",
+    "filename": "3720_inst01_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "3720.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 13,
+    "raw_bbox": [
+      196,
+      0,
+      277,
+      22
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      192,
+      0,
+      277,
+      23
+    ],
+    "crop_dimensions": [
+      85,
+      23
+    ],
+    "sha256": "b6c6e1316f18d63bdd0719847b60eac0f95de2adce30c5ee6f540898dc095730"
+  },
+  {
+    "crop_id": "apple_crop_02125",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\3720_inst02_immature.jpg",
+    "filename": "3720_inst02_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "3720.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 22,
+    "raw_bbox": [
+      225,
+      14,
+      277,
+      101
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      222,
+      10,
+      277,
+      105
+    ],
+    "crop_dimensions": [
+      55,
+      95
+    ],
+    "sha256": "ce520def506739523017135e7ecfc2af40519a779361ac758ae2441972a0e25f"
+  },
+  {
+    "crop_id": "apple_crop_02126",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\3860_inst00_immature.jpg",
+    "filename": "3860_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "3860.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 40,
+    "raw_bbox": [
+      34,
+      103,
+      169,
+      225
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      27,
+      97,
+      176,
+      231
+    ],
+    "crop_dimensions": [
+      149,
+      134
+    ],
+    "sha256": "a3b4519f61ad919144a6366c1d3609b90a17d142bda0adee66128abb83701744"
+  },
+  {
+    "crop_id": "apple_crop_02127",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\3860_inst01_immature.jpg",
+    "filename": "3860_inst01_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "3860.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 27,
+    "raw_bbox": [
+      175,
+      0,
+      271,
+      44
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      170,
+      0,
+      276,
+      46
+    ],
+    "crop_dimensions": [
+      106,
+      46
+    ],
+    "sha256": "84027798580e242208d4fd0bf0ca5898099fad1b3117a01e4f053b1c3a3eb226"
+  },
+  {
+    "crop_id": "apple_crop_02128",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\3870_inst00_immature.jpg",
+    "filename": "3870_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "3870.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 37,
+    "raw_bbox": [
+      82,
+      100,
+      198,
+      207
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      76,
+      95,
+      204,
+      212
+    ],
+    "crop_dimensions": [
+      128,
+      117
+    ],
+    "sha256": "7a71084b789b8f783404972a3d48ab0c483624f94738930f5787d5ab907f6af7"
+  },
+  {
+    "crop_id": "apple_crop_02129",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\3880_inst00_immature.jpg",
+    "filename": "3880_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "3880.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 32,
+    "raw_bbox": [
+      102,
+      125,
+      193,
+      214
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      97,
+      121,
+      198,
+      218
+    ],
+    "crop_dimensions": [
+      101,
+      97
+    ],
+    "sha256": "afe41a007e52a9e1f4053f06b1bded395bad331dcedc04556409bb06bedad13c"
+  },
+  {
+    "crop_id": "apple_crop_02130",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\4141_inst00_immature.jpg",
+    "filename": "4141_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "4141.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 35,
+    "raw_bbox": [
+      123,
+      39,
+      230,
+      145
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      118,
+      34,
+      235,
+      150
+    ],
+    "crop_dimensions": [
+      117,
+      116
+    ],
+    "sha256": "5c3333df851db422c187bfe52949ddaf0955c76ce63ea35e55bdbab635f1ae9d"
+  },
+  {
+    "crop_id": "apple_crop_02131",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\4141_inst01_immature.jpg",
+    "filename": "4141_inst01_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "4141.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 39,
+    "raw_bbox": [
+      86,
+      191,
+      187,
+      284
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      81,
+      186,
+      192,
+      289
+    ],
+    "crop_dimensions": [
+      111,
+      103
+    ],
+    "sha256": "ff990bc061bc1b9ee2c4ad65794180c7f07dad44c11661c72fe21ce0b527a1c3"
+  },
+  {
+    "crop_id": "apple_crop_02132",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\3460_inst00_mature.jpg",
+    "filename": "3460_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "3460.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 36,
+    "raw_bbox": [
+      175,
+      54,
+      327,
+      209
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      167,
+      46,
+      335,
+      217
+    ],
+    "crop_dimensions": [
+      168,
+      171
+    ],
+    "sha256": "d46c2058a88cf268db53bbd5ae714f55940789dd69bc9858f28fca6076c23f91"
+  },
+  {
+    "crop_id": "apple_crop_02133",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\3460_inst01_mature.jpg",
+    "filename": "3460_inst01_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "3460.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 24,
+    "raw_bbox": [
+      298,
+      154,
+      349,
+      207
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      295,
+      151,
+      352,
+      210
+    ],
+    "crop_dimensions": [
+      57,
+      59
+    ],
+    "sha256": "bf3ac7cdd4549f47f2b18b60bb768fefb23b782cb48db3a17d4911b84a2d40ad"
+  },
+  {
+    "crop_id": "apple_crop_02134",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\3460_inst02_mature.jpg",
+    "filename": "3460_inst02_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "3460.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 15,
+    "raw_bbox": [
+      337,
+      157,
+      369,
+      218
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      335,
+      154,
+      369,
+      221
+    ],
+    "crop_dimensions": [
+      34,
+      67
+    ],
+    "sha256": "8a172633f7d4e842a8a7feb97deb5a4bc8fdfa2768c6407f4a57ef863172c58f"
+  },
+  {
+    "crop_id": "apple_crop_02135",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\3460_inst03_mature.jpg",
+    "filename": "3460_inst03_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "3460.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 54,
+    "raw_bbox": [
+      0,
+      164,
+      78,
+      277
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      0,
+      158,
+      82,
+      277
+    ],
+    "crop_dimensions": [
+      82,
+      119
+    ],
+    "sha256": "74585946aae41e0f4129f708fb67c53fa68f739c224371e7a335a395f2b819b0"
+  },
+  {
+    "crop_id": "apple_crop_02136",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\170_inst00_mature.jpg",
+    "filename": "170_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "170.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 71,
+    "raw_bbox": [
+      88,
+      80,
+      239,
+      228
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      80,
+      73,
+      247,
+      235
+    ],
+    "crop_dimensions": [
+      167,
+      162
+    ],
+    "sha256": "eef90993129d318274864a1d710372f5906a634760057701c6d6993253f37368"
+  },
+  {
+    "crop_id": "apple_crop_02137",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\166_inst00_immature.jpg",
+    "filename": "166_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "166.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 46,
+    "raw_bbox": [
+      135,
+      69,
+      274,
+      206
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      128,
+      62,
+      281,
+      213
+    ],
+    "crop_dimensions": [
+      153,
+      151
+    ],
+    "sha256": "c1f6a8c01854bba41b6ba85814ce7743090a03bb8e2f1311185c4ab78b12ace7"
+  },
+  {
+    "crop_id": "apple_crop_02138",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\166_inst01_immature.jpg",
+    "filename": "166_inst01_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "166.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 14,
+    "raw_bbox": [
+      0,
+      200,
+      15,
+      245
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      0,
+      198,
+      16,
+      247
+    ],
+    "crop_dimensions": [
+      16,
+      49
+    ],
+    "sha256": "f011f9284ebffd7b84faae97f67358aff89818afc8be03d990854f23c3c327b5"
+  },
+  {
+    "crop_id": "apple_crop_02139",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\1870_inst00_immature.jpg",
+    "filename": "1870_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "1870.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 48,
+    "raw_bbox": [
+      69,
+      129,
+      208,
+      253
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      62,
+      123,
+      215,
+      259
+    ],
+    "crop_dimensions": [
+      153,
+      136
+    ],
+    "sha256": "af0e880b16131407be88ccaaee7c558bb6541aa8b28815bfb8305dcfed4b7439"
+  },
+  {
+    "crop_id": "apple_crop_02140",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\114_inst00_mature.jpg",
+    "filename": "114_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "114.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 47,
+    "raw_bbox": [
+      34,
+      30,
+      227,
+      227
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      24,
+      20,
+      237,
+      237
+    ],
+    "crop_dimensions": [
+      213,
+      217
+    ],
+    "sha256": "ed618b54569296387721bdc4116c1946b76aa0b24c9dce7394916fb65e395660"
+  },
+  {
+    "crop_id": "apple_crop_02141",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\114_inst01_mature.jpg",
+    "filename": "114_inst01_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "114.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 44,
+    "raw_bbox": [
+      212,
+      92,
+      297,
+      217
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      208,
+      86,
+      301,
+      223
+    ],
+    "crop_dimensions": [
+      93,
+      137
+    ],
+    "sha256": "ceb28964f216acee2e52910be1bc9f40aba797cd34c0328370b717f0555e1001"
+  },
+  {
+    "crop_id": "apple_crop_02142",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\114_inst02_mature.jpg",
+    "filename": "114_inst02_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "114.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 27,
+    "raw_bbox": [
+      329,
+      37,
+      369,
+      128
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      327,
+      32,
+      369,
+      133
+    ],
+    "crop_dimensions": [
+      42,
+      101
+    ],
+    "sha256": "6d480959c1d18fc87329e206e8e54fbbabd99ac18a9aefbcd9a30dc6dde2c964"
+  },
+  {
+    "crop_id": "apple_crop_02143",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\111_inst00_mature.jpg",
+    "filename": "111_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "111.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 45,
+    "raw_bbox": [
+      81,
+      39,
+      286,
+      232
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      71,
+      29,
+      296,
+      242
+    ],
+    "crop_dimensions": [
+      225,
+      213
+    ],
+    "sha256": "9a64bf6a525f61c81ff071f981f9298df6c3917a119b4106d44ae9ffe7c98d73"
+  },
+  {
+    "crop_id": "apple_crop_02144",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\1090_inst00_mature.jpg",
+    "filename": "1090_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "1090.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 36,
+    "raw_bbox": [
+      118,
+      57,
+      250,
+      192
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      111,
+      50,
+      257,
+      199
+    ],
+    "crop_dimensions": [
+      146,
+      149
+    ],
+    "sha256": "419a1ebd82a243373a41efa725cdfa81f077b7d649c9b3a8cd0143d0f22afaf7"
+  },
+  {
+    "crop_id": "apple_crop_02145",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\1090_inst01_mature.jpg",
+    "filename": "1090_inst01_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "1090.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 20,
+    "raw_bbox": [
+      155,
+      225,
+      223,
+      277
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      152,
+      222,
+      226,
+      277
+    ],
+    "crop_dimensions": [
+      74,
+      55
+    ],
+    "sha256": "2ec4c7a5e9e5e01d75aa68f604570517de337d5736b9235f4aea70422081c37d"
+  },
+  {
+    "crop_id": "apple_crop_02146",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\1130_inst00_mature.jpg",
+    "filename": "1130_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "1130.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 37,
+    "raw_bbox": [
+      94,
+      79,
+      231,
+      213
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      87,
+      72,
+      238,
+      220
+    ],
+    "crop_dimensions": [
+      151,
+      148
+    ],
+    "sha256": "f4ff58d3f89d777206482c6ed1318b9eb8f35825a1a5615aa0faf8f800a5b254"
+  },
+  {
+    "crop_id": "apple_crop_02147",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Semi_Mature\\1130_inst01_semi_mature.jpg",
+    "filename": "1130_inst01_semi_mature.jpg",
+    "class": "Semi_Mature",
+    "raw_label": "semi-mature apple",
+    "source_split": "val",
+    "source_image": "1130.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 25,
+    "raw_bbox": [
+      338,
+      36,
+      369,
+      100
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      336,
+      33,
+      369,
+      103
+    ],
+    "crop_dimensions": [
+      33,
+      70
+    ],
+    "sha256": "7ab4805fc606bb36302bd577eb0619927795c17709a74c6d931a2e72648011ba"
+  },
+  {
+    "crop_id": "apple_crop_02148",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\1130_inst02_mature.jpg",
+    "filename": "1130_inst02_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "1130.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 18,
+    "raw_bbox": [
+      153,
+      256,
+      206,
+      277
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      150,
+      255,
+      209,
+      277
+    ],
+    "crop_dimensions": [
+      59,
+      22
+    ],
+    "sha256": "7e836a80582c076566b1de3b7147460d1ff42dc8651f967435e45546c7bbbb81"
+  },
+  {
+    "crop_id": "apple_crop_02149",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\1180_inst00_mature.jpg",
+    "filename": "1180_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "1180.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 42,
+    "raw_bbox": [
+      106,
+      16,
+      301,
+      190
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      96,
+      7,
+      311,
+      199
+    ],
+    "crop_dimensions": [
+      215,
+      192
+    ],
+    "sha256": "78236fed2b50510d51edb8c3ceceb31f195944593a409b0e1775f821d29a0edd"
+  },
+  {
+    "crop_id": "apple_crop_02150",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\1210_inst00_mature.jpg",
+    "filename": "1210_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "1210.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 39,
+    "raw_bbox": [
+      115,
+      81,
+      255,
+      217
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      108,
+      74,
+      262,
+      224
+    ],
+    "crop_dimensions": [
+      154,
+      150
+    ],
+    "sha256": "18733b53ed9e46c4b7a4e9a849760c0e44370112595997be4e3c12d3dfc42a51"
+  },
+  {
+    "crop_id": "apple_crop_02151",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\1220_inst00_mature.jpg",
+    "filename": "1220_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "1220.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 34,
+    "raw_bbox": [
+      174,
+      79,
+      286,
+      193
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      168,
+      73,
+      292,
+      199
+    ],
+    "crop_dimensions": [
+      124,
+      126
+    ],
+    "sha256": "eed36667869466840b01465ffaac317169d1685f8a71a43c93aa2267ca8c6383"
+  },
+  {
+    "crop_id": "apple_crop_02152",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\107_inst00_mature.jpg",
+    "filename": "107_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "107.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 49,
+    "raw_bbox": [
+      148,
+      71,
+      283,
+      188
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      141,
+      65,
+      290,
+      194
+    ],
+    "crop_dimensions": [
+      149,
+      129
+    ],
+    "sha256": "399c760462e15e20428e51e4a645af12e99eddd529a9996c5714ef88dc0cdd0e"
+  },
+  {
+    "crop_id": "apple_crop_02153",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\22000_inst00_mature.jpg",
+    "filename": "22000_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "22000.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 12,
+    "raw_bbox": [
+      0,
+      128,
+      32,
+      223
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      0,
+      123,
+      34,
+      228
+    ],
+    "crop_dimensions": [
+      34,
+      105
+    ],
+    "sha256": "f7ff4b6e34474c2e0346f29fed8cc3f05aca8fa2d0a4ceecb2e0de901f1d476a"
+  },
+  {
+    "crop_id": "apple_crop_02154",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\22000_inst01_mature.jpg",
+    "filename": "22000_inst01_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "22000.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 17,
+    "raw_bbox": [
+      45,
+      79,
+      74,
+      112
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      44,
+      77,
+      75,
+      114
+    ],
+    "crop_dimensions": [
+      31,
+      37
+    ],
+    "sha256": "a46de89f4667daf82894b22b4c944b090a3583b5f17370ef8c6df7ba785a4065"
+  },
+  {
+    "crop_id": "apple_crop_02155",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\22000_inst02_mature.jpg",
+    "filename": "22000_inst02_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "22000.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 36,
+    "raw_bbox": [
+      75,
+      96,
+      174,
+      187
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      70,
+      91,
+      179,
+      192
+    ],
+    "crop_dimensions": [
+      109,
+      101
+    ],
+    "sha256": "7770ddb8a0162d90f9888063d382917bc6fcafa30a997a81fe61197156c92201"
+  },
+  {
+    "crop_id": "apple_crop_02156",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\22000_inst03_mature.jpg",
+    "filename": "22000_inst03_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "22000.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 34,
+    "raw_bbox": [
+      165,
+      114,
+      272,
+      225
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      160,
+      108,
+      277,
+      231
+    ],
+    "crop_dimensions": [
+      117,
+      123
+    ],
+    "sha256": "f4e4ff5a948d894f4b5e3eacb447d3d45bfccc0e6464d05c4918293a5328a22a"
+  },
+  {
+    "crop_id": "apple_crop_02157",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\22000_inst04_mature.jpg",
+    "filename": "22000_inst04_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "22000.jpg",
+    "source_image_dimensions": [
+      369,
+      277
+    ],
+    "source_polygon_points": 11,
+    "raw_bbox": [
+      58,
+      255,
+      125,
+      277
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      55,
+      254,
+      128,
+      277
+    ],
+    "crop_dimensions": [
+      73,
+      23
+    ],
+    "sha256": "5e143e66f705af1d02621e4c8763828f49c06678ad58f6facb53af0d23a0ddf2"
+  },
+  {
+    "crop_id": "apple_crop_02158",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\78_inst00_mature.jpg",
+    "filename": "78_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "78.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 35,
+    "raw_bbox": [
+      149,
+      136,
+      270,
+      252
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      143,
+      130,
+      276,
+      258
+    ],
+    "crop_dimensions": [
+      133,
+      128
+    ],
+    "sha256": "3050c4bac4639b0deda9c57ad9c0f89aee6950986d3b3b02db97cc05d1644a57"
+  },
+  {
+    "crop_id": "apple_crop_02159",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\78_inst01_mature.jpg",
+    "filename": "78_inst01_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "78.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 36,
+    "raw_bbox": [
+      63,
+      142,
+      154,
+      236
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      58,
+      137,
+      159,
+      241
+    ],
+    "crop_dimensions": [
+      101,
+      104
+    ],
+    "sha256": "bfa259bd5dcc5aee0c1f296dab3def5051556e60c712adc13058c30ab033c7dc"
+  },
+  {
+    "crop_id": "apple_crop_02160",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\79_inst00_mature.jpg",
+    "filename": "79_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "79.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 39,
+    "raw_bbox": [
+      55,
+      83,
+      155,
+      194
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      50,
+      77,
+      160,
+      200
+    ],
+    "crop_dimensions": [
+      110,
+      123
+    ],
+    "sha256": "f51e13b8d2c2e163138bc3d1bac2e43c4add3e50ff770b4579fe500e907f1ea4"
+  },
+  {
+    "crop_id": "apple_crop_02161",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\79_inst01_mature.jpg",
+    "filename": "79_inst01_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "79.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 37,
+    "raw_bbox": [
+      149,
+      111,
+      263,
+      222
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      143,
+      105,
+      269,
+      228
+    ],
+    "crop_dimensions": [
+      126,
+      123
+    ],
+    "sha256": "6b6fa96ad86a528eda9b2ab187e16e5da1c61a19ffbf915ad745ae6a363cbf03"
+  },
+  {
+    "crop_id": "apple_crop_02162",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\8100_inst00_mature.jpg",
+    "filename": "8100_inst00_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "8100.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 37,
+    "raw_bbox": [
+      77,
+      105,
+      214,
+      249
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      70,
+      98,
+      221,
+      256
+    ],
+    "crop_dimensions": [
+      151,
+      158
+    ],
+    "sha256": "2dbf2d45c0695a483ef36a074544cd2ee5ff721196812b67653c60440d195422"
+  },
+  {
+    "crop_id": "apple_crop_02163",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\8100_inst01_mature.jpg",
+    "filename": "8100_inst01_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "8100.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 32,
+    "raw_bbox": [
+      145,
+      54,
+      240,
+      152
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      140,
+      49,
+      245,
+      157
+    ],
+    "crop_dimensions": [
+      105,
+      108
+    ],
+    "sha256": "de18250c43a29a54d41f29f5b92a559e5a1a23481dd69872752b144bd98534fe"
+  },
+  {
+    "crop_id": "apple_crop_02164",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Mature\\8100_inst02_mature.jpg",
+    "filename": "8100_inst02_mature.jpg",
+    "class": "Mature",
+    "raw_label": "mature apple",
+    "source_split": "val",
+    "source_image": "8100.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 34,
+    "raw_bbox": [
+      192,
+      21,
+      251,
+      82
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      189,
+      18,
+      254,
+      85
+    ],
+    "crop_dimensions": [
+      65,
+      67
+    ],
+    "sha256": "c7df8602bef38185058c41aea339a20e3c4a647a248abad4abb6dbf0cd1d29e2"
+  },
+  {
+    "crop_id": "apple_crop_02165",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\3810_inst00_immature.jpg",
+    "filename": "3810_inst00_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "3810.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 42,
+    "raw_bbox": [
+      57,
+      167,
+      217,
+      323
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      49,
+      159,
+      225,
+      331
+    ],
+    "crop_dimensions": [
+      176,
+      172
+    ],
+    "sha256": "02e13881eb4511ef3239c12bbec056385db8c1755c050c2679f56b14e6509d0c"
+  },
+  {
+    "crop_id": "apple_crop_02166",
+    "crop_path": "ml\\data\\processed\\apple_crops_v1\\val\\Immature\\3810_inst01_immature.jpg",
+    "filename": "3810_inst01_immature.jpg",
+    "class": "Immature",
+    "raw_label": "immature apple",
+    "source_split": "val",
+    "source_image": "3810.jpg",
+    "source_image_dimensions": [
+      277,
+      369
+    ],
+    "source_polygon_points": 14,
+    "raw_bbox": [
+      152,
+      0,
+      277,
+      43
+    ],
+    "margin_applied_pct": 5.0,
+    "padded_bbox": [
+      146,
+      0,
+      277,
+      45
+    ],
+    "crop_dimensions": [
+      131,
+      45
+    ],
+    "sha256": "5c9381da02937a6051dd9aca5fb67017647fa59cb7861e65c89659e125637e77"
+  }
+]

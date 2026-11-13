@@ -1,0 +1,41 @@
+# Git and documentation
+.git
+.gitignore
+.gitattributes
+docs/
+*.md
+
+# Virtual environments & Python cache
+.venv
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Node.js & Web builds
+node_modules/
+apps/web/node_modules/
+apps/web/.next/
+apps/web/.turbo/
+
+# Mobile (Flutter) build artifacts
+apps/mobile/build/
+apps/mobile/.dart_tool/
+
+# Database local storage ledger
+backend/app/db/.persisted_session.json
+backend/app/db/*.tmp
+
+# Machine learning large datasets and experiments
+ml/data/raw/
+ml/data/interim/
+ml/experiments/
+
+# IDE & Editor artifacts
+.vscode/
+.idea/
+.gemini/
+*.swp
+*.swo

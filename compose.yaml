@@ -1,0 +1,122 @@
+# ==============================================================================
+# AgriChain AI — Docker Compose Architecture (compose.yaml)
+#
+# Services:
+#   1. db:       PostgreSQL 16 with PostGIS 3.4 spatial engine.
+#   2. backend:  FastAPI REST API, CNN/LSTM services, and WebSocket gateway.
+#   3. frontend: Next.js 14 web portal with Tailwind CSS dashboard.
+# ==============================================================================
+
+name: agrichain
+
+services:
+  # ----------------------------------------------------------------------------
+  # 1. Spatial Database: PostgreSQL 16 + PostGIS 3.4
+  # ----------------------------------------------------------------------------
+  db:
+    image: postgis/postgis:16-3.4
+    container_name: agrichain-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-agrichain_db}
+      POSTGRES_USER: ${POSTGRES_USER:-agrichain_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-your_secure_password_here}
+    volumes:
+      - agrichain_pgdata:/var/lib/postgresql/data
+      - ./database/migrations/001_initial_postgis_schema.sql:/docker-entrypoint-initdb.d/001_initial_postgis_schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-agrichain_user} -d ${POSTGRES_DB:-agrichain_db}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    networks:
+      - agrichain-net
+    # Expose PostgreSQL / PostGIS to localhost for host backend and migration tooling
+    ports:
+      - "127.0.0.1:5432:5432"
+
+  # ----------------------------------------------------------------------------
+  # 2. Application Backend: FastAPI REST & WebSocket API
+  # ----------------------------------------------------------------------------
+  backend:
+    image: agrichain-backend:1.0.0
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: agrichain-backend
+    restart: unless-stopped
+    environment:
+      ENVIRONMENT: ${ENVIRONMENT:-production}
+      DEBUG: ${DEBUG:-False}
+      PROJECT_NAME: ${PROJECT_NAME:-AgriChain AI Backend}
+      API_V1_STR: ${API_V1_STR:-/api/v1}
+      HOST: "0.0.0.0"
+      PORT: "8000"
+      BACKEND_CORS_ORIGINS: '["http://localhost:3000","http://127.0.0.1:3000","http://frontend:3000"]'
+      DATABASE_ENABLED: ${DATABASE_ENABLED:-true}
+      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-agrichain_user}:${POSTGRES_PASSWORD:-your_secure_password_here}@db:5432/${POSTGRES_DB:-agrichain_db}
+      SYNC_DATABASE_URL: postgresql://${POSTGRES_USER:-agrichain_user}:${POSTGRES_PASSWORD:-your_secure_password_here}@db:5432/${POSTGRES_DB:-agrichain_db}
+      MODEL_DEVICE: ${MODEL_DEVICE:-cpu}
+      MODEL_WEIGHTS_PATH: ml/artifacts/best_kinnow_resnet18.pth
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:8000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+    networks:
+      - agrichain-net
+
+  # ----------------------------------------------------------------------------
+  # 3. Web Dashboard: Next.js 14 App Router
+  # ----------------------------------------------------------------------------
+  frontend:
+    image: agrichain-frontend:1.0.0
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+    container_name: agrichain-frontend
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: "3000"
+      # Browser-facing requests connect via localhost
+      NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:8000/api/v1}
+      # Server-side Next.js route handlers connect internally via Compose network
+      ML_API_URL: http://backend:8000
+      BACKEND_API_URL: http://backend:8000
+      NEXT_PUBLIC_MAPBOX_TOKEN: ${NEXT_PUBLIC_MAPBOX_TOKEN:-your_mapbox_token_here_if_applicable}
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "3000:3000"
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+    networks:
+      - agrichain-net
+
+# ------------------------------------------------------------------------------
+# Persistent Named Volumes
+# ------------------------------------------------------------------------------
+volumes:
+  agrichain_pgdata:
+    name: agrichain_pgdata
+
+# ------------------------------------------------------------------------------
+# Network Topology
+# ------------------------------------------------------------------------------
+networks:
+  agrichain-net:
+    name: agrichain-network
+    driver: bridge

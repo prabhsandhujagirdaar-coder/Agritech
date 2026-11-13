@@ -1,0 +1,85 @@
+{
+  "total_records_checked": 19886,
+  "missing_files": 0,
+  "corrupted_files": 0,
+  "resolution_statistics": {
+    "guava": {
+      "min_res": [
+        192,
+        192
+      ],
+      "max_res": [
+        850,
+        1300
+      ],
+      "mean_res": [
+        547,
+        779
+      ],
+      "sample_count": 4590
+    },
+    "banana": {
+      "min_res": [
+        192,
+        192
+      ],
+      "max_res": [
+        384,
+        256
+      ],
+      "mean_res": [
+        306,
+        254
+      ],
+      "sample_count": 4160
+    },
+    "apple": {
+      "min_res": [
+        12,
+        16
+      ],
+      "max_res": [
+        280,
+        290
+      ],
+      "mean_res": [
+        171,
+        178
+      ],
+      "sample_count": 4864
+    },
+    "mango": {
+      "min_res": [
+        651,
+        721
+      ],
+      "max_res": [
+        4000,
+        4000
+      ],
+      "mean_res": [
+        1852,
+        2673
+      ],
+      "sample_count": 272
+    },
+    "negative_background": {
+      "min_res": [
+        112,
+        106
+      ],
+      "max_res": [
+        8000,
+        6000
+      ],
+      "mean_res": [
+        435,
+        440
+      ],
+      "sample_count": 6000
+    }
+  },
+  "exact_sha256_cross_split_collisions": 0,
+  "perceptual_near_duplicates_in_40k_sample": 0,
+  "status": "PASS_CLEAN_DISJOINT"
+}

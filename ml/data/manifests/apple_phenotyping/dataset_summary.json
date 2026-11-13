@@ -1,0 +1,25 @@
+{
+  "dataset": "Apple Phenotyping",
+  "seed": 42,
+  "total_samples": 1406,
+  "splits": {
+    "train": {
+      "count": 1041,
+      "classes": {
+        "mixed": 1041
+      }
+    },
+    "val": {
+      "count": 126,
+      "classes": {
+        "mixed": 126
+      }
+    },
+    "test": {
+      "count": 239,
+      "classes": {
+        "mixed": 239
+      }
+    }
+  }
+}

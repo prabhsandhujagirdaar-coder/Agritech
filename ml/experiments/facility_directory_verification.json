@@ -1,0 +1,367 @@
+{
+  "timestamp": "2026-10-31T14:40:01Z",
+  "backend_tests": {
+    "/api/facilities": {
+      "status": 200,
+      "count": 12
+    },
+    "/api/v1/facilities": {
+      "status": 200,
+      "count": 12
+    },
+    "detail": {
+      "id": "FAC-DL-AZD-01",
+      "name": "Azadpur APMC Fruit & Vegetable Mega Mandi",
+      "facility_type": "mandi",
+      "address": "Office Complex, New Fruit Market (NFM) Phase-II, Sarai Pipal Thala, Azadpur",
+      "village_or_city": "Azadpur",
+      "district": "North Delhi",
+      "state": "Delhi",
+      "postal_code": "110033",
+      "latitude": 28.7161,
+      "longitude": 77.1772,
+      "coordinates": {
+        "latitude": 28.7161,
+        "longitude": 77.1772
+      },
+      "contact_phone": "011-27691807",
+      "contact_email": "apmcazadpur.delhi@delhi.gov.in",
+      "capacity": null,
+      "capacity_unit": null,
+      "current_utilization": null,
+      "storage_temperature_min_c": null,
+      "storage_temperature_max_c": null,
+      "supported_commodities": [
+        "Guava",
+        "Kinnow",
+        "Citrus",
+        "Perishable Produce"
+      ],
+      "operational_status": "active",
+      "guava_suitability_category": "guava_confirmed",
+      "source_citation_type": "official_portal",
+      "legal_entity_verification": "verified",
+      "physical_facility_verification": "verified",
+      "source_name": "APMC Azadpur (Market of National Importance) / Govt of NCT of Delhi",
+      "source_url": "https://apmcazadpurdelhi.com/",
+      "source_record": "APMC Azadpur Terminal Market Directory & e-NAM Trading Hub",
+      "verification_status": "verified",
+      "verification_date": "2026-10-26",
+      "last_source_check": "2026-10-26",
+      "coordinate_source": "Azadpur APMC Market Office Complex, WGS84 Geocode",
+      "geocoding_confidence": "facility_campus",
+      "data_provenance": "Asia's largest wholesale fruits and vegetables market. CONFIRMED SUITABLE FOR GUAVA: primary northern terminal market handling commercial guava auction, ripening chambers, and cold-chain transfers from Punjab. Verified via official APMC portal.",
+      "location_verification_status": "verified",
+      "created_at": "2026-10-18T10:00:00Z",
+      "updated_at": "2026-10-26T10:00:00Z"
+    },
+    "suitability": {
+      "facility_id": "FAC-DL-AZD-01",
+      "facility_name": "Azadpur APMC Fruit & Vegetable Mega Mandi",
+      "operation": "market_auction",
+      "crop": "guava",
+      "suitable": true,
+      "suitability_status": "verified_guava_trading",
+      "capabilities": {
+        "guava_trading": "verified",
+        "guava_handling": "not_verified",
+        "guava_cold_chain": "partially_verified",
+        "operational_availability": "active"
+      },
+      "warnings": [],
+      "evidence_summary": "Facility 'Azadpur APMC Fruit & Vegetable Mega Mandi' (MANDI): Trading=VERIFIED, Handling=NOT_VERIFIED, ColdChain=PARTIALLY_VERIFIED, Availability=ACTIVE.",
+      "source_citation": {
+        "source_name": "APMC Azadpur (Market of National Importance) / Govt of NCT of Delhi",
+        "source_record": "APMC Azadpur Terminal Market Directory & e-NAM Trading Hub",
+        "source_url": "https://apmcazadpurdelhi.com/",
+        "source_citation_type": "official_portal",
+        "verification_status": "verified",
+        "coordinate_source": "Azadpur APMC Market Office Complex, WGS84 Geocode",
+        "geocoding_confidence": "facility_campus"
+      }
+    }
+  },
+  "proxy_tests": {
+    "/api/facilities": {
+      "status": 200,
+      "count": 12
+    },
+    "detail": {
+      "id": "FAC-PB-ABO-01",
+      "name": "PAGREXCO Kinnow Grading, Waxing & Packhouse Center",
+      "facility_type": "packhouse",
+      "address": "Village Alamgarh, Abohar-Ganganagar Road (NH-62)",
+      "village_or_city": "Alamgarh",
+      "district": "Fazilka",
+      "state": "Punjab",
+      "postal_code": "152116",
+      "latitude": 30.1227,
+      "longitude": 74.1566,
+      "coordinates": {
+        "latitude": 30.1227,
+        "longitude": 74.1566
+      },
+      "contact_phone": null,
+      "contact_email": "pagrexco@punjabagro.gov.in",
+      "capacity": null,
+      "capacity_unit": null,
+      "current_utilization": null,
+      "storage_temperature_min_c": null,
+      "storage_temperature_max_c": null,
+      "supported_commodities": [
+        "Kinnow",
+        "Citrus"
+      ],
+      "operational_status": "active",
+      "guava_suitability_category": "horticulture_unconfirmed",
+      "source_citation_type": "directory_level_reference",
+      "legal_entity_verification": "verified",
+      "physical_facility_verification": "verified",
+      "source_name": "Punjab Agro Export Corporation (PAGREXCO)",
+      "source_url": "https://punjabagro.gov.in/horticulture/",
+      "source_record": "PAGREXCO Horticultural Infrastructure Directory (Alamgarh Center, Abohar)",
+      "verification_status": "verified",
+      "verification_date": "2026-10-26",
+      "last_source_check": "2026-10-26",
+      "coordinate_source": "Village Alamgarh, NH-62 Abohar corridor approximate geocode",
+      "geocoding_confidence": "village_level",
+      "data_provenance": "Major mechanized citrus post-harvest center on NH-62 with washing, waxing, and electronic size grading lines. Sourced from PAGREXCO horticulture directory (directory-level reference). Engineered specifically for Kinnow/citrus; guava handling is not documented.",
+      "location_verification_status": "verified",
+      "created_at": "2026-10-18T10:00:00Z",
+      "updated_at": "2026-10-26T10:00:00Z"
+    },
+    "suitability": {
+      "facility_id": "FAC-DL-AZD-01",
+      "facility_name": "Azadpur APMC Fruit & Vegetable Mega Mandi",
+      "operation": "market_auction",
+      "crop": "guava",
+      "suitable": true,
+      "suitability_status": "verified_guava_trading",
+      "capabilities": {
+        "guava_trading": "verified",
+        "guava_handling": "not_verified",
+        "guava_cold_chain": "partially_verified",
+        "operational_availability": "active"
+      },
+      "warnings": [],
+      "evidence_summary": "Facility 'Azadpur APMC Fruit & Vegetable Mega Mandi' (MANDI): Trading=VERIFIED, Handling=NOT_VERIFIED, ColdChain=PARTIALLY_VERIFIED, Availability=ACTIVE.",
+      "source_citation": {
+        "source_name": "APMC Azadpur (Market of National Importance) / Govt of NCT of Delhi",
+        "source_record": "APMC Azadpur Terminal Market Directory & e-NAM Trading Hub",
+        "source_url": "https://apmcazadpurdelhi.com/",
+        "source_citation_type": "official_portal",
+        "verification_status": "verified",
+        "coordinate_source": "Azadpur APMC Market Office Complex, WGS84 Geocode",
+        "geocoding_confidence": "facility_campus"
+      }
+    }
+  },
+  "filter_tests": {
+    "facility_type=packhouse": {
+      "status": 200,
+      "count": 3,
+      "expected": 3
+    },
+    "facility_type=cold_storage": {
+      "status": 200,
+      "count": 3,
+      "expected": 3
+    },
+    "facility_type=godown": {
+      "status": 200,
+      "count": 4,
+      "expected": 4
+    },
+    "facility_type=mandi": {
+      "status": 200,
+      "count": 2,
+      "expected": 2
+    },
+    "district=Fazilka": {
+      "status": 200,
+      "count": 2,
+      "expected": 2
+    },
+    "district=Jalandhar": {
+      "status": 200,
+      "count": 2,
+      "expected": 2
+    },
+    "state=Punjab": {
+      "status": 200,
+      "count": 11,
+      "expected": 11
+    },
+    "state=Delhi": {
+      "status": 200,
+      "count": 1,
+      "expected": 1
+    },
+    "district=North+Delhi": {
+      "status": 200,
+      "count": 1,
+      "expected": 1
+    },
+    "verification_status=verified": {
+      "status": 200,
+      "count": 5,
+      "expected": 5
+    },
+    "operational_status=active": {
+      "status": 200,
+      "count": 9,
+      "expected": 9
+    },
+    "q=PAGREXCO": {
+      "status": 200,
+      "count": 3,
+      "expected": 3
+    },
+    "q=Azadpur": {
+      "status": 200,
+      "count": 1,
+      "expected": 1
+    }
+  },
+  "browser_verification": {
+    "url": "http://localhost:3000/dashboard?role=Logistics&tab=warehouse",
+    "screenshot_path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\docs\\screenshots\\phase19_final\\09_logistics_facility_directory.png",
+    "screenshot_size": 296160,
+    "dom_verified": true,
+    "facilities_rendered_count": 12
+  },
+  "facility_records": [
+    {
+      "id": "FAC-PB-PAG-BARA",
+      "name": "PAGREXCO Pack House-cum-Cold Storage (Bara Farm)",
+      "facility_type": "packhouse",
+      "district": "Fatehgarh Sahib",
+      "state": "Punjab",
+      "latitude": 30.6283,
+      "longitude": 76.3863,
+      "verification_status": "verified",
+      "guava_suitability_category": "horticulture_unconfirmed"
+    },
+    {
+      "id": "FAC-PB-PAG-KANG",
+      "name": "PAGREXCO Pack House-cum-Cold Storage (Kangmai)",
+      "facility_type": "packhouse",
+      "district": "Hoshiarpur",
+      "state": "Punjab",
+      "latitude": 31.6677,
+      "longitude": 75.7923,
+      "verification_status": "verified",
+      "guava_suitability_category": "horticulture_unconfirmed"
+    },
+    {
+      "id": "FAC-PB-ABO-01",
+      "name": "PAGREXCO Kinnow Grading, Waxing & Packhouse Center",
+      "facility_type": "packhouse",
+      "district": "Fazilka",
+      "state": "Punjab",
+      "latitude": 30.1227,
+      "longitude": 74.1566,
+      "verification_status": "verified",
+      "guava_suitability_category": "horticulture_unconfirmed"
+    },
+    {
+      "id": "FAC-PB-FAZ-01",
+      "name": "PSWC Warehousing Centre Fazilka",
+      "facility_type": "godown",
+      "district": "Fazilka",
+      "state": "Punjab",
+      "latitude": 30.4037,
+      "longitude": 74.0254,
+      "verification_status": "partially_verified",
+      "guava_suitability_category": "ambient_grain"
+    },
+    {
+      "id": "FAC-PB-BTI-01",
+      "name": "PSWC Container Freight Station & Warehousing Complex",
+      "facility_type": "godown",
+      "district": "Bathinda",
+      "state": "Punjab",
+      "latitude": 30.1798,
+      "longitude": 74.9654,
+      "verification_status": "verified",
+      "guava_suitability_category": "ambient_grain"
+    },
+    {
+      "id": "FAC-PB-LDH-01",
+      "name": "PSWC Warehousing Centre Sahnewal",
+      "facility_type": "godown",
+      "district": "Ludhiana",
+      "state": "Punjab",
+      "latitude": 30.8492,
+      "longitude": 75.9868,
+      "verification_status": "partially_verified",
+      "guava_suitability_category": "ambient_grain"
+    },
+    {
+      "id": "FAC-PB-ASR-01",
+      "name": "Bhagtanwala APMC Fruit & Produce Mandi Yard",
+      "facility_type": "mandi",
+      "district": "Amritsar",
+      "state": "Punjab",
+      "latitude": 31.6042,
+      "longitude": 74.8723,
+      "verification_status": "partially_verified",
+      "guava_suitability_category": "wholesale_market"
+    },
+    {
+      "id": "FAC-PB-JAL-01",
+      "name": "M/s Rabb Cold Store",
+      "facility_type": "cold_storage",
+      "district": "Jalandhar",
+      "state": "Punjab",
+      "latitude": 31.0825,
+      "longitude": 75.3412,
+      "verification_status": "partially_verified",
+      "guava_suitability_category": "cold_store_unknown"
+    },
+    {
+      "id": "FAC-DL-AZD-01",
+      "name": "Azadpur APMC Fruit & Vegetable Mega Mandi",
+      "facility_type": "mandi",
+      "district": "North Delhi",
+      "state": "Delhi",
+      "latitude": 28.7161,
+      "longitude": 77.1772,
+      "verification_status": "verified",
+      "guava_suitability_category": "guava_confirmed"
+    },
+    {
+      "id": "FAC-PB-NHB-TALW",
+      "name": "Sardar Mohinder Singh Cold Store",
+      "facility_type": "cold_storage",
+      "district": "Jalandhar",
+      "state": "Punjab",
+      "latitude": 31.0945,
+      "longitude": 75.328,
+      "verification_status": "partially_verified",
+      "guava_suitability_category": "cold_store_unknown"
+    },
+    {
+      "id": "FAC-PB-NHB-BURJ",
+      "name": "M/s New Kissan Cold Storage",
+      "facility_type": "cold_storage",
+      "district": "Bathinda",
+      "state": "Punjab",
+      "latitude": 30.45,
+      "longitude": 75.23,
+      "verification_status": "partially_verified",
+      "guava_suitability_category": "cold_store_unknown"
+    },
+    {
+      "id": "FAC-PB-PSW-MAL",
+      "name": "PSWC Warehousing Centre Malout",
+      "facility_type": "godown",
+      "district": "Sri Muktsar Sahib",
+      "state": "Punjab",
+      "latitude": 30.1915,
+      "longitude": 74.4989,
+      "verification_status": "partially_verified",
+      "guava_suitability_category": "ambient_grain"
+    }
+  ]
+}

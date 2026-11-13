@@ -1,0 +1,268 @@
+{
+  "audit_version": "1.0.0",
+  "phase": "15A",
+  "target_fruit_categories": [
+    "Guava",
+    "Banana",
+    "Apple",
+    "Mango"
+  ],
+  "unsupported_fruit_categories": [
+    "Orange",
+    "Lime",
+    "Pomegranate",
+    "Citrus"
+  ],
+  "datasets": {
+    "guava_harvest": {
+      "commodity": "Guava (Psidium guajava)",
+      "source": "Sindh Agriculture University / Local Orchard Harvest",
+      "license": "Internal Academic / AgriChain AI Research",
+      "local_path": "ml/data/guava_classification",
+      "total_images": 2309,
+      "breakdown": {
+        "Local Sindhi": {
+          "Green": 98,
+          "Mature Green": 360,
+          "Ripe": 253
+        },
+        "Riyali": {
+          "Green": 67,
+          "Mature Green": 101,
+          "Ripe": 487
+        },
+        "Thadhrami": {
+          "Green": 67,
+          "Mature Green": 368,
+          "Ripe": 508
+        }
+      },
+      "sample_resolutions": [
+        "850x1300"
+      ],
+      "fruit_identity_independent_of_ripeness": false,
+      "fruit_identity_label": "Implicit (100% Guava)",
+      "image_composition": "Single fruit specimens on neutral/tabletop background",
+      "supports_stage1_identification": true,
+      "notes": "No non-guava images. All specimens are Guava across 3 cultivars and 3 ripeness stages."
+    },
+    "banana_id": {
+      "commodity": "Banana (Musa acuminata / paradisiaca)",
+      "dataset_name": "BananaID (Mendeley Data DOI 10.17632/h6n5srjjyw.1)",
+      "license": "CC BY 4.0",
+      "local_path": "ml/data/raw/banana",
+      "total_ripeness_images": 1960,
+      "total_variety_images": 1960,
+      "ripeness_distribution": {
+        "Unripe": 408,
+        "Half_Ripe": 488,
+        "Ripe": 616,
+        "Overripe": 448
+      },
+      "variety_distribution": {
+        "Ambon": 468,
+        "Cavendish": 380,
+        "Mas": 376,
+        "Raja": 424,
+        "Saba": 312
+      },
+      "shared_filenames_count": 1960,
+      "fruit_identity_independent_of_ripeness": true,
+      "fruit_identity_label": "Implicit (100% Banana)",
+      "variety_labeled": true,
+      "image_composition": "Single banana specimens on neutral/studio background",
+      "supports_stage1_identification": true,
+      "notes": "1,960 unique images labeled across two orthogonal axes: Ripeness (4 classes) and Variety (5 classes)."
+    },
+    "apple_phenotyping": {
+      "commodity": "Apple (Malus domestica)",
+      "dataset_name": "Apple Multi-Stage Phenotyping (Mendeley Data DOI 10.17632/gfcmdbvw65.4)",
+      "license": "CC BY-NC 4.0",
+      "local_raw_path": "ml/data/raw/apple",
+      "local_crops_path": "ml/data/processed/apple_crops_v1",
+      "total_orchard_images": 2812,
+      "total_extracted_crops": 2574,
+      "crops_split_counts": {
+        "train": 1981,
+        "val": 185,
+        "test": 408
+      },
+      "fruit_identity_independent_of_ripeness": true,
+      "fruit_identity_label": "Implicit (100% Apple)",
+      "image_composition": "Raw: Multi-fruit orchard canopy (average ~1.8 apples/image + leaves/branches/sky). Crops: Isolated bounding-box apple specimens.",
+      "supports_stage1_identification": true,
+      "background_negative_generation_source": true,
+      "notes": "1,406 orchard images contain polygon masks for 2,574 apples. Background regions outside masks represent verified non-fruit background."
+    },
+    "harumanis_mango": {
+      "commodity": "Mango (Mangifera indica cv. Harumanis)",
+      "dataset_name": "Harumanis Mango Multi-Modal Maturity (Mendeley Data DOI 10.17632/x6bcr3fkj5.4)",
+      "license": "CC BY 4.0",
+      "local_path": "ml/data/raw/mango/original",
+      "total_images": 272,
+      "class_distribution": {},
+      "fruit_identity_independent_of_ripeness": false,
+      "fruit_identity_label": "Implicit (100% Mango)",
+      "image_composition": "Field/indoor individual mango specimens on scale paper or cloth",
+      "supports_stage1_identification": true,
+      "sample_deficit_warning": true,
+      "notes": "Low sample count (272 images total: 129 Ripe, 61 Semi-Ripe, 59 Unripe, 23 Rotten). Requires supplementation or strong transfer learning."
+    },
+    "fruitnet": {
+      "dataset_name": "FruitNet: Indian Fruits Dataset",
+      "source": "Kaggle / Indian Domestic Markets Dataset",
+      "license": "Open Database / Academic Research",
+      "local_path": "ml/data/raw/fruitnet",
+      "total_images": 19526,
+      "breakdown_by_directory": {
+        "Bad Quality_Fruits": {
+          "Apple_Bad": 1141,
+          "Banana_Bad": 1087,
+          "Guava_Bad": 1129,
+          "Lime_Bad": 1085,
+          "Orange_Bad": 1159,
+          "Pomegranate_Bad": 1187
+        },
+        "Good Quality_Fruits": {
+          "Apple_Good": 1149,
+          "Banana_Good": 1113,
+          "Guava_Good": 1152,
+          "Lime_Good": 1094,
+          "Orange_Good": 1216,
+          "Pomegranate_Good": 5940
+        },
+        "Mixed Qualit_Fruits": {
+          "Apple": 113,
+          "Banana": 285,
+          "Guava": 148,
+          "Lemon": 278,
+          "Orange": 125,
+          "Pomegranate": 125
+        }
+      },
+      "aggregated_by_commodity": {
+        "apple": {
+          "good": 1149,
+          "bad": 1141,
+          "mixed": 113,
+          "total": 2403
+        },
+        "banana": {
+          "good": 1113,
+          "bad": 1087,
+          "mixed": 285,
+          "total": 2485
+        },
+        "guava": {
+          "good": 1152,
+          "bad": 1129,
+          "mixed": 148,
+          "total": 2429
+        },
+        "lime_lemon": {
+          "good": 1094,
+          "bad": 1085,
+          "mixed": 278,
+          "total": 2457
+        },
+        "orange": {
+          "good": 1216,
+          "bad": 1159,
+          "mixed": 125,
+          "total": 2500
+        },
+        "pomegranate": {
+          "good": 5940,
+          "bad": 1187,
+          "mixed": 125,
+          "total": 7252
+        }
+      },
+      "fruit_identity_independent_of_ripeness": true,
+      "fruit_identity_explicitly_labeled": true,
+      "target_fruits_covered": [
+        "Apple",
+        "Banana",
+        "Guava"
+      ],
+      "unsupported_ood_fruits_covered": [
+        "Orange",
+        "Lime/Lemon",
+        "Pomegranate"
+      ],
+      "image_composition": "Market/tabletop single and multi-fruit heaps",
+      "known_data_quality_issues": [
+        "Heavy burst photograph clustering (largest dhash cluster = 426 images)",
+        "Shared tabletop backgrounds causing strong surface feature entanglement",
+        "Severe class imbalance between good and bad specimens",
+        "Not verified Kinnow Mandarin (contains Nagpur Mandarin / Mosambi)",
+        "Bad quality class contains post-harvest mold and rot, not field maturity"
+      ],
+      "notes": "FruitNet explicitly labels fruit identity (Apple, Banana, Guava, Orange, Lime, Pomegranate). Excellent candidate for Out-Of-Distribution (OOD) negative testing (Orange, Lime, Pomegranate)."
+    },
+    "citrus_disease": {
+      "dataset_name": "Citrus Disease Leaf/Fruit Dataset",
+      "local_path": "ml/data/raw/citrus_disease",
+      "total_images": 759,
+      "composition": "Citrus leaves, twigs, and diseased fruits in outdoor conditions",
+      "role_in_stage1": "Foliage / Non-target negative evaluation"
+    },
+    "oranges_in_field": {
+      "dataset_name": "Oranges in Field",
+      "local_path": "ml/data/raw/oranges_in_field",
+      "total_images": 5025,
+      "composition": "Orange tree canopy scenes in orchard",
+      "role_in_stage1": "Orchard canopy / Non-target citrus OOD evaluation"
+    }
+  },
+  "synthesis": {
+    "target_fruit_availability": {
+      "Guava": {
+        "clean_dedicated_crops": 2309,
+        "fruitnet_supplemental": 2429,
+        "total_available": 4738,
+        "readiness_status": "READY"
+      },
+      "Banana": {
+        "clean_dedicated_crops": 1960,
+        "fruitnet_supplemental": 2485,
+        "total_available": 4445,
+        "readiness_status": "READY"
+      },
+      "Apple": {
+        "clean_dedicated_crops": 2574,
+        "raw_canopy_images": 2812,
+        "fruitnet_supplemental": 2403,
+        "total_available": 4977,
+        "readiness_status": "READY"
+      },
+      "Mango": {
+        "clean_dedicated_crops": 272,
+        "fruitnet_supplemental": 0,
+        "total_available": 272,
+        "readiness_status": "DEFICIT_WARNING (272 samples only)"
+      }
+    },
+    "negative_and_ood_availability": {
+      "unsupported_fruits_ood": {
+        "Orange": 7525,
+        "Lime_Lemon": 2457,
+        "Pomegranate": 7252,
+        "Citrus_Disease_Leaves": 759,
+        "total_ood_samples": 17993
+      },
+      "background_no_fruit_sources": {
+        "apple_canopy_negative_patches": "Available via polygon inversion on 1,406 orchard images",
+        "tabletop_bench_backgrounds": "Available via background segmentation of Guava/FruitNet surfaces",
+        "status": "CAN_BE_EXTRACTED_PROGRAMMATICALLY"
+      }
+    },
+    "multi_fruit_image_prevalence": {
+      "apple_canopy_raw": "1,406 images (multi-fruit by nature, 1-10 apples/tree)",
+      "fruitnet_mixed": "1,875 images (piles/crates containing multiple fruits)",
+      "guava_harvest": "Single fruit specimens (predominantly)",
+      "banana_id": "Single fruit specimens (predominantly)",
+      "harumanis_mango": "Single fruit specimens (predominantly)"
+    }
+  }
+}

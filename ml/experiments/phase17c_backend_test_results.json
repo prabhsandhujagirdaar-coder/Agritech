@@ -1,0 +1,472 @@
+{
+  "timestamp": "2026-10-31T06:16:13Z",
+  "task1_runtime": {
+    "health": {
+      "status": "unavailable",
+      "api_status": "offline",
+      "message": "Service uninitialized."
+    },
+    "registry": {
+      "supported_fruits": [
+        "guava",
+        "mango",
+        "banana",
+        "apple"
+      ],
+      "available_fruits": [
+        "guava",
+        "banana",
+        "apple"
+      ],
+      "production_crop": "guava",
+      "fruits": {
+        "guava": {
+          "fruit": "guava",
+          "common_name": "Guava",
+          "scientific_name": "Psidium guajava L.",
+          "cultivar": "Local Sindhi / Allahabad Safeda",
+          "supported": true,
+          "available": true,
+          "is_validated": true,
+          "status": "CERTIFIED_ACTIVE",
+          "architecture": "resnet18",
+          "task_type": "classification",
+          "model_version": "2.0.0",
+          "classes": [
+            "Green",
+            "Mature Green",
+            "Ripe"
+          ],
+          "class_labels": {
+            "0": "Green",
+            "1": "Mature Green",
+            "2": "Ripe"
+          },
+          "num_classes": 3,
+          "weights_path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\ml\\artifacts\\best_guava_resnet18.pth",
+          "weights_exist": true,
+          "message": "Certified Guava model v2.0.0 ready at 'best_guava_resnet18.pth'."
+        },
+        "mango": {
+          "fruit": "mango",
+          "common_name": "Mango",
+          "scientific_name": "Mangifera indica L.",
+          "cultivar": "Harumanis / Chaunsa / Dashehari",
+          "supported": true,
+          "available": false,
+          "is_validated": false,
+          "status": "GATED_DEFICIT",
+          "architecture": "resnet18",
+          "task_type": "classification",
+          "model_version": null,
+          "classes": [
+            "unripe",
+            "semi-ripe",
+            "ripe",
+            "rotten"
+          ],
+          "class_labels": {
+            "0": "unripe",
+            "1": "semi-ripe",
+            "2": "ripe",
+            "3": "rotten"
+          },
+          "num_classes": 4,
+          "weights_path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\ml\\artifacts\\best_mango_resnet18.pth",
+          "weights_exist": false,
+          "message": "No certified checkpoint found for Mango. Training required."
+        },
+        "banana": {
+          "fruit": "banana",
+          "common_name": "Banana",
+          "scientific_name": "Musa acuminata / Musa balbisiana",
+          "cultivar": "Cavendish / Ambon",
+          "supported": true,
+          "available": true,
+          "is_validated": true,
+          "status": "BASELINE_VERIFIED",
+          "architecture": "resnet18",
+          "task_type": "classification",
+          "model_version": "1.0.0",
+          "classes": [
+            "Unripe",
+            "Half_Ripe",
+            "Ripe",
+            "Overripe"
+          ],
+          "class_labels": {
+            "0": "Unripe",
+            "1": "Half_Ripe",
+            "2": "Ripe",
+            "3": "Overripe"
+          },
+          "num_classes": 4,
+          "weights_path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\ml\\artifacts\\best_banana_resnet18.pth",
+          "weights_exist": true,
+          "message": "Certified Banana model v1.0.0 ready at 'best_banana_resnet18.pth'."
+        },
+        "apple": {
+          "fruit": "apple",
+          "common_name": "Apple",
+          "scientific_name": "Malus domestica Borkh.",
+          "cultivar": "Fuji / Gala",
+          "supported": true,
+          "available": true,
+          "is_validated": true,
+          "status": "EXPERIMENTAL_DETECTION",
+          "architecture": "yolov8n",
+          "task_type": "object_detection",
+          "model_version": "1.0.0-experimental",
+          "classes": [
+            "apple"
+          ],
+          "class_labels": {
+            "0": "apple"
+          },
+          "num_classes": 1,
+          "weights_path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\ml\\artifacts\\best_apple_yolov8n.pt",
+          "weights_exist": true,
+          "message": "Certified Apple model v1.0.0-experimental ready at 'best_apple_yolov8n.pt'."
+        }
+      },
+      "stage1_identifier": {
+        "supported": true,
+        "available": true,
+        "status": "BENCHMARK_VERIFIED",
+        "checkpoint": "best_fruit_identifier_mobilenet_v3_large.pth",
+        "architecture": "mobilenet_v3_large",
+        "version": "2.0.0",
+        "classes": [
+          "guava",
+          "banana",
+          "apple",
+          "mango",
+          "negative_background"
+        ],
+        "weights_path": "C:\\Users\\PrabSandhu\\Documents\\codes\\Agritech_\\ml\\artifacts\\best_fruit_identifier_mobilenet_v3_large.pth",
+        "weights_exist": true,
+        "message": "Stage 1 fruit identifier (mobilenet_v3_large) v2.0.0 active."
+      }
+    },
+    "unsupported_crop_rejection": {
+      "detail": "Unsupported commodity 'dragonfruit'. Registered fruits: ['guava', 'mango', 'banana', 'apple']."
+    },
+    "corrupt_payload_rejection": {
+      "detail": "Invalid or corrupted image. Unable to decode pixel buffer."
+    }
+  },
+  "task2_manual_inspection": {
+    "guava": {
+      "Green": {
+        "image": "ml/data/guava_classification/Local Sindhi/Green/40.jpg",
+        "predicted": "Green",
+        "confidence": 0.9706,
+        "latency_ms": 299.89,
+        "probabilities": {
+          "Green": 0.9706,
+          "Mature Green": 0.0289,
+          "Ripe": 0.0006
+        }
+      },
+      "Mature Green": {
+        "image": "ml/data/guava_classification/Local Sindhi/Mature Green/237.jpg",
+        "predicted": "Mature Green",
+        "confidence": 0.8147,
+        "latency_ms": 30.06,
+        "probabilities": {
+          "Green": 0.1683,
+          "Mature Green": 0.8147,
+          "Ripe": 0.017
+        }
+      },
+      "Ripe": {
+        "image": "ml/data/guava_classification/Local Sindhi/Ripe/140.jpg",
+        "predicted": "Ripe",
+        "confidence": 0.677,
+        "latency_ms": 33.1,
+        "probabilities": {
+          "Green": 0.0597,
+          "Mature Green": 0.2633,
+          "Ripe": 0.677
+        }
+      }
+    },
+    "banana": {
+      "Unripe": {
+        "image": "ml/data/raw/banana/ripeness/Banana Ripeness Classification Dataset/Unripe/Ambon_Unripe_Bottom_0009.jpg",
+        "predicted": "Unripe",
+        "confidence": 0.9786,
+        "latency_ms": 24.0,
+        "probabilities": {
+          "Unripe": 0.9786,
+          "Half_Ripe": 0.0177,
+          "Ripe": 0.0016,
+          "Overripe": 0.0021
+        }
+      },
+      "Half_Ripe": {
+        "image": "ml/data/raw/banana/ripeness/Banana Ripeness Classification Dataset/Half_Ripe/Raja_Half_Ripe_Left_0001.jpg",
+        "predicted": "Overripe",
+        "confidence": 0.6809,
+        "latency_ms": 23.88,
+        "probabilities": {
+          "Unripe": 0.0192,
+          "Half_Ripe": 0.0733,
+          "Ripe": 0.2267,
+          "Overripe": 0.6809
+        }
+      },
+      "Ripe": {
+        "image": "ml/data/raw/banana/ripeness/Banana Ripeness Classification Dataset/Ripe/Cavendish_Ripe_Bottom_0009.jpg",
+        "predicted": "Ripe",
+        "confidence": 0.8989,
+        "latency_ms": 25.18,
+        "probabilities": {
+          "Unripe": 0.0038,
+          "Half_Ripe": 0.0638,
+          "Ripe": 0.8989,
+          "Overripe": 0.0334
+        }
+      },
+      "Overripe": {
+        "image": "ml/data/raw/banana/ripeness/Banana Ripeness Classification Dataset/Overripe/Cavendish_Overripe_Bottom_0008.jpg",
+        "predicted": "Overripe",
+        "confidence": 0.8949,
+        "latency_ms": 23.09,
+        "probabilities": {
+          "Unripe": 0.002,
+          "Half_Ripe": 0.0085,
+          "Ripe": 0.0946,
+          "Overripe": 0.8949
+        }
+      }
+    },
+    "apple": {
+      "image": "ml/data/processed/apple_detection_yolo/images/test/108.jpg",
+      "count": 2,
+      "avg_conf": 0.8867,
+      "boxes": [
+        {
+          "x1": 127.8,
+          "y1": 98.9,
+          "x2": 251.4,
+          "y2": 207.3,
+          "confidence": 0.9609,
+          "class_id": 0,
+          "class_name": "apple"
+        },
+        {
+          "x1": 104.2,
+          "y1": 0.0,
+          "x2": 166.2,
+          "y2": 34.4,
+          "confidence": 0.8126,
+          "class_id": 0,
+          "class_name": "apple"
+        }
+      ],
+      "license": "Academic / Non-Commercial Research Only (CC BY-NC 4.0)"
+    },
+    "mango": {
+      "mode": "manual",
+      "target_fruit": "mango",
+      "task_type": "unavailable",
+      "status": "unavailable",
+      "identified_fruit": null,
+      "identification": null,
+      "classification": null,
+      "detection": null,
+      "unavailable_reason": "Mango maturity prediction is unavailable. Awaiting validated multi-stage harvest dataset. In compliance with AgriChain AI integrity standards, cross-crop proxy models and synthetic predictions are strictly disabled.",
+      "warnings": [
+        "Commodity gated due to training data deficit."
+      ],
+      "device": "cuda",
+      "inference_ms": 0.0
+    }
+  },
+  "task3_auto_identification": {
+    "specimens": [
+      {
+        "expected_type": "guava",
+        "description": "Clean Guava",
+        "image": "ml/data/guava_classification/Local Sindhi/Green/40.jpg",
+        "identification": {
+          "predicted_fruit": "guava",
+          "confidence": 1.0,
+          "probabilities": {
+            "guava": 1.0,
+            "banana": 0.0,
+            "apple": 0.0,
+            "mango": 0.0,
+            "negative_background": 0.0
+          },
+          "is_uncertain": false,
+          "uncertainty_reason": null,
+          "model_name": "mobilenet_v3_large",
+          "model_version": "2.0.0"
+        },
+        "auto_inspection": {
+          "status": "ready",
+          "target_fruit": "guava",
+          "warnings": [],
+          "task_type": "classification"
+        }
+      },
+      {
+        "expected_type": "banana",
+        "description": "Clean Banana",
+        "image": "ml/data/raw/banana/ripeness/Banana Ripeness Classification Dataset/Ripe/Cavendish_Ripe_Bottom_0009.jpg",
+        "identification": {
+          "predicted_fruit": "banana",
+          "confidence": 1.0,
+          "probabilities": {
+            "guava": 0.0,
+            "banana": 1.0,
+            "apple": 0.0,
+            "mango": 0.0,
+            "negative_background": 0.0
+          },
+          "is_uncertain": false,
+          "uncertainty_reason": null,
+          "model_name": "mobilenet_v3_large",
+          "model_version": "2.0.0"
+        },
+        "auto_inspection": {
+          "status": "ready",
+          "target_fruit": "banana",
+          "warnings": [],
+          "task_type": "classification"
+        }
+      },
+      {
+        "expected_type": "apple",
+        "description": "Apple Crop",
+        "image": "ml/data/processed/apple_crops_v1/test/Mature/IMG_12340_inst00_mature.jpg",
+        "identification": {
+          "predicted_fruit": "apple",
+          "confidence": 1.0,
+          "probabilities": {
+            "guava": 0.0,
+            "banana": 0.0,
+            "apple": 1.0,
+            "mango": 0.0,
+            "negative_background": 0.0
+          },
+          "is_uncertain": false,
+          "uncertainty_reason": null,
+          "model_name": "mobilenet_v3_large",
+          "model_version": "2.0.0"
+        },
+        "auto_inspection": {
+          "status": "ready",
+          "target_fruit": "apple",
+          "warnings": [],
+          "task_type": "object_detection"
+        }
+      },
+      {
+        "expected_type": "mango",
+        "description": "Clean Mango",
+        "image": "ml/data/raw/mango/original/IMG-37.jpeg",
+        "identification": {
+          "predicted_fruit": "mango",
+          "confidence": 1.0,
+          "probabilities": {
+            "guava": 0.0,
+            "banana": 0.0,
+            "apple": 0.0,
+            "mango": 1.0,
+            "negative_background": 0.0
+          },
+          "is_uncertain": false,
+          "uncertainty_reason": null,
+          "model_name": "mobilenet_v3_large",
+          "model_version": "2.0.0"
+        },
+        "auto_inspection": {
+          "status": "unavailable",
+          "target_fruit": "mango",
+          "warnings": [
+            "Commodity gated due to training data deficit."
+          ],
+          "task_type": "unavailable"
+        }
+      },
+      {
+        "expected_type": "foliage",
+        "description": "Canopy Foliage",
+        "image": "ml/data/raw/fruitnet/Bad Quality_Fruits/Lime_Bad/IMG_7589.JPG",
+        "identification": {
+          "predicted_fruit": "negative_background",
+          "confidence": 1.0,
+          "probabilities": {
+            "guava": 0.0,
+            "banana": 0.0,
+            "apple": 0.0,
+            "mango": 0.0,
+            "negative_background": 1.0
+          },
+          "is_uncertain": true,
+          "uncertainty_reason": "Non-fruit canopy or background foliage detected. Please upload an image centered on produce.",
+          "model_name": "mobilenet_v3_large",
+          "model_version": "2.0.0"
+        },
+        "auto_inspection": {
+          "status": "unknown_fruit",
+          "target_fruit": "negative_background",
+          "warnings": [
+            "Non-fruit canopy or background foliage detected. Please upload an image centered on produce."
+          ],
+          "task_type": "unavailable"
+        }
+      }
+    ],
+    "blurred_test": {
+      "mode": "auto",
+      "target_fruit": "apple",
+      "task_type": "object_detection",
+      "status": "ready",
+      "identified_fruit": "apple",
+      "identification": {
+        "predicted_fruit": "apple",
+        "confidence": 0.9967,
+        "probabilities": {
+          "guava": 0.0009,
+          "banana": 0.0003,
+          "apple": 0.9967,
+          "mango": 0.0,
+          "negative_background": 0.0021
+        },
+        "is_uncertain": false,
+        "uncertainty_reason": null,
+        "model_name": "mobilenet_v3_large",
+        "model_version": "2.0.0"
+      },
+      "classification": null,
+      "detection": {
+        "task": "object_detection",
+        "detected_apples_count": 1,
+        "boxes": [
+          {
+            "x1": 0.0,
+            "y1": 6.4,
+            "x2": 850.0,
+            "y2": 1131.4,
+            "confidence": 0.9005,
+            "class_id": 0,
+            "class_name": "apple"
+          }
+        ],
+        "average_confidence": 0.9005,
+        "model_name": "yolov8n",
+        "model_version": "1.0.0-experimental",
+        "license": "Academic / Non-Commercial Research Only (CC BY-NC 4.0)",
+        "scope_disclaimer": "This experimental model performs orchard object detection and instance counting only. It does NOT evaluate maturity stages, ripeness, sweetness, disease, or commercial market grade."
+      },
+      "unavailable_reason": null,
+      "warnings": [],
+      "device": "cuda",
+      "inference_ms": 152.11
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "dataset_name": "Apple Individual-Fruit Ripeness Crops v1",
+  "version": "1.0.0",
+  "source_dataset_doi": "10.17632/gfcmdbvw65.4",
+  "license": "CC BY-NC 4.0 (Non-Commercial)",
+  "margin_percentage": 5.0,
+  "total_valid_crops": 2574,
+  "splits": {
+    "train": {
+      "count": 1981,
+      "classes": {
+        "Mature": 650,
+        "Semi_Mature": 618,
+        "Immature": 713
+      }
+    },
+    "val": {
+      "count": 185,
+      "classes": {
+        "Semi_Mature": 60,
+        "Immature": 67,
+        "Mature": 58
+      }
+    },
+    "test": {
+      "count": 408,
+      "classes": {
+        "Mature": 131,
+        "Semi_Mature": 136,
+        "Immature": 141
+      }
+    }
+  },
+  "tiny_crops_count": 12,
+  "excluded_annotations_count": 1,
+  "exclusions_file": "ml/data/manifests/apple_crops_v1/exclusions.json"
+}

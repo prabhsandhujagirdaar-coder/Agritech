@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Analytics &amp; System Status - AgriChain AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#4cffb3",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-primary": "#accfb8",
+                    "on-primary-fixed": "#022113",
+                    "surface-container": "#eceef0",
+                    "on-surface-variant": "#424843",
+                    "surface-dim": "#d8dadc",
+                    "on-tertiary-container": "#8090a8",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed": "#002112",
+                    "surface-container-high": "#e6e8ea",
+                    "inverse-surface": "#2d3133",
+                    "surface-tint": "#466553",
+                    "outline": "#727973",
+                    "surface-variant": "#e0e3e5",
+                    "error": "#ba1a1a",
+                    "primary-container": "#0f2e1f",
+                    "tertiary": "#031427",
+                    "on-secondary-fixed-variant": "#005234",
+                    "secondary-container": "#45fcb0",
+                    "primary-fixed": "#c8ebd4",
+                    "inverse-on-surface": "#eff1f3",
+                    "on-primary-fixed-variant": "#2f4d3c",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#006c46",
+                    "secondary-fixed-dim": "#0ae298",
+                    "on-primary-container": "#769783",
+                    "on-background": "#191c1e",
+                    "on-tertiary-fixed-variant": "#38485d",
+                    "outline-variant": "#c2c8c1",
+                    "surface": "#f7f9fb",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#19293d",
+                    "surface-container-highest": "#e0e3e5",
+                    "tertiary-fixed-dim": "#b7c8e1",
+                    "surface-bright": "#f7f9fb",
+                    "surface-container-low": "#f2f4f6",
+                    "primary-fixed-dim": "#accfb8",
+                    "on-secondary-container": "#00714a",
+                    "on-surface": "#191c1e",
+                    "background": "#f7f9fb",
+                    "primary": "#00180c",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed": "#0b1c30",
+                    "tertiary-fixed": "#d3e4fe"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "40px",
+                    "unit": "8px",
+                    "container-max": "1440px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "data-mono": ["Plus Jakarta Sans"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "label-caps": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-lg-mobile": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "data-mono": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "700"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        /* Ambient Shadow Utility for Surface Layer */
+        .shadow-ambient {
+            box-shadow: 0 20px 40px -15px rgba(3, 20, 39, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md overflow-x-hidden selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- SideNavBar (from JSON) -->
+<nav class="h-screen w-64 fixed left-0 top-0 bg-surface-container-low dark:bg-surface-container-lowest border-r border-outline-variant dark:border-outline flex flex-col py-unit z-40">
+<!-- Header -->
+<div class="px-6 py-6 mb-4 flex flex-col gap-2">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-secondary-fixed font-bold">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed leading-tight">AgriChain Admin</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span> AI Service Online
+                    </span>
+</div>
+</div>
+</div>
+<!-- Navigation Links -->
+<ul class="flex flex-col flex-grow w-full px-2 gap-1">
+<li>
+<a class="text-on-surface-variant dark:text-outline-variant mx-2 my-1 px-4 py-3 flex items-center gap-3 rounded-xl hover:bg-surface-container-high dark:hover:bg-surface-container transition-all" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-body-md text-body-md">Dashboard</span>
+</a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-outline-variant mx-2 my-1 px-4 py-3 flex items-center gap-3 rounded-xl hover:bg-surface-container-high dark:hover:bg-surface-container transition-all" href="#">
+<span class="material-symbols-outlined">inventory_2</span>
+<span class="font-body-md text-body-md">Inventory</span>
+</a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-outline-variant mx-2 my-1 px-4 py-3 flex items-center gap-3 rounded-xl hover:bg-surface-container-high dark:hover:bg-surface-container transition-all" href="#">
+<span class="material-symbols-outlined">local_shipping</span>
+<span class="font-body-md text-body-md">Logistics</span>
+</a>
+</li>
+<!-- Active State: Analytics -->
+<li>
+<a class="bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-xl mx-2 my-1 px-4 py-3 flex items-center gap-3 translate-x-1 duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">monitoring</span>
+<span class="font-body-md text-body-md font-medium">Analytics</span>
+</a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-outline-variant mx-2 my-1 px-4 py-3 flex items-center gap-3 rounded-xl hover:bg-surface-container-high dark:hover:bg-surface-container transition-all" href="#">
+<span class="material-symbols-outlined">chat_bubble</span>
+<span class="font-body-md text-body-md">Messages</span>
+</a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-outline-variant mx-2 my-1 px-4 py-3 flex items-center gap-3 rounded-xl hover:bg-surface-container-high dark:hover:bg-surface-container transition-all" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-body-md text-body-md">Settings</span>
+</a>
+</li>
+</ul>
+<!-- CTA & Footer -->
+<div class="px-4 mt-auto flex flex-col gap-4">
+<button class="w-full bg-secondary-fixed text-on-secondary-fixed py-3 rounded-lg font-body-md text-body-md font-semibold hover:bg-secondary-fixed-dim transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">science</span> Analyze Produce
+            </button>
+<div class="border-t border-outline-variant/50 pt-4 flex flex-col gap-1">
+<a class="text-on-surface-variant mx-2 px-2 py-2 flex items-center gap-3 rounded-xl hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined text-sm">help</span>
+<span class="font-body-md text-body-md text-sm">Support</span>
+</a>
+<a class="text-on-surface-variant mx-2 px-2 py-2 flex items-center gap-3 rounded-xl hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined text-sm">logout</span>
+<span class="font-body-md text-body-md text-sm">Log Out</span>
+</a>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="ml-64 min-h-screen pt-12 pb-margin-desktop px-margin-desktop max-w-[1440px] mx-auto">
+<!-- Header -->
+<header class="flex justify-between items-end mb-gutter">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface mb-1">Analytics Overview</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Real-time ecosystem metrics and AI health.</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="px-4 py-2 bg-surface-container-lowest rounded-lg border border-outline-variant/30 flex items-center gap-2 text-on-surface-variant text-sm font-data-mono cursor-pointer hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-base">calendar_today</span>
+                    Last 30 Days
+                </div>
+<button class="px-5 py-2 bg-primary text-on-primary rounded-lg font-body-md text-body-md hover:bg-primary-container transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-base">download</span> Export Report
+                </button>
+</div>
+</header>
+<!-- Main Grid -->
+<div class="grid grid-cols-12 gap-gutter">
+<!-- KPI Card 1: Produce Photography Background -->
+<div class="col-span-12 md:col-span-4 rounded-xl overflow-hidden shadow-ambient relative group cursor-pointer border border-transparent hover:border-outline-variant/30 transition-all">
+<div class="absolute inset-0 bg-cover bg-center z-0 transition-transform duration-700 group-hover:scale-105" data-alt="A highly detailed macro photography shot of freshly harvested, dew-covered organic blueberries. The lighting is bright and natural, creating a vibrant, tactile aesthetic that aligns with high-end modern agricultural tech. Deep blues and subtle greens dominate the palette." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCE4ziLwr2qIzSa1RMGxO_R6Vz_7SPcmxLj-3eyQrGBXBGRuKiAwYO88-iaCqGCxYCM_Dkwr47L3PRXCNEA8VKh6ZHhrHIb6p5snZGKimaXNAJPplUzu0C7ln_zruti2mGaXqs33kHoWJJnCVYn8aOLGLcoSuU_p97A3pdms3jgqrzwsdnDE_GRF-TDLPwWNQhetJUQukMfmrWnTJI26q5bB-oWpUsHA9MUcOXRZU3E1tUwpk9TWKWD')"></div>
+<!-- Subtle Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent z-10"></div>
+<div class="relative z-20 h-full p-6 flex flex-col justify-end min-h-[220px]">
+<h3 class="font-label-caps text-label-caps text-on-primary/80 mb-1">Total Produce Analyzed</h3>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-display-lg text-display-lg text-on-primary">14.2M</span>
+<span class="font-data-mono text-data-mono text-secondary-fixed">kg</span>
+</div>
+<div class="inline-flex items-center gap-1 bg-surface-tint/30 backdrop-blur-md px-2 py-1 rounded-md w-fit">
+<span class="material-symbols-outlined text-secondary-fixed text-sm">trending_up</span>
+<span class="font-data-mono text-data-mono text-secondary-fixed text-sm">+8.4% vs last mo</span>
+</div>
+</div>
+</div>
+<!-- KPI Card 2 -->
+<div class="col-span-12 md:col-span-4 bg-surface-container-lowest rounded-xl p-6 shadow-ambient border border-outline-variant/30 flex flex-col justify-between group hover:border-outline transition-colors cursor-pointer">
+<div>
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-label-caps text-label-caps text-on-surface-variant">AI Detection Accuracy</h3>
+<div class="w-8 h-8 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-sm">psychology</span>
+</div>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="font-display-lg text-display-lg text-on-surface">99.4</span>
+<span class="font-headline-md text-headline-md text-on-surface">%</span>
+</div>
+</div>
+<div class="mt-4 flex items-center gap-2">
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[99.4%] rounded-full"></div>
+</div>
+<span class="font-data-mono text-data-mono text-on-surface-variant text-xs">Peak</span>
+</div>
+</div>
+<!-- KPI Card 3 -->
+<div class="col-span-12 md:col-span-4 bg-surface-container-lowest rounded-xl p-6 shadow-ambient border border-outline-variant/30 flex flex-col justify-between group hover:border-outline transition-colors cursor-pointer">
+<div>
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-label-caps text-label-caps text-on-surface-variant">Active Sensor Nodes</h3>
+<div class="w-8 h-8 rounded-full bg-tertiary-container/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-sm">router</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface">1,248</span>
+</div>
+</div>
+<div class="mt-4 flex items-center gap-3 text-sm text-on-surface-variant font-data-mono">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary-fixed"></span> 1,240 Online</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-error"></span> 8 Offline</span>
+</div>
+</div>
+<!-- Analysis Trends Line Chart -->
+<div class="col-span-12 lg:col-span-8 bg-surface-container-lowest rounded-xl p-6 shadow-ambient border border-outline-variant/30">
+<div class="flex justify-between items-center mb-6">
+<h2 class="font-headline-md text-headline-md text-on-surface">Analysis Throughput Trends</h2>
+<div class="flex gap-4">
+<div class="flex items-center gap-2 font-label-caps text-label-caps text-on-surface-variant">
+<span class="w-3 h-0.5 bg-secondary block"></span> Current
+                        </div>
+<div class="flex items-center gap-2 font-label-caps text-label-caps text-outline">
+<span class="w-3 h-0.5 border-t border-dashed border-outline block"></span> Benchmark
+                        </div>
+</div>
+</div>
+<!-- Chart Area (Simulated) -->
+<div class="relative w-full h-64 border-b border-l border-outline-variant/50">
+<!-- Y Axis Labels -->
+<div class="absolute -left-8 top-0 h-full flex flex-col justify-between text-xs text-outline font-data-mono pb-6">
+<span>50k</span>
+<span>40k</span>
+<span>30k</span>
+<span>20k</span>
+<span>10k</span>
+</div>
+<!-- Grid Lines -->
+<div class="absolute inset-0 flex flex-col justify-between pb-6">
+<div class="w-full h-[1px] bg-outline-variant/20"></div>
+<div class="w-full h-[1px] bg-outline-variant/20"></div>
+<div class="w-full h-[1px] bg-outline-variant/20"></div>
+<div class="w-full h-[1px] bg-outline-variant/20"></div>
+<div class="w-full h-[1px] bg-outline-variant/20"></div>
+</div>
+<!-- SVG Chart Lines -->
+<svg class="absolute inset-0 w-full h-[calc(100%-24px)]" preserveaspectratio="none" viewbox="0 0 100 100">
+<!-- Historical (Slate/Outline) -->
+<path d="M0,80 Q10,70 20,75 T40,60 T60,65 T80,40 T100,45" fill="none" stroke="#727973" stroke-dasharray="4 4" stroke-width="1.5" vector-effect="non-scaling-stroke"></path>
+<!-- Current (Mint/Secondary) -->
+<path d="M0,90 Q15,80 25,60 T50,50 T70,20 T90,30 T100,10" fill="none" stroke="#006c46" stroke-linecap="round" stroke-width="3" vector-effect="non-scaling-stroke"></path>
+<!-- Glow effect -->
+<path d="M0,90 Q15,80 25,60 T50,50 T70,20 T90,30 T100,10" fill="none" opacity="0.2" stroke="#45fcb0" stroke-linecap="round" stroke-width="8" vector-effect="non-scaling-stroke"></path>
+</svg>
+<!-- X Axis Labels -->
+<div class="absolute bottom-0 left-0 w-full flex justify-between text-xs text-outline font-data-mono pt-2 px-2 translate-y-full">
+<span>Mon</span>
+<span>Tue</span>
+<span>Wed</span>
+<span>Thu</span>
+<span>Fri</span>
+<span>Sat</span>
+<span>Sun</span>
+</div>
+</div>
+</div>
+<!-- Quality Distribution -->
+<div class="col-span-12 lg:col-span-4 bg-surface-container-lowest rounded-xl p-6 shadow-ambient border border-outline-variant/30 flex flex-col">
+<div class="flex justify-between items-center mb-6">
+<h2 class="font-headline-md text-headline-md text-on-surface">Quality Distribution</h2>
+<span class="material-symbols-outlined text-outline">pie_chart</span>
+</div>
+<div class="flex-grow flex flex-col justify-center gap-6">
+<!-- Category 1 -->
+<div>
+<div class="flex justify-between font-data-mono text-data-mono mb-2">
+<span class="text-on-surface font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Premium Grade
+                            </span>
+<span class="text-on-surface-variant">68%</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 68%;"></div>
+</div>
+</div>
+<!-- Category 2 -->
+<div>
+<div class="flex justify-between font-data-mono text-data-mono mb-2">
+<span class="text-on-surface font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-fixed-dim"></span> Standard Market
+                            </span>
+<span class="text-on-surface-variant">27%</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-fixed-dim rounded-full" style="width: 27%;"></div>
+</div>
+</div>
+<!-- Category 3 -->
+<div>
+<div class="flex justify-between font-data-mono text-data-mono mb-2">
+<span class="text-on-surface font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span> Processing
+                            </span>
+<span class="text-on-surface-variant">5%</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-fixed-dim rounded-full" style="width: 5%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- System Status Full Width -->
+<div class="col-span-12 bg-surface-container-lowest rounded-xl p-6 shadow-ambient border border-outline-variant/30 mt-4">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6">Platform System Status</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- AI Service Info -->
+<div class="flex items-start gap-4 p-4 rounded-lg bg-surface hover:bg-surface-container-low transition-colors">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-surface-variant mb-1">Inference Engine</h4>
+<div class="flex items-center gap-2 mb-2">
+<span class="font-headline-md text-headline-md text-on-surface">Online</span>
+<span class="px-2 py-0.5 bg-secondary/10 text-secondary text-xs font-data-mono rounded font-semibold">STABLE</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Processing nodes operating within normal thermal thresholds.</p>
+</div>
+</div>
+<!-- Model Info -->
+<div class="flex items-start gap-4 p-4 rounded-lg bg-surface hover:bg-surface-container-low transition-colors border-l-2 md:border-l-0 md:border-l border-outline-variant/50 pl-6">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined">memory</span>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-surface-variant mb-1">Active Vision Model</h4>
+<div class="flex items-center gap-2 mb-2">
+<span class="font-headline-md text-headline-md text-on-surface">ResNet18_v4</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Optimized for high-speed conveyor belt image classification.</p>
+</div>
+</div>
+<!-- Service Stats Grid inside -->
+<div class="flex flex-col gap-4 border-t-2 md:border-t-0 md:border-l border-outline-variant/50 pt-4 md:pt-0 md:pl-6">
+<div class="flex justify-between items-center">
+<span class="font-body-md text-body-md text-on-surface-variant">Global Latency</span>
+<span class="font-data-mono text-data-mono text-on-surface font-semibold">24ms</span>
+</div>
+<div class="w-full h-[1px] bg-outline-variant/30"></div>
+<div class="flex justify-between items-center">
+<span class="font-body-md text-body-md text-on-surface-variant">System Uptime</span>
+<span class="font-data-mono text-data-mono text-secondary font-semibold">99.998%</span>
+</div>
+<div class="w-full h-[1px] bg-outline-variant/30"></div>
+<div class="flex justify-between items-center">
+<span class="font-body-md text-body-md text-on-surface-variant">API Requests/sec</span>
+<span class="font-data-mono text-data-mono text-on-surface font-semibold">4,205</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>
