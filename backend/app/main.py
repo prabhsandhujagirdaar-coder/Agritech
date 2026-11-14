@@ -12,8 +12,9 @@ while exposing the structured /api/v1 architecture.
 from __future__ import annotations
 
 import logging
+from typing import Optional
 from contextlib import asynccontextmanager
-from fastapi import FastAPI, File, HTTPException, Request, UploadFile, status
+from fastapi import FastAPI, File, HTTPException, Query, Request, UploadFile, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
@@ -183,8 +184,30 @@ async def root_predict(
 async def root_inspect(
     request: Request,
     file: UploadFile = File(..., description="Image file of produce specimen."),
-    mode: str = "manual",
-    fruit: str = "guava",
+    mode: str = Query("manual", pattern="^(manual|auto)$", description="Inspection mode ('manual' | 'auto')."),
+    fruit: Optional[str] = Query(None, description="Target commodity for manual mode ('guava', 'banana', 'apple', 'mango')."),
 ) -> FruitInspectionResponse:
     """Root alias delegating to the unified multi-fruit inspection endpoint."""
+    return await inspect_fruit_produce(request=request, file=file, mode=mode, fruit=fruit)
+
+
+@app.post(
+    "/api/inspect",
+    response_model=FruitInspectionResponse,
+    summary="API Inspect Proxy Alias",
+    tags=["Compatibility"],
+    responses={
+        400: {"description": "Invalid image payload or corrupted byte stream."},
+        415: {"description": "Unsupported media type (accepts JPEG, PNG, WEBP)."},
+        422: {"description": "Missing file upload parameter."},
+        503: {"description": "Model unavailable."},
+    },
+)
+async def api_inspect_proxy(
+    request: Request,
+    file: UploadFile = File(..., description="Image file of produce specimen."),
+    mode: str = Query("manual", pattern="^(manual|auto)$", description="Inspection mode ('manual' | 'auto')."),
+    fruit: Optional[str] = Query(None, description="Target commodity for manual mode ('guava', 'banana', 'apple', 'mango')."),
+) -> FruitInspectionResponse:
+    """Next.js API proxy alias delegating to the unified multi-fruit inspection endpoint."""
     return await inspect_fruit_produce(request=request, file=file, mode=mode, fruit=fruit)

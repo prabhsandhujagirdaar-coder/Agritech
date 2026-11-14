@@ -341,14 +341,32 @@ function DashboardContent() {
       });
 
       if (!res.ok) {
-        const errorData = await res.json();
-        throw new Error(errorData.detail || "Multi-fruit inspection server error");
+        let errorData = null;
+        try {
+          errorData = await res.json();
+        } catch {
+          const text = await res.text().catch(() => "");
+          errorData = { detail: text || `Multi-fruit inspection server error (${res.status})` };
+        }
+        const errObj = new Error(errorData.detail || errorData.message || `Multi-fruit inspection server error (${res.status})`);
+        errObj.category = errorData.error_category || (res.status === 503 ? "network" : res.status >= 400 && res.status < 500 ? "validation" : "server");
+        errObj.hint = errorData.hint || (res.status === 503 ? "Ensure the FastAPI backend is running via .\\start.bat" : null);
+        errObj.requestId = errorData.request_id || res.headers.get("x-request-id") || null;
+        errObj.status = res.status;
+        throw errObj;
       }
 
       const data = await res.json();
       setAnalysisResult(data);
     } catch (err) {
-      setAnalysisError(err.message || "Failed to run multi-fruit inspection");
+      const isFetchFailed = (err.message || "").toLowerCase().includes("fetch");
+      setAnalysisError({
+        message: err.message || "Failed to run multi-fruit inspection",
+        category: err.category || (isFetchFailed ? "network" : "client_error"),
+        hint: err.hint || (isFetchFailed ? "Verify network connection and ensure FastAPI backend is running on http://127.0.0.1:8000 via '.\\start.bat'." : null),
+        requestId: err.requestId || null,
+        status: err.status || null,
+      });
     } finally {
       setAnalyzing(false);
     }
@@ -826,19 +844,53 @@ function DashboardContent() {
 
                   {analysisError && (
                     <div className="bg-error/5 border border-error/20 rounded-[2rem] p-8 premium-shadow min-h-[300px] flex flex-col justify-center">
-                      <div className="flex items-center gap-3 mb-4">
-                        <div className="w-10 h-10 rounded-full bg-error/15 text-error flex items-center justify-center shrink-0">
-                          <span className="material-symbols-outlined">report</span>
+                      <div className="flex items-center justify-between mb-4">
+                        <div className="flex items-center gap-3">
+                          <div className="w-10 h-10 rounded-full bg-error/15 text-error flex items-center justify-center shrink-0">
+                            <span className="material-symbols-outlined">report</span>
+                          </div>
+                          <div>
+                            <h4 className="font-bold text-error">Inspection Error</h4>
+                            <p className="text-[10px] uppercase font-bold tracking-wider text-error/70">
+                              {analysisError?.category === "network"
+                                ? "Backend Connectivity / Offline"
+                                : analysisError?.category === "validation"
+                                ? "Produce Specimen Validation Error"
+                                : analysisError?.category === "model_unavailable"
+                                ? "Produce Model Gated / Checkpoint Missing"
+                                : "Backend Validation / Service Diagnostic"}
+                            </p>
+                          </div>
                         </div>
-                        <div>
-                          <h4 className="font-bold text-error">Inspection Error</h4>
-                          <p className="text-[10px] uppercase font-bold tracking-wider text-error/70">
-                            Backend Validation / Service Diagnostic
-                          </p>
-                        </div>
+                        {analysisError?.requestId && (
+                          <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-error/10 text-error border border-error/20">
+                            ID: {analysisError.requestId}
+                          </span>
+                        )}
                       </div>
-                      <div className="bg-white/80 p-4 rounded-xl border border-error/10 text-xs font-mono text-error-container select-all">
-                        {analysisError}
+
+                      <div className="bg-white/80 p-4 rounded-xl border border-error/10 text-xs font-mono text-error-container select-all whitespace-pre-wrap">
+                        {typeof analysisError === "string" ? analysisError : (analysisError?.message || "An unknown error occurred during produce inspection.")}
+                      </div>
+
+                      {analysisError?.hint && (
+                        <div className="mt-3 p-3 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-900 flex items-start gap-2">
+                          <span className="material-symbols-outlined text-sm text-amber-600 mt-0.5 shrink-0">lightbulb</span>
+                          <div>
+                            <span className="font-bold">Troubleshooting Hint: </span>
+                            {analysisError.hint}
+                          </div>
+                        </div>
+                      )}
+
+                      <div className="mt-4 flex gap-3">
+                        <button
+                          onClick={() => runAnalysis()}
+                          className="px-4 py-2 rounded-xl bg-error text-white text-xs font-bold hover:bg-error/90 transition-colors flex items-center gap-1.5 shadow-sm"
+                        >
+                          <span className="material-symbols-outlined text-sm">refresh</span>
+                          Retry Inspection
+                        </button>
                       </div>
                     </div>
                   )}

@@ -10,7 +10,8 @@ from __future__ import annotations
 
 import logging
 from typing import Optional
-from fastapi import APIRouter, File, HTTPException, Query, Request, UploadFile, status
+import uuid
+from fastapi import APIRouter, File, HTTPException, Query, Request, Response, UploadFile, status
 
 from app.schemas.cnn import (
     CNNModelStatusResponse,
@@ -230,26 +231,39 @@ predict_kinnow_quality = predict_guava_quality
 )
 async def inspect_fruit_produce(
     request: Request,
+    response: Response = None,
     file: UploadFile = File(..., description="Image file of the produce specimen (JPEG/PNG/WEBP)."),
     mode: str = Query("manual", pattern="^(manual|auto)$", description="Inspection mode ('manual' | 'auto')."),
     fruit: Optional[str] = Query(None, description="Target commodity for manual mode ('guava', 'banana', 'apple', 'mango')."),
 ) -> FruitInspectionResponse:
+    request_id = request.headers.get("x-request-id") or f"insp_{uuid.uuid4().hex[:8]}"
+    if response is not None:
+        response.headers["X-Request-ID"] = request_id
+
     # 1. Validate file part is present
     if file is None or file.filename is None:
+        logger.warning("[%s] Rejected produce inspection request: Missing file upload payload.", request_id)
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="No file uploaded.",
+            headers={"X-Request-ID": request_id},
         )
 
     # 2. Read file bytes
     try:
         raw_bytes = await file.read()
     except Exception as exc:
-        logger.exception("Error reading uploaded file: %s", exc)
+        logger.exception("[%s] Error reading uploaded file: %s", request_id, exc)
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="Could not read uploaded file content.",
+            headers={"X-Request-ID": request_id},
         )
+
+    logger.info(
+        "[%s] Incoming inspection: mode='%s', fruit='%s', filename='%s', content_type='%s', size=%d bytes",
+        request_id, mode, fruit, file.filename, file.content_type, len(raw_bytes)
+    )
 
     # 3. Process through unified MultiFruitInspectionService
     service = get_multi_fruit_service(request)
@@ -259,18 +273,33 @@ async def inspect_fruit_produce(
             content_type=file.content_type,
             filename=file.filename,
         )
-        return service.inspect(image=image, mode=mode, target_fruit=fruit)
+        result = service.inspect(image=image, mode=mode, target_fruit=fruit)
+        logger.info(
+            "[%s] Inspection success: mode='%s', target='%s', status='%s', latency=%.2f ms",
+            request_id,
+            mode,
+            getattr(result, "target_fruit", fruit),
+            getattr(result, "status", "ready"),
+            getattr(result, "inference_ms", 0.0),
+        )
+        return result
 
     except CNNServiceError as cnn_err:
+        logger.warning(
+            "[%s] CNNServiceError during inspection: status=%d detail='%s'",
+            request_id, cnn_err.status_code, cnn_err.detail
+        )
         raise HTTPException(
             status_code=cnn_err.status_code,
             detail=cnn_err.detail,
+            headers={"X-Request-ID": request_id},
         )
     except Exception as exc:
-        logger.exception("Unhandled error during multi-fruit inspection: %s", exc)
+        logger.exception("[%s] Unhandled error during multi-fruit inspection: %s", request_id, exc)
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Unexpected failure during produce inspection: {exc}",
+            headers={"X-Request-ID": request_id},
         )
 
 
