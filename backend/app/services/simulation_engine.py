@@ -14,7 +14,6 @@ import math
 import random
 from typing import Any, Dict, List, Optional
 
-from app.api.v1.endpoints.ws import get_ws_manager
 from app.db.repository import get_shipment_repository
 from app.schemas.telemetry import TelemetryPoint
 from app.services.routing_service import get_routing_service
@@ -29,6 +28,7 @@ class SimulationEngine:
         self._running_tasks: Dict[str, asyncio.Task] = {}
         self._rolling_buffers: Dict[str, List[TelemetryPoint]] = {}
         self._lock: Optional[asyncio.Lock] = None
+        self._lock_loop: Optional[asyncio.AbstractEventLoop] = None
         self._tick_interval_s: float = 1.0
         self._base_advance_km_per_tick: float = 2.0  # Scaled for responsive UI demonstration
 
@@ -37,8 +37,9 @@ class SimulationEngine:
             loop = asyncio.get_running_loop()
         except RuntimeError:
             loop = None
-        if self._lock is None or (loop is not None and getattr(self._lock, "_loop", None) is not None and self._lock._loop is not loop):
+        if self._lock is None or (loop is not None and self._lock_loop is not loop):
             self._lock = asyncio.Lock()
+            self._lock_loop = loop
         return self._lock
 
     async def start_simulation(self, simulation_id: str) -> Dict[str, Any]:
@@ -386,6 +387,7 @@ class SimulationEngine:
     async def _broadcast_status(self, session: Dict[str, Any]):
         """Broadcasts simulation session status change."""
         try:
+            from app.api.v1.endpoints.ws import get_ws_manager
             ws = get_ws_manager()
             await ws.broadcast("simulation_status_update", {
                 "simulation_id": session["id"],
@@ -406,6 +408,7 @@ class SimulationEngine:
     ):
         """Broadcasts simulation position, sensor telemetry, and LSTM risk updates."""
         try:
+            from app.api.v1.endpoints.ws import get_ws_manager
             ws = get_ws_manager()
             await ws.broadcast("simulation_telemetry_update", {
                 "simulation_id": session["id"],

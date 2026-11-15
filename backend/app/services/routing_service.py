@@ -123,6 +123,20 @@ _CORRIDOR_ANCHORS: Dict[str, List[Tuple[float, float]]] = {
         (27.0900, 77.6600),  # Fatehpur Sikri Historical Corridor
         (27.1767, 78.0081),  # Agra Integrated Cold Logistics Hub
     ],
+    # Abohar -> Jaipur via Hanumangarh, Rawatsar, Sardarshahr, Ratangarh, Sikar, Ringas, Chomu (NH-52 / NH-62 ~431 km)
+    "abohar_to_jaipur": [
+        (30.1453, 74.1994),  # Abohar Packhouse
+        (29.5800, 74.3200),  # Hanumangarh Junction
+        (29.2800, 74.3800),  # Rawatsar
+        (28.8900, 74.4500),  # Pallu
+        (28.4400, 74.4900),  # Sardarshahr
+        (28.0800, 74.6200),  # Ratangarh NH-11 Junction
+        (27.9800, 74.9500),  # Fatehpur Shekhawati
+        (27.6100, 75.1400),  # Sikar Bypass NH-52
+        (27.3500, 75.5600),  # Ringas Junction NH-52
+        (27.1700, 75.7200),  # Chomu NH-52
+        (26.7937, 75.7381),  # Jaipur Muhana Terminal Mandi
+    ],
     # Abohar -> Bathinda via Malout, Giddarbaha (NH-7 ~75 km)
     "abohar_to_bathinda": [
         (30.1453, 74.1994),  # Abohar Packhouse

@@ -9,8 +9,9 @@ from __future__ import annotations
 
 import logging
 import time
+import re
 import urllib.parse
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Set, Tuple
 import urllib.request
 import json
 
@@ -28,6 +29,17 @@ CURATED_AGRICULTURAL_PLACES: List[Dict[str, Any]] = [
         "type": "mandi",
         "state": "Delhi",
         "district": "North Delhi",
+        "aliases": ["Azadpur APMC Mandi", "Azadpur Mandi", "Azadpur", "Delhi APMC Mandi", "Delhi Mandi"],
+    },
+    {
+        "name": "Abohar Packhouse",
+        "display_name": "Abohar Packhouse & Post-Harvest Center, Fazilka, Punjab 152116",
+        "latitude": 30.1453,
+        "longitude": 74.1994,
+        "type": "packhouse",
+        "state": "Punjab",
+        "district": "Fazilka",
+        "aliases": ["Abohar Post-Harvest Center", "Abohar Kinnow & Guava Packhouse", "Abohar Kinnow Packhouse", "Abohar Mandi", "Abohar"],
     },
     {
         "name": "Abohar Kinnow & Guava Packhouse",
@@ -37,6 +49,7 @@ CURATED_AGRICULTURAL_PLACES: List[Dict[str, Any]] = [
         "type": "facility",
         "state": "Punjab",
         "district": "Fazilka",
+        "aliases": ["Abohar Packhouse", "Abohar Post-Harvest Center", "Abohar Mandi", "Abohar Facility", "Abohar"],
     },
     {
         "name": "Fazilka CA Cold Store Hub",
@@ -46,6 +59,7 @@ CURATED_AGRICULTURAL_PLACES: List[Dict[str, Any]] = [
         "type": "cold_storage",
         "state": "Punjab",
         "district": "Fazilka",
+        "aliases": ["Fazilka Cold Store", "Fazilka CA Store", "Fazilka Mandi", "Fazilka Hub", "Fazilka"],
     },
     {
         "name": "Bathinda Multimodal Transit Hub",
@@ -55,6 +69,7 @@ CURATED_AGRICULTURAL_PLACES: List[Dict[str, Any]] = [
         "type": "logistics_hub",
         "state": "Punjab",
         "district": "Bathinda",
+        "aliases": ["Bathinda Central Agri Godown", "Bathinda Mandi", "Bathinda Logistics Hub", "Bathinda Godown", "Bathinda"],
     },
     {
         "name": "Ludhiana Agro Cold Chain Terminal",
@@ -64,6 +79,7 @@ CURATED_AGRICULTURAL_PLACES: List[Dict[str, Any]] = [
         "type": "cold_storage",
         "state": "Punjab",
         "district": "Ludhiana",
+        "aliases": ["Ludhiana Agro Cold Chain Warehouse", "Ludhiana Mandi", "PAU Ludhiana", "Ludhiana Cold Storage", "Ludhiana"],
     },
     {
         "name": "Amritsar Mandi Logistics Center",
@@ -73,6 +89,7 @@ CURATED_AGRICULTURAL_PLACES: List[Dict[str, Any]] = [
         "type": "mandi",
         "state": "Punjab",
         "district": "Amritsar",
+        "aliases": ["Amritsar Fruit & Produce Mandi Cold Terminal", "Amritsar Mandi", "Bhagtanwala Mandi", "Amritsar"],
     },
     {
         "name": "Jalandhar Maqsudan Mandi",
@@ -165,6 +182,16 @@ CURATED_AGRICULTURAL_PLACES: List[Dict[str, Any]] = [
         "district": "Moga",
     },
     {
+        "name": "Jaipur Mandi",
+        "display_name": "Jaipur APMC Muhana Fruit & Vegetable Terminal Mandi, Jaipur, Rajasthan 302029",
+        "latitude": 26.7937,
+        "longitude": 75.7381,
+        "type": "mandi",
+        "state": "Rajasthan",
+        "district": "Jaipur",
+        "aliases": ["Jaipur APMC Mandi", "Muhana Mandi", "Jaipur Wholesale Mandi", "Jaipur APMC", "Jaipur"],
+    },
+    {
         "name": "Jaipur Muhana APMC Terminal Mandi",
         "display_name": "Muhana Mandi Wholesale Terminal, Sanganer, Jaipur, Rajasthan 302029",
         "latitude": 26.7937,
@@ -172,6 +199,7 @@ CURATED_AGRICULTURAL_PLACES: List[Dict[str, Any]] = [
         "type": "mandi",
         "state": "Rajasthan",
         "district": "Jaipur",
+        "aliases": ["Jaipur Mandi", "Muhana Mandi", "Jaipur Terminal Mandi", "Jaipur"],
     },
     {
         "name": "Agra Agro Cold Logistics Hub",
@@ -181,6 +209,7 @@ CURATED_AGRICULTURAL_PLACES: List[Dict[str, Any]] = [
         "type": "cold_storage",
         "state": "Uttar Pradesh",
         "district": "Agra",
+        "aliases": ["Agra Mandi", "Agra Cold Storage", "Agra Cold Hub", "Agra"],
     },
     {
         "name": "Malout Corridor Transit Center",
@@ -203,19 +232,111 @@ CURATED_AGRICULTURAL_PLACES: List[Dict[str, Any]] = [
 ]
 
 
+GENERIC_AGRI_KEYWORDS: Set[str] = {
+    "punjab", "haryana", "rajasthan", "delhi", "uttar", "pradesh", "india",
+    "mandi", "packhouse", "cold", "store", "storage", "hub", "terminal",
+    "logistics", "center", "centre", "godown", "warehouse", "farm", "estate",
+    "market", "wholesale", "apmc", "ca", "integrated", "post", "harvest",
+    "checkpoint", "bypass", "road", "transit", "corridor", "depot", "complex",
+}
+
+
+def _score_place_relevance(
+    q_clean: str,
+    q_tokens: List[str],
+    distinctive_tokens: List[str],
+    place: Dict[str, Any],
+) -> int:
+    """Calculates relevance score for a place candidate against a query."""
+    if not q_tokens:
+        return 0
+
+    name_lower = place.get("name", "").lower()
+    disp_lower = place.get("display_name", "").lower()
+    dist_lower = place.get("district", "").lower()
+    state_lower = place.get("state", "").lower()
+    aliases = [a.lower() for a in place.get("aliases", [])]
+
+    # Exact match on name or any alias
+    if q_clean == name_lower or any(q_clean == a for a in aliases):
+        return 1000
+
+    score = 0
+    # Full substring match
+    if q_clean in name_lower or name_lower in q_clean:
+        score += 500
+    for a in aliases:
+        if q_clean in a or a in q_clean:
+            score += 450
+            break
+    if q_clean in disp_lower:
+        score += 300
+
+    matched_distinctive = 0
+
+    for token in q_tokens:
+        is_distinctive = token in distinctive_tokens
+        tok_matched = False
+
+        if token in name_lower or any(token in a for a in aliases):
+            score += 200 if is_distinctive else 20
+            tok_matched = True
+
+        if dist_lower and token in dist_lower:
+            score += 150 if is_distinctive else 15
+            tok_matched = True
+
+        if disp_lower and token in disp_lower:
+            score += 80 if is_distinctive else 10
+            tok_matched = True
+
+        if state_lower and token == state_lower:
+            score += 10
+
+        if is_distinctive and tok_matched:
+            matched_distinctive += 1
+
+    # If the query had distinctive location tokens (e.g. "bathinda"), but NONE matched this place,
+    # discard this candidate so a state-only match ("punjab") does not pollute the results.
+    if distinctive_tokens and matched_distinctive == 0:
+        return 0
+
+    return score
+
+
+def _try_parse_coordinate_string(q: str) -> Optional[Tuple[float, float]]:
+    """Attempts to parse a 'lat, lon' or 'lat lon' coordinate string."""
+    parts = re.split(r"[,;\s]+", q.strip())
+    if len(parts) == 2:
+        try:
+            lat = float(parts[0])
+            lon = float(parts[1])
+            if is_within_india(lat, lon):
+                return lat, lon
+        except (ValueError, TypeError):
+            pass
+    return None
+
+
 class GeocodingService:
     """Geocoding service with local cache, repository facilities, and OSM Nominatim lookup."""
 
     def __init__(self):
         self._cache: Dict[str, List[Dict[str, Any]]] = {}
+        self._single_cache: Dict[str, Optional[Dict[str, Any]]] = {}
         self._last_osm_call_time: float = 0.0
         self._nominatim_available: bool = True
         self._nominatim_retry_after: float = 0.0
 
+    def clear_cache(self) -> None:
+        """Clears in-memory search and geocoding caches."""
+        self._cache.clear()
+        self._single_cache.clear()
+
     def search_locations(self, query: str, limit: int = 8) -> List[Dict[str, Any]]:
         """
         Searches Indian agricultural locations by name, district, or keyword.
-        Prioritizes curated local mandis/facilities and falls back to OSM Nominatim.
+        Prioritizes curated local mandis/facilities by relevance score and falls back to OSM Nominatim.
         """
         q = query.strip()
         if not q or len(q) < 2:
@@ -225,29 +346,47 @@ class GeocodingService:
         if q_lower in self._cache:
             return self._cache[q_lower][:limit]
 
-        results: List[Dict[str, Any]] = []
-        seen_coords = set()
+        # 0. Check if query is direct coordinates
+        coord_pair = _try_parse_coordinate_string(q)
+        if coord_pair is not None:
+            c_lat, c_lon = coord_pair
+            direct_coord_res = [{
+                "name": f"Coordinate ({c_lat:.4f}, {c_lon:.4f})",
+                "display_name": f"Coordinate Location ({c_lat:.4f}° N, {c_lon:.4f}° E)",
+                "latitude": c_lat,
+                "longitude": c_lon,
+                "type": "coordinate",
+                "state": "India",
+                "source": "coordinate_input",
+            }]
+            self._cache[q_lower] = direct_coord_res
+            return direct_coord_res
+
+        q_clean = q_lower
+        q_tokens = [w for w in re.split(r"[\s,._/\\-]+", q_clean) if len(w) >= 2]
+        distinctive_tokens = [t for t in q_tokens if t not in GENERIC_AGRI_KEYWORDS]
+
+        scored_candidates: List[Tuple[int, Dict[str, Any]]] = []
+        seen_coords: Set[Tuple[float, float]] = set()
 
         # 1. Search in curated places
         for place in CURATED_AGRICULTURAL_PLACES:
-            name_match = q_lower in place["name"].lower()
-            display_match = q_lower in place["display_name"].lower()
-            district_match = place.get("district", "").lower() in q_lower or q_lower in place.get("district", "").lower()
-            state_match = place.get("state", "").lower() in q_lower or q_lower in place.get("state", "").lower()
-
-            if name_match or display_match or district_match or state_match:
-                coord_key = (round(place["latitude"], 3), round(place["longitude"], 3))
+            score = _score_place_relevance(q_clean, q_tokens, distinctive_tokens, place)
+            if score > 0:
+                lat = float(place["latitude"])
+                lon = float(place["longitude"])
+                coord_key = (round(lat, 3), round(lon, 3))
                 if coord_key not in seen_coords:
                     seen_coords.add(coord_key)
-                    results.append({
+                    scored_candidates.append((score, {
                         "name": place["name"],
-                        "display_name": place["display_name"],
-                        "latitude": place["latitude"],
-                        "longitude": place["longitude"],
+                        "display_name": place.get("display_name", place["name"]),
+                        "latitude": lat,
+                        "longitude": lon,
                         "type": place.get("type", "location"),
-                        "state": place.get("state", "Punjab"),
+                        "state": place.get("state", "India"),
                         "source": "curated_agri_directory",
-                    })
+                    }))
 
         # 2. Search in repository facilities
         try:
@@ -255,32 +394,42 @@ class GeocodingService:
             repo = get_shipment_repository()
             facilities = repo.list_facilities()
             for fac in facilities:
-                fac_name = fac.get("name", "")
-                fac_dist = fac.get("district", "")
-                fac_addr = fac.get("address", "")
                 fac_lat = fac.get("latitude")
                 fac_lon = fac.get("longitude")
-
                 if fac_lat is not None and fac_lon is not None:
-                    if (
-                        q_lower in fac_name.lower()
-                        or q_lower in fac_dist.lower()
-                        or q_lower in fac_addr.lower()
-                    ):
-                        coord_key = (round(float(fac_lat), 3), round(float(fac_lon), 3))
+                    try:
+                        f_lat = float(fac_lat)
+                        f_lon = float(fac_lon)
+                    except (ValueError, TypeError):
+                        continue
+
+                    fac_place = {
+                        "name": fac.get("name", ""),
+                        "display_name": f"{fac.get('name', '')}, {fac.get('address', '')}",
+                        "district": fac.get("district", ""),
+                        "state": fac.get("state", "Punjab"),
+                        "type": fac.get("facility_type", "facility"),
+                    }
+                    score = _score_place_relevance(q_clean, q_tokens, distinctive_tokens, fac_place)
+                    if score > 0:
+                        coord_key = (round(f_lat, 3), round(f_lon, 3))
                         if coord_key not in seen_coords:
                             seen_coords.add(coord_key)
-                            results.append({
-                                "name": fac_name,
-                                "display_name": f"{fac_name}, {fac_addr}",
-                                "latitude": float(fac_lat),
-                                "longitude": float(fac_lon),
+                            scored_candidates.append((score, {
+                                "name": fac.get("name", ""),
+                                "display_name": fac_place["display_name"],
+                                "latitude": f_lat,
+                                "longitude": f_lon,
                                 "type": fac.get("facility_type", "facility"),
                                 "state": fac.get("state", "Punjab"),
                                 "source": "facility_repository",
-                            })
+                            }))
         except Exception as exc:
             logger.debug("Facility repo lookup skipped: %s", exc)
+
+        # Sort candidates descending by score
+        scored_candidates.sort(key=lambda x: x[0], reverse=True)
+        results = [cand[1] for cand in scored_candidates]
 
         # 3. Only query OSM Nominatim if no local matches found
         if len(results) == 0:
@@ -294,6 +443,84 @@ class GeocodingService:
         trimmed = results[:limit]
         self._cache[q_lower] = trimmed
         return trimmed
+
+    def geocode_location(self, query: str) -> Optional[Dict[str, Any]]:
+        """
+        Geocodes a location query into a single verified Indian geographic coordinate dict.
+        Resolves coordinates from curated agricultural landmarks, facilities, or Nominatim.
+
+        Returns:
+            Dict with 'name', 'display_name', 'latitude', 'longitude', 'type', 'state', 'source'
+            or None if unresolvable.
+        """
+        q = (query or "").strip()
+        if not q or len(q) < 2:
+            return None
+
+        q_lower = q.lower()
+        if q_lower in self._single_cache:
+            return self._single_cache[q_lower]
+
+        # 1. Check direct coordinates
+        coord_pair = _try_parse_coordinate_string(q)
+        if coord_pair is not None:
+            c_lat, c_lon = coord_pair
+            direct_res = {
+                "name": f"Coordinate ({c_lat:.4f}, {c_lon:.4f})",
+                "display_name": f"Coordinate Location ({c_lat:.4f}° N, {c_lon:.4f}° E)",
+                "latitude": c_lat,
+                "longitude": c_lon,
+                "type": "coordinate",
+                "state": "India",
+                "source": "coordinate_input",
+            }
+            self._single_cache[q_lower] = direct_res
+            return direct_res
+
+        # 2. Search candidates via search_locations
+        candidates = self.search_locations(q, limit=5)
+        for cand in candidates:
+            lat = cand.get("latitude")
+            lon = cand.get("longitude")
+            if lat is not None and lon is not None:
+                try:
+                    f_lat = float(lat)
+                    f_lon = float(lon)
+                    if is_within_india(f_lat, f_lon):
+                        resolved = {
+                            "name": cand.get("name") or q,
+                            "display_name": cand.get("display_name") or cand.get("name") or q,
+                            "latitude": f_lat,
+                            "longitude": f_lon,
+                            "type": cand.get("type", "location"),
+                            "state": cand.get("state", "India"),
+                            "source": cand.get("source", "curated_agri_directory"),
+                        }
+                        self._single_cache[q_lower] = resolved
+                        return resolved
+                except (ValueError, TypeError):
+                    continue
+
+        # 3. Direct Nominatim fallback if search_locations yielded nothing
+        osm_matches = self._query_osm_nominatim(q, limit=3)
+        for item in osm_matches:
+            lat = item.get("latitude")
+            lon = item.get("longitude")
+            if lat is not None and lon is not None:
+                try:
+                    f_lat = float(lat)
+                    f_lon = float(lon)
+                    if is_within_india(f_lat, f_lon):
+                        self._single_cache[q_lower] = item
+                        return item
+                except (ValueError, TypeError):
+                    continue
+
+        self._single_cache[q_lower] = None
+        return None
+
+    # Backward compatibility alias
+    geocode = geocode_location
 
     def _query_osm_nominatim(self, query: str, limit: int = 5) -> List[Dict[str, Any]]:
         """Queries OpenStreetMap Nominatim with rate limiting (1 call / sec) and timeout."""
