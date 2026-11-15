@@ -1998,29 +1998,23 @@ export default function ShipmentsTracking({ backendHealth, onRetryHealth }) {
           </div>
         </div>
 
-        {/* Map Container: strictly isolated at z-0 with overflow hidden, responsive vertical height */}
-        <div className="h-[520px] sm:h-[580px] md:h-[650px] lg:h-[720px] w-full rounded-2xl relative isolate z-0 overflow-hidden border border-outline-variant/40 transition-all duration-300">
-          <TrackingMapClient
-            className="w-full h-full"
-            shipments={shipments}
-            selectedShipment={selectedShipment}
-            selectedRoute={selectedRoute}
-            loadingRoute={loadingRoute}
-            waypoints={waypoints}
-            facilities={facilities}
-            simulationSession={activeSimulation}
-            simulationRoute={simulationRoute}
-            mapPickMode={mapPickTarget}
-            onMapPick={handleMapPick}
-            onSelectShipment={(shp) => setSelectedShipment(shp)}
+        {/* Fullscreen Backdrop when expanded */}
+        {mapExpanded && (
+          <div
+            className="fixed inset-0 z-40 bg-black/75 backdrop-blur-sm animate-fade-in"
+            onClick={() => setMapExpanded(false)}
           />
-        </div>
-      </div>
+        )}
 
-      {/* Fullscreen Map Modal (z-40: below z-50 dialogs, above normal content) */}
-      {mapExpanded && (
-        <div className="fixed inset-0 z-40 bg-black/75 backdrop-blur-sm p-3 md:p-6 flex flex-col justify-center items-center animate-fade-in">
-          <div className="bg-white rounded-2xl w-full h-full max-w-7xl flex flex-col overflow-hidden shadow-2xl border border-outline-variant">
+        {/* Map Container: responsive inline layout when normal; fixed viewport modal when expanded */}
+        <div
+          className={`w-full rounded-2xl overflow-hidden border border-outline-variant/40 transition-all duration-300 ${
+            mapExpanded
+              ? "fixed inset-3 md:inset-6 z-50 bg-white shadow-2xl flex flex-col max-w-7xl mx-auto my-auto h-[calc(100vh-2rem)] md:h-[calc(100vh-3rem)]"
+              : "h-[520px] sm:h-[580px] md:h-[650px] lg:h-[720px] relative isolate z-0"
+          }`}
+        >
+          {mapExpanded && (
             <div className="flex items-center justify-between px-6 py-4 border-b border-outline-variant/60 bg-surface shrink-0">
               <div className="flex items-center gap-3">
                 <span className="material-symbols-outlined text-digital-mint text-xl">pin_drop</span>
@@ -2041,25 +2035,25 @@ export default function ShipmentsTracking({ backendHealth, onRetryHealth }) {
                 Exit Fullscreen
               </button>
             </div>
-            <div className="flex-1 w-full h-full min-h-0 relative isolate z-0 overflow-hidden">
-              <TrackingMapClient
-                className="w-full h-full"
-                shipments={shipments}
-                selectedShipment={selectedShipment}
-                selectedRoute={selectedRoute}
-                loadingRoute={loadingRoute}
-                waypoints={waypoints}
-                facilities={facilities}
-                simulationSession={activeSimulation}
-                simulationRoute={simulationRoute}
-                mapPickMode={mapPickTarget}
-                onMapPick={handleMapPick}
-                onSelectShipment={(shp) => setSelectedShipment(shp)}
-              />
-            </div>
+          )}
+          <div className="flex-1 w-full h-full min-h-0 relative isolate z-0 overflow-hidden">
+            <TrackingMapClient
+              className="w-full h-full"
+              shipments={shipments}
+              selectedShipment={selectedShipment}
+              selectedRoute={selectedRoute}
+              loadingRoute={loadingRoute}
+              waypoints={waypoints}
+              facilities={facilities}
+              simulationSession={activeSimulation}
+              simulationRoute={simulationRoute}
+              mapPickMode={mapPickTarget}
+              onMapPick={handleMapPick}
+              onSelectShipment={(shp) => setSelectedShipment(shp)}
+            />
           </div>
         </div>
-      )}
+      </div>
 
       {/* Main Grid: Shipments List (Left) + Selected Shipment & Telemetry (Right) */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">

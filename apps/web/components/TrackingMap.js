@@ -4,6 +4,27 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { isValidCoordinate, isWithinIndia, normalizeShipmentCoordinates } from "../lib/api";
 
+// Authoritative Leaflet runtime defense against null/undefined element references
+function ensureLeafletPatched() {
+  if (typeof window === "undefined" || !L || L.DomUtil?._safePatched) {
+    return;
+  }
+
+  // Guard L.DomUtil.getPosition against null/undefined element without suppressing real exceptions
+  if (L.DomUtil && L.DomUtil.getPosition) {
+    const origGetPosition = L.DomUtil.getPosition;
+    L.DomUtil.getPosition = function (el) {
+      if (!el) return new L.Point(0, 0);
+      return origGetPosition.call(this, el);
+    };
+    L.DomUtil._safePatched = true;
+  }
+}
+
+if (typeof window !== "undefined") {
+  ensureLeafletPatched();
+}
+
 /**
  * Creates custom SVG Leaflet DivIcon for a shipment vehicle marker.
  */
@@ -165,6 +186,29 @@ function createWaypointDotIcon(idx, isLatest) {
 // Default Punjab Agricultural Center (Abohar / Bathinda / Ludhiana corridor)
 const PUNJAB_DEFAULT_CENTER = [30.5000, 74.8000];
 
+// Safe cancellation of all in-progress Leaflet animations
+function stopActiveAnimations(map) {
+  if (!map) return;
+  try {
+    if (map._flyToFrame) {
+      L.Util.cancelAnimFrame(map._flyToFrame);
+      map._flyToFrame = null;
+    }
+    if (map._panAnim) {
+      map._panAnim.stop();
+    }
+    if (map._animatingZoom) {
+      map._animatingZoom = false;
+      if (map._mapPane) {
+        L.DomUtil.removeClass(map._mapPane, "leaflet-zoom-anim");
+      }
+    }
+    map.stop();
+  } catch {
+    // Ignore defensive stop error
+  }
+}
+
 export default function TrackingMap({
   shipments = [],
   selectedShipment = null,
@@ -182,18 +226,78 @@ export default function TrackingMap({
 }) {
   const mapContainerRef = useRef(null);
   const mapInstanceRef = useRef(null);
+  const isMountedRef = useRef(true);
   const facilitiesLayerRef = useRef(null);
   const markersLayerRef = useRef(null);
   const routeLayerRef = useRef(null);
   const simulationLayerRef = useRef(null);
 
+  // Layout & Camera Tracking Refs
+  const lastDimensionsRef = useRef({ width: 0, height: 0 });
+  const resizeTimerRef = useRef(null);
+  const cameraFocusRef = useRef({ key: null, time: 0 });
+  const lastVehiclePosRef = useRef({ lat: null, lon: null });
+
   const [showFacilities, setShowFacilities] = useState(true);
   const [selectedFacilityType, setSelectedFacilityType] = useState("all");
 
-  // Initialize Leaflet map
+  // Safe camera motion helpers
+  const safeFitBounds = (bounds, options = {}) => {
+    const map = mapInstanceRef.current;
+    if (!isMountedRef.current || !map || !map._loaded || !map._mapPane) return;
+    if (!bounds || typeof bounds.isValid !== "function" || !bounds.isValid()) return;
+    stopActiveAnimations(map);
+    try {
+      map.fitBounds(bounds, { animate: true, duration: 0.6, ...options });
+    } catch (err) {
+      console.warn("safeFitBounds caught:", err);
+    }
+  };
+
+  const safeFlyTo = (latLng, zoom, options = {}) => {
+    const map = mapInstanceRef.current;
+    if (!isMountedRef.current || !map || !map._loaded || !map._mapPane) return;
+    if (!latLng || isNaN(latLng[0]) || isNaN(latLng[1])) return;
+    stopActiveAnimations(map);
+    try {
+      map.flyTo(latLng, zoom, { duration: 0.8, ...options });
+    } catch (err) {
+      console.warn("safeFlyTo caught:", err);
+    }
+  };
+
+  const safePanTo = (latLng, options = {}) => {
+    const map = mapInstanceRef.current;
+    if (!isMountedRef.current || !map || !map._loaded || !map._mapPane) return;
+    if (!latLng || isNaN(latLng[0]) || isNaN(latLng[1])) return;
+    // Don't interrupt user zoom transitions with vehicle pan
+    if (map._animatingZoom) return;
+    try {
+      map.panTo(latLng, { animate: true, duration: 0.5, ...options });
+    } catch (err) {
+      console.warn("safePanTo caught:", err);
+    }
+  };
+
+  const safeInvalidateSize = (options = {}) => {
+    const map = mapInstanceRef.current;
+    if (!isMountedRef.current || !map || !map._loaded || !map._mapPane || !map._container) return;
+    const container = map._container;
+    if (container.offsetWidth <= 0 || container.offsetHeight <= 0) return;
+    try {
+      map.invalidateSize({ debounceMoveend: true, ...options });
+    } catch (err) {
+      console.warn("safeInvalidateSize caught:", err);
+    }
+  };
+
+  // 1. Initialize Leaflet map with safe unmount lifecycle
   useEffect(() => {
+    isMountedRef.current = true;
     if (!mapContainerRef.current) return;
     if (mapInstanceRef.current) return;
+
+    ensureLeafletPatched();
 
     const map = L.map(mapContainerRef.current, {
       center: PUNJAB_DEFAULT_CENTER,
@@ -220,36 +324,85 @@ export default function TrackingMap({
     // Responsive size invalidation when container resizes
     let resizeObserver = null;
     if (typeof ResizeObserver !== "undefined") {
-      resizeObserver = new ResizeObserver(() => {
-        map.invalidateSize();
+      resizeObserver = new ResizeObserver((entries) => {
+        if (!isMountedRef.current || !mapInstanceRef.current) return;
+        const entry = entries[0];
+        if (!entry) return;
+        const { width, height } = entry.contentRect;
+        if (width <= 0 || height <= 0) return;
+
+        const prev = lastDimensionsRef.current;
+        if (Math.abs(prev.width - width) < 2 && Math.abs(prev.height - height) < 2) {
+          return;
+        }
+        lastDimensionsRef.current = { width, height };
+
+        if (resizeTimerRef.current) clearTimeout(resizeTimerRef.current);
+        resizeTimerRef.current = setTimeout(() => {
+          if (isMountedRef.current && mapInstanceRef.current) {
+            safeInvalidateSize();
+          }
+        }, 100);
       });
       resizeObserver.observe(mapContainerRef.current);
     }
 
     const handleWindowResize = () => {
-      map.invalidateSize();
+      if (resizeTimerRef.current) clearTimeout(resizeTimerRef.current);
+      resizeTimerRef.current = setTimeout(() => {
+        if (isMountedRef.current && mapInstanceRef.current) {
+          safeInvalidateSize();
+        }
+      }, 100);
     };
     window.addEventListener("resize", handleWindowResize);
 
+    // Initial size invalidation after layout settles
+    setTimeout(() => {
+      if (isMountedRef.current && mapInstanceRef.current) {
+        safeInvalidateSize();
+      }
+    }, 150);
+
     return () => {
+      isMountedRef.current = false;
+      if (resizeTimerRef.current) clearTimeout(resizeTimerRef.current);
       if (resizeObserver) resizeObserver.disconnect();
       window.removeEventListener("resize", handleWindowResize);
-      map.remove();
-      mapInstanceRef.current = null;
+
+      if (mapInstanceRef.current) {
+        const m = mapInstanceRef.current;
+        stopActiveAnimations(m);
+        try {
+          if (facilitiesLayerRef.current) facilitiesLayerRef.current.clearLayers();
+          if (markersLayerRef.current) markersLayerRef.current.clearLayers();
+          if (routeLayerRef.current) routeLayerRef.current.clearLayers();
+          if (simulationLayerRef.current) simulationLayerRef.current.clearLayers();
+          m.off();
+          m.remove();
+        } catch (e) {
+          console.warn("Clean map removal notice:", e);
+        } finally {
+          mapInstanceRef.current = null;
+        }
+      }
     };
   }, []);
 
-  // Trigger size invalidation when parent dimensions or className changes
+  // 2. Trigger size invalidation when parent dimensions or className changes
   useEffect(() => {
-    const timer = setTimeout(() => {
-      if (mapInstanceRef.current) {
-        mapInstanceRef.current.invalidateSize();
+    if (resizeTimerRef.current) clearTimeout(resizeTimerRef.current);
+    resizeTimerRef.current = setTimeout(() => {
+      if (isMountedRef.current && mapInstanceRef.current) {
+        safeInvalidateSize();
       }
-    }, 120);
-    return () => clearTimeout(timer);
+    }, 100);
+    return () => {
+      if (resizeTimerRef.current) clearTimeout(resizeTimerRef.current);
+    };
   }, [className]);
 
-  // Render Storage Facilities & Godowns
+  // 3. Render Storage Facilities & Godowns
   useEffect(() => {
     const map = mapInstanceRef.current;
     const facilitiesLayer = facilitiesLayerRef.current;
@@ -447,7 +600,7 @@ export default function TrackingMap({
     });
   }, [facilities, showFacilities, selectedFacilityType, selectedShipment, onSelectFacility, simulationSession?.status]);
 
-  // Update shipment markers & bounds
+  // 4. Update shipment markers
   useEffect(() => {
     const map = mapInstanceRef.current;
     const markersLayer = markersLayerRef.current;
@@ -500,17 +653,12 @@ export default function TrackingMap({
       return;
     }
 
-    const validPoints = [];
-
     shipments.forEach((s) => {
       const coords = normalizeShipmentCoordinates(s);
       if (!coords) return;
 
       const [lat, lng] = coords;
-      // Filter out invalid or foreign points outside India
       if (!isWithinIndia(lat, lng)) return;
-
-      validPoints.push([lat, lng]);
 
       const isSelected = selectedShipment?.id === s.id;
       const marker = L.marker([lat, lng], {
@@ -551,15 +699,9 @@ export default function TrackingMap({
 
       markersLayer.addLayer(marker);
     });
-
-    // Auto-fit map to show all valid Indian shipment locations on first load
-    if (validPoints.length > 0 && !selectedShipment) {
-      const bounds = L.latLngBounds(validPoints);
-      map.fitBounds(bounds, { padding: [50, 50], maxZoom: 11 });
-    }
   }, [shipments, selectedShipment, onSelectShipment, simulationSession?.status]);
 
-  // Update dynamic road route or location history route for selected shipment
+  // 5. Update dynamic road route or location history route for selected shipment
   useEffect(() => {
     const map = mapInstanceRef.current;
     const routeLayer = routeLayerRef.current;
@@ -592,7 +734,6 @@ export default function TrackingMap({
       Array.isArray(selectedRoute.geometry.coordinates) &&
       selectedRoute.geometry.coordinates.length > 1
     ) {
-      // GeoJSON [lon, lat] -> Leaflet [lat, lon]
       const routeLatLngs = selectedRoute.geometry.coordinates.map((c) => [c[1], c[0]]);
 
       const highwayPolyline = L.polyline(routeLatLngs, {
@@ -672,10 +813,6 @@ export default function TrackingMap({
         `);
         routeLayer.addLayer(dot);
       });
-
-      // Fit bounds tightly around the actual road route
-      const bounds = L.latLngBounds(routeLatLngs);
-      map.fitBounds(bounds, { padding: [60, 60], maxZoom: 12 });
       return;
     }
 
@@ -712,13 +849,78 @@ export default function TrackingMap({
         dashArray: "4, 6",
       });
       routeLayer.addLayer(corridorLine);
-      map.fitBounds(L.latLngBounds(corridorPoints), { padding: [60, 60], maxZoom: 11 });
-    } else if (latLngs.length === 1) {
-      map.flyTo(latLngs[0], 11, { duration: 0.8 });
     }
   }, [selectedShipment, selectedRoute, waypoints, simulationSession?.status]);
 
-  // Handle map click for coordinate picking mode
+  // 6. Camera Coordinator — Clean Single-Flight Transition Management
+  useEffect(() => {
+    const map = mapInstanceRef.current;
+    if (!map || !map._loaded) return;
+
+    // A: Selected Shipment with Authoritative Road Route
+    if (
+      selectedShipment &&
+      selectedRoute &&
+      selectedRoute.shipment_id === selectedShipment.id &&
+      selectedRoute.geometry?.coordinates?.length > 1
+    ) {
+      const targetKey = `route_${selectedShipment.id}_${selectedRoute.distance_km}`;
+      if (cameraFocusRef.current.key !== targetKey) {
+        cameraFocusRef.current = { key: targetKey, time: Date.now() };
+        const routeLatLngs = selectedRoute.geometry.coordinates.map((c) => [c[1], c[0]]);
+        const bounds = L.latLngBounds(routeLatLngs);
+        safeFitBounds(bounds, { padding: [60, 60], maxZoom: 12 });
+      }
+      return;
+    }
+
+    // B: Selected Shipment without full Route yet (Corridor / Waypoints fallback)
+    if (selectedShipment) {
+      const targetKey = `corridor_${selectedShipment.id}`;
+      if (cameraFocusRef.current.key !== targetKey) {
+        cameraFocusRef.current = { key: targetKey, time: Date.now() };
+
+        const validWaypoints = (waypoints || [])
+          .filter((w) => isValidCoordinate(w.latitude, w.longitude) && isWithinIndia(w.latitude, w.longitude));
+        const corridorPoints = [];
+        if (selectedShipment.origin_facility && isWithinIndia(selectedShipment.origin_facility.latitude, selectedShipment.origin_facility.longitude)) {
+          corridorPoints.push([selectedShipment.origin_facility.latitude, selectedShipment.origin_facility.longitude]);
+        }
+        corridorPoints.push(...validWaypoints.map((w) => [w.latitude, w.longitude]));
+        if (selectedShipment.destination_facility && isWithinIndia(selectedShipment.destination_facility.latitude, selectedShipment.destination_facility.longitude)) {
+          corridorPoints.push([selectedShipment.destination_facility.latitude, selectedShipment.destination_facility.longitude]);
+        }
+
+        if (corridorPoints.length > 1) {
+          safeFitBounds(L.latLngBounds(corridorPoints), { padding: [60, 60], maxZoom: 11 });
+        } else if (corridorPoints.length === 1) {
+          safeFlyTo(corridorPoints[0], 11);
+        }
+      }
+      return;
+    }
+
+    // C: Global Overview (Only auto-fit once on initial load or explicit clear)
+    if (!selectedShipment) {
+      const validPoints = shipments
+        .map(normalizeShipmentCoordinates)
+        .filter((c) => c !== null && isWithinIndia(c[0], c[1]));
+
+      if (cameraFocusRef.current.key === null && validPoints.length > 0) {
+        cameraFocusRef.current = { key: `global_initial`, time: Date.now() };
+        const bounds = L.latLngBounds(validPoints);
+        safeFitBounds(bounds, { padding: [50, 50], maxZoom: 11 });
+      } else if (cameraFocusRef.current.key && cameraFocusRef.current.key.startsWith("route_") || cameraFocusRef.current.key?.startsWith("corridor_")) {
+        // Just returned to global from focused shipment
+        cameraFocusRef.current = { key: `global_returned`, time: Date.now() };
+        if (validPoints.length > 0) {
+          safeFitBounds(L.latLngBounds(validPoints), { padding: [50, 50], maxZoom: 11 });
+        }
+      }
+    }
+  }, [selectedShipment?.id, selectedRoute?.shipment_id, selectedRoute?.distance_km, shipments.length]);
+
+  // 7. Handle map click for coordinate picking mode
   useEffect(() => {
     const map = mapInstanceRef.current;
     if (!map) return;
@@ -735,7 +937,7 @@ export default function TrackingMap({
     };
   }, [mapPickMode, onMapPick]);
 
-  // Render Real-Road Dynamic Simulation Polyline & Animated Virtual Vehicle
+  // 8. Render Real-Road Dynamic Simulation Polyline & Animated Virtual Vehicle
   useEffect(() => {
     const map = mapInstanceRef.current;
     const simLayer = simulationLayerRef.current;
@@ -820,9 +1022,14 @@ export default function TrackingMap({
       endMarker.bindTooltip(`Point B: ${endName}`, { direction: "top", offset: [0, -12] });
       simLayer.addLayer(endMarker);
 
-      // Fit bounds if initially loaded and not running yet
-      if (!simulationSession || simulationSession.status === "READY" || simulationSession.status === "CREATED") {
-        map.fitBounds(L.latLngBounds(latLngs), { padding: [50, 50], maxZoom: 11 });
+      // Fit bounds when a new simulation route is initialized and not yet running
+      const simRouteKey = `sim_route_${simulationSession?.id || "preview"}`;
+      if (
+        (!simulationSession || simulationSession.status === "READY" || simulationSession.status === "CREATED") &&
+        cameraFocusRef.current.key !== simRouteKey
+      ) {
+        cameraFocusRef.current = { key: simRouteKey, time: Date.now() };
+        safeFitBounds(L.latLngBounds(latLngs), { padding: [50, 50], maxZoom: 11 });
       }
     } else if (
       simulationSession &&
@@ -935,32 +1142,37 @@ export default function TrackingMap({
       vehicleMarker.bindPopup(popupHtml);
       simLayer.addLayer(vehicleMarker);
 
+      // Smooth pan following vehicle when running (only if vehicle actually moved significantly)
       if (status === "RUNNING") {
-        map.panTo([lat, lon], { animate: true, duration: 0.5 });
+        const last = lastVehiclePosRef.current;
+        const dLat = last.lat != null ? Math.abs(last.lat - lat) : 1;
+        const dLon = last.lon != null ? Math.abs(last.lon - lon) : 1;
+        if (dLat > 0.0003 || dLon > 0.0003) {
+          lastVehiclePosRef.current = { lat, lon };
+          safePanTo([lat, lon], { animate: true, duration: 0.5 });
+        }
       }
     }
   }, [simulationSession, simulationRoute]);
 
   // Handler to manually fit all shipments inside India
   const handleFitAll = () => {
-    const map = mapInstanceRef.current;
-    if (!map) return;
     const validPoints = shipments
       .map(normalizeShipmentCoordinates)
       .filter((c) => c !== null && isWithinIndia(c[0], c[1]));
 
     if (validPoints.length > 0) {
+      cameraFocusRef.current = { key: "manual_fit_all", time: Date.now() };
       const bounds = L.latLngBounds(validPoints);
-      map.fitBounds(bounds, { padding: [50, 50], maxZoom: 11 });
+      safeFitBounds(bounds, { padding: [50, 50], maxZoom: 11 });
     } else {
-      map.flyTo(PUNJAB_DEFAULT_CENTER, 8);
+      safeFlyTo(PUNJAB_DEFAULT_CENTER, 8);
     }
   };
 
   const handleFitPunjab = () => {
-    const map = mapInstanceRef.current;
-    if (!map) return;
-    map.flyTo(PUNJAB_DEFAULT_CENTER, 8, { duration: 0.8 });
+    cameraFocusRef.current = { key: "manual_fit_punjab", time: Date.now() };
+    safeFlyTo(PUNJAB_DEFAULT_CENTER, 8, { duration: 0.8 });
   };
 
   const geolocatedCount = shipments
