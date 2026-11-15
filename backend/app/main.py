@@ -211,3 +211,12 @@ async def api_inspect_proxy(
 ) -> FruitInspectionResponse:
     """Next.js API proxy alias delegating to the unified multi-fruit inspection endpoint."""
     return await inspect_fruit_produce(request=request, file=file, mode=mode, fruit=fruit)
+
+
+if __name__ == "__main__":
+    import os
+    import uvicorn
+    host = os.getenv("HOST", "127.0.0.1")
+    port = int(os.getenv("PORT", os.getenv("BACKEND_PORT", "8000")))
+    uvicorn.run("app.main:app", host=host, port=port, reload=True)
+

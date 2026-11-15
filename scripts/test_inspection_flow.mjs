@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-const FRONTEND_URL = "http://localhost:3001";
+const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:3000";
 const BACKEND_URL = "http://127.0.0.1:8000";
 
 const results = [];

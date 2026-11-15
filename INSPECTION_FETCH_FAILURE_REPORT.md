@@ -163,3 +163,4 @@ All 5 frozen production checkpoints were re-verified against their baseline SHA-
 | `best_apple_yolov8n.pt` | Ultralytics YOLOv8n | 6,502,250 B | `02a89b45ead457a8aedfd36fd78e23dd959c410becdd380c61ffef0b3e21d8e2` | **PASS (100%)** |
 
 **Conclusion**: Zero weights modified, retrained, or compressed. Model gating policies remain intact.
+
